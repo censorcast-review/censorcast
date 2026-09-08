@@ -1,0 +1,211 @@
+{
+  "schema": "nb-nll-uncertainty-v1",
+  "status": "COMPLETE",
+  "scope": "POST_SELECTION_CONDITIONAL_ON_FIXED_FITS_DEVELOPMENT_ONLY",
+  "n_items": 1829,
+  "n_rows": 365800,
+  "n_series": 18290,
+  "validation_days": [
+    1534,
+    1535,
+    1536,
+    1537,
+    1538,
+    1539,
+    1540,
+    1541,
+    1542,
+    1543,
+    1544,
+    1545,
+    1546,
+    1547,
+    1548,
+    1549,
+    1550,
+    1551,
+    1552,
+    1553
+  ],
+  "reference_shape": 2.0,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260906,
+  "bootstrap_unit": "item; all stores and validation days travel together",
+  "estimator": "total sampled NLL divided by total sampled rows; paired across shapes",
+  "interval_method": "percentile; NumPy linear empirical quantile",
+  "bonferroni_comparisons": [
+    1.0,
+    1.5,
+    3.0,
+    5.0
+  ],
+  "bonferroni_tail_probability": 0.00625,
+  "caveats": [
+    "Kappa=2 was selected on this validation set; these are post-selection descriptive intervals, not independent winner confirmation.",
+    "Intervals condition on the fitted models and do not resample training or reselect kappa.",
+    "Item resampling retains within-item dependence but does not remove common store/calendar shocks.",
+    "Bonferroni quantiles address the four displayed fixed comparisons; they do not correct the earlier model-development and selection history.",
+    "Observed-data score differences do not by themselves identify latent censored-tail moments or validate downstream risk control."
+  ],
+  "records": [
+    {
+      "shape": 0.5,
+      "validation_nll": 0.7541090539603138,
+      "difference_vs_kappa2": 0.022664219804156005,
+      "pointwise_95_percentile_interval": [
+        0.019649122359142554,
+        0.02570344673296304
+      ],
+      "bonferroni_family_95_percentile_interval": null,
+      "in_four_comparison_family": false,
+      "pointwise_excludes_zero": true,
+      "bonferroni_excludes_zero": null
+    },
+    {
+      "shape": 1.0,
+      "validation_nll": 0.7361164822869565,
+      "difference_vs_kappa2": 0.004671648130798678,
+      "pointwise_95_percentile_interval": [
+        0.00331834345039288,
+        0.00600066387371689
+      ],
+      "bonferroni_family_95_percentile_interval": [
+        0.002934462731830778,
+        0.0063344258480320745
+      ],
+      "in_four_comparison_family": true,
+      "pointwise_excludes_zero": true,
+      "bonferroni_excludes_zero": true
+    },
+    {
+      "shape": 1.5,
+      "validation_nll": 0.7323977165991893,
+      "difference_vs_kappa2": 0.0009528824430314886,
+      "pointwise_95_percentile_interval": [
+        0.0003985844080523104,
+        0.0014860474655940257
+      ],
+      "bonferroni_family_95_percentile_interval": [
+        0.00022006455735949852,
+        0.0016338983308547533
+      ],
+      "in_four_comparison_family": true,
+      "pointwise_excludes_zero": true,
+      "bonferroni_excludes_zero": true
+    },
+    {
+      "shape": 2.0,
+      "validation_nll": 0.7314448341561578,
+      "difference_vs_kappa2": 0.0,
+      "pointwise_95_percentile_interval": [
+        0.0,
+        0.0
+      ],
+      "bonferroni_family_95_percentile_interval": null,
+      "in_four_comparison_family": false,
+      "pointwise_excludes_zero": false,
+      "bonferroni_excludes_zero": null
+    },
+    {
+      "shape": 3.0,
+      "validation_nll": 0.7321962316509701,
+      "difference_vs_kappa2": 0.0007513974948123447,
+      "pointwise_95_percentile_interval": [
+        0.0001432192843144886,
+        0.00139852883500901
+      ],
+      "bonferroni_family_95_percentile_interval": [
+        -8.118121598670693e-06,
+        0.0015921629652594898
+      ],
+      "in_four_comparison_family": true,
+      "pointwise_excludes_zero": true,
+      "bonferroni_excludes_zero": false
+    },
+    {
+      "shape": 5.0,
+      "validation_nll": 0.7346742039914724,
+      "difference_vs_kappa2": 0.0032293698353146327,
+      "pointwise_95_percentile_interval": [
+        0.001944145600056338,
+        0.004611590324672071
+      ],
+      "bonferroni_family_95_percentile_interval": [
+        0.0016058054309695904,
+        0.005031229905050017
+      ],
+      "in_four_comparison_family": true,
+      "pointwise_excludes_zero": true,
+      "bonferroni_excludes_zero": true
+    },
+    {
+      "shape": 10.0,
+      "validation_nll": 0.7391764602293274,
+      "difference_vs_kappa2": 0.007731626073169573,
+      "pointwise_95_percentile_interval": [
+        0.005680760120767583,
+        0.010010857201265882
+      ],
+      "bonferroni_family_95_percentile_interval": null,
+      "in_four_comparison_family": false,
+      "pointwise_excludes_zero": true,
+      "bonferroni_excludes_zero": null
+    }
+  ],
+  "fits_performed": 0,
+  "threshold_searches": 0,
+  "raw_guardian_accesses": 0,
+  "raw_external_accesses": 0,
+  "new_hidden_outcome_arrays_loaded": 0,
+  "item_statistics_sha256": "49119e8ed48a1fe17e1673d579e6b74c64e40f4f9a24c7bfce1f504060689dba",
+  "protocol_sha256": "c34d476db2ff4937cfff99817c255c50c4ac723a76ff9c64668631b77803f6fc",
+  "historical_nll_replay": [
+    {
+      "shape": 0.5,
+      "replay_nll": 0.7541090539603158,
+      "historical_nll": 0.7541090539603158,
+      "absolute_difference": 0.0
+    },
+    {
+      "shape": 1.0,
+      "replay_nll": 0.7361164822869559,
+      "historical_nll": 0.7361164822869559,
+      "absolute_difference": 0.0
+    },
+    {
+      "shape": 1.5,
+      "replay_nll": 0.7323977165991894,
+      "historical_nll": 0.7323977165991894,
+      "absolute_difference": 0.0
+    },
+    {
+      "shape": 2.0,
+      "replay_nll": 0.731444834156158,
+      "historical_nll": 0.731444834156158,
+      "absolute_difference": 0.0
+    },
+    {
+      "shape": 3.0,
+      "replay_nll": 0.732196231650971,
+      "historical_nll": 0.732196231650971,
+      "absolute_difference": 0.0
+    },
+    {
+      "shape": 5.0,
+      "replay_nll": 0.7346742039914725,
+      "historical_nll": 0.7346742039914725,
+      "absolute_difference": 0.0
+    },
+    {
+      "shape": 10.0,
+      "replay_nll": 0.7391764602293277,
+      "historical_nll": 0.7391764602293277,
+      "absolute_difference": 0.0
+    }
+  ],
+  "runtime": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "lightgbm": "4.6.0"
+  }
+}

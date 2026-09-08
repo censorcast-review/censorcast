@@ -1,0 +1,272 @@
+[
+  {
+    "cap": 0.55,
+    "thresholds": {
+      "ALL": 0.23559057712554932
+    },
+    "metrics": {
+      "ALL": {
+        "n": 2085060,
+        "accepted_n": 1129332,
+        "coverage": 0.5416304566775056,
+        "wape": 0.5384728330351469,
+        "baseline_same_subset_wape": 0.5490510222170193,
+        "paired_error_ratio": 0.9807336863900944,
+        "demand_coverage": 0.48723623156547546
+      },
+      "FOODS": {
+        "n": 1008900,
+        "accepted_n": 426555,
+        "coverage": 0.4227921498661909,
+        "wape": 0.4868800522092606,
+        "baseline_same_subset_wape": 0.5006913351839506,
+        "paired_error_ratio": 0.9724155742187635,
+        "demand_coverage": 0.4966503977775574
+      },
+      "HOBBIES": {
+        "n": 372780,
+        "accepted_n": 251161,
+        "coverage": 0.6737512742099898,
+        "wape": 0.8743210858327484,
+        "baseline_same_subset_wape": 0.8732776469688039,
+        "paired_error_ratio": 1.001194853512587,
+        "demand_coverage": 0.27472740411758423
+      },
+      "HOUSEHOLD": {
+        "n": 703380,
+        "accepted_n": 451616,
+        "coverage": 0.6420654553726293,
+        "wape": 0.6130959677691428,
+        "baseline_same_subset_wape": 0.6171996911643362,
+        "paired_error_ratio": 0.993351060517461,
+        "demand_coverage": 0.5393519401550293
+      }
+    },
+    "refit_count": 0
+  },
+  {
+    "cap": 0.6,
+    "thresholds": {
+      "ALL": 0.25931262969970703
+    },
+    "metrics": {
+      "ALL": {
+        "n": 2085060,
+        "accepted_n": 1486270,
+        "coverage": 0.7128188157654936,
+        "wape": 0.5884593396067217,
+        "baseline_same_subset_wape": 0.5982964977930142,
+        "paired_error_ratio": 0.9835580548731612,
+        "demand_coverage": 0.6717885732650757
+      },
+      "FOODS": {
+        "n": 1008900,
+        "accepted_n": 632825,
+        "coverage": 0.6272425413817029,
+        "wape": 0.5439405067988377,
+        "baseline_same_subset_wape": 0.557105922976729,
+        "paired_error_ratio": 0.9763681992330185,
+        "demand_coverage": 0.6740496754646301
+      },
+      "HOBBIES": {
+        "n": 372780,
+        "accepted_n": 288006,
+        "coverage": 0.7725897312087558,
+        "wape": 0.8501292247470856,
+        "baseline_same_subset_wape": 0.8490672108844977,
+        "paired_error_ratio": 1.0012508007010206,
+        "demand_coverage": 0.42496806383132935
+      },
+      "HOUSEHOLD": {
+        "n": 703380,
+        "accepted_n": 565439,
+        "coverage": 0.8038883675964628,
+        "wape": 0.6491159546479669,
+        "baseline_same_subset_wape": 0.6525981639541454,
+        "paired_error_ratio": 0.9946640835072543,
+        "demand_coverage": 0.7576402425765991
+      }
+    },
+    "refit_count": 0
+  },
+  {
+    "cap": 0.640129832706689,
+    "thresholds": {
+      "ALL": 0.2888724207878113
+    },
+    "metrics": {
+      "ALL": {
+        "n": 2085060,
+        "accepted_n": 1801839,
+        "coverage": 0.8641664988057898,
+        "wape": 0.6275237988631079,
+        "baseline_same_subset_wape": 0.6370976141368146,
+        "paired_error_ratio": 0.9849727654581191,
+        "demand_coverage": 0.8155909180641174
+      },
+      "FOODS": {
+        "n": 1008900,
+        "accepted_n": 826274,
+        "coverage": 0.8189850332044801,
+        "wape": 0.5872176546216245,
+        "baseline_same_subset_wape": 0.6001257444380275,
+        "paired_error_ratio": 0.9784910246960151,
+        "demand_coverage": 0.8157109618186951
+      },
+      "HOBBIES": {
+        "n": 372780,
+        "accepted_n": 322606,
+        "coverage": 0.8654058694135951,
+        "wape": 0.8475186144148669,
+        "baseline_same_subset_wape": 0.8464720372372745,
+        "paired_error_ratio": 1.0012363989967208,
+        "demand_coverage": 0.5855079889297485
+      },
+      "HOUSEHOLD": {
+        "n": 703380,
+        "accepted_n": 652959,
+        "coverage": 0.9283161306832722,
+        "wape": 0.6804849179785438,
+        "baseline_same_subset_wape": 0.683833761535159,
+        "paired_error_ratio": 0.9951028396885564,
+        "demand_coverage": 0.9014240503311157
+      }
+    },
+    "refit_count": 0
+  },
+  {
+    "cap": 0.65,
+    "thresholds": {
+      "ALL": 0.29567867517471313
+    },
+    "metrics": {
+      "ALL": {
+        "n": 2085060,
+        "accepted_n": 1882802,
+        "coverage": 0.9029965564540109,
+        "wape": 0.6370422513626657,
+        "baseline_same_subset_wape": 0.6465770982117046,
+        "paired_error_ratio": 0.9852533489425928,
+        "demand_coverage": 0.8474676012992859
+      },
+      "FOODS": {
+        "n": 1008900,
+        "accepted_n": 875831,
+        "coverage": 0.8681048666864902,
+        "wape": 0.5973217353714257,
+        "baseline_same_subset_wape": 0.6101939766715678,
+        "paired_error_ratio": 0.9789046732805256,
+        "demand_coverage": 0.8464174866676331
+      },
+      "HOBBIES": {
+        "n": 372780,
+        "accepted_n": 332456,
+        "coverage": 0.8918289607811578,
+        "wape": 0.8504634706418226,
+        "baseline_same_subset_wape": 0.8494665016415462,
+        "paired_error_ratio": 1.001173641336474,
+        "demand_coverage": 0.6299821138381958
+      },
+      "HOUSEHOLD": {
+        "n": 703380,
+        "accepted_n": 674515,
+        "coverage": 0.9589624385111888,
+        "wape": 0.6883223703061429,
+        "baseline_same_subset_wape": 0.6916748664233272,
+        "paired_error_ratio": 0.9951530751225353,
+        "demand_coverage": 0.9319983124732971
+      }
+    },
+    "refit_count": 0
+  },
+  {
+    "cap": 0.7,
+    "thresholds": {
+      "ALL": 16.50613784790039
+    },
+    "metrics": {
+      "ALL": {
+        "n": 2085060,
+        "accepted_n": 2085039,
+        "coverage": 0.9999899283473856,
+        "wape": 0.6666305602671987,
+        "baseline_same_subset_wape": 0.6788303491638807,
+        "paired_error_ratio": 0.9820282211723318,
+        "demand_coverage": 0.9994988441467285
+      },
+      "FOODS": {
+        "n": 1008900,
+        "accepted_n": 1008879,
+        "coverage": 0.9999791852512637,
+        "wape": 0.6314258659094273,
+        "baseline_same_subset_wape": 0.6480465331983454,
+        "paired_error_ratio": 0.9743526638328128,
+        "demand_coverage": 0.9992629289627075
+      },
+      "HOBBIES": {
+        "n": 372780,
+        "accepted_n": 372780,
+        "coverage": 1.0,
+        "wape": 0.8577771233998505,
+        "baseline_same_subset_wape": 0.8571592792806969,
+        "paired_error_ratio": 1.0007208043290063,
+        "demand_coverage": 1.0
+      },
+      "HOUSEHOLD": {
+        "n": 703380,
+        "accepted_n": 703380,
+        "coverage": 1.0,
+        "wape": 0.6977373729027981,
+        "baseline_same_subset_wape": 0.7018409261098976,
+        "paired_error_ratio": 0.9941531577107591,
+        "demand_coverage": 1.0
+      }
+    },
+    "refit_count": 0
+  },
+  {
+    "cap": 0.75,
+    "thresholds": {
+      "ALL": 15.933466911315918
+    },
+    "metrics": {
+      "ALL": {
+        "n": 2085060,
+        "accepted_n": 2085046,
+        "coverage": 0.9999932855649238,
+        "wape": 0.6666618920581212,
+        "baseline_same_subset_wape": 0.6788632357040005,
+        "paired_error_ratio": 0.9820268015644915,
+        "demand_coverage": 0.9996195435523987
+      },
+      "FOODS": {
+        "n": 1008900,
+        "accepted_n": 1008886,
+        "coverage": 0.9999861235008425,
+        "wape": 0.6314782085837292,
+        "baseline_same_subset_wape": 0.6481003780595526,
+        "paired_error_ratio": 0.9743524768098561,
+        "demand_coverage": 0.9994403719902039
+      },
+      "HOBBIES": {
+        "n": 372780,
+        "accepted_n": 372780,
+        "coverage": 1.0,
+        "wape": 0.8577771233998505,
+        "baseline_same_subset_wape": 0.8571592792806969,
+        "paired_error_ratio": 1.0007208043290063,
+        "demand_coverage": 1.0
+      },
+      "HOUSEHOLD": {
+        "n": 703380,
+        "accepted_n": 703380,
+        "coverage": 1.0,
+        "wape": 0.6977373729027981,
+        "baseline_same_subset_wape": 0.7018409261098976,
+        "paired_error_ratio": 0.9941531577107591,
+        "demand_coverage": 1.0
+      }
+    },
+    "refit_count": 0
+  }
+]

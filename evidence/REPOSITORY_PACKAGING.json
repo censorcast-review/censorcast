@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "parent_files": 934,
+  "changed_parent_files": [
+    "README.md"
+  ],
+  "unchanged_scientific_files": 933,
+  "remote_published": false,
+  "manuscript_link_added": true,
+  "integrity_files_checked": 940,
+  "text_files_screened": 825,
+  "identity_pattern_matches": 0,
+  "core_checks_passed": 8,
+  "numerical_distribution": "Nine archive parts; restore_large_assets.py reconstructs original paths and verifies individual hashes",
+  "repository_url": "https://github.com/censorcast-review/censorcast"
+}

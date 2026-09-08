@@ -1,0 +1,35 @@
+{
+  "method": "observed_poisson",
+  "seed": 20260907,
+  "training_rows": 1200000,
+  "parameters": {
+    "objective": "poisson",
+    "n_estimators": 300,
+    "num_leaves": 63,
+    "learning_rate": 0.05,
+    "min_child_samples": 100,
+    "reg_lambda": 2.0,
+    "n_jobs": 4,
+    "random_state": 20260907,
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "metrics": {
+    "selection": {
+      "n": 2139930,
+      "wape": 0.7488900191023146,
+      "wpe": -0.28390361549847315,
+      "mae": 0.869478554709665,
+      "rmse": 2.371219061937731
+    },
+    "shadow": {
+      "n": 2194800,
+      "wape": 0.726670752665738,
+      "wpe": -0.3197789426077578,
+      "mae": 1.0070554772887135,
+      "rmse": 2.6917235287097148
+    }
+  },
+  "seconds": 37.64618396759033
+}

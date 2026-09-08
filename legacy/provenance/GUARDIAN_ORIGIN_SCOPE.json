@@ -1,0 +1,89 @@
+{
+  "status": "ORIGIN_AND_SPLIT_BOUNDARIES_REPAIRED",
+  "feature_names": [
+    "log_baseline",
+    "log_proposal",
+    "log_raw",
+    "log_em",
+    "censor_probability",
+    "positive_correction",
+    "prior_observed_wape_origin",
+    "horizon",
+    "observed_mean7",
+    "observed_mean28",
+    "observed_mean56",
+    "observed_std28",
+    "observed_zero_fraction28",
+    "past_censor_rate7",
+    "past_censor_rate28",
+    "observed_seasonal7",
+    "observed_seasonal14",
+    "cat_id",
+    "dept_id",
+    "store_id",
+    "state_id"
+  ],
+  "blocks": [
+    {
+      "block": "risk_train",
+      "total_rows": 732000,
+      "rows_with_after_origin_history": 628300,
+      "max_after_origin_days": 6,
+      "mean_absolute_prior_change": 0.7546985221996186,
+      "p95_absolute_prior_change": 0.9242224584836551,
+      "dropped_days": [
+        1434,
+        1435
+      ]
+    },
+    {
+      "block": "calibration_a",
+      "total_rows": 732000,
+      "rows_with_after_origin_history": 628300,
+      "max_after_origin_days": 6,
+      "mean_absolute_prior_change": 0.7841472087100273,
+      "p95_absolute_prior_change": 0.95034397166605,
+      "dropped_days": [
+        1554
+      ]
+    },
+    {
+      "block": "calibration_b",
+      "total_rows": 732000,
+      "rows_with_after_origin_history": 622200,
+      "max_after_origin_days": 6,
+      "mean_absolute_prior_change": 0.7997736412173344,
+      "p95_absolute_prior_change": 0.9657921701330601,
+      "dropped_days": []
+    },
+    {
+      "block": "shadow",
+      "total_rows": 732000,
+      "rows_with_after_origin_history": 628300,
+      "max_after_origin_days": 6,
+      "mean_absolute_prior_change": 0.8104905016462709,
+      "p95_absolute_prior_change": 0.9767018693349567,
+      "dropped_days": [
+        1794,
+        1795,
+        1796,
+        1797,
+        1798,
+        1799
+      ]
+    }
+  ],
+  "old_risk_predictions": "diagnostic negative control only; not used by repaired learners",
+  "raw_dataset": "previously held-out guardian items; observed context and explicitly authorized outcome shard",
+  "fresh_guardian_opened": true,
+  "external_opened": false,
+  "scope": "Frozen comparison only; generic inherited development status strings are not the access ledger.",
+  "context_truth_placeholder_used_for_training_or_scoring": false,
+  "risk_train_cache_used_for_training_or_scoring": false,
+  "evaluated_blocks": [
+    "calibration_a",
+    "calibration_b",
+    "shadow"
+  ],
+  "freeze_sha256": "3d94aec80d993b92684a61f058ed4e3ceb2351233f07fb8eea3f9f542fe2b156"
+}

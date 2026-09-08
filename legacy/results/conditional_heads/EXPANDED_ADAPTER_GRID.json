@@ -1,0 +1,415 @@
+{
+  "status": "SELECTION_ONLY_EXPANDED_GRID_COMPLETE",
+  "point_seed": 20260906,
+  "grid": [
+    {
+      "alpha": 0,
+      "gamma": 0.25,
+      "selection_wape": 0.6987874204198706
+    },
+    {
+      "alpha": 0,
+      "gamma": 0.5,
+      "selection_wape": 0.6987874204198706
+    },
+    {
+      "alpha": 0,
+      "gamma": 1,
+      "selection_wape": 0.6987874204198706
+    },
+    {
+      "alpha": 0,
+      "gamma": 2,
+      "selection_wape": 0.6987874204198706
+    },
+    {
+      "alpha": 0,
+      "gamma": 3,
+      "selection_wape": 0.6987874204198706
+    },
+    {
+      "alpha": 0,
+      "gamma": 4,
+      "selection_wape": 0.6987874204198706
+    },
+    {
+      "alpha": 0,
+      "gamma": 6,
+      "selection_wape": 0.6987874204198706
+    },
+    {
+      "alpha": 0.25,
+      "gamma": 0.25,
+      "selection_wape": 0.7029411969412823
+    },
+    {
+      "alpha": 0.25,
+      "gamma": 0.5,
+      "selection_wape": 0.699774505863868
+    },
+    {
+      "alpha": 0.25,
+      "gamma": 1,
+      "selection_wape": 0.6977537954292341
+    },
+    {
+      "alpha": 0.25,
+      "gamma": 2,
+      "selection_wape": 0.6975916266192734
+    },
+    {
+      "alpha": 0.25,
+      "gamma": 3,
+      "selection_wape": 0.697922211497006
+    },
+    {
+      "alpha": 0.25,
+      "gamma": 4,
+      "selection_wape": 0.6981634129261689
+    },
+    {
+      "alpha": 0.25,
+      "gamma": 6,
+      "selection_wape": 0.6984319164848455
+    },
+    {
+      "alpha": 0.5,
+      "gamma": 0.25,
+      "selection_wape": 0.7076576968763133
+    },
+    {
+      "alpha": 0.5,
+      "gamma": 0.5,
+      "selection_wape": 0.701141812803174
+    },
+    {
+      "alpha": 0.5,
+      "gamma": 1,
+      "selection_wape": 0.6969040641272771
+    },
+    {
+      "alpha": 0.5,
+      "gamma": 2,
+      "selection_wape": 0.6964539539318432
+    },
+    {
+      "alpha": 0.5,
+      "gamma": 3,
+      "selection_wape": 0.6970842607953901
+    },
+    {
+      "alpha": 0.5,
+      "gamma": 4,
+      "selection_wape": 0.6975551977572816
+    },
+    {
+      "alpha": 0.5,
+      "gamma": 6,
+      "selection_wape": 0.698082735705713
+    },
+    {
+      "alpha": 0.75,
+      "gamma": 0.25,
+      "selection_wape": 0.7128933752169954
+    },
+    {
+      "alpha": 0.75,
+      "gamma": 0.5,
+      "selection_wape": 0.7028509013072329
+    },
+    {
+      "alpha": 0.75,
+      "gamma": 1,
+      "selection_wape": 0.6962195241960909
+    },
+    {
+      "alpha": 0.75,
+      "gamma": 2,
+      "selection_wape": 0.6953741999396548
+    },
+    {
+      "alpha": 0.75,
+      "gamma": 3,
+      "selection_wape": 0.6962698650075391
+    },
+    {
+      "alpha": 0.75,
+      "gamma": 4,
+      "selection_wape": 0.6969587505996585
+    },
+    {
+      "alpha": 0.75,
+      "gamma": 6,
+      "selection_wape": 0.697738339048884
+    },
+    {
+      "alpha": 1,
+      "gamma": 0.25,
+      "selection_wape": 0.7187254206902978
+    },
+    {
+      "alpha": 1,
+      "gamma": 0.5,
+      "selection_wape": 0.7049382506463178
+    },
+    {
+      "alpha": 1,
+      "gamma": 1,
+      "selection_wape": 0.6957204714471846
+    },
+    {
+      "alpha": 1,
+      "gamma": 2,
+      "selection_wape": 0.6943569125306509
+    },
+    {
+      "alpha": 1,
+      "gamma": 3,
+      "selection_wape": 0.6954837375622639
+    },
+    {
+      "alpha": 1,
+      "gamma": 4,
+      "selection_wape": 0.6963755971905637
+    },
+    {
+      "alpha": 1,
+      "gamma": 6,
+      "selection_wape": 0.6973980321692904
+    },
+    {
+      "alpha": 1.5,
+      "gamma": 0.25,
+      "selection_wape": 0.732458477502398
+    },
+    {
+      "alpha": 1.5,
+      "gamma": 0.5,
+      "selection_wape": 0.7103465592703206
+    },
+    {
+      "alpha": 1.5,
+      "gamma": 1,
+      "selection_wape": 0.6953196425285609
+    },
+    {
+      "alpha": 1.5,
+      "gamma": 2,
+      "selection_wape": 0.6925135373105926
+    },
+    {
+      "alpha": 1.5,
+      "gamma": 3,
+      "selection_wape": 0.694008143700535
+    },
+    {
+      "alpha": 1.5,
+      "gamma": 4,
+      "selection_wape": 0.6952609588710795
+    },
+    {
+      "alpha": 1.5,
+      "gamma": 6,
+      "selection_wape": 0.6967323192230382
+    },
+    {
+      "alpha": 2,
+      "gamma": 0.25,
+      "selection_wape": 0.7497944112706548
+    },
+    {
+      "alpha": 2,
+      "gamma": 0.5,
+      "selection_wape": 0.7175383967453434
+    },
+    {
+      "alpha": 2,
+      "gamma": 1,
+      "selection_wape": 0.6957425827879451
+    },
+    {
+      "alpha": 2,
+      "gamma": 2,
+      "selection_wape": 0.6909713930313732
+    },
+    {
+      "alpha": 2,
+      "gamma": 3,
+      "selection_wape": 0.6926641084796924
+    },
+    {
+      "alpha": 2,
+      "gamma": 4,
+      "selection_wape": 0.694220571621358
+    },
+    {
+      "alpha": 2,
+      "gamma": 6,
+      "selection_wape": 0.6960951707918125
+    },
+    {
+      "alpha": 3,
+      "gamma": 0.25,
+      "selection_wape": 0.7998393731457335
+    },
+    {
+      "alpha": 3,
+      "gamma": 0.5,
+      "selection_wape": 0.7381732244091329
+    },
+    {
+      "alpha": 3,
+      "gamma": 1,
+      "selection_wape": 0.6991739625729447
+    },
+    {
+      "alpha": 3,
+      "gamma": 2,
+      "selection_wape": 0.6887962745000143
+    },
+    {
+      "alpha": 3,
+      "gamma": 3,
+      "selection_wape": 0.6904073265092094
+    },
+    {
+      "alpha": 3,
+      "gamma": 4,
+      "selection_wape": 0.6923833192788248
+    },
+    {
+      "alpha": 3,
+      "gamma": 6,
+      "selection_wape": 0.6949147686366238
+    },
+    {
+      "alpha": 4,
+      "gamma": 0.25,
+      "selection_wape": 0.8691022068400945
+    },
+    {
+      "alpha": 4,
+      "gamma": 0.5,
+      "selection_wape": 0.768096658407903
+    },
+    {
+      "alpha": 4,
+      "gamma": 1,
+      "selection_wape": 0.7059715932710866
+    },
+    {
+      "alpha": 4,
+      "gamma": 2,
+      "selection_wape": 0.687911403587916
+    },
+    {
+      "alpha": 4,
+      "gamma": 3,
+      "selection_wape": 0.6887916450358399
+    },
+    {
+      "alpha": 4,
+      "gamma": 4,
+      "selection_wape": 0.6909007903446783
+    },
+    {
+      "alpha": 4,
+      "gamma": 6,
+      "selection_wape": 0.6938667742560987
+    },
+    {
+      "alpha": 6,
+      "gamma": 0.25,
+      "selection_wape": 1.0486081615226042
+    },
+    {
+      "alpha": 6,
+      "gamma": 0.5,
+      "selection_wape": 0.854184271203005
+    },
+    {
+      "alpha": 6,
+      "gamma": 1,
+      "selection_wape": 0.7287007913230313
+    },
+    {
+      "alpha": 6,
+      "gamma": 2,
+      "selection_wape": 0.6896681688087835
+    },
+    {
+      "alpha": 6,
+      "gamma": 3,
+      "selection_wape": 0.687414765929097
+    },
+    {
+      "alpha": 6,
+      "gamma": 4,
+      "selection_wape": 0.6890230644962584
+    },
+    {
+      "alpha": 6,
+      "gamma": 6,
+      "selection_wape": 0.6922797280197661
+    },
+    {
+      "alpha": 8,
+      "gamma": 0.25,
+      "selection_wape": 1.2645912247312063
+    },
+    {
+      "alpha": 8,
+      "gamma": 0.5,
+      "selection_wape": 0.9666244900694745
+    },
+    {
+      "alpha": 8,
+      "gamma": 1,
+      "selection_wape": 0.7620662854455331
+    },
+    {
+      "alpha": 8,
+      "gamma": 2,
+      "selection_wape": 0.6954257822641332
+    },
+    {
+      "alpha": 8,
+      "gamma": 3,
+      "selection_wape": 0.6883134834501056
+    },
+    {
+      "alpha": 8,
+      "gamma": 4,
+      "selection_wape": 0.6885828673890307
+    },
+    {
+      "alpha": 8,
+      "gamma": 6,
+      "selection_wape": 0.6912953506811067
+    }
+  ],
+  "selected": {
+    "alpha": 6,
+    "gamma": 3,
+    "selection_wape": 0.687414765929097
+  },
+  "old_alpha2_gamma2_shadow": {
+    "n": 2194800,
+    "wape": 0.6703923781501372,
+    "wpe": -0.3512214696058084,
+    "mae": 0.9290621837635075,
+    "rmse": 2.5449114708382288
+  },
+  "expanded_shadow": {
+    "n": 2194800,
+    "wape": 0.6635914080404676,
+    "wpe": -0.33096080538287836,
+    "mae": 0.9196370704302754,
+    "rmse": 2.4444483752852175
+  },
+  "training_calls": 0,
+  "risk_comparison_forecast_unchanged": true,
+  "selection_only": true,
+  "guardian_opened": false,
+  "selection_boundary": false
+}

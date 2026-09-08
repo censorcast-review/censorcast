@@ -1,0 +1,72 @@
+{
+  "schema": "preopening-plan-evolution-1",
+  "status": "HISTORICAL_REPLACEMENT_DISCLOSED",
+  "old_pair": {
+    "frozen_utc": "2026-09-06T14:29:07.055512+00:00",
+    "original_path": "code/review4_external/EXTERNAL_PLAN.json",
+    "public_original_path": "PRIOR_FROZEN_PLAN_ORIGINAL.json",
+    "sha256": "390e11d0494c7fe493545063001c8dd479d50cd4a3f4fd00bf836e60dec9cd19",
+    "policies": [
+      {
+        "name": "direct_excess",
+        "objective": "row",
+        "threshold": 0.27530351281166077,
+        "score": "stored direct head, 220 trees"
+      },
+      {
+        "name": "demand_normalized",
+        "objective": "demand",
+        "threshold": 1.0048801898956299,
+        "score": "max(error_head,0)/max(max(demand_head,0),0.25)",
+        "denominator_floor": 0.25,
+        "error_trees": 220,
+        "demand_trees": 220
+      }
+    ],
+    "historical_status": "FROZEN_PENDING_EXPLICIT_EXTERNAL_PURPOSE_AMENDMENT"
+  },
+  "executed_pair": {
+    "frozen_utc": "2026-09-06T14:47:36.694813+00:00",
+    "original_path": "code/review5_external/EXTERNAL_PLAN.json",
+    "public_original_path": "FROZEN_PLAN_ORIGINAL.json",
+    "sha256": "8173b957c2c1d4fdb3a962862a4435a1531e378569f8a6602d02af97a0dd7f1d",
+    "policies": [
+      {
+        "name": "composed_excess_lambda_1",
+        "objective": "row",
+        "lambda": 1.0,
+        "threshold": 0.2888724531967165,
+        "score": "(max(error_head,0)-r*max(demand_head,0))/(1+0*max(demand_head,0)/T)",
+        "error_trees": 220,
+        "demand_trees": 220,
+        "raw_head_dtype": "float32",
+        "score_dtype": "float64"
+      },
+      {
+        "name": "mixed_utility_lambda_0_25",
+        "objective": "mixed: .25*row + .75*demand",
+        "lambda": 0.25,
+        "threshold": 0.37635288579749315,
+        "score": "(max(error_head,0)-r*max(demand_head,0))/(.25+.75*max(demand_head,0)/T)",
+        "error_trees": 220,
+        "demand_trees": 220,
+        "raw_head_dtype": "float32",
+        "score_dtype": "float64"
+      }
+    ]
+  },
+  "opened_utc": "2026-09-06T15:10:45.169571+00:00",
+  "completed_utc": "2026-09-06T15:13:38.277616+00:00",
+  "replacement_reason": "Internal review and diagnostics on the already-consumed held-out partition motivated replacing the direct-excess versus regularized demand-normalized pair by composed-excess lambda=1 versus mixed utility lambda=0.25 before external access.",
+  "no_external_access_during_replacement": true,
+  "old_plan_external_opened": false,
+  "executed_plan_external_opened_at_freeze": false,
+  "access_evidence": "Final frozen revision reason states no external access; the single recorded opening is later than both plan timestamps.",
+  "old_plan_preserved_byte_for_byte": true,
+  "original_approval_status": "The old plan was pending and unapproved; only the final pair was executed after the recorded authorization.",
+  "external_use_count": 1,
+  "fit_calls": 0,
+  "threshold_selection_calls": 0,
+  "inference_scope": "Confirmation concerns transfer of this selected fixed policy contrast. It does not establish optimality of either policy, test the superseded pair, or certify operating constraints.",
+  "archival_language_policy": "Immutable originals retain their exact historical wording. Neutral readable and executable publication derivatives identify the original SHA-256 and do not replace the original freeze evidence."
+}

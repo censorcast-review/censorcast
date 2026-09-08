@@ -1,0 +1,544 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic nonnegative ratio-risk laws only; no retail labels, fits, caches, or external partition read.",
+  "family_exact_vertex_and_LP_cases": 24,
+  "sharp_sequence_cases": 36,
+  "nested_binary_realization_cases": 18,
+  "strict_ordering_cases": 12,
+  "constant_denominator_counterexamples": 81,
+  "finite_ratio_perturbation_cases": 150,
+  "mixed_score_perturbation_cases": 1200,
+  "universal_claim_caveat": "Sharpness is existential across realizable joint laws. Ratio form alone does not imply reversal for every fixed loss/exposure metric class.",
+  "records": [
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "0",
+      "epsilon": "1/30",
+      "vertices": 4,
+      "row_gap": "1/4",
+      "exposure_gap": "9/20",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "0",
+      "epsilon": "1/300000",
+      "vertices": 4,
+      "row_gap": "1/4",
+      "exposure_gap": "99999/100010",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "7/20",
+      "epsilon": "1/30",
+      "vertices": 6,
+      "row_gap": "13/80",
+      "exposure_gap": "9/20",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "7/20",
+      "epsilon": "1/300000",
+      "vertices": 6,
+      "row_gap": "13/80",
+      "exposure_gap": "99999/100010",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "9/10",
+      "epsilon": "1/30",
+      "vertices": 6,
+      "row_gap": "1/40",
+      "exposure_gap": "9/20",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "9/10",
+      "epsilon": "1/300000",
+      "vertices": 6,
+      "row_gap": "1/40",
+      "exposure_gap": "99999/100010",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "0",
+      "epsilon": "1/30",
+      "vertices": 4,
+      "row_gap": "1/4",
+      "exposure_gap": "3/4",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "0",
+      "epsilon": "1/300000",
+      "vertices": 4,
+      "row_gap": "1/4",
+      "exposure_gap": "33333/33334",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "7/20",
+      "epsilon": "1/30",
+      "vertices": 6,
+      "row_gap": "13/80",
+      "exposure_gap": "3/4",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "7/20",
+      "epsilon": "1/300000",
+      "vertices": 6,
+      "row_gap": "13/80",
+      "exposure_gap": "33333/33334",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "9/10",
+      "epsilon": "1/30",
+      "vertices": 6,
+      "row_gap": "1/40",
+      "exposure_gap": "3/4",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "9/10",
+      "epsilon": "1/300000",
+      "vertices": 6,
+      "row_gap": "1/40",
+      "exposure_gap": "33333/33334",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "0",
+      "epsilon": "1/30",
+      "vertices": 4,
+      "row_gap": "1/4",
+      "exposure_gap": "81/100",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "0",
+      "epsilon": "1/300000",
+      "vertices": 4,
+      "row_gap": "1/4",
+      "exposure_gap": "899991/900010",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "7/20",
+      "epsilon": "1/30",
+      "vertices": 6,
+      "row_gap": "13/80",
+      "exposure_gap": "81/100",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "7/20",
+      "epsilon": "1/300000",
+      "vertices": 6,
+      "row_gap": "13/80",
+      "exposure_gap": "899991/900010",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "9/10",
+      "epsilon": "1/30",
+      "vertices": 6,
+      "row_gap": "1/40",
+      "exposure_gap": "81/100",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "9/10",
+      "epsilon": "1/300000",
+      "vertices": 6,
+      "row_gap": "1/40",
+      "exposure_gap": "899991/900010",
+      "nested_binary_realization": true
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "0",
+      "epsilon": "1/30",
+      "vertices": 4,
+      "row_gap": "1/4",
+      "exposure_gap": "27/34",
+      "nested_binary_realization": false
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "0",
+      "epsilon": "1/300000",
+      "vertices": 4,
+      "row_gap": "1/4",
+      "exposure_gap": "299997/300004",
+      "nested_binary_realization": false
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "7/20",
+      "epsilon": "1/30",
+      "vertices": 6,
+      "row_gap": "13/80",
+      "exposure_gap": "27/34",
+      "nested_binary_realization": false
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "7/20",
+      "epsilon": "1/300000",
+      "vertices": 6,
+      "row_gap": "13/80",
+      "exposure_gap": "299997/300004",
+      "nested_binary_realization": false
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "9/10",
+      "epsilon": "1/30",
+      "vertices": 6,
+      "row_gap": "1/40",
+      "exposure_gap": "27/34",
+      "nested_binary_realization": false
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "9/10",
+      "epsilon": "1/300000",
+      "vertices": 6,
+      "row_gap": "1/40",
+      "exposure_gap": "299997/300004",
+      "nested_binary_realization": false
+    }
+  ],
+  "sharp_sequences": [
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "0",
+      "eta": "1/100",
+      "row_gap": "797/800",
+      "exposure_gap": "4399/4410"
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "0",
+      "eta": "1/1000",
+      "row_gap": "7997/8000",
+      "exposure_gap": "43999/44010"
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "0",
+      "eta": "1/10000",
+      "row_gap": "79997/80000",
+      "exposure_gap": "439999/440010"
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "7/20",
+      "eta": "1/100",
+      "row_gap": "10361/16000",
+      "exposure_gap": "4399/4410"
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "7/20",
+      "eta": "1/1000",
+      "row_gap": "103961/160000",
+      "exposure_gap": "43999/44010"
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "7/20",
+      "eta": "1/10000",
+      "row_gap": "1039961/1600000",
+      "exposure_gap": "439999/440010"
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "9/10",
+      "eta": "1/100",
+      "row_gap": "797/8000",
+      "exposure_gap": "4399/4410"
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "9/10",
+      "eta": "1/1000",
+      "row_gap": "7997/80000",
+      "exposure_gap": "43999/44010"
+    },
+    {
+      "r": "1/10",
+      "rho": "1",
+      "c0": "9/10",
+      "eta": "1/10000",
+      "row_gap": "79997/800000",
+      "exposure_gap": "439999/440010"
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "0",
+      "eta": "1/100",
+      "row_gap": "797/800",
+      "exposure_gap": "1199/1202"
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "0",
+      "eta": "1/1000",
+      "row_gap": "7997/8000",
+      "exposure_gap": "11999/12002"
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "0",
+      "eta": "1/10000",
+      "row_gap": "79997/80000",
+      "exposure_gap": "119999/120002"
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "7/20",
+      "eta": "1/100",
+      "row_gap": "10361/16000",
+      "exposure_gap": "1199/1202"
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "7/20",
+      "eta": "1/1000",
+      "row_gap": "103961/160000",
+      "exposure_gap": "11999/12002"
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "7/20",
+      "eta": "1/10000",
+      "row_gap": "1039961/1600000",
+      "exposure_gap": "119999/120002"
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "9/10",
+      "eta": "1/100",
+      "row_gap": "797/8000",
+      "exposure_gap": "1199/1202"
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "9/10",
+      "eta": "1/1000",
+      "row_gap": "7997/80000",
+      "exposure_gap": "11999/12002"
+    },
+    {
+      "r": "1/2",
+      "rho": "1",
+      "c0": "9/10",
+      "eta": "1/10000",
+      "row_gap": "79997/800000",
+      "exposure_gap": "119999/120002"
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "0",
+      "eta": "1/100",
+      "row_gap": "797/800",
+      "exposure_gap": "7591/7610"
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "0",
+      "eta": "1/1000",
+      "row_gap": "7997/8000",
+      "exposure_gap": "75991/76010"
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "0",
+      "eta": "1/10000",
+      "row_gap": "79997/80000",
+      "exposure_gap": "759991/760010"
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "7/20",
+      "eta": "1/100",
+      "row_gap": "10361/16000",
+      "exposure_gap": "7591/7610"
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "7/20",
+      "eta": "1/1000",
+      "row_gap": "103961/160000",
+      "exposure_gap": "75991/76010"
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "7/20",
+      "eta": "1/10000",
+      "row_gap": "1039961/1600000",
+      "exposure_gap": "759991/760010"
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "9/10",
+      "eta": "1/100",
+      "row_gap": "797/8000",
+      "exposure_gap": "7591/7610"
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "9/10",
+      "eta": "1/1000",
+      "row_gap": "7997/80000",
+      "exposure_gap": "75991/76010"
+    },
+    {
+      "r": "9/10",
+      "rho": "1",
+      "c0": "9/10",
+      "eta": "1/10000",
+      "row_gap": "79997/800000",
+      "exposure_gap": "759991/760010"
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "0",
+      "eta": "1/100",
+      "row_gap": "797/800",
+      "exposure_gap": "2797/2804"
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "0",
+      "eta": "1/1000",
+      "row_gap": "7997/8000",
+      "exposure_gap": "27997/28004"
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "0",
+      "eta": "1/10000",
+      "row_gap": "79997/80000",
+      "exposure_gap": "279997/280004"
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "7/20",
+      "eta": "1/100",
+      "row_gap": "10361/16000",
+      "exposure_gap": "2797/2804"
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "7/20",
+      "eta": "1/1000",
+      "row_gap": "103961/160000",
+      "exposure_gap": "27997/28004"
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "7/20",
+      "eta": "1/10000",
+      "row_gap": "1039961/1600000",
+      "exposure_gap": "279997/280004"
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "9/10",
+      "eta": "1/100",
+      "row_gap": "797/8000",
+      "exposure_gap": "2797/2804"
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "9/10",
+      "eta": "1/1000",
+      "row_gap": "7997/80000",
+      "exposure_gap": "27997/28004"
+    },
+    {
+      "r": "3/2",
+      "rho": "2",
+      "c0": "9/10",
+      "eta": "1/10000",
+      "row_gap": "79997/800000",
+      "exposure_gap": "279997/280004"
+    }
+  ]
+}

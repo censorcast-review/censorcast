@@ -1,0 +1,35 @@
+{
+  "method": "uncensored_l1",
+  "seed": 20260906,
+  "training_rows": 1075230,
+  "parameters": {
+    "objective": "regression_l1",
+    "n_estimators": 300,
+    "num_leaves": 63,
+    "learning_rate": 0.05,
+    "min_child_samples": 100,
+    "reg_lambda": 2.0,
+    "n_jobs": 4,
+    "random_state": 20260906,
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "metrics": {
+    "selection": {
+      "n": 2139930,
+      "wape": 0.7359356541323376,
+      "wpe": -0.5639159844025119,
+      "mae": 0.8544382387166991,
+      "rmse": 2.5763455402840476
+    },
+    "shadow": {
+      "n": 2194800,
+      "wape": 0.7301369435144104,
+      "wpe": -0.5870590263448598,
+      "mae": 1.0118590922225448,
+      "rmse": 2.9171588915373374
+    }
+  },
+  "seconds": 27.779887676239014
+}

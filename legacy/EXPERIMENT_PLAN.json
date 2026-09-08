@@ -1,0 +1,73 @@
+{
+  "study": "CENSORCAST ICLR development replication, 2026-09-06",
+  "status": "EXPLORATORY_EXTENSION_OF_ALREADY_CONSUMED_DESIGN_DATA",
+  "holdouts": "No FreshRetailNet eval, M5 fresh guardian, or M5 external outcomes are read.",
+  "primary_questions": [
+    "Does the point forecast gain survive metric-matched LightGBM baselines?",
+    "How do origin-aligned history and boundary purging change selective feasibility?",
+    "Do conditional contract-excess scores improve selection over absolute-error scores?",
+    "Does pooled feasibility hide category failures?"
+  ],
+  "point_fit": {
+    "days": [
+      365,
+      1313
+    ],
+    "sample_rows": 1200000,
+    "seeds": [
+      20260906,
+      20260907,
+      20260908
+    ],
+    "lightgbm_iterations": 300,
+    "num_leaves": 63,
+    "learning_rate": 0.05,
+    "methods": [
+      "observed_l1",
+      "observed_poisson",
+      "uncensored_l1"
+    ]
+  },
+  "risk_fit": {
+    "days": [
+      1434,
+      1553
+    ],
+    "purge_if_origin_before": 1433,
+    "sample_rows": 600000,
+    "seeds": [
+      20260906,
+      20260907,
+      20260908
+    ],
+    "iterations": 220,
+    "leaves": 31,
+    "targets": [
+      "absolute_error_mean",
+      "absolute_error_quantile_085",
+      "conditional_contract_excess",
+      "paired_baseline_excess"
+    ]
+  },
+  "selection": "Point choices use selection block; score thresholds use calibration A and B. Previously inspected shadow is evaluation for this extension, not an untouched test.",
+  "contracts": {
+    "legacy_absolute_wape_cap": 0.640129832706689,
+    "coverage_floor": 0.35,
+    "paired_error_ratio_cap": 0.95,
+    "legacy_cap_note": "0.85 times frozen v0.5 baseline selection WAPE; no relaxed prior gate"
+  },
+  "uncertainty": {
+    "item_cluster_bootstrap_reps": 3000,
+    "seed": 20260906,
+    "interpretation": "descriptive conditional bootstrap, not a fresh confirmatory certificate",
+    "sensitivity": "week-block bootstrap"
+  },
+  "all_results_reported": true,
+  "future_independent_confirmation_required": true,
+  "extension_log": [
+    {
+      "recorded_utc": "2026-09-06T01:14:05.836212+00:00",
+      "extension": "Repeat identical selector comparison on metric-matched LightGBM + censor adapter. First prespecified point seed; same fixed absolute cap. Three risk seeds. No holdout reads."
+    }
+  ]
+}

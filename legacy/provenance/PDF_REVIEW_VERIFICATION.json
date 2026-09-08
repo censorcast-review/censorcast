@@ -1,0 +1,16 @@
+{
+  "status": "PDF_RENDER_REVIEW_PASS",
+  "main_pages": 9,
+  "total_pages": 18,
+  "rendered_pages": 18,
+  "page_montage_inspected": true,
+  "detail_pages_inspected": [
+    3,
+    7,
+    13
+  ],
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "style": "unmodified official ICLR 2027",
+  "guardian_results_included": false
+}

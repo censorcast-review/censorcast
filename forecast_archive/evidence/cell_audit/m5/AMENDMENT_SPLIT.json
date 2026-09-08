@@ -1,0 +1,19 @@
+{
+  "category_scaling": "fit category weighted-median scales on first half only for held-out-half comparison",
+  "created_utc": "2026-09-08T09:58:15.316826+00:00",
+  "epsilon": 1e-08,
+  "evaluation_status": "post-hoc development diagnostic; both halves and Later were previously consumed",
+  "fit_count": "one fixed calibration fit, zero forecast or q head fits",
+  "fit_days": "available point-validation days <=1373",
+  "floor": 0.5,
+  "floor_definition": "max(saved or newly fit absolute cell multiplier,0.5) times raw hierarchy forecast",
+  "heldout_days": "point-validation days >=1374",
+  "later_policy": "unchanged original full-validation final policy and fixed floor0.5; no replacement using Later outcomes",
+  "nbins": 8,
+  "quantile_edges": "pooled first-half q quantiles only",
+  "reason": "Separate in-sample final-calibration loss from held-out time-half loss for the single fixed multiplier-floor diagnostic.",
+  "selection_count": 0,
+  "shrinkage": 0.75,
+  "source_protocol": "PROTOCOL.json",
+  "status": "FIXED_BEFORE_SPLIT_SCORING"
+}

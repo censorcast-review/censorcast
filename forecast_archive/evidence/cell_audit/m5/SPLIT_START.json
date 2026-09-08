@@ -1,0 +1,13 @@
+{
+  "amendment_sha256": "3f43e3e0050068cae5d77d5e8e8ac13468583f33b48397b74ac7e511af570ff8",
+  "created_utc": "2026-09-08T10:00:01.306577+00:00",
+  "fixed_calibration_fit_calls": 1,
+  "input_sha256": "5d63b6aff7854ed1811f6b5bffd2f397a09d671c6754e0f1345e2313b35e48fd",
+  "model_fit_calls": 0,
+  "new_holdout_accesses": 0,
+  "policy_selection_calls": 0,
+  "prediction_sha256": "87373beddf53150d4451ebd7ab15f6585141f62b409ec8b7effd4e8673488abc",
+  "script_sha256": "c266e1067f4ece00d7a7af69de438984a3f38a6077b9f54a4197713442b6728d",
+  "status": "FIXED_CONFIG_BEFORE_CALIBRATION_FIT_AND_SCORING",
+  "weighted_scale_source_sha256": "7f74d596562b728a8f6f6aeaede9233b97be62fafbd9539b7a31fbebaf720920"
+}

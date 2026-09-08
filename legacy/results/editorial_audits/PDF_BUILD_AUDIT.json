@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "pages": 21,
+  "main_pages": 9,
+  "diagnostics": [],
+  "packaged_inputs_unchanged": true,
+  "pdf_sha256": "dd84b147adc9f9b21712bb20c8c71314ff5e4c9daabe885500233174341af27e",
+  "source_sha256": "ac2cc3cde2fe3951924e655c11ff49e907b1110e97232961472e43dc4c28ad93",
+  "visual_review": {
+    "status": "PASS",
+    "all_pages_rendered": 21,
+    "contact_sheets_inspected": 5,
+    "final_full_page_checks": [
+      14,
+      20,
+      21
+    ],
+    "table_4_location": "Immediately before Section 5.7 on page 8",
+    "scope": "No overlap, clipping, missing glyphs, or margin overflow observed. Final page starts with moment table followed by complete D.3 subsection."
+  },
+  "supporting_sources_sha256": {
+    "paper/main.tex": "ac2cc3cde2fe3951924e655c11ff49e907b1110e97232961472e43dc4c28ad93",
+    "paper/appendix_review4.tex": "26a1f2b8d281037bbfbbe020f5764f89d53776e179b64d291b28dde4ef6023ce",
+    "paper/review8_bounded_exposure.tex": "214ced6943dfe3aa8294c38cf6bbae673f19156d6cf673f26737a8f83ea9cf84",
+    "paper/tables/nb_fine_grid.tex": "0415a3b56d32c74c0d5a24b9e242368b5396127740b2ec574a9beaaefba4e0a0",
+    "paper/tables/external_budget.tex": "aad6cba91a532f85994f7a4338479c90628f4fd201fee819b546e8899e06fee6",
+    "paper/tables/shared_error_intervention.tex": "2aadcb220c5f09002e8792d6eff1d255db4b30d7cb11b19df63951cf950ed270"
+  }
+}

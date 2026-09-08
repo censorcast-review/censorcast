@@ -1,0 +1,17 @@
+{
+  "row_coverage_delta_ci95": [
+    -0.15520128702904804,
+    -0.12164315501869427
+  ],
+  "demand_coverage_delta_ci95": [
+    0.027190493257089037,
+    0.07018342885212875
+  ],
+  "wape_delta_ci95": [
+    -0.014486242923328785,
+    -0.00017939839632158706
+  ],
+  "bootstrap_reps": 5000,
+  "item_clusters": 610,
+  "scope": "descriptive_posthoc_same_consumed_guardian_not_new_confirmatory_test"
+}

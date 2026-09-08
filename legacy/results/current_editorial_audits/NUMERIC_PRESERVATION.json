@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checked_frozen_dependency_hashes": 37,
+  "checked_prior_result_table_figure_hashes": 516,
+  "only_changed_prior_scientific_artifact": "paper/tables/shared_error_intervention.tex",
+  "change": "Identical caption and label moved above table; identical table cells, wording, numbers.",
+  "prior_main_tex_unchanged": true,
+  "new_model_fits": 0,
+  "new_threshold_searches": 0,
+  "new_policy_evaluations": 0,
+  "external_openings": 0
+}

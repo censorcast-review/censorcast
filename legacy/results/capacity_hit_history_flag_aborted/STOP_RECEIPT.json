@@ -1,0 +1,8 @@
+{
+  "status": "STOPPED_FOR_OBSERVATION_BOUNDARY_REPAIR",
+  "reason": "Initial capacity-hit response control still used benchmark strict flags in historical risk features. Rebuild the two historical censor-rate columns from observed S>=C and refit all capacity-hit models. Do not interpret archived fits as a fully sales/capacity-only control.",
+  "completed_model_files": 6,
+  "snapshot_sha256": "3441eeb66a75d1437ee365547990c11ebbdc28b34a2499fa3025938177d75dcb",
+  "new_output": "results/capacity_hit_extension",
+  "prior_results_retained": true
+}

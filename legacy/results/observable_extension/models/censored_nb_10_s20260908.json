@@ -1,0 +1,11 @@
+{
+  "method": "censored_nb_10",
+  "shape": 10.0,
+  "bias": -0.1865183510280445,
+  "training_rows": 600000,
+  "hidden_labels_used_for_fit": 0,
+  "seed": 20260908,
+  "trees": 220,
+  "fit_seconds": 13.267212629318237,
+  "model_sha256": "314190f2e805d1be2b2fff74c2da114fc5dc1823aedbe78f4521042ede1b7cca"
+}

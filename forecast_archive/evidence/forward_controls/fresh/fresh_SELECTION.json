@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-09-08T18:56:33.027902+00:00",
+  "fit_max_target": "2024-06-04",
+  "fit_rows": 17721,
+  "grid": [
+    {
+      "depth": 2,
+      "trees": 50,
+      "wape": 0.33234517298788696
+    },
+    {
+      "depth": 2,
+      "trees": 150,
+      "wape": 0.3280310917053544
+    },
+    {
+      "depth": 2,
+      "trees": 300,
+      "wape": 0.325028500285448
+    },
+    {
+      "depth": 4,
+      "trees": 50,
+      "wape": 0.32842218634235615
+    },
+    {
+      "depth": 4,
+      "trees": 150,
+      "wape": 0.32383370920836724
+    },
+    {
+      "depth": 4,
+      "trees": 300,
+      "wape": 0.32062098593883465
+    }
+  ],
+  "parent_wape": 0.335518188859357,
+  "selected": {
+    "depth": 4,
+    "kind": "residual_gbm",
+    "trees": 300,
+    "wape": 0.32062098593883465
+  },
+  "selection_max_target": "2024-06-25",
+  "selection_min_target": "2024-06-05"
+}

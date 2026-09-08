@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "exact_ordered_pair_checks": 1662,
+  "unique_optimum_approximations": 54,
+  "independent_LP_checks": 122,
+  "two_atom_no_reversal": {
+    "exact_feasible_cases": 274,
+    "no_positive_feasible_cases": 158,
+    "qualification": "A fixed two-atom positive-weight feature support is an additional counterexample to a proposed universal iff based only on nonconstant w."
+  },
+  "output": "<workspace>/original_theory/CENSORCAST_Anonymous/reproduction_outputs/bounded_exposure_validation/BOUNDED_EXPOSURE_CHECKS.json"
+}

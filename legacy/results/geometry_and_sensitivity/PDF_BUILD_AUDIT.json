@@ -1,0 +1,10 @@
+{
+  "status": "REVIEW3_PDF_BUILD_PASS",
+  "pages": 28,
+  "main_pages": 9,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "pdf_sha256": "9dea037aaa103539f48871b50f2b5ab22e8cb0650c47b858c373090533f84fbc",
+  "source_sha256": "ad1519e259c219808f07531187cdc455021c2e9a9760721d486dcacb8e4bf3c7",
+  "visual_review": "PASS: all28pages rendered and inspected; final27-28 rerendered after appendix hierarchy correction"
+}

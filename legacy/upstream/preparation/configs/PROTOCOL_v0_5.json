@@ -1,0 +1,139 @@
+{
+  "schema_version": "0.5",
+  "protocol_name": "CENSORCAST v0.5 M5 independent cross-dataset protocol",
+  "created_utc": "2026-09-05T00:00:00+00:00",
+  "statistical_role": "NEW_STUDY_AFTER_V0_4_CONFIRMATORY_FAILURE",
+  "independence": {
+    "freshretail_v04_guardian_reused": false,
+    "freshretail_eval_or_test_authorized": false,
+    "v04_alpha_recycled": false,
+    "new_dataset": "M5 Forecasting Accuracy",
+    "new_alpha_ledger": true
+  },
+  "dataset": {
+    "name": "M5 Forecasting Accuracy",
+    "record_id": "10203108",
+    "doi": "10.5281/zenodo.10203108",
+    "record_url": "https://zenodo.org/records/10203108",
+    "api_url": "https://zenodo.org/api/records/10203108",
+    "source_note": "Zenodo fixed record mirrored from the M5 competition; only the three declared files are acquired.",
+    "files": {
+      "calendar.csv": {
+        "md5": "3ffeab2991b0c8e861d008b39ea4c95c",
+        "role": "shared_known_calendar_covariates"
+      },
+      "sales_train_evaluation.csv": {
+        "md5": "b806dfc9f30a745102b708c09951f6aa",
+        "role": "unit_sales_d1_to_d1941"
+      },
+      "sell_prices.csv": {
+        "md5": "08c591caa99e55daf3e0ccac913f7c85",
+        "role": "shared_known_price_covariates"
+      }
+    },
+    "expected_bottom_series": 30490,
+    "expected_unique_items": 3049,
+    "expected_days": 1941,
+    "id_columns": [
+      "id",
+      "item_id",
+      "dept_id",
+      "cat_id",
+      "store_id",
+      "state_id"
+    ]
+  },
+  "item_cluster_partition": {
+    "cluster": "item_id",
+    "salt": "CENSORCAST_V0_5_M5_ITEM_CLUSTER_SPLIT_20260905",
+    "ordering": "ascending_sha256(salt + NUL + item_id)",
+    "design_items": 1829,
+    "fresh_guardian_items": 610,
+    "external_items": 610,
+    "expected_design_series": 18290,
+    "expected_fresh_guardian_series": 6100,
+    "expected_external_series": 6100,
+    "overlap_allowed": false
+  },
+  "time_partition": {
+    "warmup": [1, 56],
+    "fit": [1, 1313],
+    "selection": [1314, 1433],
+    "risk_train": [1434, 1553],
+    "calibration_a": [1554, 1673],
+    "calibration_b": [1674, 1793],
+    "shadow": [1794, 1913],
+    "external_final": [1914, 1941],
+    "forecast_horizons": [1, 2, 3, 4, 5, 6, 7],
+    "future_outcome_leakage_allowed": false
+  },
+  "controlled_censoring": {
+    "primary_estimand": "recovery of mechanically hidden unit demand; not natural stockout inference",
+    "warmup_days_uncensored": 56,
+    "level_update": "level_t = 0.90 * level_(t-1) + 0.10 * observed_(t-1)",
+    "capacity_rule": "max(1, ceil(1.15 * level_t + 0.25 * sqrt(level_t + 1)))",
+    "observed_rule": "min(true_units, capacity)",
+    "censored_rule": "true_units > capacity",
+    "parameters_selected_after_outcomes": false,
+    "design_validity_gate": {
+      "minimum_row_censor_rate": 0.005,
+      "maximum_row_censor_rate": 0.35,
+      "minimum_hidden_demand_mass_fraction": 0.002,
+      "maximum_hidden_demand_mass_fraction": 0.40
+    }
+  },
+  "development_protocol": {
+    "permitted_data": "design item cluster only, through d_1913",
+    "forbidden_data": [
+      "fresh guardian outcome shard",
+      "external outcome shard",
+      "FreshRetailNet v0.4 guardian",
+      "FreshRetailNet eval/test"
+    ],
+    "primary_forecast_comparison": "censor-aware proposal versus frozen strongest non-censor-aware baseline",
+    "risk_layer": "prequential cross-fitted upper-risk estimator with strictly prior residual history, ensemble dispersion, intermittency, price/event regime and design-support distance",
+    "threshold_search": "all unique deployable-score thresholds",
+    "reachability_gate": "all development blocks and prespecified item-category strata must satisfy margin-adjusted operational bounds before freeze",
+    "policy_reselection_after_guardian": false
+  },
+  "selective_contract": {
+    "primary_type": "baseline_relative",
+    "accepted_wape_cap_rule": "0.90 * frozen full-coverage baseline WAPE on selection",
+    "minimum_coverage": 0.30,
+    "development_margin": {
+      "maximum_wape_ratio_ucb": 0.85,
+      "minimum_coverage_lcb": 0.35
+    },
+    "legacy_absolute_contract_diagnostic_only": {
+      "maximum_accepted_wape": 0.30,
+      "minimum_coverage": 0.30
+    }
+  },
+  "confirmatory_plan": {
+    "fresh_guardian_use_count": 1,
+    "familywise_alpha": 0.05,
+    "cluster": "item_id",
+    "paired_across_blocks": true,
+    "blocks": [
+      "calibration_a",
+      "calibration_b",
+      "shadow"
+    ],
+    "endpoints_per_block": [
+      "coverage lower bound",
+      "accepted WAPE ratio upper bound"
+    ],
+    "multiplicity": "Holm step-down across six one-sided endpoints",
+    "certificate_rule": "all six adjusted endpoints pass",
+    "external_open_rule": "only after an independently audited guardian certificate"
+  },
+  "data_preparation_boundary": {
+    "preparation_may_transform_sealed_outcomes_blindly": true,
+    "guardian_or_external_metrics_during_preparation": false,
+    "guardian_or_external_model_fitting_during_preparation": false,
+    "raw_sales_plaintext_retained_after_verified_sharding": false,
+    "initial_guardian_opened": false,
+    "initial_external_opened": false,
+    "initial_confirmatory_alpha_spent": 0.0
+  }
+}

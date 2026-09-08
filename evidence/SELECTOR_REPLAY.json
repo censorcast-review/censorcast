@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "chronos2_univariate_raw mu replay",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw error replay",
+      "pass": true
+    },
+    {
+      "name": "group_l1 mu replay",
+      "pass": true
+    },
+    {
+      "name": "group_l1 error replay",
+      "pass": true
+    },
+    {
+      "name": "learned_l1 mu replay",
+      "pass": true
+    },
+    {
+      "name": "learned_l1 error replay",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0 exact threshold",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.00 calibration",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.01 calibration",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25 exact threshold",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.250 calibration",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.251 calibration",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0 exact threshold",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.00 calibration",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.01 calibration",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0 exact threshold",
+      "pass": true
+    },
+    {
+      "name": "group_l10.00 calibration",
+      "pass": true
+    },
+    {
+      "name": "group_l10.01 calibration",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25 exact threshold",
+      "pass": true
+    },
+    {
+      "name": "group_l10.250 calibration",
+      "pass": true
+    },
+    {
+      "name": "group_l10.251 calibration",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0 exact threshold",
+      "pass": true
+    },
+    {
+      "name": "group_l11.00 calibration",
+      "pass": true
+    },
+    {
+      "name": "group_l11.01 calibration",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0 exact threshold",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.00 calibration",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.01 calibration",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25 exact threshold",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.250 calibration",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.251 calibration",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0 exact threshold",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.00 calibration",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.01 calibration",
+      "pass": true
+    }
+  ],
+  "count": 33,
+  "new_fits": 0,
+  "later_model_replay_rows": 50000,
+  "calibration_replay_rows": 1152270
+}

@@ -1,0 +1,22 @@
+{
+  "completed_utc": "2026-09-08T20:33:12.433541+00:00",
+  "files": {
+    "CALIBRATION_FRONTIERS.json": "ebc6cad9440bc3e80a36ba201b107af05827325adc9259ee43d33113d173567a",
+    "DEMAND_HEAD.txt": "c53d543118640c312be283fc676c35f7c50ecc9a04806b9bd65f861eea6fb331",
+    "FROZEN_SELECTORS.json": "20d7111baa8099ffaadd35148714b21f94761a14400b438b2c4fa545db6868d4",
+    "ITEM_STATISTICS.npz": "73b9ab98b299355e656c2ebeb76641db1793d47237382c6577af60cab4f5ca79",
+    "PROTOCOL.json": "74989dd42c8a5335f063828ea53af3fdda351c02ef67a02156e5b6e313e67f76",
+    "RESULTS.json": "d0aac5e09255e69e3bd5af1720933b587a03469359498f7f20172347344b8f19",
+    "TRAINING_ROWS.npz": "08b02e3d310f2f2e5b41cd7e6ed3b2f6621bf605a475d103e668f59d83efb3ff",
+    "chronos2_univariate_raw_ERROR_HEAD.txt": "5d9c5beb9dba6caff6401dec3533b22dddb4f3a16a11f35b03ac7e6e35fec634",
+    "chronos2_univariate_raw_EVAL_SELECTORS.npz": "f2688ba633fe488f022c7b31c7653afe13975720625d2cb1e43aa3817f6fd550",
+    "development_forecasts.npz": "a68177709116e5a94add12a05ebfd2139bbb035d1434a57ea642e38407d9d213",
+    "evaluation_forecasts.npz": "27c496d8c60a2ca06df25c8ca84758e7f48511b7bee08f29688ff9a54aec3721",
+    "group_l1_ERROR_HEAD.txt": "2ecd512aa6180a874512077d9e593e20a2f42bbaa1ed5718613d64ae00578b1a",
+    "group_l1_EVAL_SELECTORS.npz": "85730bbee6d0a796870af099586ba4ceafc294a069a7df210437529cd8464056",
+    "learned_l1_ERROR_HEAD.txt": "30ce8ed461f458363f77e815c5d8b055e92c122a46364ddc395190cfc10c1379",
+    "learned_l1_EVAL_SELECTORS.npz": "f2e725a0cd511b96f1252f371b4ecc231a2b3c33c9dc39ddd89e409f6d9233ab"
+  },
+  "fit_calls": 4,
+  "new_holdout_openings": 0
+}

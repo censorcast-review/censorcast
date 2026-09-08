@@ -1,0 +1,34 @@
+% Standalone mathematical note, accompanying Appendix A.2.
+\paragraph{Two-context no-reversal result.}
+Assume a finite support with at most two contexts, probabilities $p_i>0$,
+conditional exposures $w_i>0$, and finite nonnegative conditional losses
+$\ell_i$. Acceptance probabilities $a_i\in[0,1]$ are unrestricted.
+The only constraints are $\sum_i p_i a_i(\ell_i-rw_i)\leq0$,
+$\sum_i p_i a_i\geq c_0$, and positive accepted exposure.
+Whenever this feasible set is nonempty, the case and exposure objectives
+have the same unique optimum in acceptance probabilities.
+
+Write $g_i=p_i(\ell_i-rw_i)$. Both objectives are strictly increasing
+in every coordinate because their coefficients are respectively $p_i>0$
+and $p_iw_i/T>0$, where $T=\sum_i p_iw_i$.
+For one context, feasibility implies $g_1\leq0$, so $a_1=1$ is optimal.
+For two contexts, if both $g_i\leq0$, $(1,1)$ is feasible whenever any gate
+is feasible and dominates every gate. If both are positive, no gate with
+positive accepted exposure is feasible. Otherwise relabel so that
+$g_1\leq0<g_2$. The componentwise greatest feasible candidate is
+\[
+ a_1^*=1,\qquad a_2^*=\min\{1,-g_1/g_2\}.
+\]
+Indeed, any feasible gate satisfies
+$a_2\leq(-g_1/g_2)a_1\leq-g_1/g_2$ and $a_i\leq1$.
+The candidate meets the pooled risk constraint; since it dominates every
+feasible gate, it also meets the row floor whenever any feasible gate does.
+Its positive accepted exposure follows from $p_1w_1>0$.
+Strict coordinate monotonicity establishes uniqueness for both objectives.
+
+Thus strict case/exposure reversal under these constraints requires at least
+three positive-probability, positive-exposure contexts. Uniqueness refers to
+the acceptance probabilities, not to the random seeds realizing them.
+This result is not asserted for additional constraints or a restricted
+acceptance-policy family. The existing finite-grid verifier is a numerical
+check of examples; the argument above proves the continuous-moment statement.

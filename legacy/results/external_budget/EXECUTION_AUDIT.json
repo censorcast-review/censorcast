@@ -1,0 +1,30 @@
+{
+  "status": "DESCRIPTIVE_CACHED_SET_ACCOUNTING_COMPLETED",
+  "protocol_sha256": "3d5ed4b8b1343ee8da3fad37d7f4510ee52281bf3650b55c3e1a8f26ccaeaa47",
+  "protocol_prepared_utc": "2026-09-06T16:08:32.323152+00:00",
+  "first_cache_array_read_utc": "2026-09-06T16:08:36.098563+00:00",
+  "completed_utc": "2026-09-06T16:08:36.131190+00:00",
+  "input_sha256_before_and_after": {
+    "code/review5_external/EXTERNAL_PLAN.json": "8173b957c2c1d4fdb3a962862a4435a1531e378569f8a6602d02af97a0dd7f1d",
+    "results/external_confirmation/EXTERNAL_COMPARISON.json": "61fd5159b8b152626f2d14eaea6074985575140da6c8db89440321fd0ab195b9",
+    "code/review5_external/evaluate.py": "b9b3b0a93ab2f636f583c5e56faa720872c9e896169dbf8f10596d05f4ee4928",
+    "results/external_confirmation/prediction_cache/external_predictions.npz": "093c0609f477f4fe9df7b0f34adb1bf93aa7c6b9315a0feb9a9987f4f311431e",
+    "results/external_confirmation/prediction_cache/external_head_scores.npz": "d3d42a2c54e296d25b018a89240214e0175c335f3313f82a6d32f37b72af2b4f"
+  },
+  "input_hashes_unchanged": true,
+  "external_source_openings_this_analysis": 0,
+  "previous_registered_external_openings": 1,
+  "saved_cache_reads": 2,
+  "fits": 0,
+  "threshold_searches": 0,
+  "additional_policies": 0,
+  "evaluated_existing_policy_count": 2,
+  "evaluated_periods": [
+    [
+      1919,
+      1941
+    ]
+  ],
+  "registered_primary_metric_checks": 18,
+  "output_sha256": "6727f4d3d2cd8ffbcde3524b554d3f62ce45faeb7eae703780183da42556d319"
+}

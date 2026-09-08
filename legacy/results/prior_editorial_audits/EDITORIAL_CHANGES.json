@@ -1,0 +1,30 @@
+{
+  "status": "EDITORIAL_ONLY",
+  "old_abstract_word_count": 204,
+  "new_abstract_word_count": 150,
+  "old_abstract_numeric_tokens": [
+    "5",
+    "610",
+    "87.37",
+    "80.87",
+    "83.29",
+    "87.65",
+    "5.16",
+    "3.35",
+    "0.25",
+    "88.23"
+  ],
+  "new_abstract_numeric_tokens": [
+    "5",
+    "5.16",
+    "3.35"
+  ],
+  "restored_conclusion": true,
+  "nll_claim": "Only kappa3 adjusted difference interval includes zero, while its realized pooled calibration A/B risks exceed cap; failure to exclude zero is not equivalence.",
+  "three_context_claim": "Positive-probability positive-exposure finite support, unrestricted randomized acceptance, sole pooled risk cap and common row floor. Analytic proof, no new numerical experiment.",
+  "new_model_fits": 0,
+  "new_threshold_searches": 0,
+  "new_policy_evaluations": 0,
+  "external_openings": 0,
+  "independent_scientific_review": "PASS: analytic two-context proof, NLL non-equivalence wording, abstract and limitations."
+}

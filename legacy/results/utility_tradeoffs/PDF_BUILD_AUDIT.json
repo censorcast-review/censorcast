@@ -1,0 +1,10 @@
+{
+  "status": "REVIEW4_PDF_BUILD_PASS",
+  "pages": 20,
+  "main_pages": 9,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "pdf_sha256": "c71b9eeeb00a40aea20590b803b8c5666fbe51e808d6e7cccb9b420e0462623c",
+  "source_sha256": "6a8054746edd6c6a3cbe11b1a6e228315c0aa34ce69495368608922d5ce157af",
+  "visual_review": "PASS: all20pages rendered through captured PNG bytes and visually inspected"
+}

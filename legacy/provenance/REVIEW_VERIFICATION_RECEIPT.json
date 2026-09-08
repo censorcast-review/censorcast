@@ -1,0 +1,25 @@
+{
+  "status": "REVIEW_REVISION_VERIFIED",
+  "new_reports_recomputed_from_masks": 42,
+  "additional_demand_fits": 3,
+  "notebooks": [
+    {
+      "notebook": "RUN_CENSORCAST_M5_FROZEN_COMPARATIVE_GUARDIAN.ipynb",
+      "code_cells_compiled": 6,
+      "embedded_sources_match": true
+    },
+    {
+      "notebook": "RUN_CENSORCAST_ICLR_ADDITIONAL_EXPERIMENTS.ipynb",
+      "code_cells_compiled": 10,
+      "embedded_sources_match": true
+    }
+  ],
+  "frozen_files_verified": 19,
+  "default_guardian_opening_cell_writes_zero_files": true,
+  "guardian_opened": false,
+  "external_opened": false,
+  "guardian_runner_executed": false,
+  "colab_live_mount_tested": false,
+  "statistical_scope": "consumed_design_revision_only",
+  "theory_human_verification": "not asserted"
+}

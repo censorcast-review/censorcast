@@ -1,0 +1,12 @@
+{
+  "status": "GUARDIAN_COMPARATIVE_OPENING_AUTHORIZED",
+  "freeze_sha256": "3d94aec80d993b92684a61f058ed4e3ceb2351233f07fb8eea3f9f542fe2b156",
+  "authorized_utc": "2026-09-06T06:25:11.887237+00:00",
+  "user_approval_text": "[Approval granted; verbatim personal conversation omitted from anonymous distribution.]",
+  "approved_action": "Amend the protocol to open the 610-item guardian once for a fixed comparative evaluation, separate from deployment certification.",
+  "purpose": "fixed item-holdout comparison following failed original design gate",
+  "authorization_phrase": "AUTHORIZE_CENSORCAST_M5_FIXED_COMPARISON_AFTER_FAILED_DESIGN_GATE",
+  "original_deployment_gate_pass": false,
+  "certificate_issued": false,
+  "external_opened": false
+}

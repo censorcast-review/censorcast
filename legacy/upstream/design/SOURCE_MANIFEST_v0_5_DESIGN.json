@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.5-design-1",
+  "status": "CENSORCAST_V0_5_M5_DESIGN_SOURCE_MANIFEST",
+  "files": {
+    "EXPERIMENT_PROTOCOL_v0_5.md": {
+      "sha256": "dc4f27d2b13d36681eda5eb81339a1637dc6c885ea9979c36fa07da7d9f7c3fe",
+      "size_bytes": 3111
+    },
+    "README.md": {
+      "sha256": "0a0a1a391efd9eeecb81077cd3ea88d90e33369d19b8721c439535e53f4d23da",
+      "size_bytes": 1228
+    },
+    "censorcast_v05/__init__.py": {
+      "sha256": "2b3bc309d0d9f0990abc5b446056bfcb167901dcbd0e67f4909ca23e82fe8c2b",
+      "size_bytes": 84
+    },
+    "censorcast_v05/features.py": {
+      "sha256": "3b2bd1cc61b1d5108fa21b0cca13fc8e17fad9014d878ba8ab461f3648adee41",
+      "size_bytes": 15434
+    },
+    "censorcast_v05/metrics.py": {
+      "sha256": "9b297c77f19af13ab381eaf9a8298755d71610c2f25667f14a7c720f448a6277",
+      "size_bytes": 15869
+    },
+    "censorcast_v05/models.py": {
+      "sha256": "b1fcd97fdd1603e6ef57458cb39c0cf18180c0a00aec2f4702482d6a0fe0d173",
+      "size_bytes": 11051
+    },
+    "configs/DESIGN_PROTOCOL_v0_5.json": {
+      "sha256": "6ada01eba5915f583683b19658fc6089d14eba7f5a56e6fdaa8e9fcabe5f3df3",
+      "size_bytes": 4066
+    },
+    "requirements.txt": {
+      "sha256": "4642f0283c030f50fd44e7e7da7ce9d4ea3bee39a7542eee480f80d312f00237",
+      "size_bytes": 75
+    },
+    "run_v0_5_design.py": {
+      "sha256": "9b23c74f58226e4df897e9f542a82e7c396a0cc71dada20952a54b7f9ccb7c1b",
+      "size_bytes": 51759
+    },
+    "tests/smoke_end_to_end.py": {
+      "sha256": "5229abde6b184995809f9e7ff76f81bbc735694d394cc56ea50bdf0edea510f3",
+      "size_bytes": 8484
+    },
+    "tests/test_v0_5_design.py": {
+      "sha256": "4978ff65f4e36a17951d1d39b86b299e1e372326fab106eb075a986b57ca5820",
+      "size_bytes": 6715
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "0b5a2828bcc457c8b2f609287886304309e76be22358cb07342479505db5de5e",
+  "results_sha256": "bebca62effda28d7d55ca2e78c8c060f6c683d28c9854bdca5bfa391682c2e97",
+  "aggregate_records_checked": 12,
+  "development_array_records_checked": 12,
+  "original_comparator_records_preserved": 3,
+  "same_training_sample_rows": 600000,
+  "same_hobbies_subset_rows": 107384,
+  "new_fits_verified": 1,
+  "freeze_precedes_fit": true,
+  "guardian_inputs_read": false,
+  "external_inputs_read": false,
+  "raw_or_prediction_cache_read": true,
+  "scope": "Aggregate consistency plus retained fit/hash/sample audit; independent development array checks only when --arrays is requested"
+}

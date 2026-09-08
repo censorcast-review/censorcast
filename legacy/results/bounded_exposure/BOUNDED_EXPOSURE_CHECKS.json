@@ -1,0 +1,3630 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic rational laws only; no learned policy or evaluation data read.",
+  "statement": {
+    "positive_exposure": "0 < u <= w(X) <= v < infinity",
+    "gaps": "x=c(a_R)-c(a_W)>=0; y=d_W(a_W)-d_W(a_R)>=0",
+    "D": "(v-u)/(v+u)",
+    "envelope": "y <= (D-x)/(1-D*x)",
+    "individual_bounds": "x <= D; y <= D",
+    "floor_refinement": "a_star=min((1-x)/2,1-c0-x); y<=((v-u)*a_star-u*x)/(u+(v-u)*a_star)",
+    "floor_row_bound": "x <= min(D,(1-u/v)*(1-c0))",
+    "sharpness": "The floor-aware frontier is the closure of gaps achieved by unique row and exposure optima of fixed m-label classifiers with whole-example abstention, any fixed 0<r<1, and 0<=c0<1; m>=2 integer. Interior points with positive common mass attain it exactly."
+  },
+  "exact_ordered_pair_checks": 1662,
+  "exact_unrestricted_envelope_checks": [
+    {
+      "m": 2,
+      "row_gap": "0",
+      "exposure_gap": "1/3"
+    },
+    {
+      "m": 2,
+      "row_gap": "1/12",
+      "exposure_gap": "9/35"
+    },
+    {
+      "m": 2,
+      "row_gap": "1/6",
+      "exposure_gap": "3/17"
+    },
+    {
+      "m": 2,
+      "row_gap": "1/4",
+      "exposure_gap": "1/11"
+    },
+    {
+      "m": 2,
+      "row_gap": "1/3",
+      "exposure_gap": "0"
+    },
+    {
+      "m": 3,
+      "row_gap": "0",
+      "exposure_gap": "1/2"
+    },
+    {
+      "m": 3,
+      "row_gap": "1/8",
+      "exposure_gap": "2/5"
+    },
+    {
+      "m": 3,
+      "row_gap": "1/4",
+      "exposure_gap": "2/7"
+    },
+    {
+      "m": 3,
+      "row_gap": "3/8",
+      "exposure_gap": "2/13"
+    },
+    {
+      "m": 3,
+      "row_gap": "1/2",
+      "exposure_gap": "0"
+    },
+    {
+      "m": 5,
+      "row_gap": "0",
+      "exposure_gap": "2/3"
+    },
+    {
+      "m": 5,
+      "row_gap": "1/6",
+      "exposure_gap": "9/16"
+    },
+    {
+      "m": 5,
+      "row_gap": "1/3",
+      "exposure_gap": "3/7"
+    },
+    {
+      "m": 5,
+      "row_gap": "1/2",
+      "exposure_gap": "1/4"
+    },
+    {
+      "m": 5,
+      "row_gap": "2/3",
+      "exposure_gap": "0"
+    }
+  ],
+  "unique_optimum_approximations": [
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "probabilities": [
+        "1/20",
+        "67/120",
+        "47/120"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "7/67",
+        "97/470"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "1/400",
+      "row_gap": "1/6",
+      "exposure_gap": "27/167",
+      "floor_aware_envelope": "3/17",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "7/67"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "97/940"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "probabilities": [
+        "1/200",
+        "697/1200",
+        "497/1200"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "70/697",
+        "997/4970"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "1/4000",
+      "row_gap": "1/6",
+      "exposure_gap": "297/1697",
+      "floor_aware_envelope": "3/17",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "70/697"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "997/9940"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "probabilities": [
+        "1/2000",
+        "6997/12000",
+        "4997/12000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "700/6997",
+        "9997/49970"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "1/40000",
+      "row_gap": "1/6",
+      "exposure_gap": "2997/16997",
+      "floor_aware_envelope": "3/17",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "700/6997"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "9997/99940"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "probabilities": [
+        "1/20",
+        "67/120",
+        "47/120"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "140/201",
+        "194/141"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "1/60",
+      "row_gap": "1/6",
+      "exposure_gap": "27/167",
+      "floor_aware_envelope": "3/17",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "140/201"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "97/141"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "probabilities": [
+        "1/200",
+        "697/1200",
+        "497/1200"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "1400/2091",
+        "1994/1491"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "1/600",
+      "row_gap": "1/6",
+      "exposure_gap": "297/1697",
+      "floor_aware_envelope": "3/17",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1400/2091"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "997/1491"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "probabilities": [
+        "1/2000",
+        "6997/12000",
+        "4997/12000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "14000/20991",
+        "19994/14991"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "1/6000",
+      "row_gap": "1/6",
+      "exposure_gap": "2997/16997",
+      "floor_aware_envelope": "3/17",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "14000/20991"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "9997/14991"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "probabilities": [
+        "41/800",
+        "889/1600",
+        "629/1600"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "93/889",
+        "1299/6290"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "41/16000",
+      "row_gap": "13/80",
+      "exposure_gap": "123/743",
+      "floor_aware_envelope": "41/227",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "93/889"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "1299/12580"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "probabilities": [
+        "41/8000",
+        "9259/16000",
+        "6659/16000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "930/9259",
+        "13359/66590"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "41/160000",
+      "row_gap": "13/80",
+      "exposure_gap": "1353/7553",
+      "floor_aware_envelope": "41/227",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "930/9259"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "13359/133180"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "probabilities": [
+        "41/80000",
+        "92959/160000",
+        "66959/160000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "9300/92959",
+        "133959/669590"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "41/1600000",
+      "row_gap": "13/80",
+      "exposure_gap": "13653/75653",
+      "floor_aware_envelope": "41/227",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "9300/92959"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "133959/1339180"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "probabilities": [
+        "41/800",
+        "889/1600",
+        "629/1600"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "620/889",
+        "866/629"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "41/2400",
+      "row_gap": "13/80",
+      "exposure_gap": "123/743",
+      "floor_aware_envelope": "41/227",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "620/889"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "433/629"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "probabilities": [
+        "41/8000",
+        "9259/16000",
+        "6659/16000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "6200/9259",
+        "8906/6659"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "41/24000",
+      "row_gap": "13/80",
+      "exposure_gap": "1353/7553",
+      "floor_aware_envelope": "41/227",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "6200/9259"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "4453/6659"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "probabilities": [
+        "41/80000",
+        "92959/160000",
+        "66959/160000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "62000/92959",
+        "89306/66959"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "41/240000",
+      "row_gap": "13/80",
+      "exposure_gap": "13653/75653",
+      "floor_aware_envelope": "41/227",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "62000/92959"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "44653/66959"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "47/80",
+        "19/80",
+        "7/40"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "17/76",
+        "103/280"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "47/1600",
+      "row_gap": "1/16",
+      "exposure_gap": "9/94",
+      "floor_aware_envelope": "2/19",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "17/76"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "103/560"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "113/200",
+        "199/800",
+        "149/800"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "85/398",
+        "262/745"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "113/4000",
+      "row_gap": "1/16",
+      "exposure_gap": "99/949",
+      "floor_aware_envelope": "2/19",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "85/398"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "131/745"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "2251/4000",
+        "1999/8000",
+        "1499/8000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "425/1999",
+        "5249/14990"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "2251/80000",
+      "row_gap": "1/16",
+      "exposure_gap": "999/9499",
+      "floor_aware_envelope": "2/19",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "425/1999"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "5249/29980"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "47/80",
+        "19/80",
+        "7/40"
+      ],
+      "conditional_false_positives": [
+        "169/282",
+        "5/6",
+        "131/84"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "19/480",
+      "row_gap": "1/16",
+      "exposure_gap": "9/94",
+      "floor_aware_envelope": "2/19",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "169/282"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "131/168"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "113/200",
+        "199/800",
+        "149/800"
+      ],
+      "conditional_false_positives": [
+        "1609/2712",
+        "5/6",
+        "1391/894"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "199/4800",
+      "row_gap": "1/16",
+      "exposure_gap": "99/949",
+      "floor_aware_envelope": "2/19",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1609/2712"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "1391/1788"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "2251/4000",
+        "1999/8000",
+        "1499/8000"
+      ],
+      "conditional_false_positives": [
+        "16009/27012",
+        "5/6",
+        "13991/8994"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "1999/48000",
+      "row_gap": "1/16",
+      "exposure_gap": "999/9499",
+      "floor_aware_envelope": "2/19",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "16009/27012"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "13991/17988"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "probabilities": [
+        "1/20",
+        "3/5",
+        "7/20"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "5/48",
+        "43/140"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "1/400",
+      "row_gap": "1/4",
+      "exposure_gap": "9/34",
+      "floor_aware_envelope": "2/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/48"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "43/420"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "probabilities": [
+        "1/200",
+        "249/400",
+        "149/400"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "25/249",
+        "224/745"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "1/4000",
+      "row_gap": "1/4",
+      "exposure_gap": "99/349",
+      "floor_aware_envelope": "2/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "25/249"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "224/2235"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "probabilities": [
+        "1/2000",
+        "2499/4000",
+        "1499/4000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "250/2499",
+        "2249/7495"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "1/40000",
+      "row_gap": "1/4",
+      "exposure_gap": "999/3499",
+      "floor_aware_envelope": "2/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "250/2499"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "2249/22485"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "probabilities": [
+        "1/20",
+        "3/5",
+        "7/20"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "25/36",
+        "43/21"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "1/60",
+      "row_gap": "1/4",
+      "exposure_gap": "9/34",
+      "floor_aware_envelope": "2/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "25/36"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "43/63"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "probabilities": [
+        "1/200",
+        "249/400",
+        "149/400"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "500/747",
+        "896/447"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "1/600",
+      "row_gap": "1/4",
+      "exposure_gap": "99/349",
+      "floor_aware_envelope": "2/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "500/747"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "896/1341"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "probabilities": [
+        "1/2000",
+        "2499/4000",
+        "1499/4000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "5000/7497",
+        "8996/4497"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "1/6000",
+      "row_gap": "1/4",
+      "exposure_gap": "999/3499",
+      "floor_aware_envelope": "2/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5000/7497"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "8996/13491"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "probabilities": [
+        "17/300",
+        "29/50",
+        "109/300"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "73/696",
+        "671/2180"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "17/6000",
+      "row_gap": "13/60",
+      "exposure_gap": "153/518",
+      "floor_aware_envelope": "34/107",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "73/696"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "671/6540"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "probabilities": [
+        "17/3000",
+        "1211/2000",
+        "2333/6000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "365/3633",
+        "3508/11665"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "17/60000",
+      "row_gap": "13/60",
+      "exposure_gap": "1683/5333",
+      "floor_aware_envelope": "34/107",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "365/3633"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "3508/34995"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "probabilities": [
+        "17/30000",
+        "12161/20000",
+        "23483/60000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "3650/36483",
+        "35233/117415"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "17/600000",
+      "row_gap": "13/60",
+      "exposure_gap": "16983/53483",
+      "floor_aware_envelope": "34/107",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "3650/36483"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "35233/352245"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "probabilities": [
+        "17/300",
+        "29/50",
+        "109/300"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "365/522",
+        "671/327"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "17/900",
+      "row_gap": "13/60",
+      "exposure_gap": "153/518",
+      "floor_aware_envelope": "34/107",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "365/522"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "671/981"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "probabilities": [
+        "17/3000",
+        "1211/2000",
+        "2333/6000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "7300/10899",
+        "14032/6999"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "17/9000",
+      "row_gap": "13/60",
+      "exposure_gap": "1683/5333",
+      "floor_aware_envelope": "34/107",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "7300/10899"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "14032/20997"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "probabilities": [
+        "17/30000",
+        "12161/20000",
+        "23483/60000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "73000/109449",
+        "140932/70449"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "17/90000",
+      "row_gap": "13/60",
+      "exposure_gap": "16983/53483",
+      "floor_aware_envelope": "34/107",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "73000/109449"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "140932/211347"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "73/120",
+        "19/80",
+        "37/240"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "13/57",
+        "92/185"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "73/2400",
+      "row_gap": "1/12",
+      "exposure_gap": "27/157",
+      "floor_aware_envelope": "3/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "13/57"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "92/555"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "703/1200",
+        "199/800",
+        "397/2400"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "130/597",
+        "947/1985"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "703/24000",
+      "row_gap": "1/12",
+      "exposure_gap": "297/1597",
+      "floor_aware_envelope": "3/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "130/597"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "947/5955"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "7003/12000",
+        "1999/8000",
+        "3997/24000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "1300/5997",
+        "9497/19985"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "7003/240000",
+      "row_gap": "1/12",
+      "exposure_gap": "2997/15997",
+      "floor_aware_envelope": "3/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1300/5997"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "9497/59955"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "73/120",
+        "19/80",
+        "37/240"
+      ],
+      "conditional_false_positives": [
+        "527/876",
+        "5/6",
+        "167/74"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "19/480",
+      "row_gap": "1/12",
+      "exposure_gap": "27/157",
+      "floor_aware_envelope": "3/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "527/876"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "167/222"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "703/1200",
+        "199/800",
+        "397/2400"
+      ],
+      "conditional_false_positives": [
+        "5027/8436",
+        "5/6",
+        "1787/794"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "199/4800",
+      "row_gap": "1/12",
+      "exposure_gap": "297/1597",
+      "floor_aware_envelope": "3/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5027/8436"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "1787/2382"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "7003/12000",
+        "1999/8000",
+        "3997/24000"
+      ],
+      "conditional_false_positives": [
+        "50027/84036",
+        "5/6",
+        "17987/7994"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "1999/48000",
+      "row_gap": "1/12",
+      "exposure_gap": "2997/15997",
+      "floor_aware_envelope": "3/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "50027/84036"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "17987/23982"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "probabilities": [
+        "1/20",
+        "77/120",
+        "37/120"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "8/77",
+        "94/185"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "1/400",
+      "row_gap": "1/3",
+      "exposure_gap": "27/67",
+      "floor_aware_envelope": "3/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "8/77"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "94/925"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "probabilities": [
+        "1/200",
+        "797/1200",
+        "397/1200"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "80/797",
+        "994/1985"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "1/4000",
+      "row_gap": "1/3",
+      "exposure_gap": "297/697",
+      "floor_aware_envelope": "3/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "80/797"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "994/9925"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "probabilities": [
+        "1/2000",
+        "7997/12000",
+        "3997/12000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "800/7997",
+        "9994/19985"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "1/40000",
+      "row_gap": "1/3",
+      "exposure_gap": "2997/6997",
+      "floor_aware_envelope": "3/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "800/7997"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "9994/99925"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "probabilities": [
+        "1/20",
+        "77/120",
+        "37/120"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "160/231",
+        "376/111"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "1/60",
+      "row_gap": "1/3",
+      "exposure_gap": "27/67",
+      "floor_aware_envelope": "3/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "160/231"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "376/555"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "probabilities": [
+        "1/200",
+        "797/1200",
+        "397/1200"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "1600/2391",
+        "3976/1191"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "1/600",
+      "row_gap": "1/3",
+      "exposure_gap": "297/697",
+      "floor_aware_envelope": "3/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1600/2391"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "3976/5955"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "probabilities": [
+        "1/2000",
+        "7997/12000",
+        "3997/12000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "16000/23991",
+        "39976/11991"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "1/6000",
+      "row_gap": "1/3",
+      "exposure_gap": "2997/6997",
+      "floor_aware_envelope": "3/7",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "16000/23991"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "39976/59955"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "probabilities": [
+        "61/1000",
+        "1199/2000",
+        "679/2000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "126/1199",
+        "1728/3395"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "61/20000",
+      "row_gap": "13/50",
+      "exposure_gap": "61/131",
+      "floor_aware_envelope": "61/124",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "126/1199"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "1728/16975"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "probabilities": [
+        "61/10000",
+        "12539/20000",
+        "7339/20000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "1260/12539",
+        "18378/36695"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "61/200000",
+      "row_gap": "13/50",
+      "exposure_gap": "671/1371",
+      "floor_aware_envelope": "61/124",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1260/12539"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "18378/183475"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "probabilities": [
+        "61/100000",
+        "125939/200000",
+        "73939/200000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "12600/125939",
+        "184878/369695"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "61/2000000",
+      "row_gap": "13/50",
+      "exposure_gap": "6771/13771",
+      "floor_aware_envelope": "61/124",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "12600/125939"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "184878/1848475"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "probabilities": [
+        "61/1000",
+        "1199/2000",
+        "679/2000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "840/1199",
+        "2304/679"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "61/3000",
+      "row_gap": "13/50",
+      "exposure_gap": "61/131",
+      "floor_aware_envelope": "61/124",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "840/1199"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "2304/3395"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "probabilities": [
+        "61/10000",
+        "12539/20000",
+        "7339/20000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "8400/12539",
+        "24504/7339"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "61/30000",
+      "row_gap": "13/50",
+      "exposure_gap": "671/1371",
+      "floor_aware_envelope": "61/124",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "8400/12539"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "24504/36695"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "probabilities": [
+        "61/100000",
+        "125939/200000",
+        "73939/200000"
+      ],
+      "conditional_false_positives": [
+        "1/3",
+        "84000/125939",
+        "246504/73939"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "61/300000",
+      "row_gap": "13/50",
+      "exposure_gap": "6771/13771",
+      "floor_aware_envelope": "61/124",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/3"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "84000/125939"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "246504/369695"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "5/8",
+        "19/80",
+        "11/80"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "22/95",
+        "8/11"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "1/32",
+      "row_gap": "1/10",
+      "exposure_gap": "9/31",
+      "floor_aware_envelope": "5/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "22/95"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "8/55"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "241/400",
+        "199/800",
+        "119/800"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "44/199",
+        "418/595"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "241/8000",
+      "row_gap": "1/10",
+      "exposure_gap": "9/29",
+      "floor_aware_envelope": "5/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "44/199"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "418/2975"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "2401/4000",
+        "1999/8000",
+        "1199/8000"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "440/1999",
+        "4198/5995"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "2401/80000",
+      "row_gap": "1/10",
+      "exposure_gap": "999/3199",
+      "floor_aware_envelope": "5/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "440/1999"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "4198/29975"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "5/8",
+        "19/80",
+        "11/80"
+      ],
+      "conditional_false_positives": [
+        "181/300",
+        "5/6",
+        "239/66"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "19/480",
+      "row_gap": "1/10",
+      "exposure_gap": "9/31",
+      "floor_aware_envelope": "5/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "181/300"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "239/330"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "241/400",
+        "199/800",
+        "119/800"
+      ],
+      "conditional_false_positives": [
+        "1729/2892",
+        "5/6",
+        "2579/714"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "199/4800",
+      "row_gap": "1/10",
+      "exposure_gap": "9/29",
+      "floor_aware_envelope": "5/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1729/2892"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "2579/3570"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "2401/4000",
+        "1999/8000",
+        "1199/8000"
+      ],
+      "conditional_false_positives": [
+        "17209/28812",
+        "5/6",
+        "25979/7194"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "1999/48000",
+      "row_gap": "1/10",
+      "exposure_gap": "999/3199",
+      "floor_aware_envelope": "5/16",
+      "exact_feasible_vertices": 6,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "17209/28812"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "25979/35970"
+        }
+      ]
+    }
+  ],
+  "limiting_frontier_points": [
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "fixed_row_gap": "1/6",
+      "limiting_exposure_gap": "3/17",
+      "third_approximation_gap_to_bound": "42/288949"
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "fixed_row_gap": "1/6",
+      "limiting_exposure_gap": "3/17",
+      "third_approximation_gap_to_bound": "42/288949"
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "fixed_row_gap": "13/80",
+      "limiting_exposure_gap": "41/227",
+      "third_approximation_gap_to_bound": "2542/17173231"
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "fixed_row_gap": "13/80",
+      "limiting_exposure_gap": "41/227",
+      "third_approximation_gap_to_bound": "2542/17173231"
+    },
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "fixed_row_gap": "1/16",
+      "limiting_exposure_gap": "2/19",
+      "third_approximation_gap_to_bound": "17/180481"
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "fixed_row_gap": "1/16",
+      "limiting_exposure_gap": "2/19",
+      "third_approximation_gap_to_bound": "17/180481"
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "fixed_row_gap": "1/4",
+      "limiting_exposure_gap": "2/7",
+      "third_approximation_gap_to_bound": "5/24493"
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "fixed_row_gap": "1/4",
+      "limiting_exposure_gap": "2/7",
+      "third_approximation_gap_to_bound": "5/24493"
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "fixed_row_gap": "13/60",
+      "limiting_exposure_gap": "34/107",
+      "third_approximation_gap_to_bound": "1241/5722681"
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "fixed_row_gap": "13/60",
+      "limiting_exposure_gap": "34/107",
+      "third_approximation_gap_to_bound": "1241/5722681"
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "fixed_row_gap": "1/12",
+      "limiting_exposure_gap": "3/16",
+      "third_approximation_gap_to_bound": "39/255952"
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "fixed_row_gap": "1/12",
+      "limiting_exposure_gap": "3/16",
+      "third_approximation_gap_to_bound": "39/255952"
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "0",
+      "fixed_row_gap": "1/3",
+      "limiting_exposure_gap": "3/7",
+      "third_approximation_gap_to_bound": "12/48979"
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "0",
+      "fixed_row_gap": "1/3",
+      "limiting_exposure_gap": "3/7",
+      "third_approximation_gap_to_bound": "12/48979"
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "7/20",
+      "fixed_row_gap": "13/50",
+      "limiting_exposure_gap": "61/124",
+      "third_approximation_gap_to_bound": "427/1707604"
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "7/20",
+      "fixed_row_gap": "13/50",
+      "limiting_exposure_gap": "61/124",
+      "third_approximation_gap_to_bound": "427/1707604"
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "fixed_row_gap": "1/10",
+      "limiting_exposure_gap": "5/16",
+      "third_approximation_gap_to_bound": "11/51184"
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "fixed_row_gap": "1/10",
+      "limiting_exposure_gap": "5/16",
+      "third_approximation_gap_to_bound": "11/51184"
+    }
+  ],
+  "exact_floor_frontier_attainments": [
+    {
+      "m": 2,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "9/16",
+        "1/4",
+        "3/16"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "17/80",
+        "7/20"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "9/320",
+      "row_gap": "1/16",
+      "exposure_gap": "2/19",
+      "floor_aware_envelope": "2/19",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "17/80"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "7/40"
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "9/16",
+        "1/4",
+        "3/16"
+      ],
+      "conditional_false_positives": [
+        "16/27",
+        "5/6",
+        "14/9"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "slack_budget": "1/24",
+      "row_gap": "1/16",
+      "exposure_gap": "2/19",
+      "floor_aware_envelope": "2/19",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "16/27"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "7/9"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "7/12",
+        "1/4",
+        "1/6"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "13/60",
+        "19/40"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "7/240",
+      "row_gap": "1/12",
+      "exposure_gap": "3/16",
+      "floor_aware_envelope": "3/16",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "13/60"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "19/120"
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "7/12",
+        "1/4",
+        "1/6"
+      ],
+      "conditional_false_positives": [
+        "25/42",
+        "5/6",
+        "9/4"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "3"
+      ],
+      "slack_budget": "1/24",
+      "row_gap": "1/12",
+      "exposure_gap": "3/16",
+      "floor_aware_envelope": "3/16",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "25/42"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "3/4"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "1/10",
+      "row_floor": "3/4",
+      "probabilities": [
+        "3/5",
+        "1/4",
+        "3/20"
+      ],
+      "conditional_false_positives": [
+        "1/20",
+        "11/50",
+        "7/10"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "3/100",
+      "row_gap": "1/10",
+      "exposure_gap": "5/16",
+      "floor_aware_envelope": "5/16",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "1/20"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "11/50"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "7/50"
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "risk_cap": "2/3",
+      "row_floor": "3/4",
+      "probabilities": [
+        "3/5",
+        "1/4",
+        "3/20"
+      ],
+      "conditional_false_positives": [
+        "43/72",
+        "5/6",
+        "65/18"
+      ],
+      "positive_prediction_counts": [
+        "1",
+        "1",
+        "5"
+      ],
+      "slack_budget": "1/24",
+      "row_gap": "1/10",
+      "exposure_gap": "5/16",
+      "floor_aware_envelope": "5/16",
+      "exact_feasible_vertices": 4,
+      "independent_LP_checks": 2,
+      "fixed_classifier_realization": [
+        {
+          "context": "K",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "43/72"
+        },
+        {
+          "context": "U",
+          "prediction": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "all_predicted_labels_false_probability": "5/6"
+        },
+        {
+          "context": "V",
+          "prediction": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "all_predicted_labels_false_probability": "13/18"
+        }
+      ]
+    }
+  ],
+  "independent_LP_checks": 122,
+  "nonconstant_zero_loss_counterexample": {
+    "probabilities": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "w": [
+      "1",
+      "1",
+      "2"
+    ],
+    "ell": [
+      "0",
+      "0",
+      "0"
+    ],
+    "unique_common_optimum": [
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  "two_atom_no_reversal": {
+    "exact_feasible_cases": 274,
+    "no_positive_feasible_cases": 158,
+    "qualification": "A fixed two-atom positive-weight feature support is an additional counterexample to a proposed universal iff based only on nonconstant w."
+  }
+}

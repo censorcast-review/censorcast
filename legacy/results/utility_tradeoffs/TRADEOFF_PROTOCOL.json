@@ -1,0 +1,20 @@
+{
+  "status": "POST_HOC_CONSUMED_CACHE",
+  "seed": 20260906,
+  "lambdas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "denominator_floor": 0,
+  "zero_rule": "0/0 is0; positive/0 sorts last",
+  "threshold_rule": "largest common feasible threshold in development A/B; point WAPE<=r and rows>=c0",
+  "r": 0.640129832706689,
+  "c0": 0.35,
+  "training_calls": 0,
+  "external_opened": false,
+  "code_sha256": "31ed3b5d88e30e41a3363867bdc66b222e5b42eaffbb262e3bca499ac631158f",
+  "claim": "Transferred operating curve, not an empirical Pareto guarantee or an independent test"
+}

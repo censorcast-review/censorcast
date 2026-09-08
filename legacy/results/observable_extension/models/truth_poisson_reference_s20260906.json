@@ -1,0 +1,11 @@
+{
+  "method": "truth_poisson_reference",
+  "shape": null,
+  "bias": 0.0,
+  "training_rows": 600000,
+  "hidden_labels_used_for_fit": 600000,
+  "seed": 20260906,
+  "trees": 220,
+  "fit_seconds": 7.002918720245361,
+  "model_sha256": "3d63ea71e9aaeb0f68b6e31bbfb935304d4863c4a3d88ff723ec8ae8d34c2953"
+}

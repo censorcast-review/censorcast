@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "multilabel_vertices": 6,
+  "independent_LP_checks": 2,
+  "binary_no_reversal": {
+    "exact_feasible_cases": 187,
+    "no_positive_feasible_cases": 65,
+    "exact_policy_completions": 1440,
+    "identity": "max c = 1 - T + T max d",
+    "scope": "Unrestricted binary-classification gate observing fixed classifier output; nonempty accepted-positive denominator. An exposure optimizer can reject negative predictions gratuitously, but its negative-completed version also maximizes rows."
+  },
+  "output": "<workspace>/original_theory/CENSORCAST_Anonymous/reproduction_outputs/classification_validation/CLASSIFICATION_CHECKS.json"
+}

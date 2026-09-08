@@ -1,0 +1,11 @@
+\subsection{A simultaneous check for a fixed finite family}
+\label{app:calibration}
+Condition on $K$ rules fixed independently of calibration. Let $n$ i.i.d. clusters each contain $T$ cases, with arbitrary within-cluster dependence. Define cluster-average excess $Z_{ik}=T^{-1}\sum_j a_k(X_{ij})(|Y_{ij}-f(X_{ij})|-rY_{ij})$ and coverage $A_{ik}=T^{-1}\sum_j a_k(X_{ij})$. Assume known nonrandom $Z_{ik}\in[\ell,u]$ and $A_{ik}\in[0,1]$.
+\begin{theorem}[Simultaneous bounded-data check]
+Let $b=\sqrt{\log(2K/\delta)/(2n)}$. With probability at least $1-\delta$, every rule with $\overline Z_k+(u-\ell)b\leq0$ and $\overline A_k-b\geq c_0$ has population excess at most zero and coverage at least $c_0$. If accepted demand is positive, its WAPE is at most $r$.
+\end{theorem}
+\begin{proof}
+Each one-sided Hoeffding failure has probability at most $\delta/(2K)$ \citep{hoeffding1963}; union-bound over $2K$ endpoints and use equation~\eqref{eq:excess}. The population target samples a uniform position from a random cluster.
+\end{proof}
+This does not cover thresholds chosen on those same outcomes without a uniform argument. Our retail procedure uses empirical point screening and descriptive bootstrap inference. The numerical supplement's \texttt{SYNTHETIC\_RESULTS.json} retains all 400 independent bounded-data trials, fixed grids, seeds, and finite-sample test proxies; they illustrate this standard check, not a new calibration theorem.
+

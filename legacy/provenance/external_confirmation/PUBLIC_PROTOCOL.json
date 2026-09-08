@@ -1,0 +1,164 @@
+{
+  "schema_version": "review5-external-1",
+  "supersedes_sha256": "390e11d0494c7fe493545063001c8dd479d50cd4a3f4fd00bf836e60dec9cd19",
+  "revision_reason": "The fourth internal review round motivates a different pair: composed excess (lambda=1) versus mixed utility (lambda=.25). The pair is chosen after consumed-guardian diagnostics, before external access. Pure demand optimality is not tested. Prior pending plan remains byte-exact and unapproved; no external access occurred.",
+  "created_utc": "2026-09-06T14:47:36.694813+00:00",
+  "authorization_scope": "One external opening for a two-policy comparison despite the failed original guardian gate; no deployment certificate.",
+  "seeds": [
+    20260906
+  ],
+  "policy_count": 2,
+  "policies": [
+    {
+      "name": "composed_excess_lambda_1",
+      "objective": "row",
+      "lambda": 1.0,
+      "threshold": 0.2888724531967165,
+      "score": "(max(error_head,0)-r*max(demand_head,0))/(1+0*max(demand_head,0)/T)",
+      "error_trees": 220,
+      "demand_trees": 220,
+      "raw_head_dtype": "float32",
+      "score_dtype": "float64"
+    },
+    {
+      "name": "mixed_utility_lambda_0_25",
+      "objective": "mixed: .25*row + .75*demand",
+      "lambda": 0.25,
+      "threshold": 0.37635288579749315,
+      "score": "(max(error_head,0)-r*max(demand_head,0))/(.25+.75*max(demand_head,0)/T)",
+      "error_trees": 220,
+      "demand_trees": 220,
+      "raw_head_dtype": "float32",
+      "score_dtype": "float64"
+    }
+  ],
+  "threshold_selection": "Previously fixed independently for each lambda on development calibration A/B only; largest common feasible threshold with point WAPE<=r and row coverage>=.35; no search at evaluation.",
+  "point_forecast": {
+    "seed": 20260906,
+    "alpha": 2,
+    "gamma": 2,
+    "formula": "observed_L1 + 2*p_censor**2*max(EM-observed_L1,0)"
+  },
+  "wape_cap": 0.640129832706689,
+  "row_floor": 0.35,
+  "item_count": 610,
+  "series_count": 6100,
+  "item_set_sha256": "c26a653378dba8f440868565d1b562fcff6bbdf09f4083f66baf1c3f6a2aa31f",
+  "item_set_hash_recipe": "sha256 of newline-joined sorted unique item IDs with trailing newline",
+  "context_days": [
+    1,
+    1913
+  ],
+  "available_outcome_days": [
+    1914,
+    1941
+  ],
+  "primary_target_days": [
+    1919,
+    1941
+  ],
+  "expected_primary_rows": 140300,
+  "origin_rule": "h=1+((day-1)%7); origin=day-h; observed histories only through origin",
+  "origin_scope_note": "Rolling 1-7 day forecasts. Main confirmation retains d1919..1941, whose origins are strictly later than the last consumed development day1913. First-five-day origin1911 targets are excluded from confirmation. Full28days are descriptive sensitivity only.",
+  "primary": {
+    "period": [
+      1919,
+      1941
+    ],
+    "contrast": "mixed_utility_lambda_0_25 minus composed_excess_lambda_1",
+    "hypotheses": [
+      "demand coverage difference > 0",
+      "row coverage difference < 0"
+    ],
+    "confirmation_rule": "Both paired one-sided 97.5% item-bootstrap bounds exclude zero in the prespecified direction",
+    "familywise_alpha": 0.05,
+    "one_sided_endpoint_alpha": 0.025
+  },
+  "secondary": {
+    "periods": {
+      "primary_23": [
+        1919,
+        1941
+      ],
+      "first_11": [
+        1919,
+        1929
+      ],
+      "second_12": [
+        1930,
+        1941
+      ]
+    },
+    "strata": [
+      "ALL",
+      "FOODS",
+      "HOBBIES",
+      "HOUSEHOLD"
+    ],
+    "endpoints": [
+      "WAPE upper bound <= 0.640129832706689",
+      "row coverage lower bound >= 0.35"
+    ],
+    "endpoint_count": 48,
+    "familywise_alpha": 0.05,
+    "per_endpoint_alpha": 0.0010416666666666667,
+    "joint_pass_rule": "Every endpoint passes; absent category or zero accepted demand fails",
+    "certificate_issued_even_if_pass": false
+  },
+  "descriptive_sensitivity": {
+    "period": [
+      1914,
+      1941
+    ],
+    "point_estimates_only": true,
+    "no_confirmation_claim": true
+  },
+  "bootstrap": {
+    "cluster": "item_id, all stores and days together",
+    "reps": 10000,
+    "seed": 20260906,
+    "method": "paired multinomial item percentile bootstrap",
+    "scope": "Approximate; common store/calendar shocks remain."
+  },
+  "forbidden": [
+    "model fit",
+    "threshold reselect",
+    "alternative floors/seeds/architectures",
+    "external A/B or shadow truth reconstruction",
+    "public raw-data bypass of the sealed split",
+    "alternative lambda values",
+    "re-estimate T on external",
+    "revert to the superseded policy pair after seeing external"
+  ],
+  "external_inputs": {
+    "prepared/external_context_v0_5.npz": {
+      "sha256": "0e9924b3f614d909e2cc5e99d3bacd15d641a1436cff1e00845ce618c497de3a",
+      "size_bytes": 4492481
+    },
+    "sealed/external_final_outcomes_v0_5.npz": {
+      "sha256": "7ab1bb061b3b50fc33297d1a8cde903f4bfae8639ba1a3cf58f2ccc5117381dd",
+      "size_bytes": 224237
+    },
+    "source/calendar.csv": {
+      "sha256": "d12b5914ef03e66649adf5dd9e996e6602251c22b7a6af8f1f7e3aa12f8860f5",
+      "size_bytes": 103469
+    },
+    "source/sell_prices.csv": {
+      "sha256": "9da3ad1f8b8ccacdbdc70612191dd375ec24a4ac6625c24b75b3bc60b0bed2ef",
+      "size_bytes": 203395785
+    }
+  },
+  "reference_mean": 1.3048948713314772,
+  "reference_mean_source": "Total true demand / total rows on consumed development calibration A/B only; not re-estimated on external",
+  "policy_pair_selection": "Chosen after inspecting consumed-guardian exploratory diagnostics and before external access. Not preregistered relative to guardian and not a pure row-versus-demand optimum test.",
+  "confirmatory_scope": "One independent external item-partition comparison of the two frozen learned policies. Supports only the prespecified coverage contrast if both directions pass; not proof of mixed utility optimality or natural-stockout operation.",
+  "status": "COMPLETED_FROZEN_TWO_POLICY_COMPARISON",
+  "original_frozen_plan_sha256": "8173b957c2c1d4fdb3a962862a4435a1531e378569f8a6602d02af97a0dd7f1d",
+  "completed_result_sha256": "61fd5159b8b152626f2d14eaea6074985575140da6c8db89440321fd0ab195b9",
+  "scientific_scope": "One independent external item-partition comparison of the two frozen learned policies. Supports only the prespecified coverage contrast if both directions pass; not proof of mixed utility optimality or natural-stockout operation.",
+  "original_gate_pass": false,
+  "certificate_issued": false,
+  "immutable_dependency_mapping": "EXTERNAL_TRANSFER.json",
+  "purpose_amendment": "Authorized one-use comparative evaluation after the failed original guardian gate; no deployment certificate.",
+  "plan_evolution_record": "PLAN_EVOLUTION.json"
+}

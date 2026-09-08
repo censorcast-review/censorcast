@@ -1,0 +1,30 @@
+{
+  "status": "FROZEN_EXTERNAL_ITEM_STATISTIC_REPLAY_PASS",
+  "item_statistic_records": 13,
+  "point_metric_records": 28,
+  "primary_directional_bounds": 2,
+  "secondary_bounds": 48,
+  "numerical_and_decision_checks": 379,
+  "maximum_absolute_replay_difference": 8.731149137020111e-11,
+  "float_comparison_rtol": 1e-12,
+  "float_comparison_atol": 1e-10,
+  "primary": {
+    "row_coverage_difference": -0.03351389878831079,
+    "demand_coverage_difference": 0.0516120118346014,
+    "row_difference_upper_one_sided_97_5": -0.024838382038488913,
+    "demand_difference_lower_one_sided_97_5": 0.031712654442056044,
+    "directional_confirmation_pass": true,
+    "invalid_bootstrap_demand_draws": 0
+  },
+  "row_secondary_bounds_pass": 24,
+  "wape_secondary_bounds_pass": 0,
+  "raw_or_row_level_arrays_read": false,
+  "new_fit_calls": 0,
+  "new_threshold_selections": 0,
+  "new_holdout_openings": 0,
+  "original_frozen_evaluator_sha256": "b9b3b0a93ab2f636f583c5e56faa720872c9e896169dbf8f10596d05f4ee4928",
+  "external_result_sha256": "61fd5159b8b152626f2d14eaea6074985575140da6c8db89440321fd0ab195b9",
+  "sufficient_statistic_sha256": "fc55b09994ba4c53271198fe5f2215659c5c3133b0c3b763fd908828b7033d29",
+  "numpy_version": "2.3.5",
+  "scope": "Exact frozen statistical formulas and bootstrap seed replayed from saved item sums. Forecast generation and threshold-mask construction are not rerun by this audit."
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "EVAL_PREDICTIONS.csv.gz": "9a0059c2b8bc41ce0b3e18cc0db35bd7a441130a7ecf2562745e9ebfb07a83db",
+    "FINAL_MODEL.txt": "60489a4f6f54fe0de2874673253ac139eee87a8d823ff3330ea3679e92f0e84f",
+    "FREEZE.json": "e5e5e3e6c72a67a13bc0f9d88d1ec7c9eb7b38026098876d2d5eaf97b3a2726f",
+    "ITEM_STATISTICS.csv": "1d5d5d7a0329f878311eaa79b35467eabe142b8c12ea5ac62db924a01a06f87d",
+    "PROTOCOL.json": "56da8b7e2b704b033af0928cbaedab0d33b58ddabc806553972f8339c5f12128",
+    "RESULTS.json": "c7030f626f3ddcbdf4143e4add426a9673ff64dfefdf1b40b0316c9e90a9e17a",
+    "SELECTION.json": "d33e9e11975957461e953472f0b6fb755e8c008a522d5c97b511973073ff98fe",
+    "candidate_2_150.txt": "84ed9d09951cf3f2a4942ed3bc47f661ce42c294c55cdbf9b12e0102269f0288",
+    "candidate_2_300.txt": "0930fc41a3edd1e26821ef8d08da85f798c7bca4fd7acbc3bb32f9ab05831877",
+    "candidate_2_50.txt": "8662e9f5ac41536f9c4de676a7355be78b67a230ff987aab0d79639c47cedd42",
+    "candidate_4_150.txt": "cce46c5723730b03eb3a1cdd30c9253c0dc6a428eec83cf67ebb6d54cd817ca6",
+    "candidate_4_300.txt": "c66217bf7fddaeb088d6094b5eda4590de875a4622de104019af86661fbc0216",
+    "candidate_4_50.txt": "d766471b2bfc9f86c8eec9affe6c451fab8e8979c94941b57d2d118b78730cf6"
+  },
+  "finished_utc": "2026-09-08T18:59:54.281651+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "prior_pending_plan": {
+    "path": "code/review4_external/EXTERNAL_PLAN.json",
+    "sha256": "390e11d0494c7fe493545063001c8dd479d50cd4a3f4fd00bf836e60dec9cd19",
+    "created_utc": "2026-09-06T14:29:07.055512+00:00",
+    "pair": [
+      "direct_excess",
+      "demand_normalized_floor_0.25"
+    ]
+  },
+  "final_plan": {
+    "path": "code/review5_external/EXTERNAL_PLAN.json",
+    "sha256": "8173b957c2c1d4fdb3a962862a4435a1531e378569f8a6602d02af97a0dd7f1d",
+    "created_utc": "2026-09-06T14:47:36.694813+00:00",
+    "pair": [
+      "composed_excess_lambda_1",
+      "mixed_utility_lambda_0.25"
+    ]
+  },
+  "opening_utc": "2026-09-06T15:10:45.169571+00:00",
+  "completed_utc": "2026-09-06T15:13:38.277616+00:00",
+  "external_access_before_replacement": false,
+  "replacement_basis": "Consumed first-holdout mixed-utility diagnostics; prospectively fixed relative to external only",
+  "frozen_originals_modified": false,
+  "superseded_pair_evaluated_this_revision": false
+}

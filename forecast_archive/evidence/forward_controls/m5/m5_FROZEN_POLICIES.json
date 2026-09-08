@@ -1,0 +1,303 @@
+{
+  "created_utc": "2026-09-08T18:57:22.098142+00:00",
+  "policies": {
+    "forecast": {
+      "bins": 5,
+      "category_scales": {
+        "FOODS": 1.0530418187229769,
+        "HOBBIES": 1.037610916933936,
+        "HOUSEHOLD": 1.0342906951617172
+      },
+      "edges": [
+        0.0,
+        0.05236935615539551,
+        0.9251613020896912,
+        1.67971071600914
+      ],
+      "scales": {
+        "FOODS|0": 1.0530418187229769,
+        "FOODS|1": 1.0130045699531666e-06,
+        "FOODS|2": 1.0811913519822933,
+        "FOODS|3": 1.0092813413843515,
+        "FOODS|4": 1.0649217013544914,
+        "HOBBIES|0": 1.037610916933936,
+        "HOBBIES|1": 1.0092729486613184e-06,
+        "HOBBIES|2": 1.0789398496174136,
+        "HOBBIES|3": 1.0083050781508103,
+        "HOBBIES|4": 1.087759698102034,
+        "HOUSEHOLD|0": 1.0342906951617172,
+        "HOUSEHOLD|1": 1.0084645920469869e-06,
+        "HOUSEHOLD|2": 1.0775739311640788,
+        "HOUSEHOLD|3": 1.0040693854776432,
+        "HOUSEHOLD|4": 1.055498659976907
+      },
+      "shrinkage": 0.75
+    },
+    "merged": {
+      "bins": 8,
+      "category_scales": {
+        "FOODS": 1.0530418187229769,
+        "HOBBIES": 1.037610916933936,
+        "HOUSEHOLD": 1.0342906951617172
+      },
+      "edges": [
+        0.025754278292879462,
+        0.1161003578454256,
+        0.19164170697331429,
+        0.2602361738681793,
+        0.31739848107099533,
+        0.3742745816707611,
+        0.45033974200487137
+      ],
+      "scales": {
+        "FOODS|0": 1.0530418187229769,
+        "FOODS|1": 0.7586171919278362,
+        "FOODS|2": 0.9726702445328994,
+        "FOODS|3": 1.0131224170815856,
+        "FOODS|4": 1.005911110138697,
+        "FOODS|5": 1.001920427219054,
+        "FOODS|6": 1.005010155733978,
+        "FOODS|7": 1.1324634803623839,
+        "HOBBIES|0": 1.037610916933936,
+        "HOBBIES|1": 1.0092729486613184e-06,
+        "HOBBIES|2": 1.0092729486613184e-06,
+        "HOBBIES|3": 1.0398629006969062,
+        "HOBBIES|4": 1.0289627172249658,
+        "HOBBIES|5": 1.0098729830171795,
+        "HOBBIES|6": 1.0059955844802542,
+        "HOBBIES|7": 1.094251108040165,
+        "HOUSEHOLD|0": 1.0342906951617172,
+        "HOUSEHOLD|1": 1.0084645920469869e-06,
+        "HOUSEHOLD|2": 0.8049897996696502,
+        "HOUSEHOLD|3": 0.9739473806588205,
+        "HOUSEHOLD|4": 1.0073664238025897,
+        "HOUSEHOLD|5": 1.006778578525888,
+        "HOUSEHOLD|6": 1.004529712802606,
+        "HOUSEHOLD|7": 1.1124982261185767
+      },
+      "shrinkage": 0.75
+    },
+    "risk": {
+      "bins": 8,
+      "category_scales": {
+        "FOODS": 1.0530418187229769,
+        "HOBBIES": 1.037610916933936,
+        "HOUSEHOLD": 1.0342906951617172
+      },
+      "edges": [
+        0.025754278292879462,
+        0.1161003578454256,
+        0.19164170697331429,
+        0.2602361738681793,
+        0.31739848107099533,
+        0.3742745816707611,
+        0.45033974200487137
+      ],
+      "scales": {
+        "FOODS|0": 1.0130045699531666e-06,
+        "FOODS|1": 0.7586171919278362,
+        "FOODS|2": 0.9726702445328994,
+        "FOODS|3": 1.0131224170815856,
+        "FOODS|4": 1.005911110138697,
+        "FOODS|5": 1.001920427219054,
+        "FOODS|6": 1.005010155733978,
+        "FOODS|7": 1.1324634803623839,
+        "HOBBIES|0": 1.037610916933936,
+        "HOBBIES|1": 1.0092729486613184e-06,
+        "HOBBIES|2": 1.0092729486613184e-06,
+        "HOBBIES|3": 1.0398629006969062,
+        "HOBBIES|4": 1.0289627172249658,
+        "HOBBIES|5": 1.0098729830171795,
+        "HOBBIES|6": 1.0059955844802542,
+        "HOBBIES|7": 1.094251108040165,
+        "HOUSEHOLD|0": 1.0342906951617172,
+        "HOUSEHOLD|1": 1.0084645920469869e-06,
+        "HOUSEHOLD|2": 0.8049897996696502,
+        "HOUSEHOLD|3": 0.9739473806588205,
+        "HOUSEHOLD|4": 1.0073664238025897,
+        "HOUSEHOLD|5": 1.006778578525888,
+        "HOUSEHOLD|6": 1.004529712802606,
+        "HOUSEHOLD|7": 1.1124982261185767
+      },
+      "shrinkage": 0.75
+    },
+    "support": [
+      {
+        "bin": 1,
+        "fallback": true,
+        "group": "FOODS",
+        "positive_rows": 11,
+        "series": 4
+      },
+      {
+        "bin": 2,
+        "fallback": false,
+        "group": "FOODS",
+        "positive_rows": 9335,
+        "series": 736
+      },
+      {
+        "bin": 3,
+        "fallback": false,
+        "group": "FOODS",
+        "positive_rows": 16791,
+        "series": 823
+      },
+      {
+        "bin": 4,
+        "fallback": false,
+        "group": "FOODS",
+        "positive_rows": 53694,
+        "series": 847
+      },
+      {
+        "bin": 5,
+        "fallback": false,
+        "group": "FOODS",
+        "positive_rows": 84568,
+        "series": 847
+      },
+      {
+        "bin": 6,
+        "fallback": false,
+        "group": "FOODS",
+        "positive_rows": 103451,
+        "series": 850
+      },
+      {
+        "bin": 7,
+        "fallback": false,
+        "group": "FOODS",
+        "positive_rows": 126486,
+        "series": 854
+      },
+      {
+        "bin": 8,
+        "fallback": false,
+        "group": "FOODS",
+        "positive_rows": 159577,
+        "series": 848
+      },
+      {
+        "bin": 1,
+        "fallback": true,
+        "group": "HOBBIES",
+        "positive_rows": 0,
+        "series": 0
+      },
+      {
+        "bin": 2,
+        "fallback": false,
+        "group": "HOBBIES",
+        "positive_rows": 1153,
+        "series": 164
+      },
+      {
+        "bin": 3,
+        "fallback": false,
+        "group": "HOBBIES",
+        "positive_rows": 3499,
+        "series": 247
+      },
+      {
+        "bin": 4,
+        "fallback": false,
+        "group": "HOBBIES",
+        "positive_rows": 11406,
+        "series": 290
+      },
+      {
+        "bin": 5,
+        "fallback": false,
+        "group": "HOBBIES",
+        "positive_rows": 14148,
+        "series": 284
+      },
+      {
+        "bin": 6,
+        "fallback": false,
+        "group": "HOBBIES",
+        "positive_rows": 16030,
+        "series": 272
+      },
+      {
+        "bin": 7,
+        "fallback": false,
+        "group": "HOBBIES",
+        "positive_rows": 19810,
+        "series": 251
+      },
+      {
+        "bin": 8,
+        "fallback": false,
+        "group": "HOBBIES",
+        "positive_rows": 20714,
+        "series": 218
+      },
+      {
+        "bin": 1,
+        "fallback": true,
+        "group": "HOUSEHOLD",
+        "positive_rows": 0,
+        "series": 0
+      },
+      {
+        "bin": 2,
+        "fallback": false,
+        "group": "HOUSEHOLD",
+        "positive_rows": 3063,
+        "series": 354
+      },
+      {
+        "bin": 3,
+        "fallback": false,
+        "group": "HOUSEHOLD",
+        "positive_rows": 7980,
+        "series": 486
+      },
+      {
+        "bin": 4,
+        "fallback": false,
+        "group": "HOUSEHOLD",
+        "positive_rows": 33579,
+        "series": 552
+      },
+      {
+        "bin": 5,
+        "fallback": false,
+        "group": "HOUSEHOLD",
+        "positive_rows": 42790,
+        "series": 553
+      },
+      {
+        "bin": 6,
+        "fallback": false,
+        "group": "HOUSEHOLD",
+        "positive_rows": 47558,
+        "series": 532
+      },
+      {
+        "bin": 7,
+        "fallback": false,
+        "group": "HOUSEHOLD",
+        "positive_rows": 52229,
+        "series": 514
+      },
+      {
+        "bin": 8,
+        "fallback": false,
+        "group": "HOUSEHOLD",
+        "positive_rows": 61101,
+        "series": 483
+      }
+    ],
+    "top_scale": 1.100675688905894,
+    "top_threshold": 0.45033974200487137
+  },
+  "selected_stack": {
+    "depth": 4,
+    "kind": "residual_gbm",
+    "trees": 300,
+    "wape": 0.6953087963861649
+  }
+}

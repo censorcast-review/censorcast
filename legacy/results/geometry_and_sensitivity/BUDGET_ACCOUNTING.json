@@ -1,0 +1,55 @@
+{
+  "status": "BUDGET_ACCOUNTING_VERIFIED",
+  "scope": "consumed_development_first_seed_original_thresholds",
+  "cap": 0.640129832706689,
+  "input_hashes": {
+    "results/review2/cache_design/shadow_aligned.npz": "be6dd6653a75da9464de1f429a88fd743c16225771ab11377110f832525c97a1",
+    "results/review2/design_predictions_s20260906.npz": "a8a33b5d42828af4df8bbb3389c7b46b697a1d96efaf5fc5997a51f59e41de35"
+  },
+  "common_slack": 97185.97110904042,
+  "sets": {
+    "both": {
+      "rows": 1529359,
+      "demand_mass": 2194615.0,
+      "absolute_error_mass": 1307652.5616965499,
+      "excess": -97185.97110904042,
+      "wape": 0.5958459965399625,
+      "demand_coverage": 0.7522502913553164
+    },
+    "direct_only": {
+      "rows": 267656,
+      "demand_mass": 165905.0,
+      "absolute_error_mass": 166341.85119569808,
+      "excess": 60141.11130049486,
+      "wape": 1.0026331406268532,
+      "demand_coverage": 0.05686741619250017
+    },
+    "relative_only": {
+      "rows": 141617,
+      "demand_mass": 334007.0,
+      "absolute_error_mass": 264357.4038395789,
+      "excess": 50549.55880671585,
+      "wape": 0.7914726453025802,
+      "demand_coverage": 0.11448790018509632
+    },
+    "neither": {
+      "rows": 146428,
+      "demand_mass": 222873.0,
+      "absolute_error_mass": 206885.52793489269,
+      "excess": 64217.871730054794,
+      "wape": 0.92826644741576,
+      "demand_coverage": 0.07639439226708714
+    },
+    "direct_policy": {
+      "excess": -37044.859808545574,
+      "fraction_of_common_slack_used": 0.6188250280795972
+    },
+    "relative_policy": {
+      "excess": -46636.41230232457,
+      "fraction_of_common_slack_used": 0.5201322601386615
+    }
+  },
+  "new_fits": 0,
+  "guardian_read": false,
+  "external_read": false
+}

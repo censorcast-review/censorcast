@@ -1,0 +1,947 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "hash:CALIBRATION_FRONTIERS.json",
+      "pass": true
+    },
+    {
+      "name": "hash:DEMAND_HEAD.txt",
+      "pass": true
+    },
+    {
+      "name": "hash:FROZEN_SELECTORS.json",
+      "pass": true
+    },
+    {
+      "name": "hash:ITEM_STATISTICS.npz",
+      "pass": true
+    },
+    {
+      "name": "hash:PROTOCOL.json",
+      "pass": true
+    },
+    {
+      "name": "hash:RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "hash:TRAINING_ROWS.npz",
+      "pass": true
+    },
+    {
+      "name": "hash:chronos2_univariate_raw_ERROR_HEAD.txt",
+      "pass": true
+    },
+    {
+      "name": "hash:chronos2_univariate_raw_EVAL_SELECTORS.npz",
+      "pass": true
+    },
+    {
+      "name": "hash:development_forecasts.npz",
+      "pass": true
+    },
+    {
+      "name": "hash:evaluation_forecasts.npz",
+      "pass": true
+    },
+    {
+      "name": "hash:group_l1_ERROR_HEAD.txt",
+      "pass": true
+    },
+    {
+      "name": "hash:group_l1_EVAL_SELECTORS.npz",
+      "pass": true
+    },
+    {
+      "name": "hash:learned_l1_ERROR_HEAD.txt",
+      "pass": true
+    },
+    {
+      "name": "hash:learned_l1_EVAL_SELECTORS.npz",
+      "pass": true
+    },
+    {
+      "name": "evaluation chronology",
+      "pass": true
+    },
+    {
+      "name": "completed after frozen",
+      "pass": true
+    },
+    {
+      "name": "four fits only",
+      "pass": true
+    },
+    {
+      "name": "no new opening",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw:full metric",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0:mask",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0:rows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0:row_coverage",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0:demand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0:error_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0:demand_coverage",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0:wape",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0:excess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0 item rows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0 item mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0 item errors",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25:mask",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25:rows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25:row_coverage",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25:demand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25:error_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25:demand_coverage",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25:wape",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25:excess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25 item rows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25 item mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25 item errors",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0:mask",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0:rows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0:row_coverage",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0:demand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0:error_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0:demand_coverage",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0:wape",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0:excess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0 item rows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0 item mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw1.0 item errors",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25commonrows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25commondemand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25commonerror_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25commonexcess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25row_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25row_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25row_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25row_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25other_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25other_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25other_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25other_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25neitherrows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25neitherdemand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25neithererror_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25neitherexcess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25 row budget identity",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.25 other budget identity",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0commonrows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0commondemand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0commonerror_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0commonexcess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0row_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0row_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0row_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0row_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0other_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0other_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0other_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0other_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0neitherrows",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0neitherdemand_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0neithererror_mass",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0neitherexcess",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0 row budget identity",
+      "pass": true
+    },
+    {
+      "name": "chronos2_univariate_raw0.0 other budget identity",
+      "pass": true
+    },
+    {
+      "name": "group_l1:full metric",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0:mask",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0:rows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0:row_coverage",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0:demand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0:error_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0:demand_coverage",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0:wape",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0:excess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0 item rows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0 item mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0 item errors",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25:mask",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25:rows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25:row_coverage",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25:demand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25:error_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25:demand_coverage",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25:wape",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25:excess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25 item rows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25 item mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25 item errors",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0:mask",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0:rows",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0:row_coverage",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0:demand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0:error_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0:demand_coverage",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0:wape",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0:excess",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0 item rows",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0 item mass",
+      "pass": true
+    },
+    {
+      "name": "group_l11.0 item errors",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25commonrows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25commondemand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25commonerror_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25commonexcess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25row_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25row_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25row_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25row_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25other_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25other_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25other_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25other_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25neitherrows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25neitherdemand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25neithererror_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25neitherexcess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25 row budget identity",
+      "pass": true
+    },
+    {
+      "name": "group_l10.25 other budget identity",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0commonrows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0commondemand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0commonerror_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0commonexcess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0row_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0row_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0row_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0row_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0other_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0other_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0other_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0other_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0neitherrows",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0neitherdemand_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0neithererror_mass",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0neitherexcess",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0 row budget identity",
+      "pass": true
+    },
+    {
+      "name": "group_l10.0 other budget identity",
+      "pass": true
+    },
+    {
+      "name": "learned_l1:full metric",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0:mask",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0:rows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0:row_coverage",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0:demand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0:error_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0:demand_coverage",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0:wape",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0:excess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0 item rows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0 item mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0 item errors",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25:mask",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25:rows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25:row_coverage",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25:demand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25:error_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25:demand_coverage",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25:wape",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25:excess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25 item rows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25 item mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25 item errors",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0:mask",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0:rows",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0:row_coverage",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0:demand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0:error_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0:demand_coverage",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0:wape",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0:excess",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0 item rows",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0 item mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l11.0 item errors",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25commonrows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25commondemand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25commonerror_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25commonexcess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25row_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25row_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25row_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25row_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25other_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25other_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25other_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25other_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25neitherrows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25neitherdemand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25neithererror_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25neitherexcess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25 row budget identity",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.25 other budget identity",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0commonrows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0commondemand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0commonerror_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0commonexcess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0row_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0row_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0row_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0row_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0other_onlyrows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0other_onlydemand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0other_onlyerror_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0other_onlyexcess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0neitherrows",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0neitherdemand_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0neithererror_mass",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0neitherexcess",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0 row budget identity",
+      "pass": true
+    },
+    {
+      "name": "learned_l10.0 other budget identity",
+      "pass": true
+    },
+    {
+      "name": "bootstrap chronos2_univariate_raw:0.0",
+      "pass": true
+    },
+    {
+      "name": "bootstrap chronos2_univariate_raw:0.25",
+      "pass": true
+    },
+    {
+      "name": "bootstrap group_l1:0.0",
+      "pass": true
+    },
+    {
+      "name": "bootstrap group_l1:0.25",
+      "pass": true
+    },
+    {
+      "name": "bootstrap learned_l1:0.0",
+      "pass": true
+    },
+    {
+      "name": "bootstrap learned_l1:0.25",
+      "pass": true
+    }
+  ],
+  "count": 235,
+  "inputs_unchanged": true
+}

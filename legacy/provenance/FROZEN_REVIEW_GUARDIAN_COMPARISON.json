@@ -1,0 +1,467 @@
+{
+  "schema_version": "review-comparison-1",
+  "status": "FROZEN_FOR_SEPARATE_COMPARATIVE_GUARDIAN_AUDIT",
+  "frozen_utc": "2026-09-06T06:12:19.744723+00:00",
+  "authorization_status": "PENDING_EXPLICIT_EVALUATION_PURPOSE_AMENDMENT",
+  "reason": "Original v0.5 sections 6 and 8 require passing category development gates before guardian opening; those gates have not passed. This separate comparison does not authorize itself.",
+  "authorization_phrase": "AUTHORIZE_CENSORCAST_M5_FIXED_COMPARISON_AFTER_FAILED_DESIGN_GATE",
+  "design_result_sha256": "18bd0f9ce66656cdc5d7b315326333bd60c385e6359f6a0ab3aaa77f784dec7d",
+  "immutable_files": {
+    "code/guardian_prediction.py": "3a732fa2ada5d3e23db13396330eaa35c11c6fd9a373665deeb605381d245060",
+    "code/run_guardian_comparison.py": "27a43ca091f9c9c2cd95a4a240ddb44f78ade28686bddff3b00ebb4d28c886f2",
+    "code/run_review_comparison.py": "5b53988b69081078f539ad67f8df15195733aec178755d9673ac72537591a80a",
+    "code/run_selective_study.py": "34bbbe99e9fe553704e797dccc03676d9a9d887935b8627bb5001b0f932a7dd1",
+    "inputs/forecast_bundle_v0_5.joblib": "7c44b064f02a824405754e8c17761d4aa035234ea16472d9be34efc8169bd91b",
+    "results/point_baselines/observed_l1_s20260906.txt": "fc24d1ecc568f6b78e11f309e5008b94801e5f78ba5568fd2793973959c57bb0",
+    "results/review_revision/demand_s20260906.txt": "7d59e0924552d35636260bd6c8e5cb90b38dc3ab51dc9d82af7f7fd16cd38f08",
+    "results/review_revision/demand_s20260907.txt": "3021786f65e3aaca1b37c99bf7da93799e12fda512e13165239e6e3c0e2fb70b",
+    "results/review_revision/demand_s20260908.txt": "04ffd8e2036820d2daa218c66781a61ba9b44e95edf3eeb643b5a45db8c045f6",
+    "results/selective_strong/contract_excess_s20260906.txt": "49d8eddd0f1fb6bb15568d08c521a0a73b6c4ffb2fb9468b61b459cc722c35d0",
+    "results/selective_strong/contract_excess_s20260907.txt": "df56c8464d48f4f0e711ba4b4f906bdcfde5faa300a183eade3278f400097d36",
+    "results/selective_strong/contract_excess_s20260908.txt": "bf063d1a88be5afaa99539edb621abdab134280bba821fceea6fd0a02b87fe33",
+    "results/selective_strong/mean_error_s20260906.txt": "accf0bb1d97d13dccaa3517ad94842d3cb79d32370030debc7e9402f43bcfacf",
+    "results/selective_strong/mean_error_s20260907.txt": "172c95a896e5f1dbdebc4968b6c1edac1f2cd50d6801411336b0866c42ab7098",
+    "results/selective_strong/mean_error_s20260908.txt": "60c6721681058f24f3200e80a6a77fd2453cf2469c6a9823a9ebdb44682333b9",
+    "upstream/design/censorcast_v05/__init__.py": "2b3bc309d0d9f0990abc5b446056bfcb167901dcbd0e67f4909ca23e82fe8c2b",
+    "upstream/design/censorcast_v05/features.py": "3b2bd1cc61b1d5108fa21b0cca13fc8e17fad9014d878ba8ab461f3648adee41",
+    "upstream/design/censorcast_v05/metrics.py": "9b297c77f19af13ab381eaf9a8298755d71610c2f25667f14a7c720f448a6277",
+    "upstream/design/censorcast_v05/models.py": "b1fcd97fdd1603e6ef57458cb39c0cf18180c0a00aec2f4702482d6a0fe0d173"
+  },
+  "point_forecast": {
+    "seed": 20260906,
+    "alpha": 2,
+    "gamma": 2,
+    "refit_on_guardian": false
+  },
+  "wape_cap": 0.640129832706689,
+  "coverage_floor": 0.35,
+  "seeds": [
+    20260906,
+    20260907,
+    20260908
+  ],
+  "primary_seed": 20260906,
+  "policies": [
+    {
+      "seed": 20260906,
+      "score": "mean_error",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": null
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "mean_error",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": null,
+        "HOBBIES": null,
+        "HOUSEHOLD": null
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "relative_error_f",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 2.0316739082336426
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "relative_error_f",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 3.5714027881622314,
+        "HOBBIES": null,
+        "HOUSEHOLD": 1.426601529121399
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "relative_error_mu",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 1.0048800706863403
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "relative_error_mu",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 1.0453811883926392,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.9858232736587524
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "excess_f",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.6175324320793152
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "excess_f",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 1.1880038976669312,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.402175635099411
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "composite_excess",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.2888724207878113
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "composite_excess",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 0.6782400608062744,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.2065580189228058
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "composite_excess_budget220",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.28764480352401733
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "composite_excess_budget220",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 0.6812722682952881,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.20609763264656067
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "direct_excess",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.27530351281166077
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": "direct_excess",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 0.5544069409370422,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.2196197509765625
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "mean_error",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": null
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "mean_error",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": null,
+        "HOBBIES": null,
+        "HOUSEHOLD": null
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "relative_error_f",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 1.988512396812439
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "relative_error_f",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 3.594860076904297,
+        "HOBBIES": null,
+        "HOUSEHOLD": 1.4202418327331543
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "relative_error_mu",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 1.0070984363555908
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "relative_error_mu",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 1.05375075340271,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.9844532608985901
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "excess_f",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.612501323223114
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "excess_f",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 1.3125267028808594,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.39866605401039124
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "composite_excess",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.2835468649864197
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "composite_excess",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 0.6345291137695312,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.19720816612243652
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "composite_excess_budget220",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.28353428840637207
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "composite_excess_budget220",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 0.6328611373901367,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.19987022876739502
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "direct_excess",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.2696341872215271
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": "direct_excess",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 0.5519516468048096,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.2151809185743332
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "mean_error",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": null
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "mean_error",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": null,
+        "HOBBIES": null,
+        "HOUSEHOLD": null
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "relative_error_f",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 2.043517827987671
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "relative_error_f",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 3.5632615089416504,
+        "HOBBIES": null,
+        "HOUSEHOLD": 1.4442609548568726
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "relative_error_mu",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 1.0080419778823853
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "relative_error_mu",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 1.0445796251296997,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.9925320148468018
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "excess_f",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.6316115260124207
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "excess_f",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 1.317010521888733,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.410719096660614
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "composite_excess",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.28393369913101196
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "composite_excess",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 0.6659368276596069,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.21207588911056519
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "composite_excess_budget220",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.2842978239059448
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "composite_excess_budget220",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 0.6527564525604248,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.21438312530517578
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "direct_excess",
+      "threshold_mode": "pooled",
+      "thresholds": {
+        "ALL": 0.2745876908302307
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": "direct_excess",
+      "threshold_mode": "category",
+      "thresholds": {
+        "FOODS": 0.543734610080719,
+        "HOBBIES": null,
+        "HOUSEHOLD": 0.21587508916854858
+      }
+    }
+  ],
+  "evaluation": {
+    "items": 610,
+    "series": 6100,
+    "blocks": {
+      "calibration_a": [
+        1555,
+        1673
+      ],
+      "calibration_b": [
+        1674,
+        1793
+      ],
+      "shadow": [
+        1800,
+        1913
+      ]
+    },
+    "primary_contrast": "first-seed direct_excess versus composite_excess on shadow; both frozen pooled thresholds",
+    "reported_endpoints": [
+      "row coverage",
+      "demand coverage",
+      "accepted WAPE",
+      "category-specific values"
+    ],
+    "all_seed_results_reported": true,
+    "adjusted_bound_family": "2 primary methods x 3 blocks x 4 strata (pooled and 3 categories) x 2 endpoints = 48",
+    "bootstrap": {
+      "cluster": "item_id",
+      "reps": 10000,
+      "seed": 20260906,
+      "nominal_familywise_alpha": 0.05,
+      "per_endpoint_alpha": 0.0010416666666666667,
+      "validity": "Approximate item bootstrap; common store/calendar shocks remain. No exact finite-sample guarantee."
+    },
+    "same_period_item_holdout_not_future_time_evaluation": true,
+    "no_retraining_no_threshold_reselection": true,
+    "certificate_issued": false,
+    "external_access_authorized": false
+  },
+  "guardian_context_sha256": "5ed3f06f69c570f2c6aff33a825b944f13b49144bedaf76e6f2f9666664ca62f",
+  "guardian_outcomes_sha256": "6bf62d608054063e7142cf47b15b75bec66765e1f04cc006138dc29037f0c827",
+  "fresh_guardian_opened": false,
+  "external_opened": false
+}

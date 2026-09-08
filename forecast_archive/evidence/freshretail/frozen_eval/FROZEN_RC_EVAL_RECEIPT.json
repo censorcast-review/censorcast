@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_BEFORE_ROW_LEVEL_EVAL_ACCESS",
+  "frozen_utc": "2026-09-07T07:03:24Z",
+  "dataset_revision": "08c1fab7f9257bc73679d415d65d644165d351d4",
+  "eval_expected_sha256": "1b118840664280c6b88bffc84c80ee1f54c05d911e354b7599e5da10995e960e",
+  "protocol_sha256": "e46f770e0bf815d6d9078d1faf3a4a81af19708499fb90f65ca4b0b6e911eead",
+  "runner_sha256": "7607bd68b784e8e16a100b712cffd0cb91c8b7b3143dea86ba971ce28bcf3ea6",
+  "train_cache_sha256": "5dc9bcca4b42f25784895ba6327a06412860571a2c63a1fd6e285d521771bed3",
+  "series": 2000,
+  "eval_rows_accessed": 0,
+  "eval_metrics_computed": 0
+}

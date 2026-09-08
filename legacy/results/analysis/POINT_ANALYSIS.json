@@ -1,0 +1,220 @@
+{
+  "seed_aggregates": [
+    {
+      "method": "observed_l1",
+      "seeds": 3,
+      "shadow_wape_mean": 0.6822548212844665,
+      "shadow_wape_sd": 0.00015058004868443068,
+      "shadow_wape_all": [
+        0.6822390042158818,
+        0.6824126855332809,
+        0.6821127741042367
+      ]
+    },
+    {
+      "method": "observed_poisson",
+      "seeds": 3,
+      "shadow_wape_mean": 0.7272874999334619,
+      "shadow_wape_sd": 0.0005906983188125738,
+      "shadow_wape_all": [
+        0.7273436006800289,
+        0.726670752665738,
+        0.7278481464546191
+      ]
+    },
+    {
+      "method": "uncensored_l1",
+      "seeds": 3,
+      "shadow_wape_mean": 0.7286602640602986,
+      "shadow_wape_sd": 0.0016288237546330608,
+      "shadow_wape_all": [
+        0.7301369435144104,
+        0.7269131477643187,
+        0.7289307009021665
+      ]
+    },
+    {
+      "method": "category_scale",
+      "seeds": 3,
+      "shadow_wape_mean": 0.6810966258239483,
+      "shadow_wape_sd": 0.00017731312007143287,
+      "shadow_wape_all": [
+        0.6809145570569554,
+        0.6811065543160818,
+        0.6812687660988074
+      ]
+    },
+    {
+      "method": "censor_adapter",
+      "seeds": 3,
+      "shadow_wape_mean": 0.6703390046235661,
+      "shadow_wape_sd": 9.089751443311712e-05,
+      "shadow_wape_all": [
+        0.6703923781501372,
+        0.6703905854022514,
+        0.6702340503183098
+      ]
+    },
+    {
+      "method": "global_scale",
+      "seeds": 3,
+      "shadow_wape_mean": 0.6812236667554772,
+      "shadow_wape_sd": 0.00020521464819750265,
+      "shadow_wape_all": [
+        0.6810120527443535,
+        0.6812371282979292,
+        0.6814218192241487
+      ]
+    },
+    {
+      "method": "plain",
+      "seeds": 3,
+      "shadow_wape_mean": 0.6822548212844665,
+      "shadow_wape_sd": 0.00015058004868443068,
+      "shadow_wape_all": [
+        0.6822390042158818,
+        0.6824126855332809,
+        0.6821127741042367
+      ]
+    },
+    {
+      "method": "ungated_em_correction",
+      "seeds": 3,
+      "shadow_wape_mean": 0.6822548212844665,
+      "shadow_wape_sd": 0.00015058004868443068,
+      "shadow_wape_all": [
+        0.6822390042158818,
+        0.6824126855332809,
+        0.6821127741042367
+      ]
+    }
+  ],
+  "first_seed": {
+    "legacy_raw": {
+      "wape": 0.727129996374899,
+      "ci95": [
+        0.7060211920271823,
+        0.7476818882966592
+      ],
+      "category_wape": {
+        "FOODS": 0.6790388699566167,
+        "HOBBIES": 0.9714653966356138,
+        "HOUSEHOLD": 0.7747295146805715
+      }
+    },
+    "legacy_censorcast": {
+      "wape": 0.7058443643175641,
+      "ci95": [
+        0.6842150508047308,
+        0.7279678367296343
+      ],
+      "category_wape": {
+        "FOODS": 0.651391536746842,
+        "HOBBIES": 0.9713544559444575,
+        "HOUSEHOLD": 0.7639217429064117
+      }
+    },
+    "plain": {
+      "wape": 0.6822390042158816,
+      "ci95": [
+        0.662942471069556,
+        0.7008611067324856
+      ],
+      "category_wape": {
+        "FOODS": 0.6517368080982139,
+        "HOBBIES": 0.8580258931031367,
+        "HOUSEHOLD": 0.704621760793207
+      }
+    },
+    "global_scale": {
+      "wape": 0.6810120527443535,
+      "ci95": [
+        0.6617332410152176,
+        0.6996721331235911
+      ],
+      "category_wape": {
+        "FOODS": 0.6502348709979012,
+        "HOBBIES": 0.8579336105421843,
+        "HOUSEHOLD": 0.703765425040265
+      }
+    },
+    "category_scale": {
+      "wape": 0.6809145570569554,
+      "ci95": [
+        0.6616328100792478,
+        0.6995654494183835
+      ],
+      "category_wape": {
+        "FOODS": 0.6500356688113337,
+        "HOBBIES": 0.8578976327425454,
+        "HOUSEHOLD": 0.7039393464179267
+      }
+    },
+    "ungated_em_correction": {
+      "wape": 0.6822390042158816,
+      "ci95": [
+        0.662942471069556,
+        0.7008611067324856
+      ],
+      "category_wape": {
+        "FOODS": 0.6517368080982139,
+        "HOBBIES": 0.8580258931031367,
+        "HOUSEHOLD": 0.704621760793207
+      }
+    },
+    "censor_adapter": {
+      "wape": 0.6703923781501372,
+      "ci95": [
+        0.6510908198258077,
+        0.6895730346315802
+      ],
+      "category_wape": {
+        "FOODS": 0.6355856259978178,
+        "HOBBIES": 0.8586014899791787,
+        "HOUSEHOLD": 0.7005795122954668
+      }
+    }
+  },
+  "contrasts": {
+    "censor_adapter_minus_plain": {
+      "delta_wape": -0.011846626065744591,
+      "ci95": [
+        -0.016165805746494826,
+        -0.008434792516683077
+      ],
+      "cluster": "item_id",
+      "reps": 3000,
+      "scope": "descriptive_fixed_first_seed"
+    },
+    "censor_adapter_minus_category_scale": {
+      "delta_wape": -0.01052217890681827,
+      "ci95": [
+        -0.014553101527673118,
+        -0.007373422419675578
+      ],
+      "cluster": "item_id",
+      "reps": 3000,
+      "scope": "descriptive_fixed_first_seed"
+    },
+    "censor_adapter_minus_legacy_censorcast": {
+      "delta_wape": -0.03545198616742691,
+      "ci95": [
+        -0.03983975563417023,
+        -0.0312016078897973
+      ],
+      "cluster": "item_id",
+      "reps": 3000,
+      "scope": "descriptive_fixed_first_seed"
+    },
+    "plain_minus_legacy_censorcast": {
+      "delta_wape": -0.023605360101682325,
+      "ci95": [
+        -0.030648514785413087,
+        -0.016104552771591212
+      ],
+      "cluster": "item_id",
+      "reps": 3000,
+      "scope": "descriptive_fixed_first_seed"
+    }
+  }
+}

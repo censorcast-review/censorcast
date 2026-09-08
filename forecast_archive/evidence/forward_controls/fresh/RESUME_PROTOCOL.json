@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-08T18:57:41.064334+00:00",
+  "new_fits": 0,
+  "new_selections": 0,
+  "policy_sha256": "baa78b2b674797c3e9920e21fe9a9faed38dd1d611c1f8d0db19b325174f5568",
+  "reason": "pyarrow missing after policy and final stack saved; resume without any model fit or selection",
+  "script_sha256": "3d3a634f4338b32788f45ddb7944a2072bdb87ea8169b86b2f1cea5181286054",
+  "stack_sha256": "a24e114053d92e71681e6f19ea790fd07e2bbaac7b31460ecbc0b1f654448338"
+}

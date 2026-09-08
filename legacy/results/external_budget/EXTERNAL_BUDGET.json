@@ -1,0 +1,239 @@
+{
+  "schema_version": "external-descriptive-budget-1",
+  "inferential_status": "Descriptive only; specified after the registered external result was known, not a new confirmatory endpoint.",
+  "protocol_sha256": "3d5ed4b8b1343ee8da3fad37d7f4510ee52281bf3650b55c3e1a8f26ccaeaa47",
+  "completed_utc": "2026-09-06T16:08:36.131190+00:00",
+  "primary_target_days": [
+    1919,
+    1941
+  ],
+  "total_rows": 140300,
+  "total_demand": 209893.0,
+  "empirical_mean_demand": 1.4960299358517462,
+  "fixed_score_reference_mean": 1.3048948713314772,
+  "wape_cap": 0.640129832706689,
+  "sets": {
+    "K": {
+      "rows": 109985,
+      "row_share": 0.783927298645759,
+      "demand_mass": 167627.0,
+      "demand_share": 0.7986307308962185,
+      "absolute_error_mass": 98881.94592532948,
+      "wape": 0.5898927137354333,
+      "forecast_sum": 122296.3000003437,
+      "mean_forecast": 1.1119361731176407,
+      "mean_demand": 1.5240896485884439,
+      "signed_excess": -8421.097541794676,
+      "signed_excess_per_original_row": -0.060022077988557916
+    },
+    "U": {
+      "rows": 10557,
+      "row_share": 0.07524590163934426,
+      "demand_mass": 6976.0,
+      "demand_share": 0.03323598214328253,
+      "absolute_error_mass": 7008.373827459669,
+      "wape": 1.004640743615205,
+      "forecast_sum": 1290.2445967055687,
+      "mean_forecast": 0.122216974207215,
+      "mean_demand": 0.6607937861134792,
+      "signed_excess": 2542.8281144978064,
+      "signed_excess_per_original_row": 0.01812422034567218
+    },
+    "V": {
+      "rows": 5855,
+      "row_share": 0.0417320028510335,
+      "demand_mass": 17809.0,
+      "demand_share": 0.08484799397788396,
+      "absolute_error_mass": 13880.498712997884,
+      "wape": 0.7794092151719851,
+      "forecast_sum": 9968.484431371093,
+      "mean_forecast": 1.7025592538635512,
+      "mean_demand": 3.0416737830913747,
+      "signed_excess": 2480.4265223244583,
+      "signed_excess_per_original_row": 0.017679447771378892
+    },
+    "N": {
+      "rows": 13903,
+      "row_share": 0.09909479686386315,
+      "demand_mass": 17481.0,
+      "demand_share": 0.08328529298261494,
+      "absolute_error_mass": 16617.906766546635,
+      "wape": 0.9506267814510975,
+      "forecast_sum": 6437.8000709963035,
+      "mean_forecast": 0.46305114514826323,
+      "mean_demand": 1.2573545277997555,
+      "signed_excess": 5427.7971610010045,
+      "signed_excess_per_original_row": 0.03868707883821101
+    }
+  },
+  "policies": {
+    "composed_excess_lambda_1": {
+      "rows": 120542,
+      "row_share": 0.8591732002851034,
+      "demand_mass": 174603.0,
+      "demand_share": 0.8318667130395011,
+      "absolute_error_mass": 105890.31975278913,
+      "wape": 0.6064633468656846,
+      "forecast_sum": 123586.54459704927,
+      "mean_forecast": 1.0252571269520108,
+      "mean_demand": 1.448482686532495,
+      "signed_excess": -5878.26942729688,
+      "signed_excess_per_original_row": -0.04189785764288582
+    },
+    "mixed_utility_lambda_0_25": {
+      "rows": 115840,
+      "row_share": 0.8256593014967926,
+      "demand_mass": 185436.0,
+      "demand_share": 0.8834787248741025,
+      "absolute_error_mass": 112762.44463832735,
+      "wape": 0.6080935990763786,
+      "forecast_sum": 132264.7844317148,
+      "mean_forecast": 1.141788539638422,
+      "mean_demand": 1.6007941988950276,
+      "signed_excess": -5940.671019470232,
+      "signed_excess_per_original_row": -0.04234263021717913
+    }
+  },
+  "budget": {
+    "common_slack": 8421.097541794676,
+    "identity": "E(K+J)-rM(K+J)=(E(K)-rM(K))+(E(J)-rM(J)), J=U,V",
+    "additions": {
+      "U": {
+        "policy": "composed_excess_lambda_1",
+        "cost": 2542.8281144978064,
+        "fraction_of_common_slack": 0.30195922822144244,
+        "remaining_slack": 5878.269427296869,
+        "combined_signed_excess": -5878.26942729688,
+        "identity_residual": -1.0913936421275139e-11,
+        "point_cap_pass": true
+      },
+      "V": {
+        "policy": "mixed_utility_lambda_0_25",
+        "cost": 2480.4265223244583,
+        "fraction_of_common_slack": 0.29454907866983787,
+        "remaining_slack": 5940.671019470217,
+        "combined_signed_excess": -5940.671019470232,
+        "identity_residual": -1.4551915228366852e-11,
+        "point_cap_pass": true
+      }
+    }
+  },
+  "differences": {
+    "row_count_mixed_minus_row": -4702,
+    "row_coverage_mixed_minus_row": -0.033513898788310764,
+    "demand_mass_mixed_minus_row": 10833.0,
+    "demand_coverage_mixed_minus_row": 0.05161201183460144
+  },
+  "registered_primary_reproduction": [
+    {
+      "policy": "composed_excess_lambda_1",
+      "field": "rows",
+      "actual": 140300,
+      "registered": 140300
+    },
+    {
+      "policy": "composed_excess_lambda_1",
+      "field": "accepted_rows",
+      "actual": 120542,
+      "registered": 120542
+    },
+    {
+      "policy": "composed_excess_lambda_1",
+      "field": "row_coverage",
+      "actual": 0.8591732002851034,
+      "registered": 0.8591732002851034
+    },
+    {
+      "policy": "composed_excess_lambda_1",
+      "field": "demand_coverage",
+      "actual": 0.8318667130395011,
+      "registered": 0.8318667130395011
+    },
+    {
+      "policy": "composed_excess_lambda_1",
+      "field": "wape",
+      "actual": 0.6064633468656846,
+      "registered": 0.6064633468656846
+    },
+    {
+      "policy": "composed_excess_lambda_1",
+      "field": "accepted_demand",
+      "actual": 174603.0,
+      "registered": 174603.0
+    },
+    {
+      "policy": "composed_excess_lambda_1",
+      "field": "total_demand",
+      "actual": 209893.0,
+      "registered": 209893.0
+    },
+    {
+      "policy": "composed_excess_lambda_1",
+      "field": "accepted_absolute_error",
+      "actual": 105890.31975278913,
+      "registered": 105890.31975278913
+    },
+    {
+      "policy": "composed_excess_lambda_1",
+      "field": "point_operating_check_pass",
+      "actual": true,
+      "registered": true
+    },
+    {
+      "policy": "mixed_utility_lambda_0_25",
+      "field": "rows",
+      "actual": 140300,
+      "registered": 140300
+    },
+    {
+      "policy": "mixed_utility_lambda_0_25",
+      "field": "accepted_rows",
+      "actual": 115840,
+      "registered": 115840
+    },
+    {
+      "policy": "mixed_utility_lambda_0_25",
+      "field": "row_coverage",
+      "actual": 0.8256593014967926,
+      "registered": 0.8256593014967926
+    },
+    {
+      "policy": "mixed_utility_lambda_0_25",
+      "field": "demand_coverage",
+      "actual": 0.8834787248741025,
+      "registered": 0.8834787248741025
+    },
+    {
+      "policy": "mixed_utility_lambda_0_25",
+      "field": "wape",
+      "actual": 0.6080935990763786,
+      "registered": 0.6080935990763786
+    },
+    {
+      "policy": "mixed_utility_lambda_0_25",
+      "field": "accepted_demand",
+      "actual": 185436.0,
+      "registered": 185436.0
+    },
+    {
+      "policy": "mixed_utility_lambda_0_25",
+      "field": "total_demand",
+      "actual": 209893.0,
+      "registered": 209893.0
+    },
+    {
+      "policy": "mixed_utility_lambda_0_25",
+      "field": "accepted_absolute_error",
+      "actual": 112762.44463832735,
+      "registered": 112762.44463832735
+    },
+    {
+      "policy": "mixed_utility_lambda_0_25",
+      "field": "point_operating_check_pass",
+      "actual": true,
+      "registered": true
+    }
+  ],
+  "joint_secondary_operating_check_pass": false,
+  "note": "Realized sample accounting for the two unchanged learned policies; not a conditional-moment or optimality claim."
+}

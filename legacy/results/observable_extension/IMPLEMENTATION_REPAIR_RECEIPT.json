@@ -1,0 +1,15 @@
+{
+  "status": "IMPLEMENTATION_REPAIR_BEFORE_ANY_COMPLETED_FIT",
+  "parent_protocol_sha256": "283864fc1877f8e8f9d3f8621325b3257e76d6226a1a04c13fdd28e21849537a",
+  "old_source_hashes": {
+    "run_observable_extension.py": "d6a56fc06084d0ef5319ac7fa2f0712702fbb78642fcf4319138897e1f53067b",
+    "r3_observable.py": "72c60f892bf80f0bb515f52a09cd186f6c7b3c5fef658272326764e5d632ddfe"
+  },
+  "new_source_hashes": {
+    "run_observable_extension.py": "d6a56fc06084d0ef5319ac7fa2f0712702fbb78642fcf4319138897e1f53067b",
+    "r3_observable.py": "78b7109fb8afdba1a8ff4e9d1514a2d7ed573af02b3d0dab4b4def3b352f0a22"
+  },
+  "reason": "LightGBM requires positive poisson_max_delta_step. Replace intended zero by 1e-12; exp(1e-12) is effectively unit Hessian damping. No fitted model or outcome metric existed at repair.",
+  "completed_fits_before_repair": 0,
+  "created_utc": "2026-09-06T13:05:51.639200+00:00"
+}

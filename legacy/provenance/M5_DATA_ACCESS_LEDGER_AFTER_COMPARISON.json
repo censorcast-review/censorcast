@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.5",
+  "created_utc": "2026-09-05T15:08:13.848433+00:00",
+  "fresh_guardian_opened": true,
+  "fresh_guardian_use_count": 1,
+  "external_opened": false,
+  "confirmatory_alpha_spent": 0.0,
+  "certificate_issued": false,
+  "note": "Original deployment protocol did not pass. One separately authorized frozen guardian comparison completed without fitting or threshold selection; its joint operating check failed. External remains sealed.",
+  "review_comparison_freeze_sha256": "3d94aec80d993b92684a61f058ed4e3ceb2351233f07fb8eea3f9f542fe2b156",
+  "review_comparison_nominal_alpha_reserved": 0.05,
+  "review_comparison_authorized_utc": "2026-09-06T06:25:11.887237+00:00",
+  "review_comparison_completed_utc": "2026-09-06T06:34:24.455327+00:00",
+  "review_comparison_status": "COMPARISON_COMPLETED_JOINT_OPERATING_CHECK_FAILED",
+  "review_comparison_results_sha256": "aaaf3e1f72a576f229f4a31ea42cb46470206cb1dbd33678beb24b9609c0077f",
+  "review_comparison_nominal_alpha_used": 0.05
+}

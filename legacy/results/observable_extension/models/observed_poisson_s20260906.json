@@ -1,0 +1,11 @@
+{
+  "method": "observed_poisson",
+  "shape": null,
+  "bias": 0.0,
+  "training_rows": 600000,
+  "hidden_labels_used_for_fit": 0,
+  "seed": 20260906,
+  "trees": 220,
+  "fit_seconds": 7.363994121551514,
+  "model_sha256": "affb8259459a4d0d79b6e732b84dd14e7b2c3efe49d14db442a262a2c6c4416b"
+}

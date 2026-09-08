@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checked_result_and_table_hashes": 347,
+  "checked_frozen_dependency_hashes": 37,
+  "new_model_fits": 0,
+  "new_threshold_searches": 0,
+  "new_policy_evaluations": 0,
+  "external_openings": 0,
+  "original_pdf_is_preserved_in_prior_distribution": true
+}

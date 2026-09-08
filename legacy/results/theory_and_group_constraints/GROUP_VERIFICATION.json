@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "producer_sha": "678c93152f6a8445111e5f7819c3ab4acd22af94c6cf8b9c649365003e8c582a",
+  "verifier_sha": "d8dd35b1d80eac9f3c945f0a1f59f421586e029dfd55e1af972d843334ff9aaf",
+  "result_sha": "eea08d764856401bdd93077fb0d998667c27168b8e03f4f05ff5b73c932c533b",
+  "selected_sha": "eb7df82d72be48defbbe4bf64adde08a5f1eee526c66c4de28636fd4fa84bcd6",
+  "checks": [
+    "21 coefficient and metric checks",
+    "3 group dual certificates with bounded-coordinate residual correction",
+    "2 positive-budget Hobbies bin blocks",
+    "synthetic cross-group borrowing counterexample"
+  ],
+  "Hobbies_dual_lower_bound": 0.01425899872965198,
+  "all_groups_floor_feasible": false,
+  "external_opened": false
+}

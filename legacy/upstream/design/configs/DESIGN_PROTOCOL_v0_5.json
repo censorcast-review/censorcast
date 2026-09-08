@@ -1,0 +1,115 @@
+{
+  "schema_version": "0.5-design-1",
+  "protocol_name": "CENSORCAST v0.5 M5 design-only model and risk-layer development",
+  "created_utc": "2026-09-05T00:00:00+00:00",
+  "statistical_role": "DEVELOPMENT_ONLY_NOT_A_CERTIFICATE",
+  "upstream": {
+    "data_protocol_sha256": "a1629cf0565f7fa661f9b71f125b97d3575d72178837e230c0e4386b6a659f06",
+    "data_runner_sha256": "fa339e9537283bf6c5b47a4096656a8375ac3e79341facc904d05f51b75499bb",
+    "required_data_audit_status": "V0_5_M5_INDEPENDENT_DATA_AUDIT_PASS",
+    "permitted_outcome_shard": "prepared/design_outcomes_v0_5.npz",
+    "forbidden_outcome_shards": [
+      "sealed/fresh_guardian_outcomes_v0_5.npz",
+      "sealed/external_final_outcomes_v0_5.npz"
+    ]
+  },
+  "time_partition": {
+    "base_fit_target_days": [365, 1313],
+    "selection": [1314, 1433],
+    "risk_train": [1434, 1553],
+    "calibration_a": [1554, 1673],
+    "calibration_b": [1674, 1793],
+    "shadow": [1794, 1913],
+    "forecast_horizons": [1, 2, 3, 4, 5, 6, 7],
+    "weekly_origin_rule": "horizon_t = 1 + ((t - 1) mod 7); origin_t = t - horizon_t"
+  },
+  "features": {
+    "observed_lags": [1, 7, 14, 28, 56],
+    "rolling_windows": [7, 28, 56],
+    "known_future_calendar": true,
+    "known_future_prices": true,
+    "item_id_feature_allowed": false,
+    "truth_feature_allowed": false,
+    "target_censor_indicator_feature_allowed": false,
+    "strictly_prior_observed_residual_history": true
+  },
+  "base_models": {
+    "training_sample_rows": 1200000,
+    "random_seed": 20260905,
+    "strong_non_censor_aware_candidates": [
+      "seasonal_naive_7",
+      "seasonal_median_4",
+      "raw_poisson_histgb"
+    ],
+    "histgb": {
+      "loss": "poisson",
+      "learning_rate": 0.06,
+      "max_iter": 300,
+      "max_leaf_nodes": 63,
+      "min_samples_leaf": 100,
+      "l2_regularization": 2.0,
+      "n_iter_no_change": 25
+    },
+    "censor_classifier": {
+      "learning_rate": 0.05,
+      "max_iter": 220,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 100,
+      "l2_regularization": 3.0,
+      "n_iter_no_change": 20
+    },
+    "censored_poisson_em_iterations": 3,
+    "em_conditional_mean_cap_multiplier": 8.0,
+    "adapter_strengths": [0.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0],
+    "adapter_powers": [0.5, 1.0, 2.0]
+  },
+  "risk_layer": {
+    "target": "absolute latent-demand forecast error",
+    "loss": "quantile",
+    "quantile": 0.85,
+    "training_sample_rows": 1200000,
+    "forward_diagnostic_initial_days": 40,
+    "forward_diagnostic_fold_days": 40,
+    "histgb": {
+      "learning_rate": 0.05,
+      "max_iter": 260,
+      "max_leaf_nodes": 63,
+      "min_samples_leaf": 100,
+      "l2_regularization": 3.0,
+      "n_iter_no_change": 25
+    },
+    "instantaneous_weights": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "historical_prior_demand_mass": 30.0,
+    "score_formula": "proposal_mass * (w * predicted_absolute_error/proposal_mass + (1-w) * strictly_prior_observed_wape - accepted_wape_cap)"
+  },
+  "selective_contract": {
+    "accepted_wape_cap_multiplier_of_selection_baseline": 0.90,
+    "minimum_coverage": 0.30,
+    "development_margin": {
+      "maximum_accepted_wape_ratio_ucb": 0.85,
+      "minimum_coverage_lcb": 0.35
+    },
+    "exact_unique_threshold_search": true,
+    "exact_search_bound": "one-sided 95% item-cluster delta-method bound",
+    "fixed_policy_bootstrap_reps": 5000,
+    "fixed_policy_familywise_alpha": 0.05,
+    "fixed_policy_units": [
+      "calibration_a",
+      "calibration_b",
+      "shadow",
+      "pooled_cat_id"
+    ],
+    "fixed_policy_multiplicity": "Bonferroni over all reported gate endpoints"
+  },
+  "point_forecast_gate": {
+    "shadow_wape_ratio_point_max": 1.0,
+    "shadow_wape_ratio_ci95_upper_max": 1.0,
+    "paired_item_cluster_bootstrap_reps": 3000
+  },
+  "administrative_freeze": {
+    "authorization_phrase": "FREEZE_CENSORCAST_V0_5_M5_DESIGN_POLICY_AFTER_DESIGN_AUDIT",
+    "guardian_opening_allowed_in_this_package": false,
+    "external_opening_allowed_in_this_package": false,
+    "confirmatory_alpha_spending_allowed_in_this_package": false
+  }
+}

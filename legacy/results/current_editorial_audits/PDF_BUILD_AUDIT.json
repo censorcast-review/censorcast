@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pages": 21,
+  "main_pages": 9,
+  "diagnostics": [],
+  "packaged_inputs_unchanged": true,
+  "pdf_sha256": "99768d3737d7f418dd3830bb19301c52441e7bb96f6cbef22ee38aeb224be70a",
+  "source_sha256": "308cc973843a69c48397a5b54c5da207f9909da86f00c500810fd3e4e6b273d0",
+  "visual_review": "PASS: rendered page 19 inspected; caption above Table 13, no overlap or clipping. Other 20 page texts unchanged."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scalar_or_interval_replay_checks": 32,
+  "item_clusters": 1829,
+  "validation_rows": 365800,
+  "bootstrap_replicates": 10000,
+  "paired_comparisons": 6,
+  "four_comparison_bonferroni_family": true,
+  "maximum_numeric_discrepancy": 1.9984014443252818e-15,
+  "evidence_hashes": {
+    "ITEM_STATISTICS.json": "49119e8ed48a1fe17e1673d579e6b74c64e40f4f9a24c7bfce1f504060689dba",
+    "RESULTS.json": "de14aac23c03a5b858aed3950324c22739fa3b9d0d120f31d30bb60f3357aea3"
+  },
+  "evidence_unchanged": true,
+  "fits": 0,
+  "raw_data_accesses": 0,
+  "interpretation": "Post-selection, conditional-on-fixed-fits item-bootstrap diagnostic; no independent winner confirmation or latent-tail identification claim."
+}

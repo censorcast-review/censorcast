@@ -1,0 +1,28 @@
+{
+  "status": "DERIVED_CACHE_IO_REPAIR_VERIFIED",
+  "created_utc": "2026-09-06T06:31:24.308232+00:00",
+  "cause_observed": "Truncated derived ZIP after the computation completed; a first regeneration also produced one truncated NPY. Durable buffered writes repair serialization only.",
+  "repairs": [
+    {
+      "file": "shadow_aligned.npz",
+      "incomplete_sha256": "4a392ce414bf41a03d1e924c18a84a4b8b5e1662e3fb295ff4061d524d2e87f8",
+      "repaired_sha256": "724abddb8c5a17906b58bb2197895c192625133e95682935ceacc01352f2c728"
+    }
+  ],
+  "original_arrays_exactly_reproduced": [
+    "calibration_a_aligned.npz",
+    "calibration_a_features.npy",
+    "calibration_b_aligned.npz",
+    "calibration_b_features.npy",
+    "metadata.npz",
+    "risk_train_aligned.npz",
+    "risk_train_features.npy",
+    "shadow_features.npy"
+  ],
+  "training_calls": 0,
+  "threshold_selection_calls": 0,
+  "new_data_access": false,
+  "frozen_source_changed": false,
+  "result_json_changed": false,
+  "metric_verification": "Performed separately by verify_guardian_results.py"
+}

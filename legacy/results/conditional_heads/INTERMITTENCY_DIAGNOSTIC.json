@@ -1,0 +1,35 @@
+[
+  {
+    "group": "FOODS",
+    "n": 1008900,
+    "zero_demand_fraction": 0.4912359996035286,
+    "mean_units": 1.9660224006343543,
+    "zero_day_error_share": 0.13747199816245742,
+    "nonzero_day_wape": 0.544822875563238,
+    "full_wape": 0.631658188954491,
+    "past28_zero_mean": 0.5070582628250122,
+    "row_censor_rate": 0.1788056343793869
+  },
+  {
+    "group": "HOBBIES",
+    "n": 372780,
+    "zero_demand_fraction": 0.714799613713182,
+    "mean_units": 0.6826680615912871,
+    "zero_day_error_share": 0.13603359472283968,
+    "nonzero_day_wape": 0.7410906178327519,
+    "full_wape": 0.8577771233998505,
+    "past28_zero_mean": 0.7193613052368164,
+    "row_censor_rate": 0.08675358444452286
+  },
+  {
+    "group": "HOUSEHOLD",
+    "n": 703380,
+    "zero_demand_fraction": 0.6236657283402997,
+    "mean_units": 0.9659003668003071,
+    "zero_day_error_share": 0.15248483075823757,
+    "nonzero_day_wape": 0.5913430076820178,
+    "full_wape": 0.6977373729027981,
+    "past28_zero_mean": 0.6323039531707764,
+    "row_censor_rate": 0.10757769644260406
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "scope": "A_B_SELECTION_COMPLETED_BEFORE_SHADOW_METRICS",
+  "protocol_sha256": "c66c1883a1d8f719f709963a1f739861b8a6f65be791857779794402b0129cee",
+  "records": [
+    {
+      "method": "shared_error_21",
+      "selected_threshold": null,
+      "minimum_calibration_row_coverage": 0.0,
+      "feature_count": 21,
+      "model_sha256": "accf0bb1d97d13dccaa3517ad94842d3cb79d32370030debc7e9402f43bcfacf"
+    },
+    {
+      "method": "hobbies_error_21",
+      "selected_threshold": null,
+      "minimum_calibration_row_coverage": 0.0,
+      "feature_count": 21,
+      "model_sha256": "1c4d827a65d263043fb9ffd7420275e1d3d90c9d05b397bfe109b00ee8b7ac42"
+    },
+    {
+      "method": "hobbies_error_29",
+      "selected_threshold": null,
+      "minimum_calibration_row_coverage": 0.0,
+      "feature_count": 29,
+      "model_sha256": "de43907bbad69b0ef85785b043622b5d2471dad3db5763187311acebb5252576"
+    }
+  ]
+}

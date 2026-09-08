@@ -1,0 +1,23 @@
+{
+  "status": "POST_HOC_LOSS_ABLATION",
+  "losses": [
+    "poisson",
+    "tweedie"
+  ],
+  "tweedie_variance_power": 1.5,
+  "seeds": [
+    20260906,
+    20260907,
+    20260908
+  ],
+  "training_rows": 600000,
+  "trees": 220,
+  "leaves": 31,
+  "learning_rate": 0.05,
+  "min_child_samples": 100,
+  "reg_lambda": 3,
+  "fitting_scope": "already_consumed_design_risk_train",
+  "guardian_scope": "posthoc_consumed_cache_only",
+  "new_guardian_accesses": 0,
+  "external_opened": false
+}

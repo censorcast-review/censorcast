@@ -1,0 +1,10 @@
+{
+  "scope": "Revision inputs; completed external result retained",
+  "files": {
+    "code/review4_external/EXTERNAL_PLAN.json": "390e11d0494c7fe493545063001c8dd479d50cd4a3f4fd00bf836e60dec9cd19",
+    "code/review5_external/EXTERNAL_PLAN.json": "8173b957c2c1d4fdb3a962862a4435a1531e378569f8a6602d02af97a0dd7f1d",
+    "results/external_confirmation/EXTERNAL_COMPARISON.json": "61fd5159b8b152626f2d14eaea6074985575140da6c8db89440321fd0ab195b9",
+    "results/external_confirmation/EXTERNAL_EXECUTION_AUDIT.json": "fbef6569a9e512a5e166af52aee2ccaef8c373cd1964b024092658ccf04277eb",
+    "paper/main.pdf": "b0a298cd050d62a6031a496d010a4bccb780bc5650e8dd84b36800fc5feead9f"
+  }
+}

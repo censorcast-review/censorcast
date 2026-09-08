@@ -1,0 +1,10 @@
+{
+  "scope": "Formatting only: moved Table 13 caption and label above the tabular; wording and all numbers retained.",
+  "table13_before_sha256": "2aadcb220c5f09002e8792d6eff1d255db4b30d7cb11b19df63951cf950ed270",
+  "table13_after_sha256": "9de34b863374f10882c8e94d073f24a4577a82c0af471acd6f2b89b8fedee5d4",
+  "main_tex_unchanged": true,
+  "new_model_fits": 0,
+  "new_threshold_searches": 0,
+  "new_policy_evaluations": 0,
+  "external_openings": 0
+}

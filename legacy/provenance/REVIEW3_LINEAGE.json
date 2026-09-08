@@ -1,0 +1,20 @@
+{
+  "uploaded_pdf_sha256": "4757f06a0e39ede4b00e7faf5bbca66fb9db681184c090f75f3af3e76cbe0d0d",
+  "recovered_source_zip_sha256": "18e5366635630b23ada417a3587dc4961e85a607a50e0e6352f68ee561a4581c",
+  "base": "Recovered completed review2 source integrated into the requested uploaded-draft revision",
+  "current_training_calls": 0,
+  "raw_guardian_opened": false,
+  "external_opened": false,
+  "immutable_cache_archives": {
+    "CENSORCAST_REVIEW2_CACHE_PART_01.zip": "e8049278102bd6edefcca6d55d25f6130047810043ae1443a28e2c73d4be339a",
+    "CENSORCAST_REVIEW2_CACHE_PART_02.zip": "94c98a70f6eaad5475865cf7edb0562872304d16ee2c78594386b447fcded6d0",
+    "CENSORCAST_REVIEW2_CACHE_PART_03.zip": "66d525fe91aa668264c916124c4086065797c489970fac0aff7ad120ec3db593",
+    "CENSORCAST_REVIEW2_CACHE_PART_04.zip": "63291f797579acfc31cfe8365d24040a901b5b3971f3a77e4400295b333d53ba",
+    "CENSORCAST_REVIEW2_CACHE_PART_05.zip": "98bce810874c74c6bd39b38c324af8bf34d6be7632081900734508cd9483016d",
+    "CENSORCAST_REVIEW2_CACHE_PART_06.zip": "0d5ab184932c91495fa23b2fad68e00bce73f056cedb232679cf7ff1c78d64ff",
+    "CENSORCAST_REVIEW2_CACHE_PART_07.zip": "24fe55f03fae767832b9af3e661c9c9f78868629a4409bce7353f47a113a18f0"
+  },
+  "intervening_source_version": 4,
+  "intervening_source_sha256": "ac6a7b2492a30bbfe738e797e39277f8a6be329641d49c22ddf35e927b8f2cde",
+  "merged_content": "Preserves latest observable/capacity/foundation additions; integrates exact objective geometry, budget accounting, and current zero-fit cached audit."
+}

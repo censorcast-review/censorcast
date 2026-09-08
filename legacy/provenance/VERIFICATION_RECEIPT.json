@@ -1,0 +1,18 @@
+{
+  "status": "MANUSCRIPT_NUMERICAL_AND_NOTEBOOK_AUDIT_PASS",
+  "verified_input_files": 9,
+  "selective_reports_recomputed": 60,
+  "point_and_adapter_archives_crc_checked": 24,
+  "notebook_code_cells_compiled": 9,
+  "notebook_embedded_sources_match": true,
+  "notebook_source_paths_exercised": true,
+  "outcome_shards_used": [
+    "previously_consumed_M5_design"
+  ],
+  "fresh_guardian_opened": false,
+  "external_opened": false,
+  "certificate_issued": false,
+  "statistical_scope": "POST_HOC_RETAIL_DEVELOPMENT_AND_SEPARATE_SYNTHETIC_EXPERIMENTS",
+  "colab_live_mount_tested": false,
+  "colab_note": "Compute scripts executed locally; authenticated Colab mounting not executed in this session."
+}

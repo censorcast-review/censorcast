@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "coefficient_metric_checks": 21,
+  "checked_group_dual_certificates": 3,
+  "positive_Hobbies_bin_budget_blocks": 2,
+  "no_cross_group_budget_borrowing_synthetic_check": true,
+  "raw_cache_reads": 0,
+  "external_reads": 0
+}

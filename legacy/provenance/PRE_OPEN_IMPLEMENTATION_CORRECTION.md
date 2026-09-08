@@ -1,0 +1,1 @@
+Before any guardian access, corrected the descriptive bootstrap scope label in the separate comparison evaluator from the reused development helper. No model, data, policy, threshold, endpoint, seed, or computed result changed. The preceding draft freeze is preserved in archive/. The final freeze supersedes it. Guardian and external outcomes remain unopened.

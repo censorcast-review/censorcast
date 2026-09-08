@@ -1,0 +1,17 @@
+{
+  "files": {
+    "PROTOCOL.json": "cc69a24e018aeefe54201bd0b05c5ab737b295b1ae7e88464baf055c66283cc2",
+    "m5_FINAL_STACK.txt": "6dec2a81d752df773502918ccc88b0e00495dc1422826086678918a0e6bf05f3",
+    "m5_FROZEN_POLICIES.json": "43a824da27f18d32894fc1c18b5a35f300ae6b4fded128abad3068ab164b0fdb",
+    "m5_ITEM_STATISTICS.csv": "b1ae1a408e6f50fa9431de984b13944012bee48bd651e47a8d454953ef463fdb",
+    "m5_RESULTS.json": "9c592b08a56c08fb68fcd9fbef3ce9edbafdf916e2fb2ef626b1001d255327ea",
+    "m5_SELECTION.json": "d0a5be6d242b48f0274a27184e141ff59f1c2243340bab97d354f23c22344105",
+    "m5_candidate_2_150.txt": "30818b72b3885e1d5374d5c37469fd31c549348a1148cd5db37de2d4423f18f0",
+    "m5_candidate_2_300.txt": "ef0047e8d6c25f498decbf65cbd3d4a3f5934e681f1467ab56bb9f14899739db",
+    "m5_candidate_2_50.txt": "44b95659252fe9918bbe68fe4c155598af639864c7d6776bb3ab29bb271b90c5",
+    "m5_candidate_4_150.txt": "3a8c496f6c202532d5ad7eca355cc1a6851b7ad5859e263c9004e1bdec203fd7",
+    "m5_candidate_4_300.txt": "79ae4030dd10ec5c43e4d57d74787ffa3f329a146a1c81ef999eb42999ffd197",
+    "m5_candidate_4_50.txt": "0f094339f15baabe214e60773355b78244a7507a9c23966b6bf37103f11e44b3"
+  },
+  "finished_utc": "2026-09-08T18:57:38.248589+00:00"
+}

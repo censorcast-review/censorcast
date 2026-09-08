@@ -1,0 +1,27 @@
+{
+  "status": "FIXED_GUARDIAN_NUMERICAL_AUDIT_PASS",
+  "created_utc": "2026-09-06T06:31:41.482151+00:00",
+  "freeze_sha256": "3d94aec80d993b92684a61f058ed4e3ceb2351233f07fb8eea3f9f542fe2b156",
+  "comparison_sha256": "aaaf3e1f72a576f229f4a31ea42cb46470206cb1dbd33678beb24b9609c0077f",
+  "immutable_files_verified": 19,
+  "fixed_policy_masks_verified": 126,
+  "group_metric_reports_recomputed": 504,
+  "independent_item_ids_verified": 610,
+  "evaluation_days_match_prespecified_blocks": true,
+  "fresh_guardian_use_count": 1,
+  "training_calls": 0,
+  "threshold_selection_calls": 0,
+  "external_opened": false,
+  "certificate_issued": false,
+  "prediction_software": {
+    "python": "3.12.13",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "scikit_learn": "1.6.1",
+    "joblib": "1.5.3",
+    "lightgbm": "4.6.0"
+  },
+  "evaluation_python": "3.12.13",
+  "evaluation_numpy": "2.3.5",
+  "scope": "Previously held-out items, same calendar and stores; approximate item-bootstrap inference."
+}

@@ -1,0 +1,30 @@
+{
+  "objectives": {
+    "row": {
+      "design": {
+        "coverage": 0.8629858773048896,
+        "demand_coverage": 0.8086403409639994,
+        "wape": 0.6245371985240341
+      },
+      "guardian_posthoc": {
+        "coverage": 0.8736612021857924,
+        "demand_coverage": 0.8328906153948537,
+        "wape": 0.6280456446211812
+      }
+    },
+    "demand": {
+      "design": {
+        "coverage": 0.7417174245984928,
+        "demand_coverage": 0.8901429375012716,
+        "wape": 0.625999215527756
+      },
+      "guardian_posthoc": {
+        "coverage": 0.7362266321541558,
+        "demand_coverage": 0.8822896657413768,
+        "wape": 0.6219239883517161
+      }
+    }
+  },
+  "demand_gain_pp": 4.939905034652314,
+  "row_loss_pp": 13.74345700316365
+}

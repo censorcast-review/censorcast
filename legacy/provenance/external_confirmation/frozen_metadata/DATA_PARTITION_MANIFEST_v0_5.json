@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.5",
+  "created_utc": "2026-09-05T15:12:05.364738+00:00",
+  "status": "M5_ITEM_AND_TIME_PARTITIONS_FIXED",
+  "partition_algorithm": {
+    "cluster": "item_id",
+    "salt": "CENSORCAST_V0_5_M5_ITEM_CLUSTER_SPLIT_20260905",
+    "ordering": "ascending_sha256(salt + NUL + item_id)",
+    "design_items": 1829,
+    "fresh_guardian_items": 610,
+    "external_items": 610,
+    "expected_design_series": 18290,
+    "expected_fresh_guardian_series": 6100,
+    "expected_external_series": 6100,
+    "overlap_allowed": false
+  },
+  "time_partition": {
+    "warmup": [
+      1,
+      56
+    ],
+    "fit": [
+      1,
+      1313
+    ],
+    "selection": [
+      1314,
+      1433
+    ],
+    "risk_train": [
+      1434,
+      1553
+    ],
+    "calibration_a": [
+      1554,
+      1673
+    ],
+    "calibration_b": [
+      1674,
+      1793
+    ],
+    "shadow": [
+      1794,
+      1913
+    ],
+    "external_final": [
+      1914,
+      1941
+    ],
+    "forecast_horizons": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "future_outcome_leakage_allowed": false
+  },
+  "item_counts": {
+    "design": 1829,
+    "fresh_guardian": 610,
+    "external": 610
+  },
+  "series_counts": {
+    "design": 18290,
+    "fresh_guardian": 6100,
+    "external": 6100
+  },
+  "item_set_sha256": {
+    "design": "4b899219e2f73830dcc1e6f77642052c9a24ff2c75ae9d6ca106d16c6a825519",
+    "fresh_guardian": "2d4730476b1995efbea14085ba6b22f7fb71a9f8d330dd6095676fffd4f1db8f",
+    "external": "c26a653378dba8f440868565d1b562fcff6bbdf09f4083f66baf1c3f6a2aa31f"
+  },
+  "design_item_ids_released": true,
+  "fresh_guardian_item_ids_released": false,
+  "external_item_ids_released": false,
+  "overlap_count": 0,
+  "freshretail_series_included": 0
+}

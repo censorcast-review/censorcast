@@ -1,0 +1,18 @@
+{
+  "status": "GUARDIAN_REVISION_PDF_QA_PASS",
+  "created_utc": "2026-09-06T06:37:31.123477+00:00",
+  "main_pages": 9,
+  "total_pages": 21,
+  "pdf_sha256": "b386ed11e2435ef465ace752f5673c785a708ed104d760abce3c7442cbe80340",
+  "all_page_contact_sheet_reviewed": true,
+  "detailed_pages_reviewed": [
+    7,
+    8,
+    20,
+    21
+  ],
+  "no_overfull_boxes": true,
+  "no_undefined_references": true,
+  "official_style_unchanged": true,
+  "author_human_verification_claimed": false
+}

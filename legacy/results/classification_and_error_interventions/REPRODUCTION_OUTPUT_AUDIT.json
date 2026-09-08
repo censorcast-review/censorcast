@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "recomputed_verifiers": 4,
+  "recorded_result_and_figure_hashes_unchanged": {
+    "results/review3/OBJECTIVE_GEOMETRY.json": "31b7a7e851558d1ed41438a4dc4f7aa993753265f5caad63ad07d5c9283feb26",
+    "paper/figures/objective_geometry.pdf": "78c6560df3350fb5d54a37d8945534c4446a561f8609423581d59920e0675d80",
+    "paper/figures/objective_geometry.png": "0751932596ba7b90fd67192d852a1fdb99421d2ea760941976da20a3fe1fd18c",
+    "results/review4/GENERAL_THEOREM_CHECK.json": "9ce047040318861ba4af879d6ea0595688bf74b85fb219826238ee3cc2c83e2d",
+    "results/review5/THEORY_CHECKS.json": "8a95d7a066240140a82c75a9a28f838d2c915921815aca8e563d0a52078f2251",
+    "results/review5_nb_grid/AGGREGATE_AUDIT.json": "44c94aecf68703a1cfa046ace726e04f173104661e51c16734c588583329bb85"
+  },
+  "protected_output_refusal_verified": true,
+  "new_default_directory": "reproduction_outputs",
+  "additional_archived_output_guards_verified": [
+    "external statistic replay",
+    "observable moment audit",
+    "optional consumed-cache replay"
+  ],
+  "classification_output_isolated_and_guarded": true
+}

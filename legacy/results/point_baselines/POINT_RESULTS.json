@@ -1,0 +1,364 @@
+{
+  "status": "DESIGN_POINT_BASELINES_COMPLETE",
+  "statistical_scope": "POST_HOC_DEVELOPMENT",
+  "reports": [
+    {
+      "method": "observed_l1",
+      "seed": 20260906,
+      "training_rows": 1200000,
+      "parameters": {
+        "objective": "regression_l1",
+        "n_estimators": 300,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "min_child_samples": 100,
+        "reg_lambda": 2.0,
+        "n_jobs": 4,
+        "random_state": 20260906,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "metrics": {
+        "selection": {
+          "n": 2139930,
+          "wape": 0.6987874204198705,
+          "wpe": -0.35675911121672343,
+          "mae": 0.8113082840712228,
+          "rmse": 2.3661987331560246
+        },
+        "shadow": {
+          "n": 2194800,
+          "wape": 0.6822390042158818,
+          "wpe": -0.3869271373192329,
+          "mae": 0.9454798111733548,
+          "rmse": 2.671139526099318
+        }
+      },
+      "seconds": 29.284486532211304
+    },
+    {
+      "method": "observed_l1",
+      "seed": 20260907,
+      "training_rows": 1200000,
+      "parameters": {
+        "objective": "regression_l1",
+        "n_estimators": 300,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "min_child_samples": 100,
+        "reg_lambda": 2.0,
+        "n_jobs": 4,
+        "random_state": 20260907,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "metrics": {
+        "selection": {
+          "n": 2139930,
+          "wape": 0.6986528727507733,
+          "wpe": -0.3597027066936677,
+          "mae": 0.8111520711295594,
+          "rmse": 2.366656992790959
+        },
+        "shadow": {
+          "n": 2194800,
+          "wape": 0.6824126855332809,
+          "wpe": -0.3918506564014645,
+          "mae": 0.9457205071437759,
+          "rmse": 2.67522053474025
+        }
+      },
+      "seconds": 33.39437556266785
+    },
+    {
+      "method": "observed_l1",
+      "seed": 20260908,
+      "training_rows": 1200000,
+      "parameters": {
+        "objective": "regression_l1",
+        "n_estimators": 300,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "min_child_samples": 100,
+        "reg_lambda": 2.0,
+        "n_jobs": 4,
+        "random_state": 20260908,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "metrics": {
+        "selection": {
+          "n": 2139930,
+          "wape": 0.6992224560925496,
+          "wpe": -0.3629702232172375,
+          "mae": 0.8118133705035157,
+          "rmse": 2.3709960438915063
+        },
+        "shadow": {
+          "n": 2194800,
+          "wape": 0.6821127741042367,
+          "wpe": -0.3910796095005448,
+          "mae": 0.9453048753790289,
+          "rmse": 2.6719163134064647
+        }
+      },
+      "seconds": 32.99215507507324
+    },
+    {
+      "method": "observed_poisson",
+      "seed": 20260906,
+      "training_rows": 1200000,
+      "parameters": {
+        "objective": "poisson",
+        "n_estimators": 300,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "min_child_samples": 100,
+        "reg_lambda": 2.0,
+        "n_jobs": 4,
+        "random_state": 20260906,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "metrics": {
+        "selection": {
+          "n": 2139930,
+          "wape": 0.7494757339838284,
+          "wpe": -0.27944250832604467,
+          "mae": 0.8701585831726708,
+          "rmse": 2.3691667280064515
+        },
+        "shadow": {
+          "n": 2194800,
+          "wape": 0.7273436006800289,
+          "wpe": -0.3225835093088562,
+          "mae": 1.0079879426118172,
+          "rmse": 2.6946522737459184
+        }
+      },
+      "seconds": 37.43421292304993
+    },
+    {
+      "method": "observed_poisson",
+      "seed": 20260907,
+      "training_rows": 1200000,
+      "parameters": {
+        "objective": "poisson",
+        "n_estimators": 300,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "min_child_samples": 100,
+        "reg_lambda": 2.0,
+        "n_jobs": 4,
+        "random_state": 20260907,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "metrics": {
+        "selection": {
+          "n": 2139930,
+          "wape": 0.7488900191023146,
+          "wpe": -0.28390361549847315,
+          "mae": 0.869478554709665,
+          "rmse": 2.371219061937731
+        },
+        "shadow": {
+          "n": 2194800,
+          "wape": 0.726670752665738,
+          "wpe": -0.3197789426077578,
+          "mae": 1.0070554772887135,
+          "rmse": 2.6917235287097148
+        }
+      },
+      "seconds": 37.64618396759033
+    },
+    {
+      "method": "observed_poisson",
+      "seed": 20260908,
+      "training_rows": 1200000,
+      "parameters": {
+        "objective": "poisson",
+        "n_estimators": 300,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "min_child_samples": 100,
+        "reg_lambda": 2.0,
+        "n_jobs": 4,
+        "random_state": 20260908,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "metrics": {
+        "selection": {
+          "n": 2139930,
+          "wape": 0.7506369430228352,
+          "wpe": -0.29177484138786897,
+          "mae": 0.8715067736027713,
+          "rmse": 2.3828847657603474
+        },
+        "shadow": {
+          "n": 2194800,
+          "wape": 0.7278481464546191,
+          "wpe": -0.3281550798481264,
+          "mae": 1.0086871665505543,
+          "rmse": 2.6997137292750635
+        }
+      },
+      "seconds": 41.36563324928284
+    },
+    {
+      "method": "uncensored_l1",
+      "seed": 20260906,
+      "training_rows": 1075230,
+      "parameters": {
+        "objective": "regression_l1",
+        "n_estimators": 300,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "min_child_samples": 100,
+        "reg_lambda": 2.0,
+        "n_jobs": 4,
+        "random_state": 20260906,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "metrics": {
+        "selection": {
+          "n": 2139930,
+          "wape": 0.7359356541323376,
+          "wpe": -0.5639159844025119,
+          "mae": 0.8544382387166991,
+          "rmse": 2.5763455402840476
+        },
+        "shadow": {
+          "n": 2194800,
+          "wape": 0.7301369435144104,
+          "wpe": -0.5870590263448598,
+          "mae": 1.0118590922225448,
+          "rmse": 2.9171588915373374
+        }
+      },
+      "seconds": 27.779887676239014
+    },
+    {
+      "method": "uncensored_l1",
+      "seed": 20260907,
+      "training_rows": 1075623,
+      "parameters": {
+        "objective": "regression_l1",
+        "n_estimators": 300,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "min_child_samples": 100,
+        "reg_lambda": 2.0,
+        "n_jobs": 4,
+        "random_state": 20260907,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "metrics": {
+        "selection": {
+          "n": 2139930,
+          "wape": 0.733106434093976,
+          "wpe": -0.5541551747391623,
+          "mae": 0.8511534491118664,
+          "rmse": 2.5623923418264143
+        },
+        "shadow": {
+          "n": 2194800,
+          "wape": 0.7269131477643187,
+          "wpe": -0.5761265076949766,
+          "mae": 1.007391400140704,
+          "rmse": 2.9042543902899323
+        }
+      },
+      "seconds": 31.299784183502197
+    },
+    {
+      "method": "uncensored_l1",
+      "seed": 20260908,
+      "training_rows": 1074748,
+      "parameters": {
+        "objective": "regression_l1",
+        "n_estimators": 300,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "min_child_samples": 100,
+        "reg_lambda": 2.0,
+        "n_jobs": 4,
+        "random_state": 20260908,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      },
+      "metrics": {
+        "selection": {
+          "n": 2139930,
+          "wape": 0.736264172199037,
+          "wpe": -0.5661167342509108,
+          "mae": 0.8548196557559755,
+          "rmse": 2.5724066759201505
+        },
+        "shadow": {
+          "n": 2194800,
+          "wape": 0.7289307009021665,
+          "wpe": -0.5865976467499732,
+          "mae": 1.010187422865903,
+          "rmse": 2.908662679643684
+        }
+      },
+      "seconds": 32.25141215324402
+    }
+  ],
+  "selected_on_selection": {
+    "method": "observed_l1",
+    "seed": 20260907,
+    "training_rows": 1200000,
+    "parameters": {
+      "objective": "regression_l1",
+      "n_estimators": 300,
+      "num_leaves": 63,
+      "learning_rate": 0.05,
+      "min_child_samples": 100,
+      "reg_lambda": 2.0,
+      "n_jobs": 4,
+      "random_state": 20260907,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true
+    },
+    "metrics": {
+      "selection": {
+        "n": 2139930,
+        "wape": 0.6986528727507733,
+        "wpe": -0.3597027066936677,
+        "mae": 0.8111520711295594,
+        "rmse": 2.366656992790959
+      },
+      "shadow": {
+        "n": 2194800,
+        "wape": 0.6824126855332809,
+        "wpe": -0.3918506564014645,
+        "mae": 0.9457205071437759,
+        "rmse": 2.67522053474025
+      }
+    },
+    "seconds": 33.39437556266785
+  },
+  "seconds": 320.55486845970154,
+  "environment": {
+    "lightgbm": "4.6.0",
+    "numpy": "2.3.5",
+    "python": "3.12.13"
+  },
+  "fresh_guardian_opened": false,
+  "external_opened": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Task-specific identity and personal-path pattern scan; cited author names preserved.",
+  "reviewed_pattern_literals": [
+    {
+      "path": "forecast_archive/code/risk_calibration/verify_risk_calibration.py",
+      "pattern": "drive/MyDrive"
+    },
+    {
+      "path": "forecast_archive/code/risk_calibration/verify_risk_calibration.py",
+      "pattern": "/Users/"
+    },
+    {
+      "path": "forecast_archive/code/risk_calibration/verify_risk_calibration.py",
+      "pattern": "/home/[^/ ]+/"
+    }
+  ],
+  "explanation": "All three pattern matches are regular-expression definitions in an anonymity verifier, not personal paths. No author identity or actual personal path was found."
+}

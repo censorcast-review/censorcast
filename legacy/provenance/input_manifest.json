@@ -1,0 +1,38 @@
+{
+  "design_outcomes_v0_5.npz": {
+    "sha256": "5d63b6aff7854ed1811f6b5bffd2f397a09d671c6754e0f1345e2313b35e48fd",
+    "bytes": 24453990
+  },
+  "selection_base_v0_5.npz": {
+    "sha256": "626c9e11820b68b760203dde10731df61b3509266f01d3fd468f42df8e449798",
+    "bytes": 32252352
+  },
+  "risk_train_v0_5.npz": {
+    "sha256": "73b0194eaf658ec2e763833251b648a8a534cfe9867fad251987253738c6ffa9",
+    "bytes": 126313997
+  },
+  "calibration_a_v0_5.npz": {
+    "sha256": "c2866f6506d4b487969f952d7bc8e6ecff492348f3c9aee559b6c4b3937121bb",
+    "bytes": 54151781
+  },
+  "calibration_b_v0_5.npz": {
+    "sha256": "66c823ff72e4689baa6816ca53da2ab0f246da445f2b468ee01f209f74dad5f8",
+    "bytes": 54371478
+  },
+  "shadow_v0_5.npz": {
+    "sha256": "ca9ec3d7bf251718fe4115afb72b717b322c7de106505bef71b5d50f8934ab49",
+    "bytes": 54823275
+  },
+  "calendar.csv": {
+    "sha256": "d12b5914ef03e66649adf5dd9e996e6602251c22b7a6af8f1f7e3aa12f8860f5",
+    "bytes": 103469
+  },
+  "sell_prices.csv": {
+    "sha256": "9da3ad1f8b8ccacdbdc70612191dd375ec24a4ac6625c24b75b3bc60b0bed2ef",
+    "bytes": 203395785
+  },
+  "DEVELOPMENT_DECISION_v0_5.json": {
+    "sha256": "03869a346d2dd3ea71cc5d5ae44520edd7789910b464e73ddbf9876c24907f9f",
+    "bytes": 17775
+  }
+}

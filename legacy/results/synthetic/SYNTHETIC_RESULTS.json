@@ -1,0 +1,55 @@
+{
+  "status": "SYNTHETIC_EXPERIMENT_COMPLETE",
+  "counterexample": {
+    "absolute_error": {
+      "auc_high_error_type": 1.0,
+      "maximum_empirical_coverage": 0.0
+    },
+    "relative_error": {
+      "auc_high_error_type": 0.0,
+      "maximum_empirical_coverage": 0.56311
+    },
+    "contract_excess": {
+      "auc_high_error_type": 0.0,
+      "maximum_empirical_coverage": 0.56311
+    }
+  },
+  "monte_carlo": [
+    {
+      "calibration_n": 1000,
+      "repetitions": 200,
+      "issued_count": 0,
+      "issuance_rate": 0.0,
+      "mean_test_coverage_if_issued": null,
+      "mean_test_wape_if_issued": null,
+      "test_proxy_violations": 0
+    },
+    {
+      "calibration_n": 5000,
+      "repetitions": 200,
+      "issued_count": 200,
+      "issuance_rate": 1.0,
+      "mean_test_coverage_if_issued": 0.391609,
+      "mean_test_wape_if_issued": 0.25456203461774635,
+      "test_proxy_violations": 0
+    }
+  ],
+  "construction": {
+    "group_B_probability": 0.2,
+    "group_A_mean": 1.0,
+    "group_B_mean": 10.0,
+    "noise_uniform": [
+      -0.2,
+      0.2
+    ],
+    "error_A_uniform": [
+      0.8,
+      1.0
+    ],
+    "error_B": 2.0,
+    "contract_wape": 0.3,
+    "minimum_coverage": 0.3
+  },
+  "uncertainty": "Finite-sample Hoeffding union bound uses known synthetic support; 20,000-row test is only a population proxy.",
+  "seconds": 0.8384337425231934
+}

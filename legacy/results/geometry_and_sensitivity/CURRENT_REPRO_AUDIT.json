@@ -1,0 +1,33 @@
+{
+  "status": "CURRENT_REVISION_REPRODUCIBILITY_PASS",
+  "created_utc": "2026-09-06T13:33:52.660515+00:00",
+  "training_calls_this_revision": 0,
+  "raw_guardian_opened_this_revision": false,
+  "external_shard_opened": false,
+  "consumed_aligned_guardian_caches_reused": true,
+  "new_independent_holdout_evaluations": 0,
+  "historical_guardian_result_sha256": "aaaf3e1f72a576f229f4a31ea42cb46470206cb1dbd33678beb24b9609c0077f",
+  "frozen_files_verified": 19,
+  "historical_policy_block_group_metrics_recomputed": 1008,
+  "cached_loss_reports_exactly_recomputed": 12,
+  "objective_rerun_exact_record_counts": {
+    "records": 27,
+    "family_choices": 6,
+    "floor_sensitivity": 12,
+    "head_diagnostics": 288,
+    "partial_oracles": 64,
+    "frontier_records": 42
+  },
+  "objective_first_seed_bootstrap_exactly_reproduced": true,
+  "objective_design_selected_policies_exactly_reproduced": true,
+  "cache_free_core_tests": 6,
+  "cache_free_objective_tests": 4,
+  "historical_policy_replay_check": "PASS",
+  "new_table_numeric_rows_verified": 46,
+  "static_nested_metric_reports_verified": 1368,
+  "loss_models_metadata_verified": 6,
+  "legacy_reference_cap_check": "stored source hash agrees with input manifest; scalar multiplication checked; original selection archive not included in compact caches",
+  "human_author_verification": "NOT_ATTESTED_BY_AUTOMATED_CHECKS",
+  "scope": "Rerun of saved post-hoc diagnostics; no new confirmation or human attestation.",
+  "reusable_wrapper_source_sha256": "fe11e715bbcedb286549607113bc78521f3b6312e9f5034b247c50c2cec0cfd1"
+}

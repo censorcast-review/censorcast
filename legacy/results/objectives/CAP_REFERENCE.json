@@ -1,0 +1,16 @@
+{
+  "value": 0.7530939208313988,
+  "source_sha256": "626c9e11820b68b760203dde10731df61b3509266f01d3fd468f42df8e449798",
+  "array": "raw_poisson_histgb",
+  "truth": "pre_mechanical_censoring_recorded_sales",
+  "target_days": [
+    1314,
+    1433
+  ],
+  "series_count": 18290,
+  "item_count": 1829,
+  "n": 2194800,
+  "multiplier": 0.85,
+  "cap": 0.640129832706689,
+  "scope": "earlier_consumed_design_selection_reference_retained_without_retuning"
+}

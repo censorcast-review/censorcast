@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETED_EXTERNAL_COMPARATIVE_EVALUATION",
+  "external_use_count": 1,
+  "original_external_gate_pass": false,
+  "certificate_issued": false,
+  "original_frozen_plan_sha256": "8173b957c2c1d4fdb3a962862a4435a1531e378569f8a6602d02af97a0dd7f1d",
+  "original_opening_receipt_sha256": "8aeb93485f07783594a2453f85e2ce39785c8b9b73f20807e4106cc2495d236c",
+  "original_result_sha256": "61fd5159b8b152626f2d14eaea6074985575140da6c8db89440321fd0ab195b9",
+  "opened_utc": "2026-09-06T15:10:45.169571+00:00",
+  "completed_utc": "2026-09-06T15:13:38.277616+00:00",
+  "explicit_user_purpose_amendment_recorded": true,
+  "authorization_scope": "One external opening for a two-policy comparison despite the failed original guardian gate; no deployment certificate.",
+  "primary_directional_confirmation_pass": true,
+  "joint_secondary_operating_check_pass": false,
+  "primary_familywise_alpha": 0.05,
+  "secondary_endpoint_count": 48,
+  "private_fields_omitted": [
+    "verbatim personal approval",
+    "mutable administrative ledger"
+  ],
+  "no_additional_holdout_opening": true
+}

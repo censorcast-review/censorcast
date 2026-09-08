@@ -1,0 +1,1934 @@
+{
+  "status": "FOUNDATION_COMPARISON_COMPLETED",
+  "scope": "POST_HOC_CONSUMED_DESIGN_ONLY",
+  "protocol_sha256": "da70251e0adf051b9a605559e9a1c4e43ea075d6717d96d5f2dc76c852e9d642",
+  "rows": [
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "ALL",
+      "n": 2176510,
+      "mae": 0.9248110387412632,
+      "wape": 0.7031672224963247,
+      "wpe": -0.41489967999430644
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "FOODS",
+      "n": 1053150,
+      "mae": 1.2368701460306548,
+      "wape": 0.6808521796107495,
+      "wpe": -0.40300324646747854
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "HOBBIES",
+      "n": 389130,
+      "mae": 0.5770266449226251,
+      "wape": 0.8646766906016317,
+      "wpe": -0.5857482807998987
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "HOUSEHOLD",
+      "n": 734230,
+      "mae": 0.6615260903256771,
+      "wape": 0.7042585047534026,
+      "wpe": -0.3835728196681246
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 1.0220514905341556,
+      "wape": 0.6752133662068412,
+      "wpe": -0.45918752876014346
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.0675614133795015,
+      "wape": 0.6883715056678855,
+      "wpe": -0.4808799481451502
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.9112385582129742,
+      "wape": 0.6979156113416823,
+      "wpe": -0.40673656529867347
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8383846537801631,
+      "wape": 0.7173649373661639,
+      "wpe": -0.35910828430366604
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.8410241780055667,
+      "wape": 0.7205851977196709,
+      "wpe": -0.3697311471023676
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8460580420893279,
+      "wape": 0.7219281077159617,
+      "wpe": -0.36482558882935745
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.9473589351871542,
+      "wape": 0.7131085286629365,
+      "wpe": -0.42837421074939297
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "ALL",
+      "n": 2194800,
+      "mae": 0.9103831783218914,
+      "wape": 0.7031789484989592,
+      "wpe": -0.3861699913637967
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "FOODS",
+      "n": 1062000,
+      "mae": 1.193075409734278,
+      "wape": 0.6736894160903313,
+      "wpe": -0.36311794363305305
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "HOBBIES",
+      "n": 392400,
+      "mae": 0.6071779631936618,
+      "wape": 0.8614602031188615,
+      "wpe": -0.5852923291861468
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "HOUSEHOLD",
+      "n": 740400,
+      "mae": 0.6655946540868332,
+      "wape": 0.720259047168315,
+      "wpe": -0.3690456968087709
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 329220,
+      "mae": 1.0197589613239342,
+      "wape": 0.6666025567017957,
+      "wpe": -0.45342953004940206
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.0696098502721876,
+      "wape": 0.6759025427505087,
+      "wpe": -0.47124868604831976
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.8700049629414489,
+      "wape": 0.6965030565815912,
+      "wpe": -0.3569887405558937
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8314221001145211,
+      "wape": 0.709165078576173,
+      "wpe": -0.33944143593479575
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.830041245713231,
+      "wape": 0.7192535721779677,
+      "wpe": -0.3433363677105696
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8441757091539626,
+      "wape": 0.7325099370892157,
+      "wpe": -0.33513167294774376
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.9012355491455989,
+      "wape": 0.7456895092335069,
+      "wpe": -0.3496841112318859
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "ALL",
+      "n": 2085060,
+      "mae": 0.9698078861581375,
+      "wape": 0.6931197748381731,
+      "wpe": -0.4130373353326532
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "FOODS",
+      "n": 1008900,
+      "mae": 1.3004573581267163,
+      "wape": 0.6614661957600851,
+      "wpe": -0.39674469226768005
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "HOBBIES",
+      "n": 372780,
+      "mae": 0.5958191277076667,
+      "wape": 0.8727801419606813,
+      "wpe": -0.5907443547471912
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "HOUSEHOLD",
+      "n": 703380,
+      "mae": 0.6937455544257417,
+      "wape": 0.718237178772258,
+      "wpe": -0.3940395689913154
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 1.1554005906003744,
+      "wape": 0.6710952681035245,
+      "wpe": -0.49044993911267376
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.1451527950221019,
+      "wape": 0.6805954521941003,
+      "wpe": -0.48590934424540233
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 292640,
+      "mae": 0.9096262918229588,
+      "wape": 0.6932218681517698,
+      "wpe": -0.37052593243511717
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 292640,
+      "mae": 0.8623377619371281,
+      "wape": 0.7046765070711594,
+      "wpe": -0.3489157229129038
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 292640,
+      "mae": 0.8502020891779618,
+      "wape": 0.7101174458272242,
+      "wpe": -0.34778582108356987
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 292640,
+      "mae": 0.8756596137449776,
+      "wape": 0.7111857563772286,
+      "wpe": -0.3584220887468356
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 292640,
+      "mae": 0.9677174599698224,
+      "wape": 0.6973046167696371,
+      "wpe": -0.4186112678732219
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "ALL",
+      "n": 2176510,
+      "mae": 0.9117804434162466,
+      "wape": 0.6932595904089779,
+      "wpe": -0.39313081382630366
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "FOODS",
+      "n": 1053150,
+      "mae": 1.2177308414518346,
+      "wape": 0.670316686228083,
+      "wpe": -0.3771783127149632
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "HOBBIES",
+      "n": 389130,
+      "mae": 0.5715168048410773,
+      "wape": 0.8564201736290127,
+      "wpe": -0.5833570665758265
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "HOUSEHOLD",
+      "n": 734230,
+      "mae": 0.6532717036311332,
+      "wape": 0.6954709117677745,
+      "wpe": -0.3657595901135021
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 1.002943472328523,
+      "wape": 0.6625897465422158,
+      "wpe": -0.4321539747871023
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.0458777536422235,
+      "wape": 0.6743897212808977,
+      "wpe": -0.4506642644757244
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.9002812795732846,
+      "wape": 0.6895234556854761,
+      "wpe": -0.39112023252746125
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8308729519983948,
+      "wape": 0.7109375398059928,
+      "wpe": -0.3440543824410466
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.8333228337820953,
+      "wape": 0.7139867255293261,
+      "wpe": -0.3532696826469978
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8357613441840597,
+      "wape": 0.7131420962785947,
+      "wpe": -0.3530345889111604
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.933403468405146,
+      "wape": 0.7026037854087269,
+      "wpe": -0.39704556908920424
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "ALL",
+      "n": 2194800,
+      "mae": 0.8972897912261624,
+      "wape": 0.6930656309536639,
+      "wpe": -0.36301480403625097
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "FOODS",
+      "n": 1062000,
+      "mae": 1.1734901981287247,
+      "wape": 0.6626303081220517,
+      "wpe": -0.33518146672759286
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "HOBBIES",
+      "n": 392400,
+      "mae": 0.6023157297855842,
+      "wape": 0.8545616975187862,
+      "wpe": -0.5769393771032928
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "HOUSEHOLD",
+      "n": 740400,
+      "mae": 0.6574505010840255,
+      "wape": 0.7114460258410283,
+      "wpe": -0.3530499586455271
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 329220,
+      "mae": 0.9999883223199558,
+      "wape": 0.6536787590128106,
+      "wpe": -0.4243536302592211
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.0459061064390132,
+      "wape": 0.660923790707909,
+      "wpe": -0.4379992429279311
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.8598874081832162,
+      "wape": 0.6884032087480623,
+      "wpe": -0.3420490283177805
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8232039256237865,
+      "wape": 0.7021553510771423,
+      "wpe": -0.3269120364981996
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.8227985666390704,
+      "wape": 0.7129775915286538,
+      "wpe": -0.32740383606564427
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8341811589503948,
+      "wape": 0.7238374447852288,
+      "wpe": -0.3217473967097989
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.8890219603633591,
+      "wape": 0.7355838880852482,
+      "wpe": -0.3126690793775031
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "ALL",
+      "n": 2085060,
+      "mae": 0.9557944362560247,
+      "wape": 0.6831043899568063,
+      "wpe": -0.39009886813152783
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "FOODS",
+      "n": 1008900,
+      "mae": 1.2791863671633115,
+      "wape": 0.6506468933164601,
+      "wpe": -0.3679666088915207
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "HOBBIES",
+      "n": 372780,
+      "mae": 0.5909314936770942,
+      "wape": 0.8656205364282656,
+      "wpe": -0.5877877307852539
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "HOUSEHOLD",
+      "n": 703380,
+      "mae": 0.6853054952031257,
+      "wape": 0.7094991561845091,
+      "wpe": -0.3806653701447977
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 1.1311867485917904,
+      "wape": 0.6570310596144814,
+      "wpe": -0.46065558728809597
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.1202418394248985,
+      "wape": 0.6657901937491445,
+      "wpe": -0.4523112929726713
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 292640,
+      "mae": 0.8996577425101622,
+      "wape": 0.685624884160101,
+      "wpe": -0.355495748106251
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 292640,
+      "mae": 0.8552456631257506,
+      "wape": 0.69888105702966,
+      "wpe": -0.3353019612512947
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 292640,
+      "mae": 0.8425001092343894,
+      "wape": 0.7036844925388711,
+      "wpe": -0.3300089137953409
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 292640,
+      "mae": 0.8663833650408835,
+      "wape": 0.7036518518241225,
+      "wpe": -0.3451676739390454
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 292640,
+      "mae": 0.9541056036452582,
+      "wape": 0.687496371439208,
+      "wpe": -0.3896966648085427
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "ALL",
+      "n": 2176510,
+      "mae": 0.9122812277421369,
+      "wape": 0.6936403548124664,
+      "wpe": -0.3993539089475991
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "FOODS",
+      "n": 1053150,
+      "mae": 1.2185794551023206,
+      "wape": 0.6707838172809547,
+      "wpe": -0.38174933594637733
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "HOBBIES",
+      "n": 389130,
+      "mae": 0.5709404159457168,
+      "wape": 0.8555564526086313,
+      "wpe": -0.5939846307719552
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "HOUSEHOLD",
+      "n": 734230,
+      "mae": 0.6538444599036716,
+      "wape": 0.6960806662158378,
+      "wpe": -0.37490724010046217
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 1.004669851128703,
+      "wape": 0.6637302703336428,
+      "wpe": -0.4407148505235359
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.0470648946570238,
+      "wape": 0.675155198599164,
+      "wpe": -0.45791005505342525
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.9013351547316962,
+      "wape": 0.6903306163557874,
+      "wpe": -0.4013110810553767
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8311699324289415,
+      "wape": 0.7111916515040034,
+      "wpe": -0.3501650629112746
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.8324913270161793,
+      "wape": 0.7132742948014203,
+      "wpe": -0.3558878899482818
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8361896128614451,
+      "wape": 0.713507531249339,
+      "wpe": -0.3557472634557255
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.9330478213709698,
+      "wape": 0.7023360780764321,
+      "wpe": -0.4018742960912825
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "ALL",
+      "n": 2194800,
+      "mae": 0.8971151153376705,
+      "wape": 0.6929307114928009,
+      "wpe": -0.3711462820221345
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "FOODS",
+      "n": 1062000,
+      "mae": 1.1733519357937778,
+      "wape": 0.6625522360480339,
+      "wpe": -0.3413188681614718
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "HOBBIES",
+      "n": 392400,
+      "mae": 0.6017270893345393,
+      "wape": 0.8537265382191076,
+      "wpe": -0.5883419744988385
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "HOUSEHOLD",
+      "n": 740400,
+      "mae": 0.6574429895667935,
+      "wape": 0.7114378974129962,
+      "wpe": -0.36534051440353216
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 329220,
+      "mae": 1.0005513974893974,
+      "wape": 0.6540468335890591,
+      "wpe": -0.4308100021338256
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.0479955341096288,
+      "wape": 0.6622441314612247,
+      "wpe": -0.44660849668229813
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.8608194261808345,
+      "wape": 0.6891493578067245,
+      "wpe": -0.3568181964390945
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8229245948174264,
+      "wape": 0.7019170946569512,
+      "wpe": -0.3329616094822429
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.8228542145425942,
+      "wape": 0.7130258119678193,
+      "wpe": -0.3340254190757166
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8323380309085471,
+      "wape": 0.7222381218109462,
+      "wpe": -0.3267374884808422
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.8862381221298693,
+      "wape": 0.7332805180416625,
+      "wpe": -0.32201651502460055
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "ALL",
+      "n": 2085060,
+      "mae": 0.9568386821331916,
+      "wape": 0.6838507104163407,
+      "wpe": -0.39753839410384423
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "FOODS",
+      "n": 1008900,
+      "mae": 1.2808043390882624,
+      "wape": 0.6514698605036238,
+      "wpe": -0.3737235804694206
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "HOBBIES",
+      "n": 372780,
+      "mae": 0.5903750172497524,
+      "wape": 0.8648053870772843,
+      "wpe": -0.600126221956331
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "HOUSEHOLD",
+      "n": 703380,
+      "mae": 0.6863751683757309,
+      "wape": 0.7106065925302977,
+      "wpe": -0.3911821444539524
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 1.1341699286287992,
+      "wape": 0.658763790256152,
+      "wpe": -0.46902264363307106
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.1222551690116849,
+      "wape": 0.6669867702815436,
+      "wpe": -0.4627451628094733
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 292640,
+      "mae": 0.9006554921498021,
+      "wape": 0.6863852644122515,
+      "wpe": -0.36913389810189984
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 292640,
+      "mae": 0.8553824340306341,
+      "wape": 0.6989928221033659,
+      "wpe": -0.3411479664499935
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 292640,
+      "mae": 0.8434292150747487,
+      "wape": 0.704460513057589,
+      "wpe": -0.3339919557994533
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 292640,
+      "mae": 0.8662430813634003,
+      "wape": 0.7035379174234577,
+      "wpe": -0.34948829074944837
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 292640,
+      "mae": 0.9543137213373902,
+      "wape": 0.6876463340404405,
+      "wpe": -0.3933497184196135
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "ALL",
+      "n": 2176510,
+      "mae": 0.9077409755268446,
+      "wape": 0.6901882371301287,
+      "wpe": -0.3825295482212762
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "FOODS",
+      "n": 1053150,
+      "mae": 1.2161523025307117,
+      "wape": 0.6694477577730661,
+      "wpe": -0.36560489309558397
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "HOBBIES",
+      "n": 389130,
+      "mae": 0.5664657975231897,
+      "wape": 0.8488512193523498,
+      "wpe": -0.5743495394525857
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "HOUSEHOLD",
+      "n": 734230,
+      "mae": 0.6462384776480321,
+      "wape": 0.6879833624679229,
+      "wpe": -0.3572550528499435
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 0.9948788634812035,
+      "wape": 0.6572619017737548,
+      "wpe": -0.35351028617255503
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.03647104560699,
+      "wape": 0.6683242062740435,
+      "wpe": -0.36908045652027094
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.9013916519262716,
+      "wape": 0.6903738874330874,
+      "wpe": -0.4156626253027105
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8268262522131182,
+      "wape": 0.707474975784913,
+      "wpe": -0.3778938420251408
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.8280622340302318,
+      "wape": 0.709479470670958,
+      "wpe": -0.3722730417113868
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8330624929520536,
+      "wape": 0.7108392086916893,
+      "wpe": -0.38031179571944046
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.9334942884780437,
+      "wape": 0.7026721486933826,
+      "wpe": -0.4137757642639601
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "ALL",
+      "n": 2194800,
+      "mae": 0.8917636039214344,
+      "wape": 0.6887972100615843,
+      "wpe": -0.34839146511506264
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "FOODS",
+      "n": 1062000,
+      "mae": 1.1706089436995677,
+      "wape": 0.6610033609918458,
+      "wpe": -0.3187597987902371
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "HOBBIES",
+      "n": 392400,
+      "mae": 0.5966534608566693,
+      "wape": 0.8465281066487221,
+      "wpe": -0.5636371100010497
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "HOUSEHOLD",
+      "n": 740400,
+      "mae": 0.648202649429587,
+      "wape": 0.7014386605773782,
+      "wpe": -0.3428358805025518
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 329220,
+      "mae": 0.9904921881844877,
+      "wape": 0.6474712653465936,
+      "wpe": -0.34682027809135696
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.0327336998572836,
+      "wape": 0.652599948981443,
+      "wpe": -0.3548454436137908
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.8604951100639894,
+      "wape": 0.68888971886637,
+      "wpe": -0.36491538291551
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8210604408230621,
+      "wape": 0.7003270564396493,
+      "wpe": -0.34782760352887687
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.8210228327451344,
+      "wape": 0.7114388692626856,
+      "wpe": -0.34568345151875823
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8307608549686734,
+      "wape": 0.7208695713587503,
+      "wpe": -0.3415055274934937
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.879972537027231,
+      "wape": 0.7280963227614424,
+      "wpe": -0.33466754237324237
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "ALL",
+      "n": 2085060,
+      "mae": 0.9500247314137875,
+      "wape": 0.6789807933370918,
+      "wpe": -0.3812304776053454
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "FOODS",
+      "n": 1008900,
+      "mae": 1.2745536438690153,
+      "wape": 0.6482904993644881,
+      "wpe": -0.35655632312285895
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "HOBBIES",
+      "n": 372780,
+      "mae": 0.585155263661538,
+      "wape": 0.8571592792806969,
+      "wpe": -0.5800367704873673
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "HOUSEHOLD",
+      "n": 703380,
+      "mae": 0.6779084079650173,
+      "wape": 0.7018409261098976,
+      "wpe": -0.3787995787247533
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 1.1144150759053415,
+      "wape": 0.6472895117308956,
+      "wpe": -0.393809589885722
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.1056735827244508,
+      "wape": 0.6571318825614837,
+      "wpe": -0.38038285943000927
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 292640,
+      "mae": 0.9005883691732497,
+      "wape": 0.6863341103112544,
+      "wpe": -0.3848293656181788
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 292640,
+      "mae": 0.8515403208999806,
+      "wape": 0.6958531627028552,
+      "wpe": -0.3625526067580013
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 292640,
+      "mae": 0.8395876134625421,
+      "wape": 0.7012518778878221,
+      "wpe": -0.3562330771405596
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 292640,
+      "mae": 0.8632027562420845,
+      "wape": 0.7010686520981011,
+      "wpe": -0.3793306718761036
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 292640,
+      "mae": 0.955162951751224,
+      "wape": 0.6882582608814483,
+      "wpe": -0.40205986230239754
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "ALL",
+      "n": 2176510,
+      "mae": 0.8906258107969903,
+      "wape": 0.677174959453384,
+      "wpe": -0.3441937723370925
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "FOODS",
+      "n": 1053150,
+      "mae": 1.1826177669015663,
+      "wape": 0.6509882115154333,
+      "wpe": -0.3189065721875722
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "HOBBIES",
+      "n": 389130,
+      "mae": 0.5670097161111476,
+      "wape": 0.8496662834897349,
+      "wpe": -0.5526487527134737
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "HOUSEHOLD",
+      "n": 734230,
+      "mae": 0.643315570618256,
+      "wape": 0.684871645236468,
+      "wpe": -0.33585397500080205
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 0.9630233397759306,
+      "wape": 0.6362167043521673,
+      "wpe": -0.2957955504974608
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.0076264079535004,
+      "wape": 0.6497249702927419,
+      "wpe": -0.3204326119341685
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.8845499987412154,
+      "wape": 0.6774749022302401,
+      "wpe": -0.3798223219516911
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8167455291684556,
+      "wape": 0.6988493917848554,
+      "wpe": -0.3495399763384544
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.8188645885193467,
+      "wape": 0.7015989752198835,
+      "wpe": -0.34461058432447556
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8241125493327882,
+      "wape": 0.7032023616436252,
+      "wpe": -0.3533905776086311
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.9194582620876953,
+      "wape": 0.6921067655469005,
+      "wpe": -0.37887795190196194
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "ALL",
+      "n": 2194800,
+      "mae": 0.8814333479740135,
+      "wape": 0.6808181319241541,
+      "wpe": -0.31888880630913397
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "FOODS",
+      "n": 1062000,
+      "mae": 1.1513785512435937,
+      "wape": 0.6501446074217437,
+      "wpe": -0.28507783910454565
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "HOBBIES",
+      "n": 392400,
+      "mae": 0.5970242213194195,
+      "wape": 0.8470541392172778,
+      "wpe": -0.5436731465467453
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "HOUSEHOLD",
+      "n": 740400,
+      "mae": 0.6449670262924476,
+      "wape": 0.69793730006698,
+      "wpe": -0.32096556657943653
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 329220,
+      "mae": 0.9673814528501141,
+      "wape": 0.6323640921366117,
+      "wpe": -0.2992204093721594
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.011173505642167,
+      "wape": 0.6389757381643084,
+      "wpe": -0.312924163775449
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 310930,
+      "mae": 0.8511106467963244,
+      "wape": 0.6813767647698699,
+      "wpe": -0.3354163060333825
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 310930,
+      "mae": 0.8154274076500364,
+      "wape": 0.6955223364157039,
+      "wpe": -0.3270293344906566
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 310930,
+      "mae": 0.816709185105139,
+      "wape": 0.7077009749228473,
+      "wpe": -0.3268244142426422
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 310930,
+      "mae": 0.8284417111765399,
+      "wape": 0.7188571989878618,
+      "wpe": -0.3286260658401795
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 310930,
+      "mae": 0.8747337557227094,
+      "wape": 0.7237617131650346,
+      "wpe": -0.31121812656968467
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "ALL",
+      "n": 2085060,
+      "mae": 0.9329407041843973,
+      "wape": 0.6667708729233973,
+      "wpe": -0.34477400774466554
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "FOODS",
+      "n": 1008900,
+      "mae": 1.241854149028657,
+      "wape": 0.631658188954491,
+      "wpe": -0.3144965070813992
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "HOBBIES",
+      "n": 372780,
+      "mae": 0.5855770461087262,
+      "wape": 0.8577771233998505,
+      "wpe": -0.5551784945409332
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "HOUSEHOLD",
+      "n": 703380,
+      "mae": 0.6739447844170954,
+      "wape": 0.6977373729027981,
+      "wpe": -0.3543578908954894
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 1,
+      "n": 310930,
+      "mae": 1.07664359962295,
+      "wape": 0.6253505762581122,
+      "wpe": -0.3338993709504825
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 2,
+      "n": 310930,
+      "mae": 1.078521916147643,
+      "wape": 0.6409949086380088,
+      "wpe": -0.33493228583502543
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 3,
+      "n": 292640,
+      "mae": 0.8871334848942609,
+      "wape": 0.6760802070330696,
+      "wpe": -0.3512114748237361
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 4,
+      "n": 292640,
+      "mae": 0.8422161805102101,
+      "wape": 0.688233755353066,
+      "wpe": -0.33775484341480083
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 5,
+      "n": 292640,
+      "mae": 0.831383372720938,
+      "wape": 0.694399419449367,
+      "wpe": -0.3332579630439518
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 6,
+      "n": 292640,
+      "mae": 0.8549615826094963,
+      "wape": 0.6943754059881633,
+      "wpe": -0.3576655784324668
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "category": "ALL",
+      "horizon": 7,
+      "n": 292640,
+      "mae": 0.9416445360726708,
+      "wape": 0.678517345734211,
+      "wpe": -0.37038611013699946
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "reference": "baseline",
+      "delta_wape": 0.012978985366196138,
+      "ci95": [
+        0.011756808442559104,
+        0.014194967948426429
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_a",
+      "reference": "proposal",
+      "delta_wape": 0.02599226304294081,
+      "ci95": [
+        0.02243366064883926,
+        0.029902217354200882
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "reference": "baseline",
+      "delta_wape": 0.014381738437374903,
+      "ci95": [
+        0.012840171633167627,
+        0.015892228657336454
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "calibration_b",
+      "reference": "proposal",
+      "delta_wape": 0.02236081657480526,
+      "ci95": [
+        0.020325783371255585,
+        0.02459344817297441
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "reference": "baseline",
+      "delta_wape": 0.014138981501081381,
+      "ci95": [
+        0.013040537013890376,
+        0.015249313449567486
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos_bolt_small",
+      "block": "shadow",
+      "reference": "proposal",
+      "delta_wape": 0.026348901914775732,
+      "ci95": [
+        0.02286879213687833,
+        0.03074613448664384
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "reference": "baseline",
+      "delta_wape": 0.003071353278849202,
+      "ci95": [
+        0.0014471434443740164,
+        0.004538958538180566
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_a",
+      "reference": "proposal",
+      "delta_wape": 0.016084630955593874,
+      "ci95": [
+        0.013268602898320353,
+        0.019279417815837977
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "reference": "baseline",
+      "delta_wape": 0.004268420892079512,
+      "ci95": [
+        0.0016701721073016675,
+        0.006330643627016766
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "calibration_b",
+      "reference": "proposal",
+      "delta_wape": 0.012247499029509865,
+      "ci95": [
+        0.010651190366417096,
+        0.01391352374056656
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "reference": "baseline",
+      "delta_wape": 0.004123596619714605,
+      "ci95": [
+        0.0025603994396813925,
+        0.005484795166535075
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_univariate",
+      "block": "shadow",
+      "reference": "proposal",
+      "delta_wape": 0.016333517033408955,
+      "ci95": [
+        0.013535135678236552,
+        0.019806536469035792
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "reference": "baseline",
+      "delta_wape": 0.0034521176823377906,
+      "ci95": [
+        0.00180572029478707,
+        0.004935832819718346
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_a",
+      "reference": "proposal",
+      "delta_wape": 0.016465395359082462,
+      "ci95": [
+        0.013654402004315273,
+        0.01965383664269905
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "reference": "baseline",
+      "delta_wape": 0.0041335014312166,
+      "ci95": [
+        0.001360508836323293,
+        0.00622022322893832
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "calibration_b",
+      "reference": "proposal",
+      "delta_wape": 0.012112579568646958,
+      "ci95": [
+        0.010482558452870147,
+        0.013740514834170858
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "reference": "baseline",
+      "delta_wape": 0.004869917079248932,
+      "ci95": [
+        0.0034748077082782805,
+        0.006095357105540724
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "chronos2_covariates",
+      "block": "shadow",
+      "reference": "proposal",
+      "delta_wape": 0.01707983749294328,
+      "ci95": [
+        0.01417753365861922,
+        0.02074396940964486
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "reference": "baseline",
+      "delta_wape": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_a",
+      "reference": "proposal",
+      "delta_wape": 0.013013277676744673,
+      "ci95": [
+        0.00926987542788429,
+        0.017340792239409007
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "reference": "baseline",
+      "delta_wape": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "observed_l1",
+      "block": "calibration_b",
+      "reference": "proposal",
+      "delta_wape": 0.007979078137430356,
+      "ci95": [
+        0.005851141507916072,
+        0.010457858578963364
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "reference": "baseline",
+      "delta_wape": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "observed_l1",
+      "block": "shadow",
+      "reference": "proposal",
+      "delta_wape": 0.01220992041369435,
+      "ci95": [
+        0.008613010977498422,
+        0.016866049892337656
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "reference": "baseline",
+      "delta_wape": -0.013013277676744673,
+      "ci95": [
+        -0.01734079223940901,
+        -0.009269875427884296
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_a",
+      "reference": "proposal",
+      "delta_wape": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "reference": "baseline",
+      "delta_wape": -0.007979078137430356,
+      "ci95": [
+        -0.010457858578963367,
+        -0.005851141507916073
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "calibration_b",
+      "reference": "proposal",
+      "delta_wape": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "reference": "baseline",
+      "delta_wape": -0.01220992041369435,
+      "ci95": [
+        -0.01686604989233766,
+        -0.008613010977498422
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    },
+    {
+      "model": "original_censor_adapter",
+      "block": "shadow",
+      "reference": "proposal",
+      "delta_wape": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "interpretation": "descriptive item bootstrap; no independent or simultaneous guarantee"
+    }
+  ],
+  "series_count": 18290,
+  "finetuning_calls": 0,
+  "fresh_guardian_opened": false,
+  "external_opened": false,
+  "certificate_issued": false
+}

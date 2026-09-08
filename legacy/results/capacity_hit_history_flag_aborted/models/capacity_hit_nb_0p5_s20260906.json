@@ -1,0 +1,13 @@
+{
+  "method": "capacity_hit_nb_0p5",
+  "shape": 0.5,
+  "bias": -0.5903740091924589,
+  "training_rows": 600000,
+  "hidden_labels_used_for_fit": 0,
+  "seed": 20260906,
+  "trees": 220,
+  "fit_seconds": 20.84122633934021,
+  "capacity_hit_rule": true,
+  "protocol_sha256": "315da1e4624443c3cb6b91671fe0e5d66a59652738578dd67d2cdfaa334e8873",
+  "model_sha256": "76ddb4ea0636d3553dc98d99653be5810493cf8ce8d9618d6cca4a44cfaac5d7"
+}

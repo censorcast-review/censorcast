@@ -1,0 +1,15 @@
+{
+  "sources": [
+    {
+      "url": "https://proceedings.mlr.press/v37/narasimhanb15.html",
+      "verified": "primary PMLR abstract and bibliographic metadata",
+      "claim": "consistent multiclass optimization including ratio-of-linear performance measures"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v108/bao20a.html",
+      "verified": "primary PMLR abstract and bibliographic metadata",
+      "claim": "calibrated surrogate optimization for linear-fractional classification metrics"
+    }
+  ],
+  "scope": "related-work positioning; no new theorem credited to these sources"
+}

@@ -1,0 +1,192 @@
+{
+  "schema_version": "review5-external-1",
+  "status": "FROZEN_PENDING_EXPLICIT_EXTERNAL_PURPOSE_AMENDMENT",
+  "supersedes_sha256": "390e11d0494c7fe493545063001c8dd479d50cd4a3f4fd00bf836e60dec9cd19",
+  "superseded_plan": "code/review4_external/EXTERNAL_PLAN.json",
+  "revision_reason": "The fourth reviewer simulation motivates a different pair: composed excess (lambda=1) versus mixed utility (lambda=.25). The pair is chosen after consumed-guardian diagnostics, before external access. Pure demand optimality is not tested. Prior pending plan remains byte-exact and unapproved; no external access occurred.",
+  "created_utc": "2026-09-06T14:47:36.694813+00:00",
+  "authorization_phrase": "AUTHORIZE_CENSORCAST_EXTERNAL_TWO_POLICY_COMPARISON_AFTER_FAILED_GUARDIAN",
+  "authorization_scope": "One external opening for a two-policy comparison despite the failed original guardian gate; no deployment certificate.",
+  "original_external_rule": "upstream/preparation/PROTOCOL_v0_5.md section 8: independently audited guardian certificate required; failed guardian ends that protocol.",
+  "original_gate_pass": false,
+  "certificate_issued": false,
+  "external_opened": false,
+  "seeds": [
+    20260906
+  ],
+  "policy_count": 2,
+  "policies": [
+    {
+      "name": "composed_excess_lambda_1",
+      "objective": "row",
+      "lambda": 1.0,
+      "threshold": 0.2888724531967165,
+      "score": "(max(error_head,0)-r*max(demand_head,0))/(1+0*max(demand_head,0)/T)",
+      "error_trees": 220,
+      "demand_trees": 220,
+      "raw_head_dtype": "float32",
+      "score_dtype": "float64"
+    },
+    {
+      "name": "mixed_utility_lambda_0_25",
+      "objective": "mixed: .25*row + .75*demand",
+      "lambda": 0.25,
+      "threshold": 0.37635288579749315,
+      "score": "(max(error_head,0)-r*max(demand_head,0))/(.25+.75*max(demand_head,0)/T)",
+      "error_trees": 220,
+      "demand_trees": 220,
+      "raw_head_dtype": "float32",
+      "score_dtype": "float64"
+    }
+  ],
+  "threshold_selection": "Previously fixed independently for each lambda on development calibration A/B only; largest common feasible threshold with point WAPE<=r and row coverage>=.35; no search at evaluation.",
+  "point_forecast": {
+    "seed": 20260906,
+    "alpha": 2,
+    "gamma": 2,
+    "formula": "observed_L1 + 2*p_censor**2*max(EM-observed_L1,0)"
+  },
+  "wape_cap": 0.640129832706689,
+  "row_floor": 0.35,
+  "item_count": 610,
+  "series_count": 6100,
+  "item_set_sha256": "c26a653378dba8f440868565d1b562fcff6bbdf09f4083f66baf1c3f6a2aa31f",
+  "item_set_hash_recipe": "sha256 of newline-joined sorted unique item IDs with trailing newline",
+  "context_days": [
+    1,
+    1913
+  ],
+  "available_outcome_days": [
+    1914,
+    1941
+  ],
+  "primary_target_days": [
+    1919,
+    1941
+  ],
+  "expected_primary_rows": 140300,
+  "origin_rule": "h=1+((day-1)%7); origin=day-h; observed histories only through origin",
+  "origin_scope_note": "Rolling 1-7 day forecasts. Main confirmation retains d1919..1941, whose origins are strictly later than the last consumed development day1913. First-five-day origin1911 targets are excluded from confirmation. Full28days are descriptive sensitivity only.",
+  "primary": {
+    "period": [
+      1919,
+      1941
+    ],
+    "contrast": "mixed_utility_lambda_0_25 minus composed_excess_lambda_1",
+    "hypotheses": [
+      "demand coverage difference > 0",
+      "row coverage difference < 0"
+    ],
+    "confirmation_rule": "Both paired one-sided 97.5% item-bootstrap bounds exclude zero in the prespecified direction",
+    "familywise_alpha": 0.05,
+    "one_sided_endpoint_alpha": 0.025
+  },
+  "secondary": {
+    "periods": {
+      "primary_23": [
+        1919,
+        1941
+      ],
+      "first_11": [
+        1919,
+        1929
+      ],
+      "second_12": [
+        1930,
+        1941
+      ]
+    },
+    "strata": [
+      "ALL",
+      "FOODS",
+      "HOBBIES",
+      "HOUSEHOLD"
+    ],
+    "endpoints": [
+      "WAPE upper bound <= 0.640129832706689",
+      "row coverage lower bound >= 0.35"
+    ],
+    "endpoint_count": 48,
+    "familywise_alpha": 0.05,
+    "per_endpoint_alpha": 0.0010416666666666667,
+    "joint_pass_rule": "Every endpoint passes; absent category or zero accepted demand fails",
+    "certificate_issued_even_if_pass": false
+  },
+  "descriptive_sensitivity": {
+    "period": [
+      1914,
+      1941
+    ],
+    "point_estimates_only": true,
+    "no_confirmation_claim": true
+  },
+  "bootstrap": {
+    "cluster": "item_id, all stores and days together",
+    "reps": 10000,
+    "seed": 20260906,
+    "method": "paired multinomial item percentile bootstrap",
+    "scope": "Approximate; common store/calendar shocks remain."
+  },
+  "forbidden": [
+    "model fit",
+    "threshold reselect",
+    "alternative floors/seeds/architectures",
+    "external A/B or shadow truth reconstruction",
+    "public raw-data bypass of the sealed split",
+    "alternative lambda values",
+    "re-estimate T on external",
+    "revert to the superseded policy pair after seeing external"
+  ],
+  "external_inputs": {
+    "prepared/external_context_v0_5.npz": {
+      "sha256": "0e9924b3f614d909e2cc5e99d3bacd15d641a1436cff1e00845ce618c497de3a",
+      "size_bytes": 4492481
+    },
+    "sealed/external_final_outcomes_v0_5.npz": {
+      "sha256": "7ab1bb061b3b50fc33297d1a8cde903f4bfae8639ba1a3cf58f2ccc5117381dd",
+      "size_bytes": 224237
+    },
+    "source/calendar.csv": {
+      "sha256": "d12b5914ef03e66649adf5dd9e996e6602251c22b7a6af8f1f7e3aa12f8860f5",
+      "size_bytes": 103469
+    },
+    "source/sell_prices.csv": {
+      "sha256": "9da3ad1f8b8ccacdbdc70612191dd375ec24a4ac6625c24b75b3bc60b0bed2ef",
+      "size_bytes": 203395785
+    }
+  },
+  "immutable_files": {
+    "inputs/forecast_bundle_v0_5.joblib": "7c44b064f02a824405754e8c17761d4aa035234ea16472d9be34efc8169bd91b",
+    "results/point_baselines/observed_l1_s20260906.txt": "fc24d1ecc568f6b78e11f309e5008b94801e5f78ba5568fd2793973959c57bb0",
+    "results/selective_strong/mean_error_s20260906.txt": "accf0bb1d97d13dccaa3517ad94842d3cb79d32370030debc7e9402f43bcfacf",
+    "results/review_revision/demand_s20260906.txt": "7d59e0924552d35636260bd6c8e5cb90b38dc3ab51dc9d82af7f7fd16cd38f08",
+    "results/review2/cache_design/metadata.npz": "8dbcca81203a23d8c3a1d61fd43d179d5c481e04ee726ca5f2fc40d896ba4fbf",
+    "code/r2_io.py": "6105d0cc2b72a360c73f7e97182d23f7cfcc5fe010ab20c14da7d9749c469fc4",
+    "code/run_review4_tradeoffs.py": "31ed3b5d88e30e41a3363867bdc66b222e5b42eaffbb262e3bca499ac631158f",
+    "code/run_selective_study.py": "34bbbe99e9fe553704e797dccc03676d9a9d887935b8627bb5001b0f932a7dd1",
+    "code/run_review2_objectives.py": "7ccff0daa03eafdc23b598ec22bfb6bd60691a42335030320b4f414d2d0daa60",
+    "results/review4/TRADEOFF_PROTOCOL.json": "f6b42ad9c27a8e6c753419ca4630effacbf7b4ddeaf12401c1e41b8cd8cf1809",
+    "results/review4/TRADEOFF_DEVELOPMENT_SELECTED.json": "3e1a28bbac7985109e4e52719b1f5e8047e941476afcd6db63f27a400f336fc7",
+    "upstream/preparation/PROTOCOL_v0_5.md": "7e3247345c59957c17a63ae035115102b31a0e2c9237c09e24406deecc4d07bd",
+    "code/review4_external/EXTERNAL_PLAN.json": "390e11d0494c7fe493545063001c8dd479d50cd4a3f4fd00bf836e60dec9cd19",
+    "code/review5_external/requirements-external.txt": "c6c234da9cf3219de0f2622c266171a5b329c6af51fd9548b3a6527664bb372a",
+    "code/review5_external/test_predict.py": "f8fe4c0be29f747be66a316f253ff5a28a52c211f6bf795892595d40e2aace3f",
+    "code/review5_external/test_external.py": "64743e7359a3d0a792345f8dda62742e8682b4f74f1a467d840e5a2d7c1db133",
+    "code/review5_external/evaluate.py": "b9b3b0a93ab2f636f583c5e56faa720872c9e896169dbf8f10596d05f4ee4928",
+    "code/review5_external/freeze_plan.py": "aefaafac65cf3a6b8b90b433e819fb8b15b224e9c3c69e00963ee4c6392008cf",
+    "code/review5_external/run.py": "6d8f06801d90d4a535abfe830e88673b6e0da5387c406bd69cc733f30f71d606",
+    "code/review5_external/predict.py": "dec125820673521c6b39f3118720b979e3056b8ec54da17e62365aaddccb002b",
+    "code/review5_external/metadata/DATA_ARTIFACT_SHA256_v0_5.json": "2f33671d95fc9f52a8729c1fde3df87aa0cfabcec2c85d7586eaf8b0406a8461",
+    "code/review5_external/metadata/DATA_ACCESS_LEDGER_v0_5.json": "2b40605af7d435ed1d1ade507d7dd9a772a7b1fa7143c6ad223abd6d591fe844",
+    "code/review5_external/metadata/DATA_PARTITION_MANIFEST_v0_5.json": "8700ea73e7e30fbeab34c854c8c0083404c28645c1509e833cce9325c3252018",
+    "upstream/design/censorcast_v05/metrics.py": "9b297c77f19af13ab381eaf9a8298755d71610c2f25667f14a7c720f448a6277",
+    "upstream/design/censorcast_v05/models.py": "b1fcd97fdd1603e6ef57458cb39c0cf18180c0a00aec2f4702482d6a0fe0d173",
+    "upstream/design/censorcast_v05/__init__.py": "2b3bc309d0d9f0990abc5b446056bfcb167901dcbd0e67f4909ca23e82fe8c2b",
+    "upstream/design/censorcast_v05/features.py": "3b2bd1cc61b1d5108fa21b0cca13fc8e17fad9014d878ba8ab461f3648adee41"
+  },
+  "execution_status": "Not executed; external arrays have not been read or downloaded by this revision.",
+  "reference_mean": 1.3048948713314772,
+  "reference_mean_source": "Total true demand / total rows on consumed development calibration A/B only; not re-estimated on external",
+  "policy_pair_selection": "Chosen after inspecting consumed-guardian exploratory diagnostics and before external access. Not preregistered relative to guardian and not a pure row-versus-demand optimum test.",
+  "confirmatory_scope": "One independent external item-partition comparison of the two frozen learned policies. Supports only the prespecified coverage contrast if both directions pass; not proof of mixed utility optimality or natural-stockout operation."
+}

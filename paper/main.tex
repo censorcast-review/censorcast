@@ -1,0 +1,203 @@
+\documentclass{article}
+\usepackage{iclr2027_conference,times}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,multirow}
+\usepackage{hyperref,url}
+\usepackage{placeins,float}
+\hypersetup{hidelinks}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prb}{\mathbb{P}}
+\newcommand{\ind}{\mathbf{1}}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newcommand{\wape}{\operatorname{WAPE}}
+\input{tables/result_macros.tex}
+\input{tables/observable_macros.tex}
+\title{When More Predictions Cover Less:\\Accuracy and Coverage under Ratio Risk}
+\author{Anonymous authors}
+\begin{document}
+\maketitle
+\lhead{Prepared for submission to ICLR 2027}
+\begin{abstract}
+Selective prediction under a ratio-risk cap can maximize accepted cases or the exposure they cover. We prove that these objectives can yield almost maximally different coverage even with exact conditional information, characterize settings where reversal is impossible, and bound its magnitude under bounded exposure. Retail WAPE reveals the mechanism: low-demand cases with near-unit relative error spend little pooled excess budget. Accepted-set accounting and a one-time external test connect this mechanism to learned policies; the external test confirms a contrast selected on an earlier holdout, not the population optimum. We then improve the predictor and refit its selectors. A residual learner reduces full-coverage WAPE by 1.76\% and improves both coverages relative to its base, yet changing acceptance utility still gains 5.87 demand-coverage points while losing 3.02 row points. A frozen Chronos-2 configuration shows the same direction. These added comparisons are retrospective, and pooled improvements do not repair every group contract. Prediction accuracy and acceptance utility are complementary design choices: improve the forecasts, state what coverage values, and audit where the risk budget is spent.
+\end{abstract}
+
+\section{Introduction}
+A selective prediction system must specify both its risk constraint and the value of acceptance. Counting accepted cases gives each case equal value. Counting their exposure, opportunity, or demand mass gives cases different weights. When risk is itself a ratio of accepted loss to accepted weight, the choice of coverage utility becomes part of the learning problem.
+
+We establish a sharp mismatch between these two objectives under a common ratio-risk cap. Nonnegative loss and weight variables yield conditional excess and conditional-ratio rankings. A three-context family makes their case-coverage and mass-coverage gaps almost maximal, even with exact conditional information. The construction identifies the needed heterogeneity; a constant conditional denominator, for example, makes the coverage objectives identical. The acceptance unit matters: a fixed multi-label classifier admits a micro-precision reversal when the whole example is accepted or rejected. Ordinary binary precision with an unrestricted gate has a common optimum for both coverage objectives.
+
+Retail WAPE makes the mechanism concrete. A well-predicted high-volume series creates pooled error slack that pays for many poor low-volume predictions. The added rows can have near-unit relative error yet negligible budget cost. CENSORCAST provides matched point forecasts and heads, accepted-set budget accounting, a frozen item-holdout comparison, and a later independent external test of two fixed utility policies. We then ask whether improving the point predictor removes the mismatch, using newly fitted selectors for a stronger residual learner and a frozen Chronos-2 configuration. This separates three questions: how accurate predictions are, which cases the coverage objective rewards, and whether a fitted acceptance contract transfers.
+
+\section{Related work and scope}
+\paragraph{Count-data evaluation and censoring.}
+\citet{kolassa2016count} explains why absolute-error measures, including weighted MAPE, can be unsuitable for retail count forecasts. Absolute loss elicits a median; when $\Pr(Y=0)\geq1/2$, zero is a median. Our new object is the acceptance budget: a poor relative-error row may still be inexpensive to accept. M5 established strong tabular forecasting baselines \citep{makridakis2022m5}; we use LightGBM \citep{ke2017lightgbm}. FreshRetailNet provides stockout annotations \citep{wang2025fresh}, and a reproducible forecasting pipeline studies chronological features, censoring, and inventory optimization \citep{azar2026pipeline}. Censored newsvendor work addresses missing demand tails and decisions \citep{hssaine2024censored}. Here the target is acceptance-set WAPE on mechanically hidden recorded sales; inventory decisions and naturally unobserved demand are different estimands.
+
+\paragraph{Ratio metrics and selective prediction.}
+Optimization of nondecomposable and ratio-of-linear classification metrics is well established \citep{narasimhan2015complex,bao2020fractional}. Those works optimize prediction performance under the chosen metric. We fix the predictor and compare acceptance utilities under the same ratio constraint, asking how much case coverage can disagree with covered denominator mass.
+
+\paragraph{Selection and risk control.}
+Case coverage and its risk trade-off are foundational to selective classification \citep{elyaniv2010foundations,geifman2017selective}. Conditional-loss thresholding is established in reject-option prediction \citep{franc2023reject}, as are group concerns in selective regression \citep{shah2022selective}. Learn then Test and conformal risk control address calibration under explicit assumptions \citep{angelopoulos2021ltt,angelopoulos2024crc}. \citet{joshi2026postprocess} maximize agreement with a baseline decision policy under a chance constraint, ranking contexts by the reduction in conditional violation risk from a fallback action. Our action is forecast acceptance, the constraint is signed expected excess $\E[a(e-r\mu)]\leq0$, and the utility can weight either rows or demand. Accurate high-volume cases can therefore subsidize inaccurate low-volume cases within an accepted set. Conditional thresholding remains the common mathematical tool; our analysis concerns this cross-case budget mechanism and its measurable consequences. Calibration is treated separately.
+
+\section{The acceptance contract}
+\input{review5_ratio_theory.tex}
+
+\subsection{What censoring does and does not identify}
+For natural demand $D$, observe sales $S=\min(D,C)$ and a censoring flag, where $C$ is an availability bound. In a mechanically censored benchmark, the retained pre-censoring target can be used for training and auditing; in natural stockouts it is generally unavailable.
+
+\begin{proposition}[Unbounded censored tails prevent a universal WAPE claim]
+\label{prop:identification}
+Fix a measurable acceptance probability based on observed information and a bounded nonnegative forecast. Assume the availability bound is nonnegative and integrable and an integrable demand completion exists. Suppose the expected acceptance weight on censored cases is positive and the compatible model class places no upper bound on their demand tail. There exist observationally indistinguishable finite-mean demand completions for which accepted WAPE approaches one. Consequently, observed censored sales alone cannot uniformly establish any contract with $r<1$ over this model class.
+\end{proposition}
+This statement does not exclude identification under additional structural assumptions. With a valid known bound $D\in[C,U]$ on a censored case, convexity gives the conservative excess envelope
+\begin{equation}
+ |D-f|-rD \leq
+ \max\{|C-f|-rC,\ |U-f|-rU\}.
+ \label{eq:envelope}
+\end{equation}
+Inventory availability $C$ is not itself a demand upper bound $U$. A maximum observed in the development sample is also insufficient to justify a population support bound.
+
+\subsection{Calibration is a separate claim}
+\label{sec:calibration}
+Independent calibration clusters and known bounded cluster losses permit simultaneous finite-family concentration checks; the supplement states a standard Hoeffding construction (Appendix~\ref{app:calibration}). Our retail counts lack a justified population bound and share store/calendar shocks. Accordingly, development intervals are descriptive; the held-out comparisons use prespecified item-bootstrap approximations, not that theorem.
+
+\section{Method and experimental design}
+\subsection{Data, chronology, and the audit boundary}
+The M5 split has three disjoint item partitions, with all ten stores of an item kept together. \emph{Development} has 1,829 items (18,290 series) and supplies fitting and threshold selection. The first \emph{item holdout}, called \emph{guardian} in the result files, has 610 items: 42 policies were frozen before its one-time comparison. Its saved predictions subsequently supported exploratory diagnostics. The final \emph{external} partition has 610 other items and is used once for two policies fixed after that exploration (Section~\ref{sec:external}). The first holdout shares development dates and stores; the external primary test uses later forecast origins, still in the same stores. Recorded M5 unit sales are the target $Y$.
+
+After 56 uncensored warmup days, mechanical censoring depends on previous observed sales:
+\begin{align}
+ L_t&=0.90L_{t-1}+0.10S_{t-1},&
+ C_t&=\max\{1,\lceil1.15L_t+0.25\sqrt{L_t+1}\rceil\},&
+ S_t&=\min(Y_t,C_t).
+ \label{eq:censor}
+\end{align}
+The previously fixed process hides 30.42\% of recorded demand mass and censors 12.67\% of development rows on days 1314--1913. Initialization is specified in Appendix~\ref{app:repro}.
+
+Horizons are one through seven, with weekly origin $o(t)=t-[1+(t-1)\bmod7]$. Point fits use days 365--1313; selection uses 1314--1433; risk learning uses 1434--1553; two calibration blocks, A and B, use 1554--1673 and 1674--1793; the later development evaluation window (\emph{shadow}) uses 1794--1913. Purging origins that precede fitted-object availability leaves 2,085,060 selective-shadow rows, versus 2,194,800 point-shadow rows. Origin-availability and mask-mutation tests verify the repaired feature constructor (Appendix~\ref{app:repro}).
+
+\subsection{Matched point forecasts and censor-adapter controls}
+The reference forecaster fits histogram gradient boosting with Poisson loss to observed sales. Its expectation--maximization (EM) correction repeatedly imputes censored responses using clipped Poisson means conditional on exceeding capacity, then refits; a separate classifier predicts censoring probability. New LightGBM controls share origin-valid features, 1.2 million sampled rows, 300 trees, 63 leaves, learning rate 0.05, and three seeds. Objectives are Poisson or L1 on observed sales, with an uncensored-row-only L1 ablation. For L1 forecast $b$, the adapter reuses the earlier EM prediction $e_{\rm EM}$ and predicted censor probability $\hat p_C$:
+\begin{equation}
+ f_{\alpha,\gamma}=b+\alpha\hat p_C^\gamma\max(e_{\rm EM}-b,0).
+ \label{eq:adapter}
+\end{equation}
+Only point selection chooses $\alpha,\gamma$. Controls include global/category rescaling and the same ungated correction. The supervised selector comparisons retain the first point seed and $(\alpha,\gamma)=(2,2)$. The sales-and-capacity extension uses the plain observed-sales L1 forecaster without this adapter.
+
+\subsection{Matched selectors and operational checks}
+Risk learners share 600,000 sampled risk-training rows, 21 origin-valid features, 220 trees, 31 leaves, and three seeds. Squared-loss heads estimate conditional error $\hat e$, demand $\hat\mu$, or excess. The two-head score is $\hat e-r\hat\mu$ (440 total trees); the matched-budget control uses the first 110 trees of each head. Nonnegative heads are clipped at zero. Forecast-normalized error is $\hat e/\max(f,0.25)$; demand-normalized error is $\hat e/\max(\hat\mu,0.25)$. These names are used throughout.
+
+We require WAPE at most $r=0.6401298$ and row coverage at least 0.35 in both calibration blocks. Each score accepts a ranked prefix. We search all distinct thresholds and choose the feasible threshold with the largest minimum A/B row coverage. Category-specific thresholds follow the same rule; an infeasible category is fully rejected.
+
+The cap is a 15\% reduction from the reference Poisson model's WAPE, 0.7530939208, on all 2,194,800 development point-selection rows (days 1314--1433, before origin purging). The 0.35 row floor retains a five-point buffer above the original 0.30 minimum; it is a study setting, not a retail standard.
+
+The original guardian comparison applies only frozen policies. Subsequent analyses reuse its saved predictions and are explicitly \emph{post-hoc}. They select thresholds and ranking families on development calibration A/B, then apply them to cached guardian outcomes. The exploratory analyses cover objective choice, floors including zero, four head-size pairs, matched Poisson/Tweedie demand heads, and a five-point mixed-utility path. Exact threshold searches are recorded, and saved predictions permit full frontier reconstruction; stored plotting curves are subsampled. Item bootstrap resamples an item's stores and days together; intervals do not include model-fitting uncertainty or remove shared shocks.
+
+\section{Results}
+\subsection{More accepted rows can mean less covered demand}
+\label{sec:mass}
+For a common accepted set $K$ and disjoint added set $U$, let $M_B$ and $E_B$ be the demand and absolute-error mass of set $B$. Excess is additive: $(E_{K\cup U}-rM_{K\cup U})=(E_K-rM_K)+(E_U-rM_U)$. When both masses are positive, the combined set meets the cap exactly when
+\begin{equation}
+ M_U(R_U-r)\leq M_K(r-R_K).
+ \label{eq:budget}
+\end{equation}
+Thus many inaccurate low-volume rows can consume little of the common set's available error budget. We measure each term through an accepted-set decomposition.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/row_vs_demand.png}
+\caption{Strong forecaster. Left: three-seed means under the same row-coverage threshold selection; row and demand coverage disagree. Right: first-seed direct-excess versus forecast-normalized-error acceptance sets. The extra direct-only set contains more rows but less demand than the relative-only set. Both panels describe the consumed development shadow.}
+\label{fig:mass}
+\end{figure}
+Direct excess gains 6.08 percentage points in mean row coverage over forecast-normalized error, but loses 5.71 points of demand coverage. At the first seed, their common accepted set covers 73.35\% of rows and has WAPE 0.5958, leaving slack under the 0.64013 cap. The direct-only set adds 267,656 rows (12.84\% of all rows), but only 5.69\% of demand; its WAPE is 1.0026. The relative-only set contains 141,617 rows and 11.45\% of demand, with WAPE 0.7915. Mean forecasts in the two differing sets are 0.039 and 1.498 units. In equation~\eqref{eq:budget}, the common set supplies 97,185.97 units of excess slack. The direct-only set consumes 60,141.11 (61.88\%), versus 50,549.56 (52.01\%) for the relative-only set. Both fit within the pooled budget despite their individual WAPE exceeding the cap. This accounts for the row gain through budget use and demand composition.
+
+\subsection{Architecture is distinct from acceptance utility}
+The original matched selector comparison provides an architectural control. Direct-excess, two-head, and matched-tree-budget two-head scores reach 86.30\%, 86.35\%, and 86.61\% mean row coverage. Direct learning has slightly lower accepted WAPE (0.6245 versus 0.6268 and 0.6269); it does not establish a direct-learning advantage. The informative distinction is the coverage objective and resulting budget allocation, not whether excess is learned directly or composed from two heads. Full three-seed results are in Appendix~\ref{app:objective}.
+
+\subsection{The frozen comparison on previously held-out items}
+\label{sec:heldout}
+\input{tables/guardian_comparison_table.tex}
+The freeze specifies seven scores, two threshold modes, three seeds, and a first-seed direct-versus-two-head primary contrast. The holdout uses the same A/B and later evaluation dates, without recalibration; no holdout outcome selects an original policy. Its shadow contains 695,400 rows on days 1800--1913.
+
+The coverage trade-off persists (Table~\ref{tab:m5guardian}). Across three fixed fits, direct excess increases row coverage by 6.49 percentage points over forecast-normalized error while reducing demand coverage by 4.36 points. Two-head coverage is 87.41\%, compared with 87.37\% for direct learning, with WAPE 0.6297 versus 0.6280. At the prespecified first seed, direct minus two-head row coverage is $-0.215$ points (paired 95\% item-bootstrap interval $[-0.413,-0.018]$ points); direct WAPE is lower by 0.00141. These are different trade-offs, not an equivalence result or a direct-learning advantage.
+
+
+
+Operating constraints do not transfer jointly. First-seed direct and two-head shadow WAPE are 0.6282 and 0.6296 pooled, but approximately 0.879 for Hobbies and 0.682--0.683 for Household. In the holdout window matching calibration B, even pooled WAPE is 0.6495 and 0.6504, above the 0.64013 cap. All frozen category-specific policies abstain entirely on Hobbies because their development threshold is absent. The prespecified 48-endpoint family covers two primary methods, three periods, four strata, and two bounds, using 10,000 item-bootstrap draws. Every coverage lower bound exceeds 0.35, but every adjusted WAPE upper bound exceeds the cap; shadow pooled upper bounds are 0.6959 and 0.6971. This fails the specified joint operating check. Appendix~\ref{app:heldout} reports all bounds and the access record.
+
+\subsection{Group budgets expose a different limitation}
+\label{sec:groups}
+A good pooled ratio need not meet every product group's contract. Replacing only the error score with realized absolute error opens 76.78\% development Hobbies row coverage; replacing only demand opens none. Both substitutions permit 89.15\%. These samplewise diagnostics include irreducible outcome information and are not attainable-learning guarantees. Adding eight origin-safe intermittency features to the same 600,000-row shared error-head sample improves error MSE but opens no feasible threshold. A group-budget LP likewise finds only positive-excess occupied Hobbies bins, with a checked dual certificate. Appendix~\ref{app:objective} reports these controls. They motivate reporting group budgets alongside pooled utility; they do not establish that every predictor or policy class must fail.
+
+\subsection{Estimated ratios require regularization disclosure}
+\label{sec:objectives}
+For all 27 original score/seed pairs, row- and demand-objective threshold searches agree: 24 produce the same finite threshold and three are infeasible. This follows from nested acceptance sets; changing utility requires comparing rankings, not just reoptimizing a threshold on one ranking. Development family selection chooses direct excess for rows and demand-normalized error for demand. On the consumed first holdout, the latter gains 4.94 demand-coverage points and loses 13.74 row points.
+
+This result uses $\hat e/\max(\hat\mu,0.25)$. With no positive floor, forecast normalization instead achieves 87.77\% demand coverage versus 87.53\% for demand normalization. Exact conditional-ratio optimality does not order imperfect fitted scores. In particular,
+\[
+ \frac{\partial(e/\mu)}{\partial\mu}=-\frac{e}{\mu^2},\qquad
+ \frac{\partial(e-r\mu)}{\partial\mu}=-r.
+\]
+A small estimated denominator amplifies errors; a floor or a positive row weight limits that amplification. This is a possible source of instability, not an identified cause of a particular reversal. The appendix gives the exact finite-perturbation identity, floor sensitivity, and capacity/loss controls.
+
+\subsection{A constructive path between coverage objectives}
+Let $U_\lambda=\lambda c+(1-\lambda)d$, $T=\E Y$, and $w_\lambda=\lambda+(1-\lambda)\mu/T$. For a nonbinding row floor, the same weighted-measure argument orders
+\begin{equation}
+ s_\lambda=\frac{e-r\mu}{\lambda+(1-\lambda)\mu/T},\qquad 0\leq\lambda\leq1.
+ \label{eq:mixed}
+\end{equation}
+It recovers excess at one endpoint and demand-ratio ordering at the other. We evaluate the fixed grid $\{0,0.25,0.5,0.75,1\}$ with the same first-seed heads, no additional max-denominator regularization, and a common development-only estimate of $T$. All thresholds are chosen on development before application to consumed guardian predictions (Appendix~\ref{app:mixed}).
+
+Appendix Table~\ref{tab:mixed-development} reports the full development A/B path. On the item holdout, at $\lambda=0.25$, shadow row/demand coverage is 84.31\%/88.67\% with WAPE 0.6272; at the composed-excess endpoint $\lambda=1$, it is 87.46\%/83.78\% with WAPE 0.6296. This offers an explicit utility choice. The transferred points need not form an empirical Pareto frontier, and all five still fail period-B pooled WAPE. No mixture is promoted to a confirmed operating policy.
+
+\FloatBarrier
+\input{tables/external_main.tex}
+\subsection{A one-time external confirmation of the fixed contrast}
+\label{sec:external}
+After inspecting the first-holdout path, we replaced an earlier pending policy pair with $\lambda=1$ and $\lambda=0.25$, then froze their thresholds and first-seed heads before external access (Appendix~\ref{app:external}). The 610 unseen items contribute 140,300 rows on days 1919--1941; all forecast origins follow the last consumed development day. Mixed utility gains 5.16 demand-coverage points and loses 3.35 row points (Table~\ref{tab:external}). Paired one-sided 97.5\% item-bootstrap bounds are $+3.17$ points for the demand difference's lower bound and $-2.48$ for the row difference's upper bound. Both prespecified directions pass. The test concerns this selected learned-policy contrast; it does not test the population theorem, pure-demand optimality, or the full utility path.
+All 24 secondary row lower bounds pass, but all 24 adjusted WAPE upper bounds fail. A descriptive decomposition of the same saved masks links the contrast to equation~\eqref{eq:budget}: each exclusive set spends about 30\% of the common slack, while the row-only set has WAPE 1.0046 and carries much less demand (Appendix~\ref{app:external}). This adds mechanism accounting, not a confirmatory endpoint.
+
+\subsection{Does better full-coverage accuracy remove the mismatch?}
+\label{sec:accuracy}
+\input{accuracy_section.tex}
+
+\subsection{Natural censoring and the limits of an operating claim}
+\label{sec:observable}
+Theoretical selection uses conditional loss and exposure; naturally hidden demand does not supply either without assumptions. Our observed-sales-and-capacity negative-binomial experiment illustrates the issue. Among adjusted paired item-bootstrap comparisons, shape $\kappa=3$ is the only candidate whose validation likelihood difference from selected $\kappa=2$ includes zero, yet it breaks both realized calibration caps that $\kappa=2$ passes. The selected model overestimates aggregate error mass by 20.59\%; its pooled point pass does not validate conditional moments. Appendix~\ref{app:observable} provides the likelihood, dispersion grid, and count-matched supervised control.
+
+Further forecasting experiments on naturally stockout-annotated FreshRetailNet test observable sales outcomes, not hidden demand. A forward-time residual learner reduces WAPE on the 8,020 non-stockout test rows from 0.32928 to 0.29201, and on all 14,000 recorded-sales rows from 0.36162 to 0.33401. These later comparisons reuse the previously opened seven-day cohort; most improvement remains without the risk feature (non-stockout WAPE 0.29289). They demonstrate useful forecast adaptation within that evaluated population, but cannot certify a demand-coverage contract on unobserved stockout demand. Appendix~\ref{app:accuracy} records the controls and uncertainty. Thus accuracy improvement, acceptance utility, and identification are three distinct requirements of a forecasting engine.
+
+\FloatBarrier
+
+\section{Limitations}
+The new predictor comparison is retrospective on consumed M5 development items; it does not extend the independent external confirmation to new predictors. Its selectors use retained pre-censoring targets, a single fit, and chronological point constraints. Approximate item-bootstrap intervals condition on fits and do not remove shared store/calendar shocks. Exact rankings can differ from fitted rankings, and arbitrary fitted policies need not lie on a population Pareto frontier. The original joint operating checks fail; naturally missing demand remains unidentified without defensible observation and tail assumptions. Forecast and covered-demand improvements are not measured profit, service-level, or inventory-cost improvements.
+
+\section{Conclusion}
+Under ratio-risk constraints, the value assigned to acceptance determines what a predictor covers. We identify when case and exposure objectives can disagree, bound their disagreement, and measure the underlying budget allocation. The original external comparison confirms a selected policy contrast; stronger-forecast experiments separately examine its sensitivity to prediction quality. Forecasting systems should improve full-coverage accuracy, specify acceptance utility, and report both coverages with group-level budget audits.
+
+\label{end:main}
+
+\clearpage
+\section*{AI use statement}
+OpenAI Codex assisted with literature retrieval, mathematical formulation and proofs, experimental design, implementation and execution, analysis, simulated peer review, figures, and writing. Retail results use the documented data and prediction caches; synthetic observations appear only in labeled experiments. Automated checks cover input hashes, forecast origins, acceptance masks, historical metrics, budget identities, and rational/LP verification of the theory. The external comparison has one recorded opening, immutable fitted objects, and independent recomputation of all registered statistics and bounds. The supplement records verification scope and execution provenance. Responsibility for the submitted content rests with the authors.
+
+\section*{Ethics statement}
+Mechanically hidden recorded sales must not be represented as identified customer demand. Pooled acceptance can concentrate errors in particular product groups; we report those failures and do not recommend deployment from these results. No human-subject intervention, customer profiling, or live replenishment action was performed.
+
+\section*{Reproducibility statement}
+The supplement supplies experiment scripts, fixed configurations, models, hashes, result records, and origin/mask tests. Appendix~\ref{app:repro} gives preprocessing, dates, and parameters; Appendix~\ref{app:proofs} gives proofs. The source package provides separate commands for theory and frozen-object verification, statistical replay, and rebuilding the manuscript. External item sufficient statistics reproduce both primary bounds and all 48 secondary endpoints. Preparation/design source regenerates data from the cited M5 release; consumed caches support the exploratory audits.
+
+% BEGIN ANONYMOUS REVIEW LINK
+The anonymous repository at \url{https://github.com/censorcast-review/censorcast} provides the manuscript source, experiment code, saved prediction arrays, and verification commands for the complete numerical replay.
+% END ANONYMOUS REVIEW LINK
+
+\bibliography{references}
+\bibliographystyle{iclr2027_conference}
+\appendix
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.85}
+\setcounter{topnumber}{4}
+\setcounter{totalnumber}{5}
+\input{appendix_review4.tex}
+\input{accuracy_appendix.tex}
+\end{document}

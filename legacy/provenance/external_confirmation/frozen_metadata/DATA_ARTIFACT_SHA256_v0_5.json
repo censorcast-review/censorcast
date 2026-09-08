@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.5",
+  "created_utc": "2026-09-05T15:12:06.327288+00:00",
+  "status": "V0_5_DATA_ARTIFACT_HASH_INDEX_CREATED",
+  "artifacts": {
+    "prepared/design_outcomes_v0_5.npz": {
+      "sha256": "5d63b6aff7854ed1811f6b5bffd2f397a09d671c6754e0f1345e2313b35e48fd",
+      "size_bytes": 24453990
+    },
+    "prepared/design_item_ids_v0_5.txt": {
+      "sha256": "4d42859dcb73f9961d77b1e085dd0d5f30cf228540920b89539b4b1a5a9eb26e",
+      "size_bytes": 25070
+    },
+    "prepared/fresh_guardian_context_v0_5.npz": {
+      "sha256": "5ed3f06f69c570f2c6aff33a825b944f13b49144bedaf76e6f2f9666664ca62f",
+      "size_bytes": 3439121
+    },
+    "sealed/fresh_guardian_outcomes_v0_5.npz": {
+      "sha256": "6bf62d608054063e7142cf47b15b75bec66765e1f04cc006138dc29037f0c827",
+      "size_bytes": 1898766
+    },
+    "prepared/external_context_v0_5.npz": {
+      "sha256": "0e9924b3f614d909e2cc5e99d3bacd15d641a1436cff1e00845ce618c497de3a",
+      "size_bytes": 4492481
+    },
+    "sealed/external_final_outcomes_v0_5.npz": {
+      "sha256": "7ab1bb061b3b50fc33297d1a8cde903f4bfae8639ba1a3cf58f2ccc5117381dd",
+      "size_bytes": 224237
+    },
+    "source/calendar.csv": {
+      "sha256": "d12b5914ef03e66649adf5dd9e996e6602251c22b7a6af8f1f7e3aa12f8860f5",
+      "size_bytes": 103469
+    },
+    "source/sell_prices.csv": {
+      "sha256": "9da3ad1f8b8ccacdbdc70612191dd375ec24a4ac6625c24b75b3bc60b0bed2ef",
+      "size_bytes": 203395785
+    },
+    "audit/DATASET_SOURCE_RECEIPT_v0_5.json": {
+      "sha256": "df49e74b445f4a46623b74eb17fbbe276eea6e908226f932e9f2f7e3beb07e1a",
+      "size_bytes": 1246
+    },
+    "audit/DATA_PARTITION_MANIFEST_v0_5.json": {
+      "sha256": "8700ea73e7e30fbeab34c854c8c0083404c28645c1509e833cce9325c3252018",
+      "size_bytes": 1744
+    },
+    "state/DATA_ACCESS_LEDGER_v0_5.json": {
+      "sha256": "90a8791fb901a8304b5690a4560fbdcd070241d606e9367fec99193b12a33ed0",
+      "size_bytes": 338
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "EXPLORATORY_CONSUMED_CACHE_CONTROL",
+  "seed": 20260906,
+  "cap": 0.640129832706689,
+  "per_group_row_floor": 0.35,
+  "quantile_bins_per_head": 8,
+  "groups": [
+    "FOODS",
+    "HOBBIES",
+    "HOUSEHOLD"
+  ],
+  "boundaries": "Within-category pooled calibration A/B head predictions only; 7 internal quantiles per head, duplicate cuts collapsed",
+  "policy_class": "One arbitrary randomized acceptance probability per error-demand bin and category, shared by all periods",
+  "fitting": "No new head fit; calibration outcomes choose probabilities by finite LP",
+  "constraints": "For each category separately, A and B excess budgets <=0 and A and B row coverage >=.35; no budget borrowing between categories",
+  "objective": "Maximize minimum within-group A/B expected row coverage",
+  "secondary": "Cap-only LP (floor0); minimax excess LP at floor.35 with checked dual lower bound",
+  "tie_rule": "Deterministic HiGHS solution of the fixed LP, no post-holdout choice",
+  "acceptance": "Independent uniform auxiliary variable <= fixed bin probability",
+  "metric_scope": "Ratios of conditional expected error/demand sums under randomized acceptance; no realized-mask or finite-sample certificate",
+  "training_calls": 0,
+  "raw_guardian_accesses": 0,
+  "external_opened": false,
+  "code_sha256": "678c93152f6a8445111e5f7819c3ab4acd22af94c6cf8b9c649365003e8c582a",
+  "created_utc": "2026-09-06T14:48:46.392485+00:00"
+}

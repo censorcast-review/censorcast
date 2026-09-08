@@ -1,0 +1,10 @@
+{
+  "repo": "amazon/chronos-bolt-small",
+  "revision": "772f3d25d38aec6d914c8949dab4462e2d46f5d8",
+  "files": {
+    "README.md": "e7a41f030a7250d67a01200512dd9fb8619d3c708f9e68ef18bc620521979219",
+    "config.json": "9ca0ebbe049ccebacb0546361e8aa728f0cf104cd18d1838d78d296aa317bd21",
+    "model.safetensors": "06a6a19bbe74bc10a9cd193bd4bf2bf638ae07f7e0d51653ae7ab8ea968a21dd"
+  },
+  "protocol_sha256": "da70251e0adf051b9a605559e9a1c4e43ea075d6717d96d5f2dc76c852e9d642"
+}

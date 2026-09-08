@@ -1,0 +1,10 @@
+{
+  "status": "PDF_BYTE_COUNT_AND_PARSE_VERIFIED",
+  "bytes": 799855,
+  "pages": 27,
+  "main_pages": 9,
+  "sha256": "87a1e595521dc3699f2f4595e75330a95c4147d53a18757dbf34260b971715fc",
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "temporary_directory": "/tmp/censorcast-observable-tex-lkkui95h"
+}

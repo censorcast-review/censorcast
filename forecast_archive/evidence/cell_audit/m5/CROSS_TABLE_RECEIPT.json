@@ -1,0 +1,127 @@
+{
+  "check_count": 24,
+  "checks": [
+    {
+      "difference": 0.0,
+      "name": "FOODS:base:wape",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "FOODS:base:mae",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "FOODS:base:rmse",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "FOODS:base:bias",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "FOODS:rc:wape",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "FOODS:rc:mae",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "FOODS:rc:rmse",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "FOODS:rc:bias",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOBBIES:base:wape",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOBBIES:base:mae",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOBBIES:base:rmse",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOBBIES:base:bias",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOBBIES:rc:wape",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOBBIES:rc:mae",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOBBIES:rc:rmse",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOBBIES:rc:bias",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOUSEHOLD:base:wape",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOUSEHOLD:base:mae",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOUSEHOLD:base:rmse",
+      "pass": true
+    },
+    {
+      "difference": -1.1102230246251565e-16,
+      "name": "HOUSEHOLD:base:bias",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOUSEHOLD:rc:wape",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOUSEHOLD:rc:mae",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOUSEHOLD:rc:rmse",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "HOUSEHOLD:rc:bias",
+      "pass": true
+    }
+  ],
+  "created_utc": "2026-09-08T10:01:08.273080+00:00",
+  "status": "PASS"
+}

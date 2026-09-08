@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "pages": 21,
+  "main_pages": 9,
+  "diagnostics": [],
+  "packaged_inputs_unchanged": true,
+  "pdf_sha256": "d908cc2dc08e40307b38bc980c2a8ba05fb0ff7ea91c6881356e3049ff6614b2",
+  "source_sha256": "308cc973843a69c48397a5b54c5da207f9909da86f00c500810fd3e4e6b273d0",
+  "visual_review": {
+    "status": "PASS",
+    "all_pages_rendered": 21,
+    "contact_sheets_inspected": 5,
+    "additional_full_page_checks": [
+      9,
+      14
+    ],
+    "conclusion_on_main_page": 9,
+    "table4_immediately_precedes_section5_7": true,
+    "scope": "All text, math, tables, and figures remain within margins; no overlapping content or missing glyphs observed."
+  },
+  "editorial_source_hashes": {
+    "paper/main.tex": "308cc973843a69c48397a5b54c5da207f9909da86f00c500810fd3e4e6b273d0",
+    "paper/review8_bounded_exposure.tex": "a7c99e6a847f7ca907458b32fdc3dc5ce9e2b790e12576ae1fd922423fd7b4ad",
+    "docs/two_context_no_reversal.tex": "994de0fdb40d8f99c731f6891d73673ff8171b11a48b4ee7bfc063bb83695910"
+  }
+}

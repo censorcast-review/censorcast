@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "moment_records_checked": 264,
+  "grid_models": 7,
+  "exact_count_matches": 21,
+  "source_hashes_verified": true,
+  "selected_shape_by_observed_validation": 2.0,
+  "result_sha256": "763a8f1c815e77852b593748a914442be370ed80c38a5610102e2daf65f7f871"
+}

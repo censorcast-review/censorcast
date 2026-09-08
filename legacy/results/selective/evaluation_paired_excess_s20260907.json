@@ -1,0 +1,270 @@
+[
+  {
+    "score": "paired_excess",
+    "seed": 20260907,
+    "threshold_mode": "pooled",
+    "contract_kind": "paired",
+    "thresholds": {
+      "ALL": 0.04261554777622223
+    },
+    "every_category_has_calibration_candidate": true,
+    "calibration_point_only": true,
+    "metrics": {
+      "calibration_a": {
+        "n": 2176510,
+        "accepted_n": 1337846,
+        "coverage": 0.6146748694010136,
+        "wape": 0.7841540473532134,
+        "baseline_same_subset_wape": 0.8333182047166664,
+        "paired_error_ratio": 0.9410019400930174,
+        "demand_coverage": 0.3837973177433014
+      },
+      "calibration_b": {
+        "n": 2194800,
+        "accepted_n": 1347488,
+        "coverage": 0.6139456898122836,
+        "wape": 0.7854912749033071,
+        "baseline_same_subset_wape": 0.8269100251429228,
+        "paired_error_ratio": 0.9499114184370218,
+        "demand_coverage": 0.3650531470775604
+      },
+      "shadow": {
+        "n": 2085060,
+        "accepted_n": 1253870,
+        "coverage": 0.6013591935004269,
+        "wape": 0.7573961322724051,
+        "baseline_same_subset_wape": 0.8065173852028645,
+        "paired_error_ratio": 0.9390946136665065,
+        "demand_coverage": 0.38740041851997375
+      }
+    },
+    "shadow_categories": {
+      "FOODS": {
+        "n": 1008900,
+        "accepted_n": 459835,
+        "coverage": 0.45577857072058675,
+        "wape": 0.6440350802231478,
+        "baseline_same_subset_wape": 0.7105651212332177,
+        "paired_error_ratio": 0.9063702410630514,
+        "demand_coverage": 0.3778953552246094
+      },
+      "HOBBIES": {
+        "n": 372780,
+        "accepted_n": 287107,
+        "coverage": 0.7701781211438382,
+        "wape": 1.2021644139207337,
+        "baseline_same_subset_wape": 1.20090318550103,
+        "paired_error_ratio": 1.001050233220239,
+        "demand_coverage": 0.3734365403652191
+      },
+      "HOUSEHOLD": {
+        "n": 703380,
+        "accepted_n": 506928,
+        "coverage": 0.7207028917512582,
+        "wape": 0.9069143178049768,
+        "baseline_same_subset_wape": 0.927111235773914,
+        "paired_error_ratio": 0.9782152160500163,
+        "demand_coverage": 0.4203813672065735
+      }
+    },
+    "shadow_bootstrap": {
+      "clusters": 1829,
+      "reps": 3000,
+      "type": "item",
+      "scope": "conditional_descriptive_not_confirmatory",
+      "coverage_ci95": [
+        0.5872723566707913,
+        0.6149126523936962
+      ],
+      "coverage_lcb95": 0.589352680498403,
+      "coverage_ucb95": 0.6122365303636346,
+      "coverage_lcb_bonf8": 0.5833361060353179,
+      "coverage_ucb_bonf8": 0.6189840370301094,
+      "wape_ci95": [
+        0.7256109405217401,
+        0.7925038114458354
+      ],
+      "wape_lcb95": 0.7308318739828022,
+      "wape_ucb95": 0.7866192066150373,
+      "wape_lcb_bonf8": 0.7164001596828241,
+      "wape_ucb_bonf8": 0.8021027972311378,
+      "paired_error_ratio_ci95": [
+        0.9248923532361338,
+        0.9519510066521297
+      ],
+      "paired_error_ratio_lcb95": 0.92757706656255,
+      "paired_error_ratio_ucb95": 0.9501982467037235,
+      "paired_error_ratio_lcb_bonf8": 0.9210825135977044,
+      "paired_error_ratio_ucb_bonf8": 0.9549673446705299
+    },
+    "shadow_week_bootstrap": {
+      "clusters": 17,
+      "reps": 3000,
+      "type": "week",
+      "scope": "conditional_descriptive_not_confirmatory",
+      "coverage_ci95": [
+        0.5922221006620354,
+        0.6100923496790733
+      ],
+      "coverage_lcb95": 0.5940595347517155,
+      "coverage_ucb95": 0.6086155397095963,
+      "coverage_lcb_bonf8": 0.5902682506738415,
+      "coverage_ucb_bonf8": 0.6120947332128444,
+      "wape_ci95": [
+        0.7388227475199063,
+        0.7758656813537799
+      ],
+      "wape_lcb95": 0.74189120612032,
+      "wape_ucb95": 0.772955488846843,
+      "wape_lcb_bonf8": 0.7334587491454244,
+      "wape_ucb_bonf8": 0.7796722595544825,
+      "paired_error_ratio_ci95": [
+        0.9353154498210123,
+        0.9433428647885829
+      ],
+      "paired_error_ratio_lcb95": 0.9358030157529024,
+      "paired_error_ratio_ucb95": 0.9426410836191712,
+      "paired_error_ratio_lcb_bonf8": 0.9346106233438712,
+      "paired_error_ratio_ucb_bonf8": 0.9443778348951664
+    },
+    "score_diagnostics": {
+      "auc_top20_absolute_error": 0.7109413394763267,
+      "spearman_contract_excess": 0.053630480315298906
+    }
+  },
+  {
+    "score": "paired_excess",
+    "seed": 20260907,
+    "threshold_mode": "category",
+    "contract_kind": "paired",
+    "thresholds": {
+      "FOODS": 0.05781522020697594,
+      "HOBBIES": null,
+      "HOUSEHOLD": null
+    },
+    "every_category_has_calibration_candidate": false,
+    "calibration_point_only": true,
+    "metrics": {
+      "calibration_a": {
+        "n": 2176510,
+        "accepted_n": 783229,
+        "coverage": 0.3598554566714603,
+        "wape": 0.7424822804768597,
+        "baseline_same_subset_wape": 0.7912974604991757,
+        "paired_error_ratio": 0.9383099498492997,
+        "demand_coverage": 0.3573095202445984
+      },
+      "calibration_b": {
+        "n": 2194800,
+        "accepted_n": 789501,
+        "coverage": 0.3597143247676326,
+        "wape": 0.7424513804143903,
+        "baseline_same_subset_wape": 0.7815410742869412,
+        "paired_error_ratio": 0.9499838266232964,
+        "demand_coverage": 0.33744555711746216
+      },
+      "shadow": {
+        "n": 2085060,
+        "accepted_n": 733622,
+        "coverage": 0.3518469492484629,
+        "wape": 0.713752075833586,
+        "baseline_same_subset_wape": 0.762479272129504,
+        "paired_error_ratio": 0.936093743034051,
+        "demand_coverage": 0.35878488421440125
+      }
+    },
+    "shadow_categories": {
+      "FOODS": {
+        "n": 1008900,
+        "accepted_n": 733622,
+        "coverage": 0.7271503617801566,
+        "wape": 0.713752075833586,
+        "baseline_same_subset_wape": 0.762479272129504,
+        "paired_error_ratio": 0.936093743034051,
+        "demand_coverage": 0.5277078151702881
+      },
+      "HOBBIES": {
+        "n": 372780,
+        "accepted_n": 0,
+        "coverage": 0.0,
+        "wape": null,
+        "baseline_same_subset_wape": null,
+        "paired_error_ratio": null,
+        "demand_coverage": 0.0
+      },
+      "HOUSEHOLD": {
+        "n": 703380,
+        "accepted_n": 0,
+        "coverage": 0.0,
+        "wape": null,
+        "baseline_same_subset_wape": null,
+        "paired_error_ratio": null,
+        "demand_coverage": 0.0
+      }
+    },
+    "shadow_bootstrap": {
+      "clusters": 1829,
+      "reps": 3000,
+      "type": "item",
+      "scope": "conditional_descriptive_not_confirmatory",
+      "coverage_ci95": [
+        0.333726079825041,
+        0.37051168791305766
+      ],
+      "coverage_lcb95": 0.3363853797972241,
+      "coverage_ucb95": 0.36725382003395585,
+      "coverage_lcb_bonf8": 0.3282627298495007,
+      "coverage_ucb_bonf8": 0.3745516675779114,
+      "wape_ci95": [
+        0.684633872775166,
+        0.7455037829255516
+      ],
+      "wape_lcb95": 0.6895336832979163,
+      "wape_ucb95": 0.7401180833692451,
+      "wape_lcb_bonf8": 0.6765717023406855,
+      "wape_ucb_bonf8": 0.7530697260075471,
+      "paired_error_ratio_ci95": [
+        0.9205795531943952,
+        0.9505766440961441
+      ],
+      "paired_error_ratio_lcb95": 0.9231581480313412,
+      "paired_error_ratio_ucb95": 0.9484838052126862,
+      "paired_error_ratio_lcb_bonf8": 0.9162454164096101,
+      "paired_error_ratio_ucb_bonf8": 0.9542174341442392
+    },
+    "shadow_week_bootstrap": {
+      "clusters": 17,
+      "reps": 3000,
+      "type": "week",
+      "scope": "conditional_descriptive_not_confirmatory",
+      "coverage_ci95": [
+        0.3483272328197836,
+        0.3557640687914986
+      ],
+      "coverage_lcb95": 0.34889616279305025,
+      "coverage_ucb95": 0.35509217355613654,
+      "coverage_lcb_bonf8": 0.34741653717399024,
+      "coverage_ucb_bonf8": 0.3569099620601418,
+      "wape_ci95": [
+        0.6980138557306053,
+        0.7288940013212958
+      ],
+      "wape_lcb95": 0.7011075306548603,
+      "wape_ucb95": 0.7265663256961578,
+      "wape_lcb_bonf8": 0.6930485649337863,
+      "wape_ucb_bonf8": 0.7328451837940338,
+      "paired_error_ratio_ci95": [
+        0.9321038488662388,
+        0.9406860667425649
+      ],
+      "paired_error_ratio_lcb95": 0.9326008041563306,
+      "paired_error_ratio_ucb95": 0.9399164246103576,
+      "paired_error_ratio_lcb_bonf8": 0.9313863716083947,
+      "paired_error_ratio_ucb_bonf8": 0.9419215353487673
+    },
+    "score_diagnostics": {
+      "auc_top20_absolute_error": 0.7109413394763267,
+      "spearman_contract_excess": 0.053630480315298906
+    }
+  }
+]

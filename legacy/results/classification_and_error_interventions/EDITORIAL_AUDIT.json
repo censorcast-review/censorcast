@@ -1,0 +1,15 @@
+{
+  "scope": "Text and aggregate-table additions; no external evaluation",
+  "fix": "Hobbies development oracle 76.78%; held-out 76.38% unchanged",
+  "mixed_source": {
+    "path": "results/review4/TRADEOFF_DEVELOPMENT_SELECTED.json",
+    "sha256": "3e1a28bbac7985109e4e52719b1f5e8047e941476afcd6db63f27a400f336fc7"
+  },
+  "classification": "binary precision strict reversal impossible; fixed multi-label whole-case micro-precision example",
+  "likelihood_conclusion": "No demonstrated robust control; average NLL differences alone do not prove nonidentifiability",
+  "new_primary_sources": [
+    "10.1016/j.ijforecast.2015.12.004",
+    "https://jmlr.org/papers/v11/el-yaniv10a.html",
+    "https://papers.nips.cc/paper_files/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html"
+  ]
+}

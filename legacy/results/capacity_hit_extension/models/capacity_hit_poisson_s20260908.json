@@ -1,0 +1,13 @@
+{
+  "method": "capacity_hit_poisson",
+  "shape": null,
+  "bias": -0.5848011260617529,
+  "training_rows": 600000,
+  "hidden_labels_used_for_fit": 0,
+  "seed": 20260908,
+  "trees": 220,
+  "fit_seconds": 14.93248200416565,
+  "capacity_hit_rule": true,
+  "protocol_sha256": "5550fd4aa387dcf0c5d21e197abcce435fa7c5139b51413f592e3a86c515dcd3",
+  "model_sha256": "7e3fc7401ec1a4618b860ee1bff0ad0c88304ffbbe7ba15e3ef99e7997aad7e3"
+}

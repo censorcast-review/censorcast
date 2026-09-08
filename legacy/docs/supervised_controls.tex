@@ -1,0 +1,28 @@
+The 21 supervised risk inputs are log baseline/proposal/Poisson/EM forecasts, predicted censor probability, positive correction, prior observed series WAPE, horizon, observed means at 7/28/56 days, 28-day standard deviation/zero fraction, censor rates at 7/28 days, seasonal lags 7/14, and category/department/store/state identifiers (categorical). Prior WAPE accumulates $|S_t-f_t|$ and $S_t$ from day 1314 only through the origin, with shrinkage mass 30 toward a pooled prior initialized at ratio 0.75 and mass 30. The pooled prior couples series. Origin tests perturb all observations from day 1800 onward and verify unchanged features for targets 1800--1806 issued at origin 1799.
+
+Let $\delta_e=\hat e-|Y-f|$ and $\delta_\mu=\hat\mu-Y$. The exact empirical decomposition is
+\[
+ \E_n[(\delta_e-r\delta_\mu)^2]=\E_n[\delta_e^2]+r^2\E_n[\delta_\mu^2]-2r\E_n[\delta_e\delta_\mu].
+\]
+The cross term is uncentered. Enlarging both heads from 110 to 220 trees increases held-out excess MSE from 1.0630 to 1.0868. Enlarging only error lowers row coverage by 0.45--0.63 points; enlarging only demand raises it by 0.20--0.38 points and raises WAPE. The 288 archived decompositions include each MSE and cross moment; they do not isolate demand overfitting as the cause.
+
+With a finite second moment, squared error targets $\mu=\E[Y\mid X]$. Poisson loss has derivative $1-\mu/z$, while Tweedie loss of fixed power $p\in(1,2)$ has derivative $z^{-p}(z-\mu)$; both also target the conditional mean for $z>0$. Six additional heads fit Poisson/Tweedie ($p=1.5$) on the same 600,000 development rows and three seeds, with fixed 220-tree settings and error heads. Their guardian period-B demand-normalized WAPE is 0.6470/0.6467, exceeding the cap despite increased shadow demand coverage. The joint operating failure remains.
+The complete six-row loss comparison is retained in the numerical supplement.
+
+\paragraph{Additional archived implementation detail.}
+Forecast horizons are 1--7 days. Target-date calendar and price schedules are assumed known at issue time. Point fits sample 1.2 million rows and use 300 trees, 63 leaves, learning rate 0.05, minimum leaf size 100, and L2 penalty 2. Risk fits sample 600,000 rows, use 220 trees, 31 leaves, the same learning rate/minimum leaf size, and L2 penalty 3. All use four threads and seeds 20260906--20260908; no early stopping is used. L1 and Poisson point models share their sampled rows/features. The uncensored-only control removes censored rows from that sample.
+
+The original adapter grid is $\alpha\in\{0,0.25,0.5,0.75,1,1.5,2\}$, $\gamma\in\{0.5,1,2\}$. Its expanded first-seed grid adds $\alpha\in\{3,4,6,8\}$ and $\gamma\in\{0.25,3,4,6\}$. The supervised selectors retain the original selected $(2,2)$ adapter; the observable-label extension uses the plain L1 fit. Mean/excess heads use squared error, and the quantile control uses quantile level 0.85. The secondary paired-error target $|Y-f|-0.95|Y-b|$ defines a different contract and is not counted as passing absolute WAPE.
+
+On the 120-day development point shadow, observed-sales L1 has mean WAPE 0.68225, improving on the earlier CENSORCAST control's 0.70584. Its censor-gated adapter reaches 0.67034; removing censored training rows instead gives 0.72866. The complete nine-row ablation table, seed variability, and fitted-object records remain in the numerical supplement.
+For each score, exact empirical threshold search evaluates the union of calibration A/B unique values, never splits a tie, rejects zero demand denominators, and maximizes minimum block coverage over common feasible candidates. Missing thresholds are null and imply all-false masks. The initial freeze uses the first maximizer; the later objective audit uses the largest maximizer as specified below. Item bootstraps retain all stores/times within an item; the 17-origin temporal bootstrap is a separate dependence sensitivity check. The development intervals use 3,000 draws and hold fitted objects fixed.
+
+
+A/B thresholds maximize common row coverage under $\sum a\hat e/\sum a\hat\mu\leq r$ and the 0.35 floor. Both excess and demand-normalized rankings are archived. Implied and realized risk differ through
+\[
+ R(a)-r=\frac{\E[a(\hat e-r\hat\mu)]+\E[a(e-\hat e)]-r\E[a(\mu-\hat\mu)]}{\E[a\mu]}.
+\]
+Hence passing the implied constraint is not an observed-risk certificate. The audit retains both numerator/denominator pairs.
+
+The fine grid adds $\kappa=1,1.5,3,5$ to the retained first-seed $\kappa=2$, with the same sample, features, and forecast. Protocol and input hashes precede fitting; the retained $\kappa=2$ results reproduce exactly. Anchors 0.5/10 are descriptive.
+The supervised count-matched head uses identical inputs and a realized-excess target. Fixed-seed uniform boundary draws are outcome-independent; fractional-tie expectations agree. The verifier checks 264 aggregate records and 21 exact-count matches. Uniform fractional abstention at 48.17\% instead has equal demand coverage and WAPE 0.6790.

@@ -1,0 +1,12 @@
+{
+  "status": "REVIEW6_PDF_BUILD_PASS",
+  "pages": 20,
+  "main_pages": 9,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "pdf_sha256": "30e7822777beeb8f5e606590022b0eff26e82cb2e9c1a7e1a25da0e4c675bdb8",
+  "source_sha256": "b2014ff29412e64e0cc239cbdb7885a5614fce1394c1cd09de4cf429bd3e7fc8",
+  "visual_review": "PASS_ALL_20_PAGES",
+  "visual_review_scope": "Root inspected pages1-10 and external main table; separate reviewer inspected every page11-20 including all external bounds and the final exact illustration.",
+  "content_review": "External primary estimates/bounds and all48secondarybounds match the independently reproduced frozen evaluation; no stale unopened claim or undefined reference; anonymous PDF metadata."
+}

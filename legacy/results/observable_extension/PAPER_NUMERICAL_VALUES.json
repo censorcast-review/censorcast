@@ -1,0 +1,13 @@
+{
+  "capacity_hit_nb2": {
+    "row_coverage": 0.48174824705284264,
+    "demand_coverage": 0.5479984461049793,
+    "wape": 0.5460862627560202,
+    "hobbies_wape": 0.8017568088499673
+  },
+  "strict_nb2": {
+    "row_coverage": 0.45205909342337075,
+    "wape": 0.5353064450144616
+  },
+  "verified": true
+}

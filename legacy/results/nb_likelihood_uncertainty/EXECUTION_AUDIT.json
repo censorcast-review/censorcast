@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "fits": 0,
+  "threshold_searches": 0,
+  "new_guardian_accesses": 0,
+  "new_external_accesses": 0,
+  "input_hashes_unchanged": true,
+  "historical_nll_replays": 7,
+  "maximum_historical_nll_error": 0.0,
+  "results_sha256": "de14aac23c03a5b858aed3950324c22739fa3b9d0d120f31d30bb60f3357aea3",
+  "item_statistics_sha256": "49119e8ed48a1fe17e1673d579e6b74c64e40f4f9a24c7bfce1f504060689dba",
+  "table_sha256": "343a8b792ab8f7a69a6c063656dee63b6618e0c796cb54175c971400a8ea7168"
+}

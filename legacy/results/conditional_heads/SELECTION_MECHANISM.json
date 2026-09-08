@@ -1,0 +1,63 @@
+{
+  "acceptance_overlap": {
+    "both": {
+      "rows": 1529359,
+      "row_fraction": 0.733484408122548,
+      "demand_coverage": 0.7522502913553164,
+      "mean_forecast": 1.0755953788757324,
+      "mean_demand": 1.4349900840809777,
+      "zero_demand_fraction": 0.5951179546463584,
+      "wape": 0.5958459965399625,
+      "total_contract_excess": -97185.97110904042
+    },
+    "direct_only": {
+      "rows": 267656,
+      "row_fraction": 0.12836848819698235,
+      "demand_coverage": 0.05686741619250017,
+      "mean_forecast": 0.03855588287115097,
+      "mean_demand": 0.6198441282840661,
+      "zero_demand_fraction": 0.6102198344143228,
+      "wape": 1.0026331406268532,
+      "total_contract_excess": 60141.11130049486
+    },
+    "relative_only": {
+      "rows": 141617,
+      "row_fraction": 0.0679198680133905,
+      "demand_coverage": 0.11448790018509632,
+      "mean_forecast": 1.4976446628570557,
+      "mean_demand": 2.3585233411243,
+      "zero_demand_fraction": 0.36416531913541456,
+      "wape": 0.7914726453025802,
+      "total_contract_excess": 50549.55880671585
+    },
+    "neither": {
+      "rows": 146428,
+      "row_fraction": 0.07022723566707913,
+      "demand_coverage": 0.07639439226708714,
+      "mean_forecast": 0.30167120695114136,
+      "mean_demand": 1.5220654519627395,
+      "zero_demand_fraction": 0.5169434807550468,
+      "wape": 0.92826644741576,
+      "total_contract_excess": 64217.871730054794
+    }
+  },
+  "oracle": [
+    {
+      "group": "FOODS",
+      "truth_only_oracle_max_coverage_at_cap": 1.0,
+      "deployable": false
+    },
+    {
+      "group": "HOBBIES",
+      "truth_only_oracle_max_coverage_at_cap": 0.891536563120339,
+      "deployable": false
+    },
+    {
+      "group": "HOUSEHOLD",
+      "truth_only_oracle_max_coverage_at_cap": 0.9803122067730103,
+      "deployable": false
+    }
+  ],
+  "cap": 0.640129832706689,
+  "scope": "post_hoc_development_diagnostic_not_a_policy"
+}

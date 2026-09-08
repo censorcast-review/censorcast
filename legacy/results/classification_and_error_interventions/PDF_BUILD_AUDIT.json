@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "pages": 20,
+  "main_pages": 9,
+  "diagnostics": [],
+  "packaged_inputs_unchanged": true,
+  "pdf_sha256": "b0a298cd050d62a6031a496d010a4bccb780bc5650e8dd84b36800fc5feead9f",
+  "source_sha256": "0ee083b397b0975fdf45726b75f08389f893bfb2237a9be584fa4b2c8f3446da",
+  "visual_review": {
+    "status": "PASS",
+    "all_pages_rendered": 20,
+    "all_contact_sheets_inspected": 5,
+    "additional_full_page_checks": [
+      13,
+      19
+    ],
+    "scope": "Text/tables/formulas within margins; no overlap, clipping or missing glyphs observed"
+  },
+  "supporting_sources_sha256": {
+    "paper/main.tex": "0ee083b397b0975fdf45726b75f08389f893bfb2237a9be584fa4b2c8f3446da",
+    "paper/review7_classification.tex": "05a047053ecf217c1a73dd518c2c73e6a900b9722df31bf701a58fc4a8279343",
+    "paper/review5_ratio_theory.tex": "0b5eb34f78217d946069102968bf4f2183135db341de41c085bd1547c8f07f77",
+    "paper/appendix_review4.tex": "a2eb5e6efbab1127641132e28b6a61a7f3473edd00de43c1e273721f1f54a681"
+  }
+}

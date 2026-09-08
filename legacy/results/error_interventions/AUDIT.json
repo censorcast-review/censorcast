@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "results_sha256": "68d2524cf2e3ba6f03d13f8993392d3847d1b4e063e49cb240d8b65f55527fcc",
+  "protocol_sha256": "c66c1883a1d8f719f709963a1f739861b8a6f65be791857779794402b0129cee",
+  "aggregate_records_checked": 9,
+  "optional_array_records_checked": 9,
+  "baseline_head_replays": 3,
+  "checks": [
+    "Frozen source, model, scope and protocol hashes",
+    "Three original development block point replays recorded bitwise-identical",
+    {
+      "future_observation_perturbation": "PASS",
+      "at_origin_negative_control": "PASS",
+      "zero_history_conventions": "PASS",
+      "direct_window_comparisons": 18
+    },
+    "Common-threshold selection agrees with independent enumeration and tie handling",
+    "Original shared Hobbies error MSE/bias reproduce all 3 published development blocks"
+  ],
+  "guardian_inputs_read": false,
+  "external_inputs_read": false
+}

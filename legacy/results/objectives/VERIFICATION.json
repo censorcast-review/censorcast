@@ -1,0 +1,13 @@
+{
+  "status": "REVIEW2_NUMERICAL_VERIFICATION_PASS",
+  "historical_cohort_block_group_metric_records_reproduced": 1008,
+  "frozen_files_unchanged": 19,
+  "original_guardian_result_unchanged": true,
+  "exact_nested_objective_pairs": 27,
+  "head_decomposition_checks": 288,
+  "new_development_only_fitted_models": 6,
+  "external_opened": false,
+  "new_independent_guardian_evaluations": 0,
+  "certificate_issued": false,
+  "human_author_verification": "NOT_ATTESTED_BY_AUTOMATED_CHECKS"
+}

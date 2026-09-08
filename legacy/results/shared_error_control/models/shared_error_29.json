@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "0b5a2828bcc457c8b2f609287886304309e76be22358cb07342479505db5de5e",
+  "model_sha256": "ba10818682ec5bd515d802d299a4ec87d280862a016c9a257f5fab33d1c1b061",
+  "training_rows": 600000,
+  "feature_count": 29,
+  "fit_started_utc": "2026-09-06T16:09:11.670811+00:00",
+  "fit_completed_utc": "2026-09-06T16:09:16.201359+00:00",
+  "fit_seconds": 4.530549764633179,
+  "fit_count": 1
+}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "FEATURE_SCHEMA.json": "1fbd0cff666a2df266779d341dafbe7cc9d54ef40c6bc6f2630404c57b05d113",
+    "PROTOCOL.json": "b60f3a93be7d7c0661d01f420ad14dac30a64c14576746da3208b65363063c2d",
+    "RESUME_PROTOCOL.json": "9b9cd94a03a766c2eac26bec97287ee7953cb362f3731f2ec304abd62316aba0",
+    "fresh_EVAL_FEATURES.npz": "b3849fffa4785a31aaa0b42d4861e253f9f7227cad88a948da75974f9f6f470a",
+    "fresh_EVAL_PREDICTIONS.csv.gz": "9bafcf754e5fd9a9dfd707ea2ce81f3cf571ad7990dd4a2fa4cdf634c8a0415f",
+    "fresh_FINAL_STACK.txt": "a24e114053d92e71681e6f19ea790fd07e2bbaac7b31460ecbc0b1f654448338",
+    "fresh_FROZEN_POLICIES.json": "baa78b2b674797c3e9920e21fe9a9faed38dd1d611c1f8d0db19b325174f5568",
+    "fresh_RESULTS.json": "d91194a8a4ab3b0da73f66fc1f3d4663de7b2b271ecc58908e6842f6b45d1b94",
+    "fresh_SELECTION.json": "3992e33c3f8ea773b6b91836c259e2273268b715e11c154374beac967e8c425f",
+    "fresh_TRAIN_CALIBRATION.csv.gz": "86c6b7c1618a6f332371abbf1e9926ce832bfcdb5de3a73e52c431ccd7914a8c",
+    "fresh_TRAIN_FEATURES.npz": "4aaf70bd12cd8f580975f8076cfb211972ec0bdbd554a177d22a28424cf4de43",
+    "fresh_candidate_2_150.txt": "90867aa30717d3b2db69c785e64c6507f516a4a5ce013a98044b5e44f10e08d4",
+    "fresh_candidate_2_300.txt": "7d4facea398be721eba3a28bcef0c75c42f9dfcd391774b1fc44ea3691efed51",
+    "fresh_candidate_2_50.txt": "f8ac2d3cfc4ae190dff42bb1faa0db3fd2653a4b139ee7a1ec26bff3ede0db13",
+    "fresh_candidate_4_150.txt": "25aeeb5f153515b1009d498eac97dba0e55de00aea0f9561bdd277c6639a7984",
+    "fresh_candidate_4_300.txt": "38bd26add7d31ed247d9c66b921b3185d82288b53a4a028e663eb4aff5a768aa",
+    "fresh_candidate_4_50.txt": "5bee3c5ec5275e3dfd3dda247223344864c7e8ea091cdfd38bdb36a0717f352d"
+  },
+  "finished_utc": "2026-09-08T18:58:21.032257+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PDF_BYTE_COUNT_AND_PARSE_VERIFIED",
+  "bytes": 694333,
+  "pages": 23,
+  "main_pages": 8,
+  "sha256": "83ee8100729761ba92b3e42cf085dfe69a588b2e1b9a4d0b9d2111196660eced",
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "temporary_directory": "/tmp/censorcast-r2-tex-j4bkvfg2"
+}

@@ -1,0 +1,7 @@
+{
+  "thresholds": {
+    "composite_excess": 0.28730344772338867,
+    "relative_error_mu": 0.9743309617042542
+  },
+  "scope": "development_selected_posthoc"
+}

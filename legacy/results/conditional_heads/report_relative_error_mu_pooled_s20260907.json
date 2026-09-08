@@ -1,0 +1,126 @@
+{
+  "seed": 20260907,
+  "score": "relative_error_mu",
+  "threshold_mode": "pooled",
+  "thresholds": {
+    "ALL": 1.0070984363555908
+  },
+  "metrics": {
+    "calibration_a": {
+      "ALL": {
+        "n": 2176510,
+        "accepted_n": 1702468,
+        "coverage": 0.7822008628492403,
+        "wape": 0.6399723561646498,
+        "baseline_same_subset_wape": 0.6545750581265939,
+        "paired_error_ratio": 0.9776913254169242,
+        "demand_coverage": 0.8981350064277649
+      },
+      "FOODS": {
+        "n": 1053150,
+        "accepted_n": 799308,
+        "coverage": 0.758968807862128,
+        "wape": 0.6165633790053054,
+        "baseline_same_subset_wape": 0.6367247483223689,
+        "paired_error_ratio": 0.9683358164258823,
+        "demand_coverage": 0.9121458530426025
+      },
+      "HOBBIES": {
+        "n": 389130,
+        "accepted_n": 294810,
+        "coverage": 0.7576131369979184,
+        "wape": 0.8090399552115947,
+        "baseline_same_subset_wape": 0.8092390282602494,
+        "paired_error_ratio": 0.9997539996939067,
+        "demand_coverage": 0.7869831323623657
+      },
+      "HOUSEHOLD": {
+        "n": 734230,
+        "accepted_n": 608350,
+        "coverage": 0.8285550849188946,
+        "wape": 0.6501099774579732,
+        "baseline_same_subset_wape": 0.6538403243008006,
+        "paired_error_ratio": 0.9942947127850877,
+        "demand_coverage": 0.9011192321777344
+      }
+    },
+    "calibration_b": {
+      "ALL": {
+        "n": 2194800,
+        "accepted_n": 1680084,
+        "coverage": 0.765483870967742,
+        "wape": 0.6401297363863596,
+        "baseline_same_subset_wape": 0.6493265484804367,
+        "paired_error_ratio": 0.9858363836876844,
+        "demand_coverage": 0.888624370098114
+      },
+      "FOODS": {
+        "n": 1062000,
+        "accepted_n": 790257,
+        "coverage": 0.7441214689265536,
+        "wape": 0.6125021298416033,
+        "baseline_same_subset_wape": 0.6245585643623839,
+        "paired_error_ratio": 0.9806960704588382,
+        "demand_coverage": 0.9054130911827087
+      },
+      "HOBBIES": {
+        "n": 392400,
+        "accepted_n": 290822,
+        "coverage": 0.7411365953109073,
+        "wape": 0.8026768647951049,
+        "baseline_same_subset_wape": 0.8032074367187008,
+        "paired_error_ratio": 0.999339433502056,
+        "demand_coverage": 0.7713226079940796
+      },
+      "HOUSEHOLD": {
+        "n": 740400,
+        "accepted_n": 599005,
+        "coverage": 0.8090289032955159,
+        "wape": 0.6604465693292939,
+        "baseline_same_subset_wape": 0.6646820607014879,
+        "paired_error_ratio": 0.993627793463052,
+        "demand_coverage": 0.889891505241394
+      }
+    },
+    "shadow": {
+      "ALL": {
+        "n": 2085060,
+        "accepted_n": 1566212,
+        "coverage": 0.7511591992556569,
+        "wape": 0.6271878544355272,
+        "baseline_same_subset_wape": 0.6409004807826143,
+        "paired_error_ratio": 0.9786041253544662,
+        "demand_coverage": 0.8924490809440613
+      },
+      "FOODS": {
+        "n": 1008900,
+        "accepted_n": 749283,
+        "coverage": 0.742673208444841,
+        "wape": 0.5973409412770844,
+        "baseline_same_subset_wape": 0.6153468647790887,
+        "paired_error_ratio": 0.9707385792751725,
+        "demand_coverage": 0.9128186106681824
+      },
+      "HOBBIES": {
+        "n": 372780,
+        "accepted_n": 267246,
+        "coverage": 0.7169000482858523,
+        "wape": 0.8130050820360784,
+        "baseline_same_subset_wape": 0.8136706478943386,
+        "paired_error_ratio": 0.9991820205632553,
+        "demand_coverage": 0.7616480588912964
+      },
+      "HOUSEHOLD": {
+        "n": 703380,
+        "accepted_n": 549683,
+        "coverage": 0.7814879581449572,
+        "wape": 0.6572676100664308,
+        "baseline_same_subset_wape": 0.6622278104177771,
+        "paired_error_ratio": 0.9925098277763099,
+        "demand_coverage": 0.8819743990898132
+      }
+    }
+  },
+  "trees_total": 440,
+  "absolute_error_auc": 0.4012134225276907
+}

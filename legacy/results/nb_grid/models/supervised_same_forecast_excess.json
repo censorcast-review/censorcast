@@ -1,0 +1,11 @@
+{
+  "method": "supervised_same_forecast_excess",
+  "seed": 20260906,
+  "trees": 220,
+  "training_rows": 600000,
+  "hidden_labels_used_for_fit": 600000,
+  "target": "abs(Y-f)-rY",
+  "model_sha256": "abba29bd1a80e0d9609327341f536bd1c7eb4391022f47fb53cd4820e9668e48",
+  "fit_seconds": 6.11879301071167,
+  "protocol_sha256": "71232dca123411ce12fcf444f776c23b7c1905ae61adbcefde11f86b5bdb964c"
+}

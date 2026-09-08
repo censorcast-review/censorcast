@@ -1,0 +1,12 @@
+\section{Exact three-context illustration}
+\label{app:geometry}
+For cap $r=1/2$, fixed row floor $0.35$, and exact conditional heads, take
+\[
+\begin{array}{c|rrrrrr}
+X&P(X)&Y=\mu&f&e&m_r&e/\mu\\\hline
+C&2/5&1/4&1/4&0&-1/8&0\\
+L&1/2&1/10&0&1/10&1/20&1\\
+H&1/10&10&3&7&2&7/10
+\end{array}
+\]
+Here $\E Y=23/20$. Both optima accept C. For $z=P(L)a(L)$ and $x=P(H)a(H)$, feasibility is $z/20+2x\leq1/20$, $0\leq z\leq1/2$, $0\leq x\leq1/10$. The row optimum $(z,x)=(1/2,1/80)$ attains row/demand coverage $73/80,11/46$; the demand optimum $(0,1/40)$ attains $17/40,7/23$. Both have WAPE $1/2$ and meet the row floor. The efficient segment is $x=1/40-z/40$. Independent acceptance randomization and rational vertex/LP checks are implemented in \texttt{verify\_objective\_geometry.py}.

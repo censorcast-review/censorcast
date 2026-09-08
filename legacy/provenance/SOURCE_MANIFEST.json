@@ -1,0 +1,16 @@
+{
+  "code/analyze_results.py": "ca51090708d9b203feec34fdd129d7900f7a5f97b60ea3a37ceb54721cccc783",
+  "code/build_tables.py": "6332927dc9baca106c622b7c57f2db27ef28201dbf3782b84d7f31d3181ba2da",
+  "code/legacy_features/__init__.py": "2b3bc309d0d9f0990abc5b446056bfcb167901dcbd0e67f4909ca23e82fe8c2b",
+  "code/legacy_features/features.py": "3b2bd1cc61b1d5108fa21b0cca13fc8e17fad9014d878ba8ab461f3648adee41",
+  "code/legacy_features/metrics.py": "9b297c77f19af13ab381eaf9a8298755d71610c2f25667f14a7c720f448a6277",
+  "code/legacy_features/models.py": "b1fcd97fdd1603e6ef57458cb39c0cf18180c0a00aec2f4702482d6a0fe0d173",
+  "code/make_reproduction_notebook.py": "f5dc3689f32acc68ffb3449033dc7fc7e21c75d81634926c0b75c5ee66483651",
+  "code/prepare_strong_point_cache.py": "a888b2e63310af5718af1ac8b1e0a24c91950c5d06d447a3435004a6a1bcfd82",
+  "code/run_adapter_ablation.py": "f64fb1baf0ac3105c13b8629ad60d75e3b52afa5f1f10129d6cde3fbbadd4e6e",
+  "code/run_point_baselines.py": "81ac36a7246dea5fce638a66783d5dee4fb90e07ed58f5641fe1f9617d5dfd34",
+  "code/run_selective_study.py": "34bbbe99e9fe553704e797dccc03676d9a9d887935b8627bb5001b0f932a7dd1",
+  "code/run_synthetic.py": "9a78d6ce9c7251eae8e8aa8159275c14e9a1038ed026abc296e9a1f3fb19e8ad",
+  "code/test_core_invariants.py": "e657ea06e4d367e138a846ce9f46094f969a7a86dbe6aa5f10750a744edeaca5",
+  "code/verify_deliverables.py": "61a04032fe30e0aca94d13e3dfd7546caae9c57e12873f3583504b2923c5a293"
+}

@@ -1,0 +1,340 @@
+{
+  "checks": [
+    {
+      "difference": 0.0,
+      "name": "original_split_RC_wape",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "original_split_RC_mae",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "original_split_RC_rmse",
+      "pass": true
+    },
+    {
+      "difference": 0.0,
+      "name": "original_split_RC_bias",
+      "pass": true
+    },
+    {
+      "name": "pooled:base:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "pooled:rc:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "pooled:floor_0_5:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "FOODS:base:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "FOODS:rc:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "FOODS:floor_0_5:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "HOBBIES:base:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "HOBBIES:rc:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "HOBBIES:floor_0_5:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "HOUSEHOLD:base:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "HOUSEHOLD:rc:error_mass_identity",
+      "pass": true
+    },
+    {
+      "name": "HOUSEHOLD:floor_0_5:error_mass_identity",
+      "pass": true
+    }
+  ],
+  "finished_utc": "2026-09-08T10:00:04.524934+00:00",
+  "fit_days": [
+    1317,
+    1318,
+    1319,
+    1320,
+    1321,
+    1322,
+    1323,
+    1324,
+    1325,
+    1326,
+    1327,
+    1328,
+    1329,
+    1330,
+    1331,
+    1332,
+    1333,
+    1334,
+    1335,
+    1336,
+    1337,
+    1338,
+    1339,
+    1340,
+    1341,
+    1342,
+    1343,
+    1344,
+    1345,
+    1346,
+    1347,
+    1348,
+    1349,
+    1350,
+    1351,
+    1352,
+    1353,
+    1354,
+    1355,
+    1356,
+    1357,
+    1358,
+    1359,
+    1360,
+    1361,
+    1362,
+    1363,
+    1364,
+    1365,
+    1366,
+    1367,
+    1368,
+    1369,
+    1370,
+    1371,
+    1372,
+    1373
+  ],
+  "heldout_days": [
+    1374,
+    1375,
+    1376,
+    1377,
+    1378,
+    1379,
+    1380,
+    1381,
+    1382,
+    1383,
+    1384,
+    1385,
+    1386,
+    1387,
+    1388,
+    1389,
+    1390,
+    1391,
+    1392,
+    1393,
+    1394,
+    1395,
+    1396,
+    1397,
+    1398,
+    1399,
+    1400,
+    1401,
+    1402,
+    1403,
+    1404,
+    1405,
+    1406,
+    1407,
+    1408,
+    1409,
+    1410,
+    1411,
+    1412,
+    1413,
+    1414,
+    1415,
+    1416,
+    1417,
+    1418,
+    1419,
+    1420,
+    1421,
+    1422,
+    1423,
+    1424,
+    1425,
+    1426,
+    1427,
+    1428,
+    1429,
+    1430,
+    1431,
+    1432,
+    1433
+  ],
+  "heldout_metrics": {
+    "FOODS": {
+      "base": {
+        "absolute_error_mass": 561108.235721132,
+        "bias": -0.29512325364462066,
+        "demand_mass": 835201.0,
+        "mae": 1.0567010088910207,
+        "prediction_mass": 588713.7634327592,
+        "rmse": 2.827462469630782,
+        "rows": 531000,
+        "squared_error_mass": 4245102.873117589,
+        "wape": 0.671824190489633
+      },
+      "floor_0_5": {
+        "absolute_error_mass": 559588.3784425436,
+        "bias": -0.28809088592507587,
+        "demand_mass": 835201.0,
+        "mae": 1.053838754129084,
+        "prediction_mass": 594587.2039844907,
+        "rmse": 2.8148324300206933,
+        "rows": 531000,
+        "squared_error_mass": 4207262.534430083,
+        "wape": 0.6700044401797215
+      },
+      "rc": {
+        "absolute_error_mass": 559588.3298424452,
+        "bias": -0.2880909441147792,
+        "demand_mass": 835201.0,
+        "mae": 1.053838662603475,
+        "prediction_mass": 594587.1553843922,
+        "rmse": 2.8148324297469673,
+        "rows": 531000,
+        "squared_error_mass": 4207262.533611819,
+        "wape": 0.6700043819900182
+      }
+    },
+    "HOBBIES": {
+      "base": {
+        "absolute_error_mass": 100248.46073928814,
+        "bias": -0.5774487888046965,
+        "demand_mass": 114474.0,
+        "mae": 0.5109503605468305,
+        "prediction_mass": 48371.12735037117,
+        "rmse": 1.7374369042969622,
+        "rows": 196200,
+        "squared_error_mass": 592266.3886962328,
+        "wape": 0.8757312642109837
+      },
+      "floor_0_5": {
+        "absolute_error_mass": 100102.76695269122,
+        "bias": -0.575953664710449,
+        "demand_mass": 114474.0,
+        "mae": 0.5102077826334924,
+        "prediction_mass": 48542.28018593607,
+        "rmse": 1.7328072364438136,
+        "rows": 196200,
+        "squared_error_mass": 589114.2242434556,
+        "wape": 0.8744585403907544
+      },
+      "rc": {
+        "absolute_error_mass": 100017.44913545763,
+        "bias": -0.5771752957191385,
+        "demand_mass": 114474.0,
+        "mae": 0.5097729313733824,
+        "prediction_mass": 48402.43519784734,
+        "rmse": 1.7328799398160197,
+        "rows": 196200,
+        "squared_error_mass": 589163.6601972507,
+        "wape": 0.8737132373766762
+      }
+    },
+    "HOUSEHOLD": {
+      "base": {
+        "absolute_error_mass": 205092.19655976858,
+        "bias": -0.3339184480464433,
+        "demand_mass": 282276.0,
+        "mae": 0.5540037724467006,
+        "prediction_mass": 188018.83615924217,
+        "rmse": 1.395282593024385,
+        "rows": 370200,
+        "squared_error_mass": 720710.3630297146,
+        "wape": 0.7265661854347113
+      },
+      "floor_0_5": {
+        "absolute_error_mass": 204208.23093826597,
+        "bias": -0.3270687219428969,
+        "demand_mass": 282276.0,
+        "mae": 0.551615966878082,
+        "prediction_mass": 189952.34944484686,
+        "rmse": 1.3861698305499415,
+        "rows": 370200,
+        "squared_error_mass": 711327.0090367611,
+        "wape": 0.7234346205071135
+      },
+      "rc": {
+        "absolute_error_mass": 203843.6988782854,
+        "bias": -0.3291467338841594,
+        "demand_mass": 282276.0,
+        "mae": 0.5506312773589557,
+        "prediction_mass": 189365.776546115,
+        "rmse": 1.3861891323053424,
+        "rows": 370200,
+        "squared_error_mass": 711346.8189550363,
+        "wape": 0.7221432175540442
+      }
+    },
+    "pooled": {
+      "base": {
+        "absolute_error_mass": 866448.8930201887,
+        "bias": -0.3302463109795986,
+        "demand_mass": 1231951.0,
+        "mae": 0.7895470138693171,
+        "prediction_mass": 825103.7269423725,
+        "rmse": 2.2505045957975276,
+        "rows": 1097400,
+        "squared_error_mass": 5558079.624843537,
+        "wape": 0.7033144118720539
+      },
+      "floor_0_5": {
+        "absolute_error_mass": 863899.3763335007,
+        "bias": -0.3237703174758788,
+        "demand_mass": 1231951.0,
+        "mae": 0.7872237801471667,
+        "prediction_mass": 833081.8336152737,
+        "rmse": 2.240282616065518,
+        "rows": 1097400,
+        "squared_error_mass": 5507703.767710299,
+        "wape": 0.7012449166675466
+      },
+      "rc": {
+        "absolute_error_mass": 863449.4778561882,
+        "bias": -0.3243600052856367,
+        "demand_mass": 1231951.0,
+        "mae": 0.7868138125170295,
+        "prediction_mass": 832355.3671283545,
+        "rmse": 2.2402966988856234,
+        "rows": 1097400,
+        "squared_error_mass": 5507773.012764106,
+        "wape": 0.7008797248073895
+      }
+    }
+  },
+  "policy_sha256": "df7f6bc78c7843c0d09334e32d8ec149375e1f1e1496c02e184566290063ebca",
+  "scope": "post-hoc held-out time-half diagnostic, not independent confirmation or selection",
+  "start_sha256": "e9c1e127e81d544769b6470e060a4f466371c94c1da67b07b3d94d3ae3aa637d",
+  "status": "PASS"
+}

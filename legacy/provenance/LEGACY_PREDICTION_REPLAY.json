@@ -1,0 +1,14 @@
+{
+  "raw_poisson_histgb": {
+    "exact_float32_match": true,
+    "max_abs_difference": 0.0
+  },
+  "censored_poisson_em": {
+    "exact_float32_match": true,
+    "max_abs_difference": 0.0
+  },
+  "censor_probability": {
+    "exact_float32_match": true,
+    "max_abs_difference": 0.0
+  }
+}
