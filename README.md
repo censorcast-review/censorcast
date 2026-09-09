@@ -12,7 +12,9 @@ cost of adding a risk margin and checking it before utility selection. All ten
 A-feasible candidates passed B, so this comparison does not isolate a benefit
 of screening from the stricter design. The discussion distinguishes predictor
 improvement, utility selection, and risk verification; see
-[revision details](docs/writing_revision.md).
+[revision details](docs/writing_revision.md). The latest
+[scope clarification](docs/scope_clarifications.md) reports both sides of the
+coverage exchange and distinguishes completed evidence from pending experiments.
 
 ## Complete repository
 

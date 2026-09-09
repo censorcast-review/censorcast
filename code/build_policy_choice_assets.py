@@ -64,7 +64,7 @@ fig.savefig(P/'figures/policy_choice.pdf',bbox_inches='tight');plt.close(fig)
 # All candidate outcomes and all cap settings remain machine-readable; the
 # appendix table makes the change of selected family visible without searching JSON.
 lines=[r'\begin{table}[t]',r'\centering\scriptsize',
- r'\caption{Declared cap sensitivity of utility-based menu selection. M5 uses absolute caps; Bike lists multipliers of full calibration risk. Changes are evaluation exposure-choice minus case-choice, in percentage points. ``All'' denotes an identical accept-all policy, regardless of its tie-breaking method label. These are descriptive additional comparisons.}',
+ r"\caption{Declared cap sensitivity of utility-based menu selection. M5 uses absolute caps; Bike lists multipliers of full calibration risk. Changes are evaluation exposure-choice minus case-choice, in percentage points. ``All'' denotes an identical accept-all policy, regardless of its tie-breaking method label. These are descriptive additional comparisons.}",
  r'\label{tab:choice-caps}',r'\begin{tabular}{lllr r}',r'\toprule',r'Setting & Cap / multiplier & Case / exposure rule & $\Delta c$ & $\Delta d$ \\',r'\midrule']
 for x in z['menus']:
     a,b=(x['selected'][o] for o in ('c','d'));q=x['contrast'];c=x.get('factor',x['cap'])

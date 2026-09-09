@@ -7,8 +7,8 @@
       "numerical_asset": false
     },
     "README.md": {
-      "bytes": 12340,
-      "sha256": "8346acb1f03dde88444a3a06c7d1b4a957182ecad1e8e69ca0c4af3c251f9886",
+      "bytes": 12510,
+      "sha256": "5307aecd64dccc8f13e4985eea43e0f96b158d8b45a9574b820294ee1f8accfa",
       "numerical_asset": false
     },
     "REVIEW_LINK.json": {
@@ -28,7 +28,7 @@
     },
     "code/build_policy_choice_assets.py": {
       "bytes": 5912,
-      "sha256": "a3cba06efd90964ba92b128c6a33bcdaa42dfbff5c90466fb27dee6d961f1c4c",
+      "sha256": "5ce91229c477f01c43f0ed2d1f050fb99b9c1f966f170e93147c571ef22f0e1d",
       "numerical_asset": false
     },
     "code/configure_review_link.py": {
@@ -5137,8 +5137,8 @@
       "numerical_asset": false
     },
     "paper/CENSORCAST_ICLR_2027_Final.pdf": {
-      "bytes": 570092,
-      "sha256": "f80c54068f825895bd5ddcd00e22ba2461478651ea6b96d2306c441482d637df",
+      "bytes": 570620,
+      "sha256": "a1de035bba9f5bd654f25b22242d520a4ce751dd4637fee705638926ee77fbd8",
       "numerical_asset": false
     },
     "paper/accuracy_appendix.tex": {
@@ -5292,8 +5292,8 @@
       "numerical_asset": false
     },
     "paper/main.tex": {
-      "bytes": 25258,
-      "sha256": "bd9ee853568a3ec264ad4bd021f3e4d954da3d9fab9394892d130ece279fb741",
+      "bytes": 25539,
+      "sha256": "7a372bdc5f2c2d47976ee49e3813eff4b61b86ffedac53e204f67aad1a16b2fc",
       "numerical_asset": false
     },
     "paper/natural_diagnostics.tex": {
@@ -5302,8 +5302,8 @@
       "numerical_asset": false
     },
     "paper/nonretail.tex": {
-      "bytes": 8631,
-      "sha256": "85956c1bd559661e342e696912ef59124dc2fb1bd84681226a5cc1cc93f8b600",
+      "bytes": 8869,
+      "sha256": "48551093cd291ca34a0371d37c8113c4fdc31d062cf2b4fda7fff5ee2a8ecb58",
       "numerical_asset": false
     },
     "paper/policy_choice_appendix.tex": {
@@ -5312,8 +5312,8 @@
       "numerical_asset": false
     },
     "paper/policy_choice_caps.tex": {
-      "bytes": 1900,
-      "sha256": "437c819b7cf317be24e14babdb085a0919424aa9a0cda66028d95af270dabc5b",
+      "bytes": 1902,
+      "sha256": "cfc5d0573af981341d914121fe44718fcbc1077d65e54b5fbce62ccb594fcca6",
       "numerical_asset": false
     },
     "paper/policy_choice_table.tex": {
@@ -5539,6 +5539,16 @@
     "docs/writing_build_report.json": {
       "bytes": 165,
       "sha256": "901954a8ba1c88248d922d0c0a3bbcc8d8993b86b4f98afb8c150dfc2231a0e6",
+      "numerical_asset": false
+    },
+    "docs/scope_clarifications.md": {
+      "bytes": 4342,
+      "sha256": "33335f88381d9d0f4aa3a7040a9845dd6768c8b49d0413a25f13ff552ab6c14a",
+      "numerical_asset": false
+    },
+    "docs/scope_build_report.json": {
+      "bytes": 165,
+      "sha256": "01ddb8b376dfab4e4f645c2ee4642b7c7b3b2e6610660f21eff022490b7d27a1",
       "numerical_asset": false
     }
   }
