@@ -1,0 +1,177 @@
+{
+  "created_utc": "2026-09-09T00:25:45.330916+00:00",
+  "n_fit": 1125,
+  "n_cal": 375,
+  "full_calibration_risk": 0.32422171602126043,
+  "policies": [
+    {
+      "factor": 0.75,
+      "cap": 0.24316628701594534,
+      "method": "conditional_error",
+      "threshold": 0.8003070106492683,
+      "calibration": {
+        "rows": 166,
+        "c": 0.44266666666666665,
+        "d": 0.35231586940015186,
+        "risk": 0.2413793103448276,
+        "loss": 112,
+        "weight": 464
+      }
+    },
+    {
+      "factor": 0.75,
+      "cap": 0.24316628701594534,
+      "method": "row_excess",
+      "threshold": -0.06335438039030572,
+      "calibration": {
+        "rows": 143,
+        "c": 0.38133333333333336,
+        "d": 0.3773728170083523,
+        "risk": 0.2414486921529175,
+        "loss": 120,
+        "weight": 497
+      }
+    },
+    {
+      "factor": 0.75,
+      "cap": 0.24316628701594534,
+      "method": "exposure_ratio",
+      "threshold": 0.22539540442938022,
+      "calibration": {
+        "rows": 145,
+        "c": 0.38666666666666666,
+        "d": 0.3720577069096431,
+        "risk": 0.24285714285714285,
+        "loss": 119,
+        "weight": 490
+      }
+    },
+    {
+      "factor": 0.85,
+      "cap": 0.27558845861807135,
+      "method": "conditional_error",
+      "threshold": 1.105142079598973,
+      "calibration": {
+        "rows": 262,
+        "c": 0.6986666666666667,
+        "d": 0.618830675778284,
+        "risk": 0.27361963190184047,
+        "loss": 223,
+        "weight": 815
+      }
+    },
+    {
+      "factor": 0.85,
+      "cap": 0.27558845861807135,
+      "method": "row_excess",
+      "threshold": 0.021606871443524245,
+      "calibration": {
+        "rows": 235,
+        "c": 0.6266666666666667,
+        "d": 0.6233864844343204,
+        "risk": 0.27527405602923266,
+        "loss": 226,
+        "weight": 821
+      }
+    },
+    {
+      "factor": 0.85,
+      "cap": 0.27558845861807135,
+      "method": "exposure_ratio",
+      "threshold": 0.2809901764789524,
+      "calibration": {
+        "rows": 232,
+        "c": 0.6186666666666667,
+        "d": 0.618830675778284,
+        "risk": 0.27361963190184047,
+        "loss": 223,
+        "weight": 815
+      }
+    },
+    {
+      "factor": 0.95,
+      "cap": 0.30801063022019737,
+      "method": "conditional_error",
+      "threshold": 1.6150935983906205,
+      "calibration": {
+        "rows": 350,
+        "c": 0.9333333333333333,
+        "d": 0.8997722095671982,
+        "risk": 0.30632911392405066,
+        "loss": 363,
+        "weight": 1185
+      }
+    },
+    {
+      "factor": 0.95,
+      "cap": 0.30801063022019737,
+      "method": "row_excess",
+      "threshold": 0.18045031174760573,
+      "calibration": {
+        "rows": 325,
+        "c": 0.8666666666666667,
+        "d": 0.8633257403189066,
+        "risk": 0.306948109058927,
+        "loss": 349,
+        "weight": 1137
+      }
+    },
+    {
+      "factor": 0.95,
+      "cap": 0.30801063022019737,
+      "method": "exposure_ratio",
+      "threshold": 0.3540403712440418,
+      "calibration": {
+        "rows": 310,
+        "c": 0.8266666666666667,
+        "d": 0.8481397114654518,
+        "risk": 0.3079677708146822,
+        "loss": 344,
+        "weight": 1117
+      }
+    },
+    {
+      "factor": 1.05,
+      "cap": 0.3404328018223235,
+      "method": "conditional_error",
+      "threshold": 3.077207618146693,
+      "calibration": {
+        "rows": 375,
+        "c": 1.0,
+        "d": 1.0,
+        "risk": 0.32422171602126043,
+        "loss": 427,
+        "weight": 1317
+      }
+    },
+    {
+      "factor": 1.05,
+      "cap": 0.3404328018223235,
+      "method": "row_excess",
+      "threshold": 0.4326001058323261,
+      "calibration": {
+        "rows": 375,
+        "c": 1.0,
+        "d": 1.0,
+        "risk": 0.32422171602126043,
+        "loss": 427,
+        "weight": 1317
+      }
+    },
+    {
+      "factor": 1.05,
+      "cap": 0.3404328018223235,
+      "method": "exposure_ratio",
+      "threshold": 0.49136667782163446,
+      "calibration": {
+        "rows": 375,
+        "c": 1.0,
+        "d": 1.0,
+        "risk": 0.32422171602126043,
+        "loss": 427,
+        "weight": 1317
+      }
+    }
+  ],
+  "classifier_sha256": "973ce4faa91c4159a1b98de03c1cc56fba8dc946d40607aaef1f7b64ec0cef27"
+}

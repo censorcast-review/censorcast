@@ -1,0 +1,13 @@
+{
+  "historical_metric_checks": 27,
+  "historical_threshold_checks": 9,
+  "floor_changes_all_infeasible": 31,
+  "independent_replay": {
+    "status": "PASS",
+    "checks": 523,
+    "sensitivity_policies": 288,
+    "yeast_policies": 12,
+    "new_fits": 0,
+    "new_threshold_searches": 0
+  }
+}

@@ -8,6 +8,8 @@
 \paragraph{Additional WAPE example.} The supplement provides a deterministic three-context calculation in \texttt{docs/wape\_worked\_example.tex}. Its row- and demand-optimal coverages are $(73/80,11/46)$ and $(17/40,7/23)$ at cap $1/2$; \texttt{verify\_objective\_geometry.py} checks the fractions and efficient segment.
 
 \subsection{Censored-tail nonidentification and bounded-tail envelope}
+\label{app:identification}
+\input{identification_statement.tex}
 Let $O=(X,S,C,\Delta)$ have the fixed observable law, where $C\geq0$, $\E C<\infty$, and $\Delta=1$ means $D>C$. Fix $a(X)\in[0,1]$ and $0\leq f(X)\leq F<\infty$, and let $D_0$ be an integrable compatible completion. Put $B=\{\Delta=1\}$ and suppose $k=\E[a\ind_B]>0$. For $M>F$, replace $D_0$ on $B$ by $C+M$. This preserves $S=\min(D,C)$ and $\Delta$, and each completion remains integrable. Its accepted numerator and denominator are
 \[
  \E[a|D_M-f|]=Mk+A_0,\qquad \E[aD_M]=Mk+B_0,
@@ -88,6 +90,10 @@ The notebook checks frozen hashes before and after replaying theory, moments, an
 \label{app:objective}
 \input{tables/twohead_table.tex}
 \input{tables/objective_table.tex}
+\subsection{Architecture controls and first-holdout detail}
+\label{app:architecture}
+\input{architecture_diagnostics.tex}
+
 \subsection{Nested paths, family choice, and denominator regularization}
 For a fixed score, $A_t=\{s\leq t\}$ is nested. Both $P(A_t)$ and $\E[Y\ind_{A_t}]/\E Y$, including their empirical blockwise minima, are nondecreasing in $t$. WAPE need not be monotone, but the largest member of any nonempty finite feasible grid maximizes either coverage. An empty grid returns no policy.
 
@@ -159,3 +165,5 @@ All fine-grid fits share the sample, features, and forecast; protocols and hashe
 
 \paragraph{Validation likelihood uncertainty.}
 All seven observed NLL means reproduce exactly. The 10,000 paired-bootstrap draws resample 1,829 validation items (365,800 rows), retaining each item's stores and dates. The four adjusted comparisons use two-sided tails $0.05/(2\times4)$; pointwise 95\% intervals are all positive. These approximate intervals reuse the data that selected shape 2 and condition on fitted models; they neither confirm the selected winner independently nor identify censored tails. Shared store/calendar shocks remain unaccounted for. Saved item sums reproduce all intervals without fitting.
+
+\input{natural_diagnostics.tex}

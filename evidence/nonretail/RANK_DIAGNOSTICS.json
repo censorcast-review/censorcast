@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "group_l1",
+    "n": 99978,
+    "kendall": 0.2996576502781837,
+    "positive_cost_kendall": 0.08248517325554604
+  },
+  {
+    "dataset": "learned_l1",
+    "n": 99978,
+    "kendall": 0.2976452194895401,
+    "positive_cost_kendall": 0.07903861384843615
+  },
+  {
+    "dataset": "chronos2_univariate_raw",
+    "n": 99978,
+    "kendall": 0.3468612096130224,
+    "positive_cost_kendall": 0.14331339431553622
+  },
+  {
+    "dataset": "Yeast",
+    "n": 908,
+    "kendall": 0.8716492867515989,
+    "positive_cost_kendall": 0.7056146599089842
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "fit_calls": 0,
+  "heldout_access": 0,
+  "records": 288,
+  "files": {
+    "PROTOCOL.json": "56770b3fd8da28f54c48727356f4a2f7975dd7b7de63848841171a807d3bd69a",
+    "chronos2_univariate_raw_CALIBRATION.npz": "613e17158d19cf12d9213995f2471cc642a25c274139c281193b12a6b28b864e",
+    "group_l1_CALIBRATION.npz": "757aa85aa248ba57a1cfce23c45e03d519f22ce7bcc39ddd6cc48e71ee01643e",
+    "learned_l1_CALIBRATION.npz": "ea3fd6179abcae8bf7d77cf1625eba46298e092d02eadfe4cf12fde3095af6cc",
+    "RESULTS.json": "76d78cd2632de1c5455c76fef117e2e205397589c6334ba5a64933332f2dbbe1"
+  }
+}

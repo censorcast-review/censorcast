@@ -1,0 +1,34 @@
+{
+  "scope": "Presentation and claim clarification; no model fitting, threshold search, or holdout access",
+  "changed_existing_sources": [
+    "paper/accuracy_section.tex",
+    "paper/appendix_review4.tex",
+    "paper/main.tex",
+    "paper/review5_ratio_theory.tex",
+    "paper/tables/external_main.tex"
+  ],
+  "added_sources": [
+    "paper/identification_statement.tex",
+    "paper/architecture_diagnostics.tex",
+    "paper/natural_diagnostics.tex",
+    "paper/classification_main.tex",
+    "paper/figures/utility_mechanism.pdf",
+    "code/plot_utility_mechanism.py"
+  ],
+  "frozen_experiment_records": "byte-identical to preceding release",
+  "classification_check": "PASS: 6 vertices, 2 LPs, 1440 binary policy-completion checks",
+  "build": {
+    "status": "PASS",
+    "main_pages": 9,
+    "total_pages": 26,
+    "warnings": [],
+    "pdf_sha256": "359df2e987bb0edeafadc334bed9af611dc86be4ce734115a2f022d96a539aac"
+  },
+  "remaining_evidence_limits": [
+    "No selective-QA benchmark added",
+    "No new selective-regression method comparison",
+    "No empirical cap/coverage-floor sensitivity sweep",
+    "No additional external seeds or utility grid evaluated"
+  ],
+  "human_independent_verification": "Not asserted; original AI assistance disclosure retained"
+}

@@ -1,0 +1,1206 @@
+{
+  "dataset": "delicious",
+  "n_test": 3221,
+  "n_units": 3221,
+  "policies": [
+    {
+      "variant": "0.5",
+      "factor": 0.75,
+      "cap": 0.31882607970651994,
+      "method": "error",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.75,
+      "cap": 0.31882607970651994,
+      "method": "row",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.75,
+      "cap": 0.31882607970651994,
+      "method": "mixed",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.75,
+      "cap": 0.31882607970651994,
+      "method": "demand",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.75,
+      "cap": 0.31882607970651994,
+      "method": "weight_descending",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.85,
+      "cap": 0.3613362236673892,
+      "method": "error",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.85,
+      "cap": 0.3613362236673892,
+      "method": "row",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.85,
+      "cap": 0.3613362236673892,
+      "method": "mixed",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.85,
+      "cap": 0.3613362236673892,
+      "method": "demand",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.85,
+      "cap": 0.3613362236673892,
+      "method": "weight_descending",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.95,
+      "cap": 0.40384636762825854,
+      "method": "error",
+      "threshold": 2.2656528015194928,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 2293,
+        "c": 0.7118907171685812,
+        "d": 0.3615696737257518,
+        "risk": 0.3835511145272867,
+        "loss": 2495.0,
+        "weight": 6505.0
+      },
+      "test": {
+        "rows": 2293,
+        "c": 0.7118907171685812,
+        "d": 0.3635865995182833,
+        "risk": 0.3760915386931647,
+        "loss": 2498.0,
+        "weight": 6642.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.95,
+      "cap": 0.40384636762825854,
+      "method": "row",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.95,
+      "cap": 0.40384636762825854,
+      "method": "mixed",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.95,
+      "cap": 0.40384636762825854,
+      "method": "demand",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.95,
+      "cap": 0.40384636762825854,
+      "method": "weight_descending",
+      "threshold": null,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 1.05,
+      "cap": 0.4463565115891279,
+      "method": "error",
+      "threshold": 6.486897171711868,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 3211,
+        "c": 0.99689537410742,
+        "d": 0.9858818298037908,
+        "risk": 0.4238597282516773,
+        "loss": 7518.0,
+        "weight": 17737.0
+      },
+      "test": {
+        "rows": 3214,
+        "c": 0.997826761875194,
+        "d": 0.9904204072695424,
+        "risk": 0.42364450339910464,
+        "loss": 7665.0,
+        "weight": 18093.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 1.05,
+      "cap": 0.4463565115891279,
+      "method": "row",
+      "threshold": 0.07586370331220305,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 3152,
+        "c": 0.9785780813411984,
+        "d": 0.9896614974153743,
+        "risk": 0.42398202752035946,
+        "loss": 7549.0,
+        "weight": 17805.0
+      },
+      "test": {
+        "rows": 3152,
+        "c": 0.9785780813411984,
+        "d": 0.9904751477994307,
+        "risk": 0.42417375925721235,
+        "loss": 7675.0,
+        "weight": 18094.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 1.05,
+      "cap": 0.4463565115891279,
+      "method": "mixed",
+      "threshold": 0.10776154038107102,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 3080,
+        "c": 0.9562247749146228,
+        "d": 0.986270913234395,
+        "risk": 0.42403065825067626,
+        "loss": 7524.0,
+        "weight": 17744.0
+      },
+      "test": {
+        "rows": 3074,
+        "c": 0.9543619993790748,
+        "d": 0.9859864243485877,
+        "risk": 0.42410615145458586,
+        "loss": 7639.0,
+        "weight": 18012.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 1.05,
+      "cap": 0.4463565115891279,
+      "method": "demand",
+      "threshold": 0.031374287377864296,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 3038,
+        "c": 0.943185346165787,
+        "d": 0.9844366627758323,
+        "risk": 0.4240302636779403,
+        "loss": 7510.0,
+        "weight": 17711.0
+      },
+      "test": {
+        "rows": 3034,
+        "c": 0.941943495808755,
+        "d": 0.9847821326910444,
+        "risk": 0.42390216787103946,
+        "loss": 7626.0,
+        "weight": 17990.0
+      }
+    },
+    {
+      "variant": "0.5",
+      "factor": 1.05,
+      "cap": 0.4463565115891279,
+      "method": "weight_descending",
+      "threshold": -4.0,
+      "T": 5.585532443340577,
+      "calibration": {
+        "rows": 2287,
+        "c": 0.7100279416330332,
+        "d": 0.9051192262798066,
+        "risk": 0.42299189388356667,
+        "loss": 6888.0,
+        "weight": 16284.0
+      },
+      "test": {
+        "rows": 2353,
+        "c": 0.7305184725240609,
+        "d": 0.9114298226406832,
+        "risk": 0.4227027027027027,
+        "loss": 7038.0,
+        "weight": 16650.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.75,
+      "cap": 0.47924971142747214,
+      "method": "error",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.75,
+      "cap": 0.47924971142747214,
+      "method": "row",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.75,
+      "cap": 0.47924971142747214,
+      "method": "mixed",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.75,
+      "cap": 0.47924971142747214,
+      "method": "demand",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.75,
+      "cap": 0.47924971142747214,
+      "method": "weight_descending",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.85,
+      "cap": 0.543149672951135,
+      "method": "error",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.85,
+      "cap": 0.543149672951135,
+      "method": "row",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.85,
+      "cap": 0.543149672951135,
+      "method": "mixed",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.85,
+      "cap": 0.543149672951135,
+      "method": "demand",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.85,
+      "cap": 0.543149672951135,
+      "method": "weight_descending",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.95,
+      "cap": 0.607049634474798,
+      "method": "error",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.95,
+      "cap": 0.607049634474798,
+      "method": "row",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.95,
+      "cap": 0.607049634474798,
+      "method": "mixed",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.95,
+      "cap": 0.607049634474798,
+      "method": "demand",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.95,
+      "cap": 0.607049634474798,
+      "method": "weight_descending",
+      "threshold": null,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      },
+      "test": {
+        "rows": 0,
+        "c": 0.0,
+        "d": 0.0,
+        "risk": null,
+        "loss": 0.0,
+        "weight": 0.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 1.05,
+      "cap": 0.670949595998461,
+      "method": "error",
+      "threshold": 23.02748124369883,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 3201,
+        "c": 0.9937907482148401,
+        "d": 0.987148903424394,
+        "risk": 0.6373557842220143,
+        "loss": 40880.0,
+        "weight": 64140.0
+      },
+      "test": {
+        "rows": 3197,
+        "c": 0.9925488978578081,
+        "d": 0.9841503015308489,
+        "risk": 0.6370806819074554,
+        "loss": 40547.0,
+        "weight": 63645.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 1.05,
+      "cap": 0.670949595998461,
+      "method": "row",
+      "threshold": 0.8496567674637276,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 3172,
+        "c": 0.9847873331263582,
+        "d": 0.9867641400538669,
+        "risk": 0.6374015441004445,
+        "loss": 40867.0,
+        "weight": 64115.0
+      },
+      "test": {
+        "rows": 3179,
+        "c": 0.9869605712511642,
+        "d": 0.9880470078861915,
+        "risk": 0.6379955240465124,
+        "loss": 40766.0,
+        "weight": 63897.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 1.05,
+      "cap": 0.670949595998461,
+      "method": "mixed",
+      "threshold": 0.9955662373626762,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 3165,
+        "c": 0.9826140950015523,
+        "d": 0.9871027318199307,
+        "risk": 0.637385596457583,
+        "loss": 40880.0,
+        "weight": 64137.0
+      },
+      "test": {
+        "rows": 3169,
+        "c": 0.9838559453585843,
+        "d": 0.9884335858976342,
+        "risk": 0.6383561215231063,
+        "loss": 40805.0,
+        "weight": 63922.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 1.05,
+      "cap": 0.670949595998461,
+      "method": "demand",
+      "threshold": 0.05418693453883261,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 3151,
+        "c": 0.9782676187519403,
+        "d": 0.9859484417083494,
+        "risk": 0.6373825356685711,
+        "loss": 40832.0,
+        "weight": 64062.0
+      },
+      "test": {
+        "rows": 3149,
+        "c": 0.9776466935734244,
+        "d": 0.9864697695995052,
+        "risk": 0.6380280586252841,
+        "loss": 40703.0,
+        "weight": 63795.0
+      }
+    },
+    {
+      "variant": "0.2",
+      "factor": 1.05,
+      "cap": 0.670949595998461,
+      "method": "weight_descending",
+      "threshold": -12.0,
+      "T": 20.172306737038188,
+      "calibration": {
+        "rows": 2803,
+        "c": 0.8702266376901583,
+        "d": 0.93900731050404,
+        "risk": 0.6367435914246378,
+        "loss": 38849.0,
+        "weight": 61012.0
+      },
+      "test": {
+        "rows": 2760,
+        "c": 0.8568767463520646,
+        "d": 0.9316839338178444,
+        "risk": 0.6365763792073292,
+        "loss": 38355.0,
+        "weight": 60252.0
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "variant": "0.5",
+      "factor": 0.75,
+      "dc": 0.0,
+      "dd": 0.0,
+      "ci95": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "ci_family98_75": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.85,
+      "dc": 0.0,
+      "dd": 0.0,
+      "ci95": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "ci_family98_75": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "variant": "0.5",
+      "factor": 0.95,
+      "dc": 0.0,
+      "dd": 0.0,
+      "ci95": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "ci_family98_75": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "variant": "0.5",
+      "factor": 1.05,
+      "dc": -0.036634585532443344,
+      "dd": -0.005693015108386249,
+      "ci95": [
+        [
+          -0.04346476249611922,
+          -0.029804408568767465
+        ],
+        [
+          -0.007339992716125515,
+          -0.004000725420264092
+        ]
+      ],
+      "ci_family98_75": [
+        [
+          -0.04532753803166718,
+          -0.027941633033219497
+        ],
+        [
+          -0.007790338892867796,
+          -0.0036354943931091155
+        ]
+      ]
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.75,
+      "dc": 0.0,
+      "dd": 0.0,
+      "ci95": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "ci_family98_75": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.85,
+      "dc": 0.0,
+      "dd": 0.0,
+      "ci95": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "ci_family98_75": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "variant": "0.2",
+      "factor": 0.95,
+      "dc": 0.0,
+      "dd": 0.0,
+      "ci95": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "ci_family98_75": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "variant": "0.2",
+      "factor": 1.05,
+      "dc": -0.009313877677739833,
+      "dd": -0.0015772382866862532,
+      "ci95": [
+        [
+          -0.014281279105867743,
+          -0.004346476249611922
+        ],
+        [
+          -0.005307188956598482,
+          0.0021229236067388207
+        ]
+      ],
+      "ci_family98_75": [
+        [
+          -0.015525069854082581,
+          -0.003104625892579944
+        ],
+        [
+          -0.006143289596516392,
+          0.003236321620893006
+        ]
+      ]
+    }
+  ],
+  "diagnostics": {
+    "0.5": {
+      "kendall": 0.7597185992096774,
+      "weight_min": 0.0,
+      "weight_max": 29.0,
+      "full": {
+        "rows": 3221,
+        "c": 1.0,
+        "d": 1.0,
+        "risk": 0.4246770308736589,
+        "loss": 7758.0,
+        "weight": 18268.0
+      }
+    },
+    "0.2": {
+      "kendall": 0.7171391334944489,
+      "weight_min": 3.0,
+      "weight_max": 54.0,
+      "full": {
+        "rows": 3221,
+        "c": 1.0,
+        "d": 1.0,
+        "risk": 0.6389979897943405,
+        "loss": 41324.0,
+        "weight": 64670.0
+      }
+    }
+  },
+  "completed_utc": "2026-09-09T01:00:12.825664+00:00"
+}

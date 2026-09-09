@@ -1,0 +1,169 @@
+{
+  "format": "zip",
+  "bytes": 55593930,
+  "sha256": "1cdbfc3230c7b9de33ef910730ae185828fab336220c654a3c739185d3aa562d",
+  "files": [
+    "evidence/additional/yeast/TEST_PREDICTIONS.npz",
+    "evidence/additional/yeast/yeast-test.arff",
+    "evidence/additional/yeast/CLASSIFIER.joblib",
+    "evidence/additional/yeast/CALIBRATION.npz",
+    "evidence/additional/yeast/yeast-train.arff",
+    "evidence/additional/sensitivity/chronos2_univariate_raw_CALIBRATION.npz",
+    "evidence/additional/sensitivity/group_l1_CALIBRATION.npz",
+    "evidence/additional/sensitivity/learned_l1_CALIBRATION.npz",
+    "evidence/nonretail/bike.zip",
+    "evidence/nonretail/delicious.bz2",
+    "evidence/nonretail/bike/MODELS.joblib",
+    "evidence/nonretail/bike/SPLITS.npz",
+    "evidence/nonretail/bike/CALIBRATION_default.npz",
+    "evidence/nonretail/bike/TEST_default.npz",
+    "evidence/nonretail/delicious/MODELS.joblib",
+    "evidence/nonretail/delicious/CALIBRATION_0.2.npz",
+    "evidence/nonretail/delicious/SPLITS.npz",
+    "evidence/nonretail/delicious/TEST_0.5.npz",
+    "evidence/nonretail/delicious/CALIBRATION_0.5.npz",
+    "evidence/nonretail/delicious/TEST_0.2.npz"
+  ],
+  "parts": [
+    {
+      "path": "data_parts/additional_assets.zip.part01",
+      "bytes": 2000000,
+      "sha256": "293e87b2d7b793ebf705d895ff81db2888055aff97b17182d269300cae1824c3"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part02",
+      "bytes": 2000000,
+      "sha256": "96730c078baeb35779887b68b585e813606424665c027f60d5adb4dc1c078827"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part03",
+      "bytes": 2000000,
+      "sha256": "7e3a373f1f80240c0eaea254cb148aa523e8241decda934e831b6f1a2930c550"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part04",
+      "bytes": 2000000,
+      "sha256": "58f3ae7de30788f1fc11c6fa8d5e067125fa4485a1403b7c340d2a176b008eb0"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part05",
+      "bytes": 2000000,
+      "sha256": "b5edefb2f8ee202b99a51319d116a8c4f1c09ae6993f9d434b9b80229237d119"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part06",
+      "bytes": 2000000,
+      "sha256": "b67dfef7662842b2ee83c3adf6266defb808c8fb6c06974d7ddb38ac482676b6"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part07",
+      "bytes": 2000000,
+      "sha256": "84d52c513dff390e28901daf78f9210260ccb26f6e141c3b858363716d219b58"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part08",
+      "bytes": 2000000,
+      "sha256": "b0f5ba3677be97efa88d915e6b6d9a8b49656be1d03f7e3cd8737efa4cad0e59"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part09",
+      "bytes": 2000000,
+      "sha256": "09421848ee23e2af3ff885b6e73d165484b44084f1f840f9a06a0dc98d02e29c"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part10",
+      "bytes": 2000000,
+      "sha256": "e962785fae03f13100592352dc3f5c3a78629c0d090f699d88ca542661a57467"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part11",
+      "bytes": 2000000,
+      "sha256": "cb4d3cf60e646d20859b664054cf0155446cad41f6edc43ea96e93524843b861"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part12",
+      "bytes": 2000000,
+      "sha256": "a57e950b15f6346e3f48785a5911cdad955416d0d0dd34931d72878b226c600c"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part13",
+      "bytes": 2000000,
+      "sha256": "13ca541e12906396e32e12fe90325c1fcc6e06df2a113549d2bd7878cd6ccdfb"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part14",
+      "bytes": 2000000,
+      "sha256": "5f607f507bac44efa6229a9d5beab5cf312a9ab9170e53b352ef33d5ca98b1f6"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part15",
+      "bytes": 2000000,
+      "sha256": "9ef0f01da14413a35443cf17de5af72e4ff565c9f6af172914b89ba72115f6e7"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part16",
+      "bytes": 2000000,
+      "sha256": "c9086ad0f2ed8fd54428c143583aa8de7af4571882a601ec1ff297dda239f4c5"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part17",
+      "bytes": 2000000,
+      "sha256": "dc1e44abbcdafe72edda686d6b880ac6ee473912b6e93ab80c6d1710c1295211"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part18",
+      "bytes": 2000000,
+      "sha256": "0f72cd85b0573eeae54c4094f612c42e43fa33c778b4bade0d4d671354cc8163"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part19",
+      "bytes": 2000000,
+      "sha256": "047169f3030c14e701e1b186748ed280a71578aa4375ec7f55ecec6fad5649d1"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part20",
+      "bytes": 2000000,
+      "sha256": "87bdc8388fdfd139c39564204fb2920a285401c10cc0c4ae4a95c8e9bea72bfd"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part21",
+      "bytes": 2000000,
+      "sha256": "0f6be28cf1a3f3bfedf1802d638022006a86d403014eaa270d16f6293789b93b"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part22",
+      "bytes": 2000000,
+      "sha256": "da3aec67fc9497ec173cdd4ffa91bd0655dba27c09d54693ca35a7665f2b7faf"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part23",
+      "bytes": 2000000,
+      "sha256": "a6ae82f0e2a596c66c1496709390b0bccb1f1d4aae2f7a576c424dfb743c88e4"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part24",
+      "bytes": 2000000,
+      "sha256": "dfbd5711aa211db2a3eda56a8988977db8e421da444ec4e3b626d0c65c7c68d2"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part25",
+      "bytes": 2000000,
+      "sha256": "49ecd87f68755b5e3c52ce52dd6bccb2fcb50f4c59b1908eab8d002d9e95de13"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part26",
+      "bytes": 2000000,
+      "sha256": "047c1bdc8b7b847cbf57407a82ce055d38274820a76f801d59dd38f82205f464"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part27",
+      "bytes": 2000000,
+      "sha256": "aa63ed2f6461d64f1fcae328e91b37d2ead5ff364d6d0c9204d0e42c807a7c86"
+    },
+    {
+      "path": "data_parts/additional_assets.zip.part28",
+      "bytes": 1593930,
+      "sha256": "ebdf287ef6b26e4d22c2a4b149038f1842ae579a4f1c600862893d1952a46b2e"
+    }
+  ]
+}

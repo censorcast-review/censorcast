@@ -13,7 +13,7 @@ no original selector is reused for a changed predictor.
 This repository includes manuscript source, experiment code, fitted model
 objects, saved predictions, calibration inputs, sufficient statistics, and
 verification scripts. Source and PDF files can be viewed directly. Numerical
-assets are packaged into 53 parts under `data_parts/` to support reliable
+assets are packaged into 53 original parts and a separate additional-results archive under `data_parts/` to support reliable
 transfer; no Git LFS or external data download is needed for the supported replay.
 Run `python code/restore_large_assets.py` once after cloning. It restores the
 original file layout and checks every asset against the original SHA-256 hashes.
@@ -28,6 +28,62 @@ its frozen records are preserved byte for byte.
 release manifest is retained in `evidence/SOURCE_RELEASE_MANIFEST.json`.
 Repository packaging does not constitute a new experiment, protocol freeze, or
 holdout opening. `legacy/` and all original experiment records are unchanged.
+
+## Non-retail evidence and scope
+
+The added UCI Bike Sharing check exhibits the primary row-versus-exposure
+contrast: -13.34 case-coverage points and +5.01 rental-coverage points. Both
+point risks meet the reporting cap; their union does not. The design uses
+randomized day groups and recorded weather, so this is conditional prediction,
+not chronological deployment validation. Delicious is infeasible at its primary
+calibration condition; the earlier Yeast primary result is null. All outcomes
+and declared cap settings are retained, along with models and prediction arrays.
+
+The original retail external policies have a feasible union. They confirm a
+selected contrast's transfer, not transfer of binding budget competition.
+A descending-demand baseline outperforms the fitted pure-ratio rule in demand
+coverage on M5. The paper does not claim universal superiority for estimated
+ratio ranking.
+
+```bash
+python code/verify_nonretail.py
+# Optional reruns of disclosed tests, into new output directories:
+python code/rerun_nonretail.py bike --output reproduction_outputs/bike_rerun
+python code/rerun_nonretail.py delicious --output reproduction_outputs/delicious_rerun
+```
+
+## Additional prespecified checks
+
+The new `evidence/additional/` directory contains the 288-configuration M5
+cap/floor sweep and the official-split Yeast classification check, including
+frozen classifiers, calibration arrays, test masks, and the complete negative
+result. The Yeast primary comparison does **not** establish a strict reversal.
+Its weight is predicted-positive label count, not true-positive coverage.
+M5 sensitivity is retrospective development analysis with zero new fits and
+zero access to the original holdouts. The error-only baseline adapts Franc et
+al.'s regression-based uncertainty ranking to WAPE calibration; it does not
+reproduce SELE or establish the original method's risk guarantees.
+
+After restoring the existing asset parts, replay the additional saved metrics:
+
+```bash
+python code/verify_additional.py
+```
+
+Optional complete reruns write to a new directory and preserve original records:
+
+```bash
+python code/rerun_additional.py yeast --output reproduction_outputs/yeast_rerun
+python code/rerun_additional.py sensitivity --output reproduction_outputs/sensitivity_rerun
+```
+
+Historical execution scripts are preserved byte-for-byte under
+`evidence/additional/` because their hashes precede execution. The wrapper
+recreates their relative working paths in a temporary workspace. Rerunning an
+already disclosed test is a reproducibility check, not a new confirmation test.
+The raw Yeast files come from the Mulan maintainer's official repository;
+`download_yeast.py` checks their Git blob identities. The original protocol,
+freeze record, and single evaluation receipt are retained alongside results.
 
 ## Quick verification and manuscript build
 

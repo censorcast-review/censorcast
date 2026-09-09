@@ -16,8 +16,8 @@ def digest(path):
     return h.hexdigest()
 
 
-def main():
-    spec = json.loads((ROOT / 'data_parts/ASSETS.json').read_text())
+def restore(spec_path):
+    spec = json.loads((ROOT / spec_path).read_text())
     manifest = json.loads((ROOT / 'MANIFEST.json').read_text())['files']
     missing = []
     for name in spec['files']:
@@ -58,4 +58,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    restore('data_parts/ASSETS.json')
+    restore('data_parts/ADDITIONAL_ASSETS.json')
