@@ -16,3 +16,9 @@ The coverage trade-off persists (Table~\ref{tab:m5guardian}). Across three fixed
 
 Operating constraints do not transfer jointly. First-seed direct and two-head shadow WAPE are 0.6282 and 0.6296 pooled, but approximately 0.879 for Hobbies and 0.682--0.683 for Household. In the holdout window matching calibration B, even pooled WAPE is 0.6495 and 0.6504, above the 0.64013 cap. All frozen category-specific policies abstain entirely on Hobbies because their development threshold is absent. The prespecified 48-endpoint family covers two primary methods, three periods, four strata, and two bounds, using 10,000 item-bootstrap draws. Every coverage lower bound exceeds 0.35, but every adjusted WAPE upper bound exceeds the cap; shadow pooled upper bounds are 0.6959 and 0.6971. This fails the specified joint operating check. Appendix~\ref{app:heldout} reports all bounds and the access record.
 
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/row_vs_demand.png}
+\caption{Original development comparison. Left: three-seed means under row-coverage threshold selection. Right: first-seed direct-excess and forecast-normalized-error acceptance sets. The direct-only set has more cases and less demand. These previously evaluated results precede the additional menu audit.}
+\label{fig:mass}
+\end{figure}

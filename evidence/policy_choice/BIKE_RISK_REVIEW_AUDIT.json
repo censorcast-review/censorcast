@@ -1,0 +1,61 @@
+{
+  "scope": "post-hoc descriptive audit, conditional on published fit and fixed cap",
+  "source_commit": "dd8ed9a5230d39148731b5a684b7bad0c6b58ff5",
+  "source_sha256": "1590c389741711da2cd84eaf4c0731c3dacf0e4b5165a0e624959a5e38fe0297",
+  "seed": 20260910,
+  "replicates": 4000,
+  "clusters": 147,
+  "cap": 0.13280609506649216,
+  "risk_intervals": {
+    "row": {
+      "point": 0.12998719583506835,
+      "ci95": [
+        0.12032089840142697,
+        0.14089601753114492
+      ],
+      "ci_bonferroni_three": [
+        0.11841907787031984,
+        0.14336260842202472
+      ],
+      "excess_total": -1650.6600040456105
+    },
+    "demand": {
+      "point": 0.12825674672455917,
+      "ci95": [
+        0.11843242988917932,
+        0.13944432100842502
+      ],
+      "ci_bonferroni_three": [
+        0.11648935070927813,
+        0.14208780667428375
+      ],
+      "excess_total": -2820.07279693913
+    },
+    "union": {
+      "point": 0.13398415683422318,
+      "ci95": [
+        0.12387050039196675,
+        0.14549617187923597
+      ],
+      "ci_bonferroni_three": [
+        0.12167719565838496,
+        0.14782788201936978
+      ],
+      "excess_total": 748.5592962045775
+    }
+  },
+  "new_fits": 0,
+  "threshold_searches": 0,
+  "coverage_interval_replay": "PASS",
+  "coverage_ci98_75": [
+    [
+      -0.15862097461616995,
+      -0.10769639560157486
+    ],
+    [
+      0.022738131419674363,
+      0.08155413932191721
+    ]
+  ],
+  "limitations": "Day-resampling ignores dependence across days and fitting uncertainty; intervals are approximate and this is not a new confirmatory test."
+}

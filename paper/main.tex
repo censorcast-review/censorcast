@@ -18,7 +18,7 @@
 \maketitle
 \lhead{Prepared for submission to ICLR 2027}
 \begin{abstract}
-Selective prediction often reports how many cases it accepts, even when its risk denominator measures unequal exposure. These two choices of coverage can favor different predictions: accurate high-exposure cases supply error budget that can pay for many inaccurate low-exposure cases. We quantify this mechanism with sharp worst-case gaps, a joint bound for positive bounded exposure, and a three-context necessity result. A fixed multilabel classifier provides an exact example. Retail data supply accepted-set budget audits and a one-time external test of a previously selected policy contrast. Improving the predictor can increase both coverages without resolving their objective mismatch. In an additional prespecified urban-mobility test, exposure-based selection sacrifices 13.34 case-coverage points for 5.01 exposure points; both point risks satisfy the common cap, but their union does not. Yeast and Delicious checks do not establish a corresponding learned-policy reversal. The contribution is a quantitative account and practical audit of coverage objectives, not a new uncertainty estimator or a universal preference for exposure over cases.
+Selective prediction often counts accepted cases even when its risk denominator measures unequal exposure. Accurate high-exposure cases can then supply error budget for many inaccurate low-exposure cases. We quantify how much these coverage objectives can disagree, when disagreement is impossible, and how accepted-set budget accounting measures the mechanism. We also test its consequence for choosing a selector: with a fixed predictor and common candidate menu, changing only the calibration utility changes the selected rule. In retrospective retail comparisons, exposure-based selection covers 7.64--10.63 more demand percentage points while accepting fewer cases; a non-retail mobility comparison gains 5.01 exposure points. A separate-window risk screen retains the disagreement at lower coverage and with greater observed risk margins. These bootstrap checks are approximate, not distribution-free guarantees. A previously frozen external retail test confirms transfer of a selected contrast; improving the predictor separately increases both coverages. The results support specifying acceptance utility before selecting a rule and auditing its risk separately, rather than treating case coverage as a proxy for covered exposure.
 \end{abstract}
 
 \section{Introduction}
@@ -26,7 +26,9 @@ A selective prediction system must specify both its risk constraint and the valu
 
 Case coverage alone is insufficient evidence of service to a denominator-weighted population: it can increase while covered exposure falls. This does not make equal value per case illegitimate; it makes the choice consequential. The threshold rankings follow established conditional-risk optimization. Our contribution is to quantify their disagreement: how large it can be, which settings exclude it, and how it can be measured under a common cap. A three-context family makes their case-coverage and mass-coverage gaps almost maximal, even with exact conditional information. The construction identifies the needed heterogeneity; a constant conditional denominator, for example, makes the coverage objectives identical. The acceptance unit matters: a fixed multi-label classifier admits a micro-precision reversal when the whole example is accepted or rejected. Ordinary binary precision with an unrestricted gate has a common optimum for both coverage objectives.
 
-Retail WAPE makes the mechanism concrete. A well-predicted high-volume series creates pooled error slack that pays for many poor low-volume predictions. The added rows can have near-unit relative error yet negligible budget cost. Our experimental suite, CENSORCAST, supplies forecasts and selectors for measuring this mechanism, followed by a first item-holdout comparison and a separately frozen external comparison of two utility policies. It is an evaluation suite, not a new prediction architecture. We then ask whether improving the point predictor removes the mismatch, using newly fitted selectors for a stronger residual learner and a frozen Chronos-2 configuration. The resulting question is whether better predictions also resolve the choice of what acceptance should reward.
+Retail WAPE makes the mechanism concrete. A well-predicted high-volume series creates pooled error slack that pays for many poor low-volume predictions. The added rows can have near-unit relative error yet negligible budget cost. Our experimental suite, CENSORCAST, supplies forecasts and selectors for measuring this mechanism. It is an evaluation suite, not a new prediction architecture. Its original item-holdout and external comparisons are preserved alongside a non-retail mobility test.
+
+The practical question is which rule an evaluator would select. We place conditional-error, excess, mixed-utility, ratio, and descending-exposure rankings in one finite menu, with shared predictions, calibration data, and risk constraints. Case coverage selects one rule; exposure coverage can select another, including a simple baseline rather than the fitted ratio score. We measure the resulting evaluation-period exposure difference. A second audit fixes thresholds in an earlier window and screens risk in a later one before choosing utility. This turns the coverage distinction into a reproducible selection procedure, including an explicit no-choice outcome when every candidate fails. The additional menu audits are retrospective; the original frozen external test has a narrower confirmatory role.
 
 \section{Related work and scope}
 \paragraph{Count-data evaluation.}
@@ -48,99 +50,105 @@ The mismatch theorem does not require censored observations. Its inputs are the 
 \label{sec:calibration}
 Independent calibration clusters and known bounded cluster losses permit simultaneous finite-family concentration checks; the supplement states a standard Hoeffding construction (Appendix~\ref{app:calibration}). Our retail counts lack a justified population bound and share store/calendar shocks. Accordingly, development intervals are descriptive; the held-out comparisons use prespecified item-bootstrap approximations, not that theorem.
 
-\section{Method and experimental design}
-\subsection{Data, chronology, and the audit boundary}
-The M5 split has three disjoint item partitions, with all ten stores of an item kept together. \emph{Development} has 1,829 items (18,290 series) and supplies fitting and threshold selection. The first \emph{item holdout}, called \emph{guardian} in the result files, has 610 items: 42 policies were frozen before its one-time comparison. Its saved predictions subsequently supported exploratory diagnostics. The final \emph{external} partition has 610 other items and is used once for two policies fixed after that exploration (Section~\ref{sec:external}). The first holdout shares development dates and stores; the external primary test uses later forecast origins, still in the same stores. Recorded M5 unit sales are the target $Y$.
+\section{Audit design}
+\subsection{Data, predictors, and chronology}
+Our primary retail menu compares three fixed predictors on the same M5 development partition: a hierarchy-feature L1 forecaster with category scaling, its learned residual correction, and a frozen univariate Chronos-2 configuration. The 1,829 items span all ten stores (18,290 series). A common demand head and one squared-loss error head per predictor use 600,000 training rows on days 1555--1610. Calibration windows A and B cover days 1611--1645 and 1646--1673; evaluation covers days 1800--1913 (2,085,060 rows). Full model and information specifications are in Appendix~\ref{app:accuracy}. These comparisons share outcomes and are not three independent dataset replications.
 
-After 56 uncensored warmup days, mechanical censoring depends on previous observed sales:
+Recorded M5 sales are the target $Y$. After 56 uncensored warmup days, the fixed mechanical process gives
 \begin{align}
  L_t&=0.90L_{t-1}+0.10S_{t-1},&
  C_t&=\max\{1,\lceil1.15L_t+0.25\sqrt{L_t+1}\rceil\},&
  S_t&=\min(Y_t,C_t).
  \label{eq:censor}
 \end{align}
-The previously fixed process hides 30.42\% of recorded demand mass and censors 12.67\% of development rows on days 1314--1913. Initialization is specified in Appendix~\ref{app:repro}.
+It hides 30.42\% of recorded demand mass and censors 12.67\% of development rows on days 1314--1913. Forecasts use origin-available information at horizons one through seven days. Retained complete targets train and calibrate the audit heads. Mechanical censoring creates heterogeneous errors in a controlled measurement setting; it is unnecessary for the mismatch theorem.
 
-Forecast horizons are one through seven days from weekly origins. Chronological blocks separately fit the predictor, select its configuration, train the risk heads, and choose thresholds using two calibration windows, A and B. The subsequent development evaluation uses days 1794--1913; origin-availability filtering leaves 2,085,060 rows. Appendix Table~\ref{tab:chronology} gives every date boundary and the corresponding first-holdout windows. All features use information available at the forecast origin.
+The UCI Bike Sharing test has 3,477 hourly observations from 147 held-out days. Disjoint, randomly assigned day groups fit the count predictor, fit its error head, calibrate selectors, and evaluate them. Features include recorded weather, so the task is conditional count prediction rather than forecasting future weather. The original predictors, five rankings, cap grid, and threshold rules were fixed before test outcomes were evaluated. The additional menu selection reuses that evidence (Appendix~\ref{app:nonretail}).
 
-\subsection{Matched point forecasts and censor-adapter controls}
-The original experiment compares observed-sales L1 and Poisson forecasts, rescaling, and a gated censoring adapter. Its point predictor is fixed before selector comparison. Appendix~\ref{app:original-adapter} preserves the model specifications and adapter equation; the accuracy intervention uses separate predictors and newly fitted selectors.
+Two other M5 item partitions support the earlier experiments. The first holdout, named \emph{guardian} in saved files, has 610 items and shares development dates. Its initial 42-policy comparison was frozen; subsequent reuse is exploratory. The external partition has 610 different items and later forecast origins. Only its previously selected two-policy contrast received a one-time frozen test (Section~\ref{sec:external}). The additional menu and risk-screen analyses reuse previously evaluated data. Their chronological separation does not create a new confirmation trial.
 
-\subsection{Matched selectors and operational checks}
-Risk learners share 600,000 sampled risk-training rows, 21 origin-valid features, 220 trees, 31 leaves, and three seeds. Squared-loss heads estimate conditional error $\hat e$, demand $\hat\mu$, or excess. The two-head score is $\hat e-r\hat\mu$ (440 total trees); the matched-budget control uses the first 110 trees of each head. Nonnegative heads are clipped at zero. Forecast-normalized error is $\hat e/\max(f,0.25)$; demand-normalized error is $\hat e/\max(\hat\mu,0.25)$. These names are used throughout.
-
-We require WAPE at most $r=0.6401298$ and row coverage at least 0.35 in both calibration blocks. Each score accepts a ranked prefix. We search all distinct thresholds and choose the feasible threshold with the largest minimum A/B row coverage. Category-specific thresholds follow the same rule; an infeasible category is fully rejected.
-
-The cap is a 15\% reduction from the reference Poisson model's WAPE, 0.7530939208, on all 2,194,800 development point-selection rows (days 1314--1433, before origin purging). The 0.35 row floor retains a five-point buffer above the original 0.30 minimum; it is a study setting, not a retail standard.
-
-The original holdout comparison uses frozen policies; subsequent analyses reuse saved predictions and are post-hoc. Thresholds and families are selected on development calibration. Item bootstrap keeps each item's stores and days together and conditions on fitted models. Complete grids and access records remain in the appendix.
-
-\section{Results}
-\subsection{More accepted rows can mean less covered demand}
-\label{sec:mass}
-For a common accepted set $K$ and disjoint added set $U$, let $M_B$ and $E_B$ be the demand and absolute-error mass of set $B$. Excess is additive: $(E_{K\cup U}-rM_{K\cup U})=(E_K-rM_K)+(E_U-rM_U)$. When both masses are positive, the combined set meets the cap exactly when
+\subsection{A common menu, two selection utilities}
+\label{sec:choice-design}
+The candidates rank conditional absolute error $\hat e$, row excess $\hat e-r\hat\mu$, exposure-normalized error, descending predicted exposure $-\hat\mu$, or mixed utility. The conditional-error comparator uses regression-based uncertainty estimation \citep{franc2023reject}, recalibrated to our ratio cap; it does not reproduce SELE training. For $U_\lambda=\lambda c+(1-\lambda)d$ and a nonbinding row floor, mixed utility orders
 \begin{equation}
- M_U(R_U-r)\leq M_K(r-R_K).
- \label{eq:budget}
-\end{equation}
-Thus many inaccurate low-volume rows can consume little of the common set's available error budget. We measure each term through an accepted-set decomposition.
-
-\begin{figure}[t]
-\centering\includegraphics[width=\linewidth]{figures/row_vs_demand.png}
-\caption{Strong forecaster. Left: three-seed means under the same row-coverage threshold selection; row and demand coverage disagree. Right: first-seed direct-excess versus forecast-normalized-error acceptance sets. The extra direct-only set contains more rows but less demand than the relative-only set. Both panels describe the previously evaluated development window.}
-\label{fig:mass}
-\end{figure}
-On the previously evaluated development window, direct excess gains 6.08 case-coverage points over forecast-normalized error but loses 5.71 demand-coverage points. Their common accepted set has WAPE 0.5958. The additional direct-only rows have WAPE 1.0026 and mean forecast 0.039 units, yet consume just 61.88\% of that common set's surplus. The competing exclusive set carries roughly twice as much demand while spending 52.01\% of the surplus. Thus either policy can satisfy the pooled cap while making a different choice of what to cover. Appendix~\ref{app:architecture} gives the complete masses and row counts.
-
-\subsection{Transfer to previously held-out items}
-\label{sec:heldout}
-On the 610-item first holdout, three frozen fits reproduce the same direction: direct excess gains 6.49 case-coverage points over forecast-normalized error while losing 4.36 demand-coverage points. This first comparison also includes a direct-versus-two-head architecture control; neither architecture establishes a coverage advantage independent of risk (Appendix~\ref{app:architecture}).
-
-The joint operating check fails: all 24 adjusted risk upper bounds exceed the cap, although the 24 coverage lower bounds pass. Hobbies and Household fail even at the later-window point estimates; pooled risk also fails in calibration-period B. These failures distinguish transfer of a utility contrast from transfer of a risk guarantee. Appendix~\ref{app:heldout} preserves the complete endpoint family and access record.
-
-\paragraph{Group budgets and certification.}\label{sec:groups}
-Pooled point-risk feasibility is separate from simultaneous or groupwise certification. Hobbies and Household exhibit point-risk violations, while failure of an adjusted pooled upper bound means a guarantee was not established. Error-information substitutions, shared-head feature interventions, and a group-budget LP delimit the tested policy family's shortcomings (Appendix~\ref{app:objective}). These checks support reporting group budgets, not claiming that all selective policies must fail.
-
-\subsection{Estimated ratios require regularization disclosure}
-\label{sec:objectives}
-Changing utility on a fixed nested ranking leaves its largest feasible threshold unchanged; different utilities require comparing rankings. The demand-selected family uses $\hat e/\max(\hat\mu,0.25)$. Removing that floor reverses its first-holdout comparison with forecast normalization (Appendix~\ref{app:objective}). Exact-ratio optimality does not order fitted scores: $\partial(e/\mu)/\partial\mu=-e/\mu^2$, whereas $\partial(e-r\mu)/\partial\mu=-r$. A floor or positive row weight limits small-denominator amplification, a possible source of instability rather than an identified explanation of any particular empirical reversal.
-
-\subsection{A constructive path between coverage objectives}
-Let $U_\lambda=\lambda c+(1-\lambda)d$, $T=\E Y$, and $w_\lambda=\lambda+(1-\lambda)\mu/T$. For a nonbinding row floor, the same weighted-measure argument orders
-\begin{equation}
- s_\lambda=\frac{e-r\mu}{\lambda+(1-\lambda)\mu/T},\qquad 0\leq\lambda\leq1.
+ s_\lambda=\frac{\hat e-r\hat\mu}{\lambda+(1-\lambda)\hat\mu/T},\qquad
+ \lambda\in\{1,.25,0\},
  \label{eq:mixed}
 \end{equation}
-It recovers excess at one endpoint and demand-ratio ordering at the other. We evaluate the fixed grid $\{0,0.25,0.5,0.75,1\}$ with the same first-seed heads, no additional max-denominator regularization, and a common development-only estimate of $T$. All thresholds are chosen on development before application to previously evaluated first-holdout predictions (Appendix~\ref{app:mixed}).
+where $T$ is a fixed development estimate of mean exposure. Positive-exposure ordering at zero is equivalent to $\hat e/\hat\mu$. The additional menu uses no denominator floor and retains infeasible candidates as such.
 
-Appendix Table~\ref{tab:mixed-development} reports the full development A/B path. On the item holdout, at $\lambda=0.25$, later-window row/demand coverage is 84.31\%/88.67\% with WAPE 0.6272; at the composed-excess endpoint $\lambda=1$, it is 87.46\%/83.78\% with WAPE 0.6296. This offers an explicit utility choice. The transferred points need not form an empirical Pareto frontier, and all five still fail period-B pooled WAPE. No mixture is promoted to a confirmed operating policy.
+Every candidate receives its largest feasible complete-tie threshold; all distinct scores are searched and accept-all is checked explicitly. M5 requires empirical risk at most $r$ and case coverage at least .35 in both A and B. Bike retains its original .95$r$ design margin and .35 case floor. The M5 reporting cap is $r=.6401298$, a 15\% reduction from the reference Poisson WAPE .7530939208 on the original point-selection rows; it is a study setting, not a retail standard. Bike's primary reporting cap is .85 times full calibration risk. The fixed sensitivity grids are reported in Appendix~\ref{app:policy-choice}.
 
-\FloatBarrier
-\input{tables/external_main.tex}
-\subsection{A one-time external confirmation of the fixed contrast}
-\label{sec:external}
-After inspecting the first-holdout path, we replaced an earlier pending policy pair with $\lambda=1$ and $\lambda=0.25$, then froze their thresholds and first-seed heads before external access (Appendix~\ref{app:external}). The 610 unseen items contribute 140,300 rows on days 1919--1941; all forecast origins follow the last previously evaluated development day. Mixed utility gains 5.16 demand-coverage points and loses 3.35 row points (Table~\ref{tab:external}). Paired one-sided 97.5\% item-bootstrap bounds are $+3.17$ points for the demand difference's lower bound and $-2.48$ for the row difference's upper bound. Both prespecified directions pass. The test concerns this selected learned-policy contrast; it does not test the population theorem, pure-demand optimality, or the full utility path.
-Pooled point risks pass the cap, but all 24 multiplicity-adjusted WAPE upper bounds exceed it; all 24 row lower bounds pass. Failure to certify pooled risk is distinct from the Hobbies/Household point-risk violations. The adjusted bounds do not establish that every underlying risk exceeds the cap. A descriptive decomposition of the same saved masks links the contrast to equation~\eqref{eq:budget}: each exclusive set spends about 30\% of the common slack, while the row-only set has WAPE 1.0046 and carries much less demand (Appendix~\ref{app:external}). The two exclusive excesses sum to less than the common slack, so their union is also point-feasible on this external sample. The external test therefore confirms transfer of a selected contrast, not transfer of binding budget competition or Pareto optimality.
+Changing utility within one nested ranking cannot change its largest feasible threshold. Utility therefore selects between candidate rankings. Among eligible candidates $j$, we choose either
+\begin{equation}
+ j_C=\arg\max_j\min_{b\in\mathcal B}\widehat c_b(a_j),
+ \qquad j_D=\arg\max_j\min_{b\in\mathcal B}\widehat d_b(a_j),
+ \label{eq:menu-choice}
+\end{equation}
+with the same declared tie order. $\mathcal B$ is A/B for the retail menu and the calibration split for Bike. Test labels enter neither choice. An empty eligible menu returns no selected policy, with undefined accepted risk. This is a finite-menu audit, not global optimality over all gates.
 
-\subsection{Does better full-coverage accuracy remove the mismatch?}
+\subsection{Risk screening and uncertainty}
+A separate retail audit designs each of the 15 thresholds (three predictors, five rankings) on A at $0.95r$, then screens it on B at reporting cap $r$. For candidate $j$, item $i$ contributes the signed sum $G_{ij}=\sum_{t\in i}a_j(L_t-rW_t)$. A one-sided item-bootstrap upper bound on mean $G_{ij}$ must be nonpositive, with Bonferroni level $.05/15$ and positive accepted exposure. Among candidates that pass, equation~\eqref{eq:menu-choice} uses A utility only. A threshold is not adjusted to pass B. Later outcomes only evaluate the resulting selections.
+
+All additional intervals use 4,000 paired cluster draws and condition on fits and selected policies. The eight primary case/exposure differences use 99.375\% intervals; screen outcomes and pointwise 95\% risk intervals are separately identified. Item resampling retains stores and dates of each item; Bike resamples days. Shared shocks and dependence across clusters prevent distribution-free guarantees. The output is an approximate risk audit under stated dependence assumptions (Section~\ref{sec:calibration}), with all rejected candidates retained.
+
+\section{Results}
+\subsection{The coverage definition changes the selected rule}
+\label{sec:policy-choice}
+\input{policy_choice_table.tex}
+Case coverage chooses the excess ranking for all four primary menus. Exposure coverage chooses descending predicted demand for all three retail predictors and the fitted ratio for Bike. Thus the practical implication is not to prescribe one score everywhere: the utility determines which candidate to select, and the empirical winner depends on the task.
+
+These calibration choices retain their coverage contrast on evaluation data (Table~\ref{tab:policy-choice}). For the residual predictor, changing the selected rule raises covered demand from 83.85\% to 92.15\% while reducing accepted cases from 89.50\% to 54.32\%. All eight adjusted coverage intervals exclude zero. The three retail comparisons share items, and this additional analysis is retrospective. It measures the consequence of selecting among these five rules, not a general benchmark ranking of uncertainty estimators.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/policy_choice.pdf}
+\caption{One predictor and one calibration-feasible candidate menu per panel. Labels identify rules selected by calibration utility; coordinates are evaluation coverages. The exposure choice is the simple descending-exposure baseline on M5 and the ratio on Bike. No line is drawn as a Pareto frontier. Point-risk feasibility does not imply a certified risk bound.}
+\label{fig:policy-choice}
+\end{figure}
+
+The cap sweep also changes the exposure-selected family: the fitted ratio is selected at stricter retail caps, whereas descending predicted exposure is selected at the original cap. At a sufficiently loose cap both choices accept all and the contrast vanishes. The conditional-error ranking has no feasible threshold at the primary caps under the stated floor. Every declared cap is retained in Appendix Table~\ref{tab:choice-caps}. This is evidence for auditing a menu under the intended utility, rather than inferring fitted-score superiority from an exact-information ranking theorem.
+
+\subsection{The contrast survives a separate-window risk screen}
+\label{sec:risk-screen}
+Ten of 15 designed candidates pass the adjusted B screen; the remaining five have no feasible A threshold. All three predictors retain different case- and exposure-selected rules. Later demand gains are 8.52, 11.76, and 9.04 points for L1, residual, and Chronos respectively. The price is lower acceptance: for the residual predictor, case-selected coverage falls from 89.50\% in the original menu to 75.36\% after the stricter design and screen. This is a change in risk margin, not a free coverage improvement.
+
+All six selected policies have Later point risks between .5959 and .6039; their pointwise 95\% risk upper limits range from .6144 to .6257, below the reporting cap .6401 (Appendix Table~\ref{tab:policy-screen}). These approximate, fit-conditional intervals are not simultaneous test guarantees or evidence of risk control under deployment shift. The new screen neither revises the original external protocol nor reverses its failed joint operating checks. It demonstrates a concrete selection procedure that keeps utility choice consequential after a separate risk check.
+
+\subsection{Better prediction can improve both coverages}
 \label{sec:accuracy}
 \input{accuracy_section.tex}
 
-\paragraph{Sensitivity and simple rankings.}
-The 288-condition development sweep preserves the mixed-versus-row contrast at strict caps. The error-only regression ranking is infeasible at the original cap; increasing the row floor either preserves a threshold or makes its family infeasible (Appendix~\ref{app:new-audits}). Descending predicted demand covers more demand than the fitted pure-ratio score for all three predictors, while accepting fewer rows. Thus exact-information optimality is not an empirical superiority claim for the fitted ratio score (Appendix~\ref{app:nonretail}).
+\subsection{Budget accounting explains the coverage difference}
+\label{sec:mass}
+For a common accepted set $K$ and disjoint additional set $U$, let $M_B$ and $E_B$ denote exposure and absolute-error mass. Additivity gives, for positive masses,
+\begin{equation}
+ R_{K\cup U}\leq r
+ \quad\Longleftrightarrow\quad
+ M_U(R_U-r)\leq M_K(r-R_K).
+ \label{eq:budget}
+\end{equation}
+The original retail direct-excess comparison gains 6.08 case points but loses 5.71 demand points relative to forecast-normalized error. Its added rows have near-unit WAPE and mean forecast .039, yet spend only 61.88\% of the common slack. The competing exclusive set carries roughly twice the demand while spending 52.01\% (Appendix~\ref{app:architecture}). The improved predictor retains the same low-exposure mechanism (Figure~\ref{fig:accuracy}).
 
-\subsection{A non-retail test with competing budget allocations}
-On the public UCI Bike Sharing data, we fix the predictors, disjoint day-group splits, primary cap rule, and selectors before evaluating held-out outcomes. This is conditional count prediction using recorded weather, not a future-weather forecast. At the primary cap $r=.13281$, row/exposure selection accepts $87.89\%/74.55\%$ of hours and covers $85.54\%/90.56\%$ of recorded rentals. Both point risks pass. Day-bootstrap intervals adjusted across the two primary dataset contrasts exclude zero in both directions (Appendix~\ref{app:nonretail}). The common set supplies 5,219 loss units of slack; the two exclusive sets require 3,569 and 2,399. Each fits separately but their union exceeds the cap, exhibiting budget competition beyond retail.
+Bike supplies a non-retail measurement without artificial censoring. Its row/ratio common set supplies 5,219 loss units of slack; the exclusive sets require 3,569 and 2,399. Each policy is point-feasible but the union is not. However, post-hoc day-bootstrap risk intervals for row, ratio, and union are respectively [.1203,.1409], [.1184,.1394], and [.1239,.1455], all crossing cap .1328. The coverage contrast is clear; population feasibility of each set and infeasibility of their union have not been jointly established. Union infeasibility alone would also not establish Pareto optimality. Appendix~\ref{app:policy-choice} gives the complete risk audit.
 
-The prespecified Delicious primary check is infeasible; Yeast's earlier check has no clear reversal. Kendall rank agreement is high on Yeast and lower on M5, a useful descriptive diagnostic rather than a sufficient condition for reversal. All declared conditions, including these negative results, remain in the supplement.
+\FloatBarrier
+\input{tables/external_main.tex}
+\subsection{What the one-time external test confirms}
+\label{sec:external}\label{sec:heldout}
+After inspecting the first item-holdout path, we replaced an earlier pending policy pair with $\lambda=1$ and $\lambda=.25$, then froze their thresholds and first-seed heads before external access (Appendix~\ref{app:external}). The 610 unseen items supply 140,300 rows on days 1919--1941. All origins follow the last previously evaluated development day. Mixed utility gains 5.16 demand points and loses 3.35 case points (Table~\ref{tab:external}); both prespecified directional bounds exclude zero. This is confirmation of transfer of that selected contrast, not of the new menu procedure, the full utility path, or the population theorem.
+
+Pooled point risks pass the cap, but all 24 adjusted risk upper bounds exceed it; all 24 case-coverage lower bounds pass. Hobbies and Household violate the cap even at their point estimates. In the saved-mask decomposition, each exclusive set spends about 30\% of the common slack, and their union remains point-feasible. The external result therefore establishes neither binding budget competition nor Pareto optimality. Its complete endpoint and access records remain unchanged.
+
+\paragraph{Fitted-score and group limits.}\label{sec:objectives}\label{sec:groups}
+Exact rankings need not order learned policies. Although $\partial(e/\mu)/\partial\mu=-e/\mu^2$, score amplification alone does not prove gate instability: for positive $\hat\mu$, $\hat e/\hat\mu\leq t$ is equivalent to $\hat e-t\hat\mu\leq0$. Boundary margins and joint estimation errors matter. A denominator floor changes the ranking; a positive row weight also changes the utility. The earlier floor sensitivity, architecture controls, and group interventions remain in Appendix~\ref{app:objective}. They do not establish a universally superior estimated ratio or resolve groupwise failure. Yeast shows no clear learned-policy reversal and Delicious is infeasible at its primary condition; both checks are retained (Appendix~\ref{app:nonretail}).
 
 \FloatBarrier
 
 \section{Limitations}
-The new predictor comparison is retrospective on previously evaluated M5 development items; it does not extend the independent external confirmation to new predictors. Its selectors use retained pre-censoring targets, a single fit, and chronological point constraints. Approximate item-bootstrap intervals condition on fits and do not remove shared store/calendar shocks. Exact rankings can differ from fitted rankings, and arbitrary fitted policies need not lie on a population Pareto frontier. The original joint operating checks fail. Natural-stockout diagnostics concern identification rather than coverage geometry (Appendix~\ref{app:natural-diagnostics}). The bounded-exposure envelope can be vacuous when the exposure lower bound approaches zero, as in retail; we do not treat it as an informative retail error bar. The empirical coverage gaps are not estimates of the worst-case bound: its sharp construction allows conditional exposure to approach zero. The cap/floor sweep is development-only; it establishes neither seed robustness nor the full utility path on the external partition. The new mobility split is randomized by day, and its bootstrap conditions on fitted models. Forecast and covered-demand improvements are not measured profit, service-level, or inventory-cost improvements.
+The additional menu and split-screen analyses use previously evaluated data and a single fit per predictor. They are not new confirmation trials. Coverage intervals condition on that choice and fit; approximate cluster bootstrap does not remove shared store/calendar shocks or interday dependence. The five-score menu includes an error-regression comparator but not every learned selective predictor. The screened results concern pooled risk; the original groupwise and external joint checks remain unresolved. Bike uses a randomized day split and recorded weather, and the positive non-retail evidence still uses a WAPE-type risk. Natural-stockout identification is a separate limitation of the retail inputs (Appendix~\ref{app:natural-diagnostics}). The bounded-exposure envelope may be vacuous as its lower bound approaches zero, so it is not an informative retail error bar. Observed gaps do not estimate the worst-case bound, whose sharp construction permits exposure to approach zero. Forecasting and coverage gains are not measured profit or inventory-cost improvements.
 
 \section{Conclusion}
-Under ratio-risk constraints, familiar threshold rules can optimize substantially different notions of coverage. We identify when case and exposure objectives can disagree, bound their disagreement, and measure the underlying budget allocation. The original external comparison confirms a selected policy contrast; stronger-forecast experiments separately examine its sensitivity to prediction quality. Forecasting systems should improve full-coverage accuracy, specify acceptance utility, and report both coverages with group-level budget audits.
+Under a ratio-risk cap, counting accepted cases and counting their exposure can select different rules from the same candidate menu. We quantify the possible disagreement, delimit its occurrence, and measure its budget mechanism. The empirical choice survives changes in predictor and a separate-window approximate risk screen, while its preferred exposure ranking varies by task and cap. A useful evaluation should state the acceptance utility, compare candidates under a common risk check, and report both coverages with uncertainty and group budgets. Better prediction can expand what is covered; it does not decide what acceptance should reward.
 
 \label{end:main}
 
@@ -171,4 +179,5 @@ The anonymous repository at \url{https://github.com/censorcast-review/censorcast
 \input{accuracy_appendix.tex}
 \input{additional_audits.tex}
 \input{nonretail.tex}
+\input{policy_choice_appendix.tex}
 \end{document}

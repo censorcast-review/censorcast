@@ -2,11 +2,13 @@
 
 Anonymous manuscript source, experiments, and numerical evidence.
 
-The paper studies acceptance utility under a ratio-risk cap. Its original
-external test is preserved. A new retrospective experiment asks whether better
-full-coverage accuracy removes the difference between row and demand coverage.
-It refits three predictor-specific error heads and one common demand head;
-no original selector is reused for a changed predictor.
+The paper studies how acceptance utility changes selector choice under a
+ratio-risk cap. It combines quantitative theory, accepted-set budget audits,
+an unchanged frozen external contrast, and retrospective experiments on
+retail forecasting and urban mobility. The latest addition compares five
+selector rankings under the same calibration protocol, then selects by case
+or exposure coverage. A separate-window risk screen measures the coverage
+cost of adding a risk margin and checking it before utility selection.
 
 ## Complete repository
 
@@ -29,11 +31,49 @@ release manifest is retained in `evidence/SOURCE_RELEASE_MANIFEST.json`.
 Repository packaging does not constitute a new experiment, protocol freeze, or
 holdout opening. `legacy/` and all original experiment records are unchanged.
 
+## Utility-based policy selection and separate-window risk screening
+
+`evidence/policy_choice/` retains all 22 declared cap/menu settings, all 15
+screen candidates, frozen choices, complete results, and cluster sufficient
+statistics. These are **additional retrospective audits**, not new confirmation
+trials. They fit no model and do not reopen the original external partition.
+
+- At the primary cap, case utility selects the excess ranking. Exposure utility
+  selects descending predicted demand for all three M5 predictors and the
+  ratio ranking for Bike. Evaluation demand gains are 7.64, 8.31, 10.63, and
+  5.01 percentage points, respectively, at lower case coverage.
+- Eight fit-conditional coverage intervals, adjusted within this audit, exclude
+  zero. The three M5 comparisons share data and are not independent replications.
+- The stricter A-window design has ten feasible candidates; all ten pass the
+  separate approximate B-window risk screen. The six utility-selected policies
+  have Later pointwise 95% risk intervals below the reporting cap, with reduced
+  coverage. This is not a distribution-free or groupwise deployment guarantee.
+- The original Bike row/ratio/union risk intervals all cross the cap. The sample
+  union is infeasible, but its population infeasibility is not established.
+
+After restoring assets:
+
+```bash
+OPENBLAS_NUM_THREADS=1 python code/verify_policy_choice.py
+python code/replay_bike_risk_audit.py
+# Optional full audit replay (threshold search; no model fit):
+OPENBLAS_NUM_THREADS=1 python code/run_policy_choice.py \
+  --output reproduction_outputs/policy_choice_replay
+# Rebuild generated tables and figure from the saved audit:
+python code/build_policy_choice_assets.py
+```
+
+`code/policy_audit.py` provides reusable score, threshold-design, utility-choice,
+and sufficient-statistic functions. `choose` returns `None` for an empty eligible
+menu. Undefined risk is retained for zero accepted exposure. `PROTOCOL.json`
+documents the utility, eligibility rules, tie order, cap grids, and resampling.
+
 ## Non-retail evidence and scope
 
 The added UCI Bike Sharing check exhibits the primary row-versus-exposure
 contrast: -13.34 case-coverage points and +5.01 rental-coverage points. Both
-point risks meet the reporting cap; their union does not. The design uses
+point risks meet the reporting cap; their union does not. All three approximate
+risk intervals cross the cap, so this is sample-level accounting. The design uses
 randomized day groups and recorded weather, so this is conditional prediction,
 not chronological deployment validation. Delicious is infeasible at its primary
 calibration condition; the earlier Yeast primary result is null. All outcomes
