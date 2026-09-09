@@ -8,7 +8,11 @@ an unchanged frozen external contrast, and retrospective experiments on
 retail forecasting and urban mobility. The latest addition compares five
 selector rankings under the same calibration protocol, then selects by case
 or exposure coverage. A separate-window risk screen measures the coverage
-cost of adding a risk margin and checking it before utility selection.
+cost of adding a risk margin and checking it before utility selection. All ten
+A-feasible candidates passed B, so this comparison does not isolate a benefit
+of screening from the stricter design. The discussion distinguishes predictor
+improvement, utility selection, and risk verification; see
+[revision details](docs/writing_revision.md).
 
 ## Complete repository
 

@@ -7,8 +7,8 @@
       "numerical_asset": false
     },
     "README.md": {
-      "bytes": 12071,
-      "sha256": "b26238c96381da8797e363b3a91a1e55774fd88639b14edbe2edda0a66dd93f3",
+      "bytes": 12340,
+      "sha256": "8346acb1f03dde88444a3a06c7d1b4a957182ecad1e8e69ca0c4af3c251f9886",
       "numerical_asset": false
     },
     "REVIEW_LINK.json": {
@@ -5137,8 +5137,8 @@
       "numerical_asset": false
     },
     "paper/CENSORCAST_ICLR_2027_Final.pdf": {
-      "bytes": 570099,
-      "sha256": "ee2274517908abd86468b77c792f0623a5d75ca23287811953aee4254b4d1bc3",
+      "bytes": 570092,
+      "sha256": "f80c54068f825895bd5ddcd00e22ba2461478651ea6b96d2306c441482d637df",
       "numerical_asset": false
     },
     "paper/accuracy_appendix.tex": {
@@ -5162,8 +5162,8 @@
       "numerical_asset": false
     },
     "paper/accuracy_section.tex": {
-      "bytes": 2779,
-      "sha256": "6acb2c25415b812a069163bef04a4479c87ea02edf32f341954c2c7b8c9e3ef1",
+      "bytes": 2303,
+      "sha256": "3739457ba611f0f2a71bffe0a584c5c10a2642963ee722a2903d0b1b3308e034",
       "numerical_asset": false
     },
     "paper/accuracy_table.tex": {
@@ -5292,8 +5292,8 @@
       "numerical_asset": false
     },
     "paper/main.tex": {
-      "bytes": 24802,
-      "sha256": "68f368301b0efeb912380845cbf5156aba04718e53fb710cd1ecd804c8a8d818",
+      "bytes": 25258,
+      "sha256": "bd9ee853568a3ec264ad4bd021f3e4d954da3d9fab9394892d130ece279fb741",
       "numerical_asset": false
     },
     "paper/natural_diagnostics.tex": {
@@ -5529,6 +5529,16 @@
     "requirements.txt": {
       "bytes": 155,
       "sha256": "1597ce9529b65aaafe3b576658f2aee5650d85b3573e63f455e053a997c7ee96",
+      "numerical_asset": false
+    },
+    "docs/writing_revision.md": {
+      "bytes": 849,
+      "sha256": "557dc4f59de34840bf13c68e0b4f34a192553bcd6113e58d033fc20dcd5e3a57",
+      "numerical_asset": false
+    },
+    "docs/writing_build_report.json": {
+      "bytes": 165,
+      "sha256": "901954a8ba1c88248d922d0c0a3bbcc8d8993b86b4f98afb8c150dfc2231a0e6",
       "numerical_asset": false
     }
   }
