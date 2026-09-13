@@ -4,8 +4,8 @@
   "scope": "Source and execution protocols only; numerical arrays require separately supplied supplement.",
   "files": {
     "README.md": {
-      "bytes": 2719,
-      "sha256": "c254d3c8e4e5817f20221986f044dee5051d80095326ebe1ff23e5c352df1a38",
+      "bytes": 2840,
+      "sha256": "aeba02a1f411f11d6509c5823e044958a20ea7bb34324c6f1ba4ed0b712a07ac",
       "numerical_asset": false
     },
     "build_submission_bundle.py": {

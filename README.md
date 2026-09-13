@@ -19,7 +19,9 @@ No frozen experimental code or protocol is altered to change the reported result
 Use Python 3.12 and requirements-v12.txt; the non-WAPE dependencies are listed in
 evidence/revision_v13_nonwape/requirements-v13.txt. Place the contents of the
 current submission supplement's CENSORCAST directory into this checkout before
-running numerical replay. The source manifest alone does not supply missing data.
+running numerical replay, preserving this repository's root README.md and
+MANIFEST.json rather than replacing them with the supplement entrypoint. The
+source manifest alone does not supply missing data.
 
 ```bash
 python code/verify_release.py
