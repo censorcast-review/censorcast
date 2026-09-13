@@ -20,6 +20,7 @@ For L1, residual, and Chronos, adjusted case-difference intervals are respective
 The selected exposure rule also illustrates estimation limits. Descending predicted exposure beats the fitted pure-ratio rule in all three primary M5 comparisons, but is not chosen on Bike. Tightening the cap can change the M5 choice to the ratio. This is a result about selecting within the declared menu, not evidence that one fitted ranking is universally optimal or that every ranking inversion is caused by small denominators.
 
 \subsection{A separate-window approximate risk screen}
+\label{sec:risk-screen}
 We repeat threshold design on A alone with the fixed design cap $.95r$ and .35 case floor. For each of the 15 possible predictor--ranking pairs, the resulting threshold is then held fixed on B. Define item-level signed excess
 \[
  G_{ij}=\sum_{t\in i}a_j(X_t)(L_t-rW_t).
@@ -30,7 +31,7 @@ Ten candidates have a feasible A threshold, and all ten pass the adjusted B scre
 
 \input{policy_screen_table.tex}
 
-The later-period exposure-choice gains for L1, residual, and Chronos are 8.52, 11.76, and 9.04 points; corresponding descriptive 95\% intervals are $[7.15,9.92]$, $[9.59,14.12]$, and $[7.92,10.12]$. Case differences are $-28.34$, $-36.55$, and $-26.11$ points, with intervals $[-30.06,-26.62]$, $[-38.82,-34.28]$, and $[-27.78,-24.45]$. These are secondary, retrospective contrasts. Table~\ref{tab:policy-screen}'s six risk intervals are pointwise rather than a joint test family. The stricter design sacrifices coverage and establishes no groupwise or shifted-deployment guarantee. The historical external operating checks are unchanged.
+The later-period exposure-choice gains for L1, residual, and Chronos are 8.52, 11.76, and 9.04 points; corresponding descriptive 95\% intervals are $[7.15,9.92]$, $[9.59,14.12]$, and $[7.92,10.12]$. Case differences are $-28.34$, $-36.55$, and $-26.11$ points, with intervals $[-30.06,-26.62]$, $[-38.82,-34.28]$, and $[-27.78,-24.45]$. For the residual predictor, case-selected coverage falls from 89.50\% in the original menu to 75.36\% after the stricter design. These are secondary, retrospective contrasts. Table~\ref{tab:policy-screen}'s six risk intervals are pointwise rather than a joint test family. The stricter design sacrifices coverage and establishes no groupwise or shifted-deployment guarantee. The historical external operating checks are unchanged.
 
 \subsection{Bike risk uncertainty and budget interpretation}
 An additional descriptive replay uses the original Bike bootstrap seed 20260910 and all 147 test days. At the reporting cap $r=.1328061$, row and ratio risks are .129987 and .128257; their union risk is .133984. Pointwise 95\% day-bootstrap intervals are $[.120321,.140896]$, $[.118432,.139444]$, and $[.123871,.145496]$. Bonferroni-adjusted intervals over these three quantities are $[.118419,.143363]$, $[.116489,.142088]$, and $[.121677,.147828]$. All cross the cap. The same replay exactly reproduces the original 98.75\% coverage-difference intervals.

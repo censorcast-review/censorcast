@@ -12,7 +12,7 @@ Row coverage, exposure coverage, and accepted ratio risk are
  R(a)=\frac{\E[aL]}{\E[aW]}.
  \label{eq:ratio}
 \end{equation}
-The accepted denominator must be positive. The contract is $R(a)\leq r$
+The accepted denominator must be positive. The acceptance constraint is $R(a)\leq r$
 and $c(a)\geq c_0$. Its signed excess is
 \begin{equation}
  g_r=L-rW,\qquad m_r=\ell-rw,\qquad
@@ -66,7 +66,7 @@ the cap and the nonbinding row floor, and obey
 The universal bounds $1-c_0$ and $1$ are jointly sharp. For
 $0<r<1$ and $\rho=1$, this sharpness also holds with binary $0\leq L\leq W\leq1$.
 \end{proposition}
-The sharpness statement ranges over joint laws that can realize the
+Approaching the joint bounds uses a sequence with vanishing conditional exposure; the construction does not establish typical or nondegenerate empirical gaps. The sharpness statement ranges over joint laws that can realize the
 conditional moments in Appendix~\ref{app:proofs}; it is not a claim
 about every fixed metric class. If $W$ is constant, for example,
 $d_W=c$ and reversal is impossible. For a fixed multi-label classifier, whole-example abstention yields an exact micro-precision reversal (Appendix~\ref{app:classification}). Ordinary binary precision with an unrestricted gate instead has a common optimum for both coverage objectives. For whole-example micro-precision with $1\leq w\leq m$, each coverage gap is at most $(m-1)/(m+1)$; Appendix~\ref{app:bounded_exposure} sharpens this to a joint bound.
@@ -97,5 +97,8 @@ that bound and the exact budget identity. More generally $|e-\mu|\leq f$.
 Exact-head optimality does not imply estimated-ratio robustness.
 Section~\ref{sec:objectives} and Appendix~\ref{app:proofs} distinguish
 objective alignment from small-denominator error amplification.
+
+\paragraph{From head error to decision error.}
+Small head error alone does not ensure small coverage regret: Appendix~\ref{app:plugin-v12} gives a two-context example with vanishing error and a limiting $1/2$ coverage loss. A conditional perturbation bound controls coverage and risk when a strictly feasible comparator and positive accepted exposure exist. This specializes established constraint-sensitivity arguments; its assumptions do not certify the fitted menu.
 
 \input{classification_main.tex}

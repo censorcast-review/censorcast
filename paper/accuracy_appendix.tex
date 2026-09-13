@@ -20,6 +20,10 @@ The earliest calibration origin is 1610, after all head-training targets through
 \input{accuracy_budget_table.tex}
 The paired bootstrap resamples 1,829 item clusters, retaining all stores and dates, with 4,000 draws at seed 20260908. These are marginal descriptive percentile intervals conditional on the predictors, fitted heads, chosen policies, and adaptive research history. They do not include model-fitting uncertainty or shared calendar/store shocks. Item sufficient statistics reproduce all intervals; saved forecast and head arrays reproduce masks and budget sums.
 
+\subsection{Coverage results for the three archived predictors}
+\label{sec:accuracy}
+\input{accuracy_section.tex}
+
 \subsection{What the additional forecasting controls establish}
 The preceding forecasting study includes fixed risk-bin recalibration, forecast-value bins, top-risk-only uplift, minimum-support fallback, separately tuned residual learning with and without $q$, and frozen-backbone recalibration. Its role here is to supply stronger predictors and explicit limits on interpretation, not to claim a universally superior risk coordinate.
 

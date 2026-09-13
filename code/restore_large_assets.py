@@ -60,3 +60,4 @@ def restore(spec_path):
 if __name__ == '__main__':
     restore('data_parts/ASSETS.json')
     restore('data_parts/ADDITIONAL_ASSETS.json')
+    restore('data_parts/MATCHED_ASSETS.json')
